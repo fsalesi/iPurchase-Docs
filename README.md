@@ -73,7 +73,7 @@ Administration screens are shared between iPurchase and iApprove:
 | 01 | [Workbench](admin/screens/iframework-01-workbench.md) | Development workbench | 🔜 Planned |
 | 02 | [Menu Maintenance](admin/screens/iframework-02-menu-maintenance.md) | Navigation menu configuration | ✅ Complete |
 | 03 | [VST Locks](admin/screens/iframework-03-vst-locks.md) | View locked database records (Developer) | ✅ Complete |
-| 04 | Compiler | Code compilation (Developer) | 🔜 Planned |
+| 04 | [Compiler](admin/screens/iframework-04-compiler.md) | Code compilation (Developer) | ✅ Complete |
 | 05 | Query Tester | SQL query testing (Developer) | 🔜 Planned |
 | 06 | Schema Browser | Database schema viewer (Developer) | 🔜 Planned |
 | 07 | Languages | Language configuration | 🔜 Planned |
