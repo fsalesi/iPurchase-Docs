@@ -23,6 +23,7 @@ This index provides direct raw links to all documentation files for easy access 
 - [Supplier Maintenance](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/ipurchase-04-supplier-maintenance.md)
 - [UNSPSC Maintenance](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/ipurchase-05-unspsc-maintenance.md)
 - [UNSPSC Accounts](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/ipurchase-06-unspsc-accounts.md)
+- [Supplier Location Maintenance](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/ipurchase-07-supplier-location-maintenance.md)
 
 ## Shared Components
 
