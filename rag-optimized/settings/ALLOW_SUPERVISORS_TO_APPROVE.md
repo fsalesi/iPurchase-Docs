@@ -55,5 +55,5 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALLOW_SUPERVIS
 
 ### Related Settings
 
-- **SUPERVISOR_ESCALATION_DAYS** - Days before supervisor can override (default: 3)
-- **SUPERVISOR_ESCALATION_LEVEL** - How many levels up can override (default: 99)
+- [SUPERVISOR_ESCALATION_DAYS](SUPERVISOR_ESCALATION_DAYS.md) - Days before supervisor can override (default: 3)
+- [SUPERVISOR_ESCALATION_LEVEL](SUPERVISOR_ESCALATION_LEVEL.md) - How many levels up can override (default: 99)

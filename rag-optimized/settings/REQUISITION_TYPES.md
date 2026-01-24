@@ -65,6 +65,6 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'REQUISITION_TY
 
 ### Related Settings
 
-- **RT_[TYPE]_ACCOUNT_RANGE** - Valid accounts for each type
-- **RT_[TYPE]_DEFAULT_BUYER** - Default buyer for each type
-- **DEFAULT_REQTYPE** - Override default type selection
+- RT_[TYPE]_ACCOUNT_RANGE - Valid accounts for each type
+- RT_[TYPE]_DEFAULT_BUYER - Default buyer for each type
+- [DEFAULT_REQTYPE](DEFAULT_REQTYPE.md) - Override default type selection

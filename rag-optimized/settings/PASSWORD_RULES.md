@@ -56,6 +56,6 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'PASSWORD_RULES
 
 ### Related Settings
 
-- **PASSWORD_EXPIRE_DAYS** - Days until password expires
+- [PASSWORD_EXPIRE_DAYS](PASSWORD_EXPIRE_DAYS.md) - Days until password expires
 - **PASSWORD_REMINDER_DAYS** - Days before expiration to warn user
 - **FAILED_LOGIN_ATTEMPTS** - Lockout after X failed attempts

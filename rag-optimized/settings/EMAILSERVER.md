@@ -10,15 +10,23 @@ iPurchase connects to this SMTP server to send all email communications. The ser
 
 ### Valid Values
 
-| Value | Description |
-|-------|-------------|
-| IP Address | Direct IP of SMTP server (e.g., "192.168.1.100") |
-| Hostname | DNS name of SMTP server (e.g., "smtp.company.com") |
+| Format | Example |
+|--------|---------|
+| IP Address | `192.168.1.100` |
+| Hostname | `smtp.company.com` |
+| With Port | `smtp.company.com:587` |
+| IP with Port | `192.168.1.100:25` |
+
+### Common Ports
+
+- **25** - Standard SMTP (often blocked by ISPs)
+- **587** - SMTP with STARTTLS (recommended)
+- **465** - SMTP over SSL (legacy)
 
 ### Configuration Notes
 
 - Ensure the SMTP server allows relay from the iPurchase server
-- For cloud SMTP services (Office 365, Gmail, etc.), may require authentication settings
+- For cloud SMTP services (Office 365, Gmail, etc.), typically use port 587
 - Test email delivery after configuration changes
 
 ### Common Questions
@@ -26,7 +34,7 @@ iPurchase connects to this SMTP server to send all email communications. The ser
 - What is EMAILSERVER?
 - How do I configure email in iPurchase?
 - Why are emails not being sent?
-- What SMTP server should I use?
+- How do I specify the SMTP port?
 
 ### Setting Details
 
@@ -46,7 +54,7 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAILSERVER'
 
 ### Related Settings
 
-- **EMAILFROM** - Default sender email address
-- **EMAIL_AUTH_USER** - SMTP authentication username
-- **EMAIL_AUTH_PASSWORD** - SMTP authentication password
-- **EMAIL_AUTH_TYPE** - Authentication method (PLAIN, LOGIN, etc.)
+- [EMAILFROM](EMAILFROM.md) - Default sender email address
+- [EMAIL_AUTH_USER](EMAIL_AUTH_USER.md) - SMTP authentication username
+- [EMAIL_AUTH_PASSWORD](EMAIL_AUTH_PASSWORD.md) - SMTP authentication password
+- [EMAIL_AUTH_TYPE](EMAIL_AUTH_TYPE.md) - Authentication method (PLAIN, LOGIN, etc.)

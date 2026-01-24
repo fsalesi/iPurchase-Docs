@@ -58,5 +58,5 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'MULTIPLE_APPRO
 
 ### Related Settings
 
-- **AUTO_APPROVE_FORWARD** - Automatically approves future instances after first approval
+- [AUTO_APPROVE_FORWARD](AUTO_APPROVE_FORWARD.md) - Automatically approves future instances after first approval
 - **REMOVE_APPROVER_FROM_GROUPS** - Controls group membership handling in routing

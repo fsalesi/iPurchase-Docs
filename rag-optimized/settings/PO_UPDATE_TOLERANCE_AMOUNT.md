@@ -54,7 +54,7 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'PO_UPDATE_TOLE
 
 ### Related Settings
 
-- **PO_UPDATE_TOLERANCE_PCT** - Maximum percentage increase allowed
-- **PO_UPDATE_CHECK_REROUTE** - Check if approvers changed regardless of tolerance
-- **CO_HEADER_REROUTE_FIELDS** - Header fields that force re-routing
-- **CO_ITEM_REROUTE_FIELDS** - Line fields that force re-routing
+- [PO_UPDATE_TOLERANCE_PCT](PO_UPDATE_TOLERANCE_PCT.md) - Maximum percentage increase allowed
+- [PO_UPDATE_CHECK_REROUTE](PO_UPDATE_CHECK_REROUTE.md) - Check if approvers changed regardless of tolerance
+- [CO_HEADER_REROUTE_FIELDS](CO_HEADER_REROUTE_FIELDS.md) - Header fields that force re-routing
+- [CO_ITEM_REROUTE_FIELDS](CO_ITEM_REROUTE_FIELDS.md) - Line fields that force re-routing

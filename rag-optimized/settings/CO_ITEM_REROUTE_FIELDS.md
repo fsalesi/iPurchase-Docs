@@ -51,7 +51,7 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'CO_ITEM_REROUT
 
 ### Related Settings
 
-- **CO_HEADER_REROUTE_FIELDS** - Header fields that force re-routing
-- **CO_ITEM_REROUTE_NEW** - Whether new lines force re-routing
-- **PO_UPDATE_TOLERANCE_AMOUNT** - Dollar tolerance for changes
-- **PO_UPDATE_TOLERANCE_PCT** - Percentage tolerance for changes
+- [CO_HEADER_REROUTE_FIELDS](CO_HEADER_REROUTE_FIELDS.md) - Header fields that force re-routing
+- [CO_ITEM_REROUTE_NEW](CO_ITEM_REROUTE_NEW.md) - Whether new lines force re-routing
+- [PO_UPDATE_TOLERANCE_AMOUNT](PO_UPDATE_TOLERANCE_AMOUNT.md) - Dollar tolerance for changes
+- [PO_UPDATE_TOLERANCE_PCT](PO_UPDATE_TOLERANCE_PCT.md) - Percentage tolerance for changes

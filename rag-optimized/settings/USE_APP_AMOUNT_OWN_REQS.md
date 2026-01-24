@@ -54,6 +54,6 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'USE_APP_AMOUNT
 
 ### Related Settings
 
-- **REMOVE_ORIG** - Remove originator from approval routing entirely
-- **REMOVE_ORIG_CO** - Remove originator from change order routing
-- **REMOVE_ORIGINATOR_FROM_GROUP** - Remove originator even if they're in an approval group
+- [REMOVE_ORIG](REMOVE_ORIG.md) - Remove originator from approval routing entirely
+- [REMOVE_ORIG_CO](REMOVE_ORIG_CO.md) - Remove originator from change order routing
+- [REMOVE_ORIGINATOR_FROM_GROUP](REMOVE_ORIGINATOR_FROM_GROUP.md) - Remove originator even if they're in an approval group

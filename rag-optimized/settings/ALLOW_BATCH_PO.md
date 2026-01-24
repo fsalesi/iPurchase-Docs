@@ -51,4 +51,4 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALLOW_BATCH_PO
 
 ### Related Settings
 
-- **BATCH_CREATE_PO_GROUPS** - Groups allowed to run batch PO creation
+- [BATCH_CREATE_PO_GROUPS](BATCH_CREATE_PO_GROUPS.md) - Groups allowed to run batch PO creation

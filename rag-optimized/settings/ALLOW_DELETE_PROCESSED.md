@@ -43,5 +43,5 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALLOW_DELETE_P
 
 ### Related Settings
 
-- **ALLOW_DELETE_APPROVED** - Delete approved but not yet processed reqs
-- **ALLOW_DELETE_NOT_SUBMITTED** - Delete draft requisitions
+- [ALLOW_DELETE_APPROVED](ALLOW_DELETE_APPROVED.md) - Delete approved but not yet processed reqs
+- [ALLOW_DELETE_NOT_SUBMITTED](ALLOW_DELETE_NOT_SUBMITTED.md) - Delete draft requisitions

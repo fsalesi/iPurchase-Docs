@@ -61,4 +61,4 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'AUTO_APPROVE_F
 
 ### Related Settings
 
-- **MULTIPLE_APPROVALS** - Controls which instance is kept when duplicates exist
+- [MULTIPLE_APPROVALS](MULTIPLE_APPROVALS.md) - Controls which instance is kept when duplicates exist

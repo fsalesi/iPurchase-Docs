@@ -41,4 +41,4 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'QAD_INTERFACE_
 
 ### Related Settings
 
-- **QAD_INTERFACE_USER** - Username for QAD integration
+- [QAD_INTERFACE_USER](QAD_INTERFACE_USER.md) - Username for QAD integration

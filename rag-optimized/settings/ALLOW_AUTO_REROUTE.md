@@ -58,6 +58,6 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALLOW_AUTO_RER
 
 ### Related Settings
 
-- **ALLOWED_DOLLAR_INCREASE** - Dollar threshold before re-routing
-- **ALLOWED_PERCENT_INCREASE** - Percentage threshold before re-routing
-- **PO_UPDATE_CHECK_REROUTE** - Check approver changes for change orders
+- [ALLOWED_DOLLAR_INCREASE](ALLOWED_DOLLAR_INCREASE.md) - Dollar threshold before re-routing
+- [ALLOWED_PERCENT_INCREASE](ALLOWED_PERCENT_INCREASE.md) - Percentage threshold before re-routing
+- [PO_UPDATE_CHECK_REROUTE](PO_UPDATE_CHECK_REROUTE.md) - Check approver changes for change orders
