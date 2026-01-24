@@ -4,8 +4,20 @@ Comprehensive documentation for iPurchase and iApprove applications.
 
 ## Quick Links
 
+**For AI Assistants:**
 - [INDEX.md](INDEX.md) - Raw GitHub links for AI assistants
-- [System Settings Reference](reference/system-settings-reference.md#table-of-contents) - Complete catalog of 550+ settings by category
+
+**Reference:**
+- [System Settings Reference](reference/system-settings-reference.md) - 550+ settings by category
+- [Database Schema](reference/database-schema.md) - 23 core tables
+- [Approval Strategy Guide](reference/approval-strategy-guide.md) - Designing approval rules
+- [Can-Do List Format](reference/can-do-list-format.md) - Pattern matching syntax
+
+**FAQ:**
+- [FAQ Index](faq/README.md) - All frequently asked questions
+- [SSO Setup](faq/general/sso-azure-setup.md) - Azure AD configuration
+- [System Settings](faq/general/system-settings.md) - Domain-specific, CODE_LIST, RT_
+- [Requisition Rerouting](faq/ipurchase/reroute-rules.md) - Why reqs reroute
 
 ---
 
