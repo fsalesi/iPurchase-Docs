@@ -4,13 +4,11 @@
 
 A value of true will show the departments sorted by name. Any other value will sort by number.
 
-**Common questions this answers:**
-- What is DEPARTMENT_SORT_BY_NAME?
-- What does DEPARTMENT_SORT_BY_NAME do?
-- What is the default value for DEPARTMENT_SORT_BY_NAME?
-- How do I configure DEPARTMENT_SORT_BY_NAME?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ A value of true will show the departments sorted by name. Any other value will s
 | **Owner** | Power Users |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

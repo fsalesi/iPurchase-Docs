@@ -4,14 +4,11 @@
 
 Allows the administrator to create a custom email body for PO revision emails.
 
-**Common questions this answers:**
-- What is EMAIL_PO_BODY_REVISION?
-- What does EMAIL_PO_BODY_REVISION do?
-- What is the default value for EMAIL_PO_BODY_REVISION?
-- How do I configure EMAIL_PO_BODY_REVISION?
-- How does EMAIL_PO_BODY_REVISION affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ Allows the administrator to create a custom email body for PO revision emails.
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

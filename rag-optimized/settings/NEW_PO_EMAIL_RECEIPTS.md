@@ -2,16 +2,13 @@
 
 **Category:** Email Configuration
 
-This setting determines if delivery receipts and read receipts are requested from the recipient's mail server when the email which includes the new PO attached is sent. To turn off this functionali...
+This setting determines if delivery receipts and read receipts are requested from the recipient's mail server when the email which includes the new PO attached is sent. To turn off this functionality set this value to "no,no" without the quotes. This is a two part setting comma-separated, no spaces around comma. The first part is a yes or no value indicating whether or not to ask for a delivery receipt. The second part is also yes or no indicating whether or not to ask for a delivery receipt. This setting can't be left blank.
 
-**Common questions this answers:**
-- What is NEW_PO_EMAIL_RECEIPTS?
-- What does NEW_PO_EMAIL_RECEIPTS do?
-- What is the default value for NEW_PO_EMAIL_RECEIPTS?
-- How do I configure NEW_PO_EMAIL_RECEIPTS?
-- How does NEW_PO_EMAIL_RECEIPTS affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ This setting determines if delivery receipts and read receipts are requested fro
 | **Owner** | Purchasing |
 | **Default Value** | no,no |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

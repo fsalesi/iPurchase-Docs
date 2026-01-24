@@ -4,13 +4,11 @@
 
 Time value. Timestamp used when AUTO_RECEIVE creates automatic receipt records. Must be configured correctly when AUTO_RECEIVE is enabled.
 
-**Common questions this answers:**
-- What is AUTO_RECEIVE_TIME?
-- What does AUTO_RECEIVE_TIME do?
-- What is the default value for AUTO_RECEIVE_TIME?
-- How do I configure AUTO_RECEIVE_TIME?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Time value. Timestamp used when AUTO_RECEIVE creates automatic receipt records. 
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

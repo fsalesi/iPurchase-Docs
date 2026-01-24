@@ -2,15 +2,13 @@
 
 **Category:** Receiving
 
-iPurchase process receipts in QAD for budgets. It periodically looks for receipts in batch. When implementing you can set the tr_id to start from so that it does not spend time looking at old recei...
+iPurchase process receipts in QAD for budgets. It periodically looks for receipts in batch. When implementing you can set the tr_id to start from so that it does not spend time looking at old receipt data.
 
-**Common questions this answers:**
-- What is LAST_RECEIPT_ID?
-- What does LAST_RECEIPT_ID do?
-- What is the default value for LAST_RECEIPT_ID?
-- How do I configure LAST_RECEIPT_ID?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ iPurchase process receipts in QAD for budgets. It periodically looks for receipt
 | **Owner** | ISS |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

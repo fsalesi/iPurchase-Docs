@@ -4,13 +4,11 @@
 
 This setting allows the administrator to globally set a default requisition type for punchout requisitions.
 
-**Common questions this answers:**
-- What is PUNCHOUT_REQ_TYPE?
-- What does PUNCHOUT_REQ_TYPE do?
-- What is the default value for PUNCHOUT_REQ_TYPE?
-- How do I configure PUNCHOUT_REQ_TYPE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting allows the administrator to globally set a default requisition type
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -4,13 +4,11 @@
 
 This setting allows the administrator to set a special character to be used for the requisition prefix.
 
-**Common questions this answers:**
-- What is REQUISITION_PREFIX?
-- What does REQUISITION_PREFIX do?
-- What is the default value for REQUISITION_PREFIX?
-- How do I configure REQUISITION_PREFIX?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting allows the administrator to set a special character to be used for 
 | **Owner** | Power Users |
 | **Default Value** | T |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

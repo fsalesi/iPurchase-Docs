@@ -4,13 +4,11 @@
 
 This setting does not allow the originator to be an approver for their own requisitions if set to true.
 
-**Common questions this answers:**
-- What is REMOVE_ORIG?
-- What does REMOVE_ORIG do?
-- What is the default value for REMOVE_ORIG?
-- How do I configure REMOVE_ORIG?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting does not allow the originator to be an approver for their own requi
 | **Owner** | Finance |
 | **Default Value** | TRUE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

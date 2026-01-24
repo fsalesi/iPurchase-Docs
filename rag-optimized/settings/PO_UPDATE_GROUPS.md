@@ -2,15 +2,21 @@
 
 **Category:** Purchase Orders
 
-Comma separated list of User ID's or Group ID's that would be allowed to use the Copy or Update PO functionality (Change Order).  For buyer, set to "$xxreq_buyer".  Asterisk indicates everyone, a b...
+Comma separated list of User ID's or Group ID's that would be allowed to use the Copy or Update PO functionality (Change Order).  For buyer, set to "$xxreq_buyer".  Asterisk indicates everyone, a blank indicates no one.
 
-**Common questions this answers:**
-- What is PO_UPDATE_GROUPS?
-- What does PO_UPDATE_GROUPS do?
-- What is the default value for PO_UPDATE_GROUPS?
-- How do I configure PO_UPDATE_GROUPS?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Comma separated list of User ID's or Group ID's that would be allowed to use the
 | **Owner** | Admin |
 | **Default Value** | $xxreq_buyer |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -2,15 +2,13 @@
 
 **Category:** Security & Authentication
 
-If you currently have the Out-Of-Office setting on, this setting can automatically turn it off when you login. A setting of "ASK" will prompt the user if they want to turn off OOF, but only once ev...
+If you currently have the Out-Of-Office setting on, this setting can automatically turn it off when you login. A setting of "ASK" will prompt the user if they want to turn off OOF, but only once every 12 hours.
 
-**Common questions this answers:**
-- What is LOGIN_BACK_IN_OFFICE?
-- What does LOGIN_BACK_IN_OFFICE do?
-- What is the default value for LOGIN_BACK_IN_OFFICE?
-- How do I configure LOGIN_BACK_IN_OFFICE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ If you currently have the Out-Of-Office setting on, this setting can automatical
 | **Owner** | Power Users |
 | **Default Value** | ASK |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -2,15 +2,18 @@
 
 **Category:** Purchase Orders
 
-This setting will control when the New PO Created email and original PO Print occur. A value of FALSE, the default, will print the PO and send the email as soon as the Purchase Order is created. Mo...
+This setting will control when the New PO Created email and original PO Print occur. A value of FALSE, the default, will print the PO and send the email as soon as the Purchase Order is created. Most of the time this happens when the final approver clicks the Approve button. However, a value of TRUE, will delay the printing of the PO and the email to the buyer or supplier by queuing up this request in the iPurchase jobs. You would set this to true when you want increased perceived performance so that the final approver doesn't need to wait for this action to be completed. YOU ARE REQUIRED TO SET THIS TO TRUE IF YOU ARE USING THE QAD REPORTING FRAMEWORK. *QAD EE Only
 
-**Common questions this answers:**
-- What is PO_PRINT_OFFLINE?
-- What does PO_PRINT_OFFLINE do?
-- What is the default value for PO_PRINT_OFFLINE?
-- How do I configure PO_PRINT_OFFLINE?
+### How It Works
 
-## Setting Details
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `TRUE` | Enabled |
+| `FALSE` | Disabled |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +22,7 @@ This setting will control when the New PO Created email and original PO Print oc
 | **Owner** | Admin |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

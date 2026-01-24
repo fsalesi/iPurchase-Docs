@@ -4,13 +4,11 @@
 
 Default tax customer code for tax calculations.
 
-**Common questions this answers:**
-- What is TAX_CUSTOMER?
-- What does TAX_CUSTOMER do?
-- What is the default value for TAX_CUSTOMER?
-- How do I configure TAX_CUSTOMER?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Default tax customer code for tax calculations.
 | **Owner** | Finance |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

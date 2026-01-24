@@ -4,13 +4,16 @@
 
 Store attachments in iPurchase database (True) or store attachments on disk (False).
 
-**Common questions this answers:**
-- What is ATTACH_IN_DB?
-- What does ATTACH_IN_DB do?
-- What is the default value for ATTACH_IN_DB?
-- How do I configure ATTACH_IN_DB?
+### How It Works
 
-## Setting Details
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `TRUE` | Enabled |
+| `FALSE` | Disabled |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +22,7 @@ Store attachments in iPurchase database (True) or store attachments on disk (Fal
 | **Owner** | IT |
 | **Default Value** | TRUE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -4,13 +4,11 @@
 
 Characters prohibited in user IDs and identifiers for security.
 
-**Common questions this answers:**
-- What is UNSAFE_ID_CHARACTERS?
-- What does UNSAFE_ID_CHARACTERS do?
-- What is the default value for UNSAFE_ID_CHARACTERS?
-- How do I configure UNSAFE_ID_CHARACTERS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Characters prohibited in user IDs and identifiers for security.
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

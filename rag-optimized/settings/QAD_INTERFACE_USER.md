@@ -2,15 +2,13 @@
 
 **Category:** User Management
 
-Use this setting to set the User ID for integration to QAD. This user ID will be used in QAD to create PO's. This user must be enabled in iPurchase and QAD. This user would need to be created befor...
+Use this setting to set the User ID for integration to QAD. This user ID will be used in QAD to create PO's. This user must be enabled in iPurchase and QAD. This user would need to be created before a PO can be created from iPurchase.
 
-**Common questions this answers:**
-- What is QAD_INTERFACE_USER?
-- What does QAD_INTERFACE_USER do?
-- What is the default value for QAD_INTERFACE_USER?
-- How do I configure QAD_INTERFACE_USER?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Use this setting to set the User ID for integration to QAD. This user ID will be
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -4,13 +4,11 @@
 
 When entering line items
 
-**Common questions this answers:**
-- What is ITEM_SEARCH_RECENT?
-- What does ITEM_SEARCH_RECENT do?
-- What is the default value for ITEM_SEARCH_RECENT?
-- How do I configure ITEM_SEARCH_RECENT?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ When entering line items
 | **Owner** | iPurchase will look for matches from previous requisitions." |
 | **Default Value** | TRUE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

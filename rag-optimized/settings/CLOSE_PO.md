@@ -2,15 +2,21 @@
 
 **Category:** Purchase Orders
 
-Comma Separated list of User ID's or Group ID's that will have the ability to close PO  or  PO line on Purchase order.  Either Line or whole PO can be closed. Close or canceled depends on Receipts....
+Comma Separated list of User ID's or Group ID's that will have the ability to close PO  or  PO line on Purchase order.  Either Line or whole PO can be closed. Close or canceled depends on Receipts. Asterisk indicates everyone, a blank indicates no one.
 
-**Common questions this answers:**
-- What is CLOSE_PO?
-- What does CLOSE_PO do?
-- What is the default value for CLOSE_PO?
-- How do I configure CLOSE_PO?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Comma Separated list of User ID's or Group ID's that will have the ability to cl
 | **Owner** | Admin |
 | **Default Value** | buyers |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

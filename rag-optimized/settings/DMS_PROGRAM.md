@@ -4,13 +4,11 @@
 
 This is the name of the Progress Program which integrates with a document management system.
 
-**Common questions this answers:**
-- What is DMS_PROGRAM?
-- What does DMS_PROGRAM do?
-- What is the default value for DMS_PROGRAM?
-- How do I configure DMS_PROGRAM?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This is the name of the Progress Program which integrates with a document manage
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

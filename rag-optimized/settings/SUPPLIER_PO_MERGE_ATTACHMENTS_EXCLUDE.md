@@ -4,13 +4,11 @@
 
 Comma-separated suppliers. Suppliers excluded from attachment merging.
 
-**Common questions this answers:**
-- What is SUPPLIER_PO_MERGE_ATTACHMENTS_EXCLUDE?
-- What does SUPPLIER_PO_MERGE_ATTACHMENTS_EXCLUDE do?
-- What is the default value for SUPPLIER_PO_MERGE_ATTACHMENTS_EXCLUDE?
-- How do I configure SUPPLIER_PO_MERGE_ATTACHMENTS_EXCLUDE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Comma-separated suppliers. Suppliers excluded from attachment merging.
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

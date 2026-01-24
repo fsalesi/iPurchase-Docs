@@ -4,13 +4,11 @@
 
 A list of accounts which will always require a Project Code
 
-**Common questions this answers:**
-- What is ACCOUNT_REQUIRE_PROJECT?
-- What does ACCOUNT_REQUIRE_PROJECT do?
-- What is the default value for ACCOUNT_REQUIRE_PROJECT?
-- How do I configure ACCOUNT_REQUIRE_PROJECT?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ A list of accounts which will always require a Project Code
 | **Owner** | Finance |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

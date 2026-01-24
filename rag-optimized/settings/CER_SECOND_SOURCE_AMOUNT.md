@@ -4,13 +4,11 @@
 
 Dollar amount. Threshold above which second source certification is required. Related to competitive bidding requirements.
 
-**Common questions this answers:**
-- What is CER_SECOND_SOURCE_AMOUNT?
-- What does CER_SECOND_SOURCE_AMOUNT do?
-- What is the default value for CER_SECOND_SOURCE_AMOUNT?
-- How do I configure CER_SECOND_SOURCE_AMOUNT?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Dollar amount. Threshold above which second source certification is required. Re
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

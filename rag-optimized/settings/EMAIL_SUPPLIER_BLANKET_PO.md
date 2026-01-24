@@ -4,14 +4,11 @@
 
 This setting determines whether or not an email is automatically sent to a supplier when the blanket order requisition is approved.
 
-**Common questions this answers:**
-- What is EMAIL_SUPPLIER_BLANKET_PO?
-- What does EMAIL_SUPPLIER_BLANKET_PO do?
-- What is the default value for EMAIL_SUPPLIER_BLANKET_PO?
-- How do I configure EMAIL_SUPPLIER_BLANKET_PO?
-- How does EMAIL_SUPPLIER_BLANKET_PO affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ This setting determines whether or not an email is automatically sent to a suppl
 | **Owner** | Purchasing |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -4,13 +4,11 @@
 
 Is the Acct selection limited to those accounts defined in the user's profile? See RESTRICT_USER_DEPARTMENTS for more information on how to set the Acct field in User Maintenance
 
-**Common questions this answers:**
-- What is RESTRICT_USER_ACCOUNTS?
-- What does RESTRICT_USER_ACCOUNTS do?
-- What is the default value for RESTRICT_USER_ACCOUNTS?
-- How do I configure RESTRICT_USER_ACCOUNTS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Is the Acct selection limited to those accounts defined in the user's profile? S
 | **Owner** | Power Users |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

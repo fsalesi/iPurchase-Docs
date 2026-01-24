@@ -4,13 +4,11 @@
 
 This is the same as ACCOUNT_RANGE_CANDO except this applies to sub accounts. USE RT_....
 
-**Common questions this answers:**
-- What is SUB_ACCOUNT_RANGE_CANDO?
-- What does SUB_ACCOUNT_RANGE_CANDO do?
-- What is the default value for SUB_ACCOUNT_RANGE_CANDO?
-- How do I configure SUB_ACCOUNT_RANGE_CANDO?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This is the same as ACCOUNT_RANGE_CANDO except this applies to sub accounts. USE
 | **Owner** | Finance |
 | **Default Value** | * |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

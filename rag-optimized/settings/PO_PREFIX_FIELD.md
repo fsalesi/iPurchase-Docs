@@ -4,13 +4,11 @@
 
 Can be either 'Entity' or any fields on the requisition header table. This will allow you to create different prefix or number scheme for different sites
 
-**Common questions this answers:**
-- What is PO_PREFIX_FIELD?
-- What does PO_PREFIX_FIELD do?
-- What is the default value for PO_PREFIX_FIELD?
-- How do I configure PO_PREFIX_FIELD?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Can be either 'Entity' or any fields on the requisition header table. This will 
 | **Owner** | entities |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

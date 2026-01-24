@@ -4,13 +4,11 @@
 
 Comma-separated field names. Fields to exclude from audit trail for the specified table. Replace {TABLE} with actual table name (e.g., AUDIT_xxreq_mstr_EXCEPT). Used to reduce audit trail volume.
 
-**Common questions this answers:**
-- What is AUDIT_TABLE_EXCEPT?
-- What does AUDIT_TABLE_EXCEPT do?
-- What is the default value for AUDIT_TABLE_EXCEPT?
-- How do I configure AUDIT_TABLE_EXCEPT?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Comma-separated field names. Fields to exclude from audit trail for the specifie
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

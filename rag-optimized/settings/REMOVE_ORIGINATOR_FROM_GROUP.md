@@ -4,13 +4,11 @@
 
 If the originator is listed as a member of a group on the approval routing, if this person should be removed from the group set this setting to TRUE.
 
-**Common questions this answers:**
-- What is REMOVE_ORIGINATOR_FROM_GROUP?
-- What does REMOVE_ORIGINATOR_FROM_GROUP do?
-- What is the default value for REMOVE_ORIGINATOR_FROM_GROUP?
-- How do I configure REMOVE_ORIGINATOR_FROM_GROUP?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ If the originator is listed as a member of a group on the approval routing, if t
 | **Owner** | Admin |
 | **Default Value** | TRUE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -2,16 +2,13 @@
 
 **Category:** Email Configuration
 
-Determines if confirmation link is included in the PO email that is automatically sent to the supplier. It will also determine if the 'Include Confirmation Link' is displayed as an option on the ma...
+Determines if confirmation link is included in the PO email that is automatically sent to the supplier. It will also determine if the 'Include Confirmation Link' is displayed as an option on the manual 'Email PO' form in the requisition workbench.
 
-**Common questions this answers:**
-- What is EMAIL_SUPPLIER_CONFIRMATION_LINK?
-- What does EMAIL_SUPPLIER_CONFIRMATION_LINK do?
-- What is the default value for EMAIL_SUPPLIER_CONFIRMATION_LINK?
-- How do I configure EMAIL_SUPPLIER_CONFIRMATION_LINK?
-- How does EMAIL_SUPPLIER_CONFIRMATION_LINK affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ Determines if confirmation link is included in the PO email that is automaticall
 | **Owner** | Purchasing |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

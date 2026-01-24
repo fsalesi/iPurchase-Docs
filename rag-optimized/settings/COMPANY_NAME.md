@@ -4,13 +4,11 @@
 
 Company name displayed on reports, purchase orders, and printed documents.
 
-**Common questions this answers:**
-- What is COMPANY_NAME?
-- What does COMPANY_NAME do?
-- What is the default value for COMPANY_NAME?
-- How do I configure COMPANY_NAME?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Company name displayed on reports, purchase orders, and printed documents.
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

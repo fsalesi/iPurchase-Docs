@@ -4,13 +4,11 @@
 
 You can use this to set the Tax Usage field in QAD. If set this will default for all Purchase Orders.
 
-**Common questions this answers:**
-- What is DEFAULT_TAX_USAGE?
-- What does DEFAULT_TAX_USAGE do?
-- What is the default value for DEFAULT_TAX_USAGE?
-- How do I configure DEFAULT_TAX_USAGE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ You can use this to set the Tax Usage field in QAD. If set this will default for
 | **Owner** |  |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

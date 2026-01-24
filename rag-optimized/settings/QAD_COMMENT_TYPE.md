@@ -4,13 +4,11 @@
 
 This is the comment type to be used when creating PO Header and PO Line comments.  Add IP To Generalized Codes if there are any generalized codes for field name cd_type
 
-**Common questions this answers:**
-- What is QAD_COMMENT_TYPE?
-- What does QAD_COMMENT_TYPE do?
-- What is the default value for QAD_COMMENT_TYPE?
-- How do I configure QAD_COMMENT_TYPE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This is the comment type to be used when creating PO Header and PO Line comments
 | **Owner** | Admin |
 | **Default Value** | IP |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

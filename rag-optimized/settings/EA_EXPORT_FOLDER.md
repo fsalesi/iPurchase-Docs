@@ -4,13 +4,11 @@
 
 Directory path on application server. Folder where Enterprise Analytics export files are written.
 
-**Common questions this answers:**
-- What is EA_EXPORT_FOLDER?
-- What does EA_EXPORT_FOLDER do?
-- What is the default value for EA_EXPORT_FOLDER?
-- How do I configure EA_EXPORT_FOLDER?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Directory path on application server. Folder where Enterprise Analytics export f
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

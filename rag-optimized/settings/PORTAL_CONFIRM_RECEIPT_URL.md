@@ -4,13 +4,11 @@
 
 URL endpoint for portal receipt confirmation integration. Used for external portal systems.
 
-**Common questions this answers:**
-- What is PORTAL_CONFIRM_RECEIPT_URL?
-- What does PORTAL_CONFIRM_RECEIPT_URL do?
-- What is the default value for PORTAL_CONFIRM_RECEIPT_URL?
-- How do I configure PORTAL_CONFIRM_RECEIPT_URL?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ URL endpoint for portal receipt confirmation integration. Used for external port
 | **Owner** | ISS |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

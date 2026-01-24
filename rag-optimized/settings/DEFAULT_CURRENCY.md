@@ -4,13 +4,11 @@
 
 The administrator can set a default currency for iPurchase.  Must be a valid currency.
 
-**Common questions this answers:**
-- What is DEFAULT_CURRENCY?
-- What does DEFAULT_CURRENCY do?
-- What is the default value for DEFAULT_CURRENCY?
-- How do I configure DEFAULT_CURRENCY?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ The administrator can set a default currency for iPurchase.  Must be a valid cur
 | **Owner** | Finance |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

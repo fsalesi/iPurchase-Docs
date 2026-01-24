@@ -4,13 +4,11 @@
 
 
 
-**Common questions this answers:**
-- What is IGNORE_IPADDR_SECURITY?
-- What does IGNORE_IPADDR_SECURITY do?
-- What is the default value for IGNORE_IPADDR_SECURITY?
-- How do I configure IGNORE_IPADDR_SECURITY?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@
 | **Owner** | IT |
 | **Default Value** | TRUE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

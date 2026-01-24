@@ -4,13 +4,11 @@
 
 Prefix for requisition numbers in iApprove vendor integration.
 
-**Common questions this answers:**
-- What is IAVD_MSTR_REQ_PREFIX?
-- What does IAVD_MSTR_REQ_PREFIX do?
-- What is the default value for IAVD_MSTR_REQ_PREFIX?
-- How do I configure IAVD_MSTR_REQ_PREFIX?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Prefix for requisition numbers in iApprove vendor integration.
 | **Owner** | ISS |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -4,13 +4,11 @@
 
 Time (HH:MM). Start of business day for escalations/notifications.
 
-**Common questions this answers:**
-- What is WORK_DAY_START_TIME?
-- What does WORK_DAY_START_TIME do?
-- What is the default value for WORK_DAY_START_TIME?
-- How do I configure WORK_DAY_START_TIME?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Time (HH:MM). Start of business day for escalations/notifications.
 | **Owner** | Admin |
 | **Default Value** | 08:00 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

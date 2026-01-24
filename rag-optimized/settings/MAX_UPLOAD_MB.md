@@ -4,13 +4,11 @@
 
 Maximum size in megabytes for attachments.
 
-**Common questions this answers:**
-- What is MAX_UPLOAD_MB?
-- What does MAX_UPLOAD_MB do?
-- What is the default value for MAX_UPLOAD_MB?
-- How do I configure MAX_UPLOAD_MB?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Maximum size in megabytes for attachments.
 | **Owner** | IT |
 | **Default Value** | 10 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

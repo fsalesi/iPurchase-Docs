@@ -4,13 +4,11 @@
 
 A setting of True will synchronize iPurchase Requisition Lines with the requisition (req_det) functionality in QAD. Only items which are planned by MRP will be synchronized
 
-**Common questions this answers:**
-- What is SYNC_REQ_DET?
-- What does SYNC_REQ_DET do?
-- What is the default value for SYNC_REQ_DET?
-- How do I configure SYNC_REQ_DET?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ A setting of True will synchronize iPurchase Requisition Lines with the requisit
 | **Owner** | Purchasing |
 | **Default Value** | TRUE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

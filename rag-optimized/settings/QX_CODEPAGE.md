@@ -4,13 +4,11 @@
 
 Character encoding for Qxtend communication.
 
-**Common questions this answers:**
-- What is QX_CODEPAGE?
-- What does QX_CODEPAGE do?
-- What is the default value for QX_CODEPAGE?
-- How do I configure QX_CODEPAGE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Character encoding for Qxtend communication.
 | **Owner** | ISS |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

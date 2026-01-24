@@ -2,15 +2,13 @@
 
 **Category:** Uncategorized
 
-In QAD master comments, there is a reference number to identify a master comment, if this reference number equals the items number then the master comment will be added to the requisition automatic...
+In QAD master comments, there is a reference number to identify a master comment, if this reference number equals the items number then the master comment will be added to the requisition automatically if the corresponding type of master comment is entered into this system setting.
 
-**Common questions this answers:**
-- What is AUTO_ADD_ITEM_MC_TYPES?
-- What does AUTO_ADD_ITEM_MC_TYPES do?
-- What is the default value for AUTO_ADD_ITEM_MC_TYPES?
-- How do I configure AUTO_ADD_ITEM_MC_TYPES?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ In QAD master comments, there is a reference number to identify a master comment
 | **Owner** | Purchasing |
 | **Default Value** | PO |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

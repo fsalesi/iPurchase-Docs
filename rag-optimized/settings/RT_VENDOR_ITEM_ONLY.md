@@ -4,13 +4,19 @@
 
 Comma separated list of requisition types which will mandate that an item selected to a requisition must exist in the vendor part cross-reference table in QAD.
 
-**Common questions this answers:**
-- What is RT_VENDOR_ITEM_ONLY?
-- What does RT_VENDOR_ITEM_ONLY do?
-- What is the default value for RT_VENDOR_ITEM_ONLY?
-- How do I configure RT_VENDOR_ITEM_ONLY?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Comma separated list of requisition types which will mandate that an item select
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

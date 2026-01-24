@@ -4,13 +4,11 @@
 
 Usually a decimal point
 
-**Common questions this answers:**
-- What is NUMERIC_FORMAT_DECIMAL?
-- What does NUMERIC_FORMAT_DECIMAL do?
-- What is the default value for NUMERIC_FORMAT_DECIMAL?
-- How do I configure NUMERIC_FORMAT_DECIMAL?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Usually a decimal point
 | **Owner** | Admin |
 | **Default Value** | . |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

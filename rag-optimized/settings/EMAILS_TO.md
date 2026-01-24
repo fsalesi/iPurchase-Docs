@@ -4,14 +4,11 @@
 
 Comma-separated email address(s) where all emails from the service will be sent to. This overrides the actual user's email addresses.
 
-**Common questions this answers:**
-- What is EMAILS_TO?
-- What does EMAILS_TO do?
-- What is the default value for EMAILS_TO?
-- How do I configure EMAILS_TO?
-- How does EMAILS_TO affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ Comma-separated email address(s) where all emails from the service will be sent 
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

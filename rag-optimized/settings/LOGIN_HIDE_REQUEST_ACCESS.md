@@ -4,13 +4,11 @@
 
 Hide the Request Access link on the login screen
 
-**Common questions this answers:**
-- What is LOGIN_HIDE_REQUEST_ACCESS?
-- What does LOGIN_HIDE_REQUEST_ACCESS do?
-- What is the default value for LOGIN_HIDE_REQUEST_ACCESS?
-- How do I configure LOGIN_HIDE_REQUEST_ACCESS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Hide the Request Access link on the login screen
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

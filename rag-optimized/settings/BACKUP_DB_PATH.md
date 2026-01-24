@@ -4,13 +4,11 @@
 
 The location where database backups are stored
 
-**Common questions this answers:**
-- What is BACKUP_DB_PATH?
-- What does BACKUP_DB_PATH do?
-- What is the default value for BACKUP_DB_PATH?
-- How do I configure BACKUP_DB_PATH?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ The location where database backups are stored
 | **Owner** | Admin |
 | **Default Value** | ../dbbackups |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

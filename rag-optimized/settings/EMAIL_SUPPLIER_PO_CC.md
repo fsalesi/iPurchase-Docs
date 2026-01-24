@@ -2,16 +2,13 @@
 
 **Category:** Email Configuration
 
-This is a list of email address(s) of whom to carbon copy the supplier email to when the PO is created.  A value of "BUYER" will copy the associated buyer which is set on the requisition. If a user...
+This is a list of email address(s) of whom to carbon copy the supplier email to when the PO is created.  A value of "BUYER" will copy the associated buyer which is set on the requisition. If a user is included in this setting and has OOF turned on, their delegate will receive a carbon copy of the supplier email. The administrator can also add static email addresses to this setting or use these other values: $xxreq_buyer = Buyer $xxreq_User ID = Originator $xxreq_obo = On Behalf Of $xxreq_deliver_to = Deliver To
 
-**Common questions this answers:**
-- What is EMAIL_SUPPLIER_PO_CC?
-- What does EMAIL_SUPPLIER_PO_CC do?
-- What is the default value for EMAIL_SUPPLIER_PO_CC?
-- How do I configure EMAIL_SUPPLIER_PO_CC?
-- How does EMAIL_SUPPLIER_PO_CC affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ This is a list of email address(s) of whom to carbon copy the supplier email to 
 | **Owner** | Power Users |
 | **Default Value** | $xxreq_buyer,$xxreq_obo,$xxreq_userid |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

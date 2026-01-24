@@ -4,13 +4,11 @@
 
 Qxtend service URL.
 
-**Common questions this answers:**
-- What is QX_URL?
-- What does QX_URL do?
-- What is the default value for QX_URL?
-- How do I configure QX_URL?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Qxtend service URL.
 | **Owner** | ISS |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

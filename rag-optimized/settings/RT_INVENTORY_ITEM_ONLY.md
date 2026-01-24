@@ -4,13 +4,11 @@
 
 Comma-separated req types. Types that require items to be in inventory catalog.
 
-**Common questions this answers:**
-- What is RT_INVENTORY_ITEM_ONLY?
-- What does RT_INVENTORY_ITEM_ONLY do?
-- What is the default value for RT_INVENTORY_ITEM_ONLY?
-- How do I configure RT_INVENTORY_ITEM_ONLY?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Comma-separated req types. Types that require items to be in inventory catalog.
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

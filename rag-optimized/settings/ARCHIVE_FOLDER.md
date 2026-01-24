@@ -4,13 +4,11 @@
 
 This should not be changed unless advised by ISS Group This is a temporary storage area for requisitions being transferred to or from the production and archive systems
 
-**Common questions this answers:**
-- What is ARCHIVE_FOLDER?
-- What does ARCHIVE_FOLDER do?
-- What is the default value for ARCHIVE_FOLDER?
-- How do I configure ARCHIVE_FOLDER?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This should not be changed unless advised by ISS Group This is a temporary stora
 | **Owner** | IT |
 | **Default Value** | archive |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

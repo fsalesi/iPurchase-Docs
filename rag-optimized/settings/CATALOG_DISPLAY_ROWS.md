@@ -4,13 +4,11 @@
 
 This setting will allow the administrator to decide how many rows of items to display on a catalog requisition.
 
-**Common questions this answers:**
-- What is CATALOG_DISPLAY_ROWS?
-- What does CATALOG_DISPLAY_ROWS do?
-- What is the default value for CATALOG_DISPLAY_ROWS?
-- How do I configure CATALOG_DISPLAY_ROWS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting will allow the administrator to decide how many rows of items to di
 | **Owner** | Power Users |
 | **Default Value** | 25 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -2,15 +2,21 @@
 
 **Category:** User Management
 
-Comma separated list of User ID's or Group ID's who are allowed to put a requisition on hold while it is pending. Asterisk indicates everyone, a blank indicates no one. Example: It would go on hold...
+Comma separated list of User ID's or Group ID's who are allowed to put a requisition on hold while it is pending. Asterisk indicates everyone, a blank indicates no one. Example: It would go on hold if an approver is waiting for information from the supplier.
 
-**Common questions this answers:**
-- What is ALLOW_HOLD?
-- What does ALLOW_HOLD do?
-- What is the default value for ALLOW_HOLD?
-- How do I configure ALLOW_HOLD?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Comma separated list of User ID's or Group ID's who are allowed to put a requisi
 | **Owner** | Admin |
 | **Default Value** | * |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

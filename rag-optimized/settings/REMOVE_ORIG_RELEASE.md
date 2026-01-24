@@ -4,13 +4,11 @@
 
 If set to true, this setting will remove the originator from the approver list on blanket release requisitions.
 
-**Common questions this answers:**
-- What is REMOVE_ORIG_RELEASE?
-- What does REMOVE_ORIG_RELEASE do?
-- What is the default value for REMOVE_ORIG_RELEASE?
-- How do I configure REMOVE_ORIG_RELEASE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ If set to true, this setting will remove the originator from the approver list o
 | **Owner** | Admin |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

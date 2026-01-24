@@ -4,15 +4,11 @@
 
 Email subject line when iApprove document requires re-approval.
 
-**Common questions this answers:**
-- What is IA_APPROVAL_REQUIRED_AGAIN_EMAIL_SUBJECT?
-- What does IA_APPROVAL_REQUIRED_AGAIN_EMAIL_SUBJECT do?
-- What is the default value for IA_APPROVAL_REQUIRED_AGAIN_EMAIL_SUBJECT?
-- How do I configure IA_APPROVAL_REQUIRED_AGAIN_EMAIL_SUBJECT?
-- How does IA_APPROVAL_REQUIRED_AGAIN_EMAIL_SUBJECT affect approval routing?
-- How does IA_APPROVAL_REQUIRED_AGAIN_EMAIL_SUBJECT affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -21,7 +17,7 @@ Email subject line when iApprove document requires re-approval.
 | **Owner** | Admin |
 | **Default Value** | Approval Required Again |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

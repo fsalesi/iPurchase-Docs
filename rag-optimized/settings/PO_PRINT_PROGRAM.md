@@ -4,13 +4,11 @@
 
 Progress program If you have a custom purchase order print program then enter the Progress program name here.
 
-**Common questions this answers:**
-- What is PO_PRINT_PROGRAM?
-- What does PO_PRINT_PROGRAM do?
-- What is the default value for PO_PRINT_PROGRAM?
-- How do I configure PO_PRINT_PROGRAM?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Progress program If you have a custom purchase order print program then enter th
 | **Owner** | Admin |
 | **Default Value** | us/po/poporp03.p |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

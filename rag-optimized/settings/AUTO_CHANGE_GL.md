@@ -2,15 +2,13 @@
 
 **Category:** Uncategorized
 
-If your company's GL Account, Sub Account, and CC are set by having defaults at the Requisition or Requisition or Site level, then the GL information will change when you change Requisition Types. ...
+If your company's GL Account, Sub Account, and CC are set by having defaults at the Requisition or Requisition or Site level, then the GL information will change when you change Requisition Types. A value which is not "TRUE" will disable this functionality
 
-**Common questions this answers:**
-- What is AUTO_CHANGE_GL?
-- What does AUTO_CHANGE_GL do?
-- What is the default value for AUTO_CHANGE_GL?
-- How do I configure AUTO_CHANGE_GL?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ If your company's GL Account, Sub Account, and CC are set by having defaults at 
 | **Owner** | Power Users |
 | **Default Value** | TRUE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

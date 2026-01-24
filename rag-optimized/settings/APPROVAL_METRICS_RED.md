@@ -4,14 +4,11 @@
 
 This setting allows the administrator to set how long the approval time should take before it will turn red on the approval metrics.  MINUTES
 
-**Common questions this answers:**
-- What is APPROVAL_METRICS_RED?
-- What does APPROVAL_METRICS_RED do?
-- What is the default value for APPROVAL_METRICS_RED?
-- How do I configure APPROVAL_METRICS_RED?
-- How does APPROVAL_METRICS_RED affect approval routing?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ This setting allows the administrator to set how long the approval time should t
 | **Owner** | Admin |
 | **Default Value** | 90 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

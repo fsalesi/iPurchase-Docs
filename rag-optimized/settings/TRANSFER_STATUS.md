@@ -4,13 +4,11 @@
 
 Status value for inventory transfer transactions.
 
-**Common questions this answers:**
-- What is TRANSFER_STATUS?
-- What does TRANSFER_STATUS do?
-- What is the default value for TRANSFER_STATUS?
-- How do I configure TRANSFER_STATUS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Status value for inventory transfer transactions.
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

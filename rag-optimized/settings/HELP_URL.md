@@ -4,13 +4,11 @@
 
 If you've developed customized help, then enter the URL to that file here. ex. https://google.com
 
-**Common questions this answers:**
-- What is HELP_URL?
-- What does HELP_URL do?
-- What is the default value for HELP_URL?
-- How do I configure HELP_URL?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ If you've developed customized help, then enter the URL to that file here. ex. h
 | **Owner** |  |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

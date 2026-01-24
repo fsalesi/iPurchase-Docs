@@ -4,13 +4,11 @@
 
 If set to True then a user can search for a supplier using any character in the suppliers name.  If set to True, the supplier lookup will run slower.
 
-**Common questions this answers:**
-- What is SUPPLIER_SEARCH_MATCHES?
-- What does SUPPLIER_SEARCH_MATCHES do?
-- What is the default value for SUPPLIER_SEARCH_MATCHES?
-- How do I configure SUPPLIER_SEARCH_MATCHES?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ If set to True then a user can search for a supplier using any character in the 
 | **Owner** | Admin |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

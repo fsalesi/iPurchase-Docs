@@ -4,13 +4,11 @@
 
 Show the value CustomNote Field on the GL record - only for EE
 
-**Common questions this answers:**
-- What is ACCOUNT_SHOW_CUSTOMNOTE?
-- What does ACCOUNT_SHOW_CUSTOMNOTE do?
-- What is the default value for ACCOUNT_SHOW_CUSTOMNOTE?
-- How do I configure ACCOUNT_SHOW_CUSTOMNOTE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Show the value CustomNote Field on the GL record - only for EE
 | **Owner** | Finance |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

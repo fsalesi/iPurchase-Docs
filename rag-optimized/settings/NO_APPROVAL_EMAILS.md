@@ -4,15 +4,19 @@
 
 Comma separated list of requisition types that will not send approval emails to approvers.
 
-**Common questions this answers:**
-- What is NO_APPROVAL_EMAILS?
-- What does NO_APPROVAL_EMAILS do?
-- What is the default value for NO_APPROVAL_EMAILS?
-- How do I configure NO_APPROVAL_EMAILS?
-- How does NO_APPROVAL_EMAILS affect approval routing?
-- How does NO_APPROVAL_EMAILS affect email notifications?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -21,7 +25,7 @@ Comma separated list of requisition types that will not send approval emails to 
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

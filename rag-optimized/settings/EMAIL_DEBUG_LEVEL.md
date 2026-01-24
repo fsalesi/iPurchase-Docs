@@ -4,14 +4,11 @@
 
 Numeric 0-3. Email system debug verbosity. 0=off, 1=basic, 2=detailed, 3=verbose. Used for troubleshooting email issues.
 
-**Common questions this answers:**
-- What is EMAIL_DEBUG_LEVEL?
-- What does EMAIL_DEBUG_LEVEL do?
-- What is the default value for EMAIL_DEBUG_LEVEL?
-- How do I configure EMAIL_DEBUG_LEVEL?
-- How does EMAIL_DEBUG_LEVEL affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ Numeric 0-3. Email system debug verbosity. 0=off, 1=basic, 2=detailed, 3=verbose
 | **Owner** | Admin |
 | **Default Value** | 0 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

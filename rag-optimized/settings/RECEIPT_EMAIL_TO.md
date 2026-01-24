@@ -4,14 +4,11 @@
 
 Email addresses for receipt notifications.
 
-**Common questions this answers:**
-- What is RECEIPT_EMAIL_TO?
-- What does RECEIPT_EMAIL_TO do?
-- What is the default value for RECEIPT_EMAIL_TO?
-- How do I configure RECEIPT_EMAIL_TO?
-- How does RECEIPT_EMAIL_TO affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ Email addresses for receipt notifications.
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

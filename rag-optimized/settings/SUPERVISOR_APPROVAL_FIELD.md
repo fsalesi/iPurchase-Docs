@@ -4,14 +4,11 @@
 
 Field name. Database field used to determine supervisor chain (default: wus_supervisor).
 
-**Common questions this answers:**
-- What is SUPERVISOR_APPROVAL_FIELD?
-- What does SUPERVISOR_APPROVAL_FIELD do?
-- What is the default value for SUPERVISOR_APPROVAL_FIELD?
-- How do I configure SUPERVISOR_APPROVAL_FIELD?
-- How does SUPERVISOR_APPROVAL_FIELD affect approval routing?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ Field name. Database field used to determine supervisor chain (default: wus_supe
 | **Owner** | Admin |
 | **Default Value** | wus_supervisor |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

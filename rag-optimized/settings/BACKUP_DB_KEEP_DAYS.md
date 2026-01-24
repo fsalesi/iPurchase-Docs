@@ -4,13 +4,11 @@
 
 How many days worth of iPurchase database backups to keep
 
-**Common questions this answers:**
-- What is BACKUP_DB_KEEP_DAYS?
-- What does BACKUP_DB_KEEP_DAYS do?
-- What is the default value for BACKUP_DB_KEEP_DAYS?
-- How do I configure BACKUP_DB_KEEP_DAYS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ How many days worth of iPurchase database backups to keep
 | **Owner** | Admin |
 | **Default Value** | 7 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

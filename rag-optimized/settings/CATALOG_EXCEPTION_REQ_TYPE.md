@@ -2,15 +2,13 @@
 
 **Category:** Catalog & Vendors
 
-If left blank the catalog exception requisition type should be set to "Catalog Exception". The administrator can change the name of the requisition type assigned to 'Catalog Exception' in this sett...
+If left blank the catalog exception requisition type should be set to "Catalog Exception". The administrator can change the name of the requisition type assigned to 'Catalog Exception' in this setting.
 
-**Common questions this answers:**
-- What is CATALOG_EXCEPTION_REQ_TYPE?
-- What does CATALOG_EXCEPTION_REQ_TYPE do?
-- What is the default value for CATALOG_EXCEPTION_REQ_TYPE?
-- How do I configure CATALOG_EXCEPTION_REQ_TYPE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ If left blank the catalog exception requisition type should be set to "Catalog E
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

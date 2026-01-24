@@ -4,14 +4,11 @@
 
 Technical - Do Not Modify without consulting ISS
 
-**Common questions this answers:**
-- What is EMAIL_AUTH_TYPE?
-- What does EMAIL_AUTH_TYPE do?
-- What is the default value for EMAIL_AUTH_TYPE?
-- How do I configure EMAIL_AUTH_TYPE?
-- How does EMAIL_AUTH_TYPE affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ Technical - Do Not Modify without consulting ISS
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

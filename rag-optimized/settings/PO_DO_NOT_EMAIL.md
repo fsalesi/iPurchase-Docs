@@ -4,14 +4,11 @@
 
 If set to true the PO will not be emailed.
 
-**Common questions this answers:**
-- What is PO_DO_NOT_EMAIL?
-- What does PO_DO_NOT_EMAIL do?
-- What is the default value for PO_DO_NOT_EMAIL?
-- How do I configure PO_DO_NOT_EMAIL?
-- How does PO_DO_NOT_EMAIL affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ If set to true the PO will not be emailed.
 | **Owner** | Power Users |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -4,13 +4,19 @@
 
 Can-Do list. Users/groups allowed to enter negative quantities on requisition line items. Normally rejected with error message.
 
-**Common questions this answers:**
-- What is ALLOW_NEGATIVE_LINE?
-- What does ALLOW_NEGATIVE_LINE do?
-- What is the default value for ALLOW_NEGATIVE_LINE?
-- How do I configure ALLOW_NEGATIVE_LINE?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Can-Do list. Users/groups allowed to enter negative quantities on requisition li
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

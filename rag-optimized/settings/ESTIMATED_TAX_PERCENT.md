@@ -4,13 +4,11 @@
 
 If the taxable amounts need to figure into the approval rules, then use this setting to enter an estimate tax percentage that will be added on to all taxable requisition lines.  If 10% enter as "10"
 
-**Common questions this answers:**
-- What is ESTIMATED_TAX_PERCENT?
-- What does ESTIMATED_TAX_PERCENT do?
-- What is the default value for ESTIMATED_TAX_PERCENT?
-- How do I configure ESTIMATED_TAX_PERCENT?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ If the taxable amounts need to figure into the approval rules, then use this set
 | **Owner** | Finance |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

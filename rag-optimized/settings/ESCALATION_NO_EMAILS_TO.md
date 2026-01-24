@@ -4,14 +4,19 @@
 
 Can-Do list. Users/groups who do not receive approval escalation notification emails.
 
-**Common questions this answers:**
-- What is ESCALATION_NO_EMAILS_TO?
-- What does ESCALATION_NO_EMAILS_TO do?
-- What is the default value for ESCALATION_NO_EMAILS_TO?
-- How do I configure ESCALATION_NO_EMAILS_TO?
-- How does ESCALATION_NO_EMAILS_TO affect email notifications?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +25,7 @@ Can-Do list. Users/groups who do not receive approval escalation notification em
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

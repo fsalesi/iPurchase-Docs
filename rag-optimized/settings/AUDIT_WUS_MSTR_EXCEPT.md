@@ -4,13 +4,11 @@
 
 Technical - Do Not Modify   The list of fields from the wus_mstr table will not be audited when changed. All other fields will show up in Audit when changed.
 
-**Common questions this answers:**
-- What is AUDIT_WUS_MSTR_EXCEPT?
-- What does AUDIT_WUS_MSTR_EXCEPT do?
-- What is the default value for AUDIT_WUS_MSTR_EXCEPT?
-- How do I configure AUDIT_WUS_MSTR_EXCEPT?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Technical - Do Not Modify   The list of fields from the wus_mstr table will not 
 | **Owner** | ISS |
 | **Default Value** | wus_last_login |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

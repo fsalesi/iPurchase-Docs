@@ -4,14 +4,11 @@
 
 If an approver changes a requisition and this is set to true, then the originator will not be notified.
 
-**Common questions this answers:**
-- What is NO_CHANGE_EMAIL?
-- What does NO_CHANGE_EMAIL do?
-- What is the default value for NO_CHANGE_EMAIL?
-- How do I configure NO_CHANGE_EMAIL?
-- How does NO_CHANGE_EMAIL affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ If an approver changes a requisition and this is set to true, then the originato
 | **Owner** | Power Users |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

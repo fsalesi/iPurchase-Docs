@@ -2,15 +2,13 @@
 
 **Category:** Requisitions
 
-This setting allows the administrator to set how many days a requisition will be purged based on no activity from either the entry date, last audit record date(header or detail), or last approval r...
+This setting allows the administrator to set how many days a requisition will be purged based on no activity from either the entry date, last audit record date(header or detail), or last approval record.  This setting works based on whichever has the last activity date.  When the system starts to purge requisitions, it will send the originator an email that this job is running.
 
-**Common questions this answers:**
-- What is PURGE_REQ_DAYS?
-- What does PURGE_REQ_DAYS do?
-- What is the default value for PURGE_REQ_DAYS?
-- How do I configure PURGE_REQ_DAYS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting allows the administrator to set how many days a requisition will be
 | **Owner** | Admin |
 | **Default Value** | 90 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

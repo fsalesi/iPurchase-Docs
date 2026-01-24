@@ -4,13 +4,11 @@
 
 If this setting is true, then a user will not be allowed to order an item# which exists in the part master (pt_mstr) table.
 
-**Common questions this answers:**
-- What is MEMO_ONLY?
-- What does MEMO_ONLY do?
-- What is the default value for MEMO_ONLY?
-- How do I configure MEMO_ONLY?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ If this setting is true, then a user will not be allowed to order an item# which
 | **Owner** | Admin |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

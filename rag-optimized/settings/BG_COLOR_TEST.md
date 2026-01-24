@@ -4,13 +4,11 @@
 
 The background color of the Archive System - default pink
 
-**Common questions this answers:**
-- What is BG_COLOR_TEST?
-- What does BG_COLOR_TEST do?
-- What is the default value for BG_COLOR_TEST?
-- How do I configure BG_COLOR_TEST?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ The background color of the Archive System - default pink
 | **Owner** | Admin |
 | **Default Value** | #d9f2e5 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

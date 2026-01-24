@@ -4,13 +4,11 @@
 
 Do not use QAD passwords for users that are also in QAD. Let iPurchase manage those passwords.
 
-**Common questions this answers:**
-- What is NO_QAD_AUTHENTICATION?
-- What does NO_QAD_AUTHENTICATION do?
-- What is the default value for NO_QAD_AUTHENTICATION?
-- How do I configure NO_QAD_AUTHENTICATION?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Do not use QAD passwords for users that are also in QAD. Let iPurchase manage th
 | **Owner** | Admin |
 | **Default Value** | true |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

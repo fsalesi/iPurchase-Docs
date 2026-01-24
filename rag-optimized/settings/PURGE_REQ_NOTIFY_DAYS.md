@@ -2,15 +2,13 @@
 
 **Category:** Requisitions
 
-This setting allows the administrator to set how many days in advanced the originator will get notified before a requisition is purged from the iPurchase system. The setting works in conjunction wi...
+This setting allows the administrator to set how many days in advanced the originator will get notified before a requisition is purged from the iPurchase system. The setting works in conjunction with PURGE_REQ_DAYS.
 
-**Common questions this answers:**
-- What is PURGE_REQ_NOTIFY_DAYS?
-- What does PURGE_REQ_NOTIFY_DAYS do?
-- What is the default value for PURGE_REQ_NOTIFY_DAYS?
-- How do I configure PURGE_REQ_NOTIFY_DAYS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting allows the administrator to set how many days in advanced the origi
 | **Owner** | Admin |
 | **Default Value** | 10 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

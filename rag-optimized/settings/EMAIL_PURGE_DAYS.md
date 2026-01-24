@@ -4,14 +4,11 @@
 
 How often iPurchase will purge emails that have error-ed . Value is in days.
 
-**Common questions this answers:**
-- What is EMAIL_PURGE_DAYS?
-- What does EMAIL_PURGE_DAYS do?
-- What is the default value for EMAIL_PURGE_DAYS?
-- How do I configure EMAIL_PURGE_DAYS?
-- How does EMAIL_PURGE_DAYS affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ How often iPurchase will purge emails that have error-ed . Value is in days.
 | **Owner** | Admin |
 | **Default Value** | 30 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -4,13 +4,11 @@
 
 Numeric. Starting purchase order number for sequential PO numbering.
 
-**Common questions this answers:**
-- What is FIRST_PO_NUMBER?
-- What does FIRST_PO_NUMBER do?
-- What is the default value for FIRST_PO_NUMBER?
-- How do I configure FIRST_PO_NUMBER?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Numeric. Starting purchase order number for sequential PO numbering.
 | **Owner** | Purchasing |
 | **Default Value** | 1 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

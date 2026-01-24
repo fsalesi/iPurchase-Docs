@@ -2,15 +2,13 @@
 
 **Category:** Security & Authentication
 
-This setting allows the administrator to turn off the recent news, events, and video sections from the login page.  To turn these functions off the administrator would need to change the default se...
+This setting allows the administrator to turn off the recent news, events, and video sections from the login page.  To turn these functions off the administrator would need to change the default setting from 1,1,1 to 0,0,0.  With this setting the administrator can turn off all or just specific sections of the login page.
 
-**Common questions this answers:**
-- What is LOGIN_VIEW_CONTENT?
-- What does LOGIN_VIEW_CONTENT do?
-- What is the default value for LOGIN_VIEW_CONTENT?
-- How do I configure LOGIN_VIEW_CONTENT?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting allows the administrator to turn off the recent news, events, and v
 | **Owner** | Power Users |
 | **Default Value** | 1,0,1 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -2,15 +2,21 @@
 
 **Category:** Code Lists & Dropdowns
 
-code_fldname This is a pointer to the code_mstr field name (code_fldname) value to be used for the Line MRO Type selection list, and validation. You can also use the prefix "LIST:" followed by a co...
+code_fldname This is a pointer to the code_mstr field name (code_fldname) value to be used for the Line MRO Type selection list, and validation. You can also use the prefix "LIST:" followed by a comma-separated list of values. This will tell iPurchase that the specified list is to be used. Example: LIST:EA,BX,PK   or Separate each entry with a colon to have both a code and name: LIST:EA:EACH,BX:Box,PK:Pack NOT USED
 
-**Common questions this answers:**
-- What is CODE_LIST_MRO_TYPE?
-- What does CODE_LIST_MRO_TYPE do?
-- What is the default value for CODE_LIST_MRO_TYPE?
-- How do I configure CODE_LIST_MRO_TYPE?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ code_fldname This is a pointer to the code_mstr field name (code_fldname) value 
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

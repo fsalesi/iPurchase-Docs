@@ -4,13 +4,11 @@
 
 Name of the qxtend instance for Purchase Orders in this environment
 
-**Common questions this answers:**
-- What is QX_PO_NAME?
-- What does QX_PO_NAME do?
-- What is the default value for QX_PO_NAME?
-- How do I configure QX_PO_NAME?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Name of the qxtend instance for Purchase Orders in this environment
 | **Owner** |  |
 | **Default Value** | QADERP |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

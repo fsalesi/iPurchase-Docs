@@ -2,15 +2,13 @@
 
 **Category:** System Configuration
 
-After the administrator has added values to the CODE_LIST_H_BLANKET_CYCLE setting, they can add one of the values in that setting to this setting, to be the default value for the cycle code drop do...
+After the administrator has added values to the CODE_LIST_H_BLANKET_CYCLE setting, they can add one of the values in that setting to this setting, to be the default value for the cycle code drop down menu on the blanket information tab on a requisition.
 
-**Common questions this answers:**
-- What is DEFAULT_BLANKET_CYCLE?
-- What does DEFAULT_BLANKET_CYCLE do?
-- What is the default value for DEFAULT_BLANKET_CYCLE?
-- How do I configure DEFAULT_BLANKET_CYCLE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ After the administrator has added values to the CODE_LIST_H_BLANKET_CYCLE settin
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

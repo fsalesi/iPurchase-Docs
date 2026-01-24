@@ -4,13 +4,11 @@
 
 Do not show nor use the Receipts column on Budgets.
 
-**Common questions this answers:**
-- What is BUDGET_HIDE_RECEIPTS?
-- What does BUDGET_HIDE_RECEIPTS do?
-- What is the default value for BUDGET_HIDE_RECEIPTS?
-- How do I configure BUDGET_HIDE_RECEIPTS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Do not show nor use the Receipts column on Budgets.
 | **Owner** | Admin |
 | **Default Value** | TRUE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

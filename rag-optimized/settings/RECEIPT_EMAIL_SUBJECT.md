@@ -4,14 +4,11 @@
 
 Email subject for receipt notifications.
 
-**Common questions this answers:**
-- What is RECEIPT_EMAIL_SUBJECT?
-- What does RECEIPT_EMAIL_SUBJECT do?
-- What is the default value for RECEIPT_EMAIL_SUBJECT?
-- How do I configure RECEIPT_EMAIL_SUBJECT?
-- How does RECEIPT_EMAIL_SUBJECT affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ Email subject for receipt notifications.
 | **Owner** | Purchasing |
 | **Default Value** | Receipt Notification |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -4,13 +4,19 @@
 
 Can-Do list. Users/groups allowed to receive against purchase orders. Can include $xxreq_buyer to allow the buyer on the PO to receive.
 
-**Common questions this answers:**
-- What is ALLOW_RECEIVING?
-- What does ALLOW_RECEIVING do?
-- What is the default value for ALLOW_RECEIVING?
-- How do I configure ALLOW_RECEIVING?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Can-Do list. Users/groups allowed to receive against purchase orders. Can includ
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

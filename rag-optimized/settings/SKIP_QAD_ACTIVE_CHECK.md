@@ -2,15 +2,18 @@
 
 **Category:** QAD Integration
 
-True or False Do not check the QAD user's active flag. Normally a user (if the QAD User ID matches the iPurchase User ID) needs to be active in QAD in order to login to iPurchase. This does not alw...
+True or False Do not check the QAD user's active flag. Normally a user (if the QAD User ID matches the iPurchase User ID) needs to be active in QAD in order to login to iPurchase. This does not always work for companies. This flag bypasses the check and allows the user to login.
 
-**Common questions this answers:**
-- What is SKIP_QAD_ACTIVE_CHECK?
-- What does SKIP_QAD_ACTIVE_CHECK do?
-- What is the default value for SKIP_QAD_ACTIVE_CHECK?
-- How do I configure SKIP_QAD_ACTIVE_CHECK?
+### How It Works
 
-## Setting Details
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `TRUE` | Enabled |
+| `FALSE` | Disabled |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +22,7 @@ True or False Do not check the QAD user's active flag. Normally a user (if the Q
 | **Owner** | Admin |
 | **Default Value** | TRUE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

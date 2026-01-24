@@ -4,13 +4,11 @@
 
 Removes the options of saving your password on the login screen. Users will need to enter their password every time.
 
-**Common questions this answers:**
-- What is REMOVE_SAVE_PASSWORD?
-- What does REMOVE_SAVE_PASSWORD do?
-- What is the default value for REMOVE_SAVE_PASSWORD?
-- How do I configure REMOVE_SAVE_PASSWORD?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Removes the options of saving your password on the login screen. Users will need
 | **Owner** | Admin |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

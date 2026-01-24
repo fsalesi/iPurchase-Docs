@@ -4,14 +4,11 @@
 
 Technical - Do Not Modify without consulting ISS
 
-**Common questions this answers:**
-- What is NO_PO_EMAIL?
-- What does NO_PO_EMAIL do?
-- What is the default value for NO_PO_EMAIL?
-- How do I configure NO_PO_EMAIL?
-- How does NO_PO_EMAIL affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ Technical - Do Not Modify without consulting ISS
 | **Owner** | ISS |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

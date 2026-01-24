@@ -4,13 +4,11 @@
 
 This setting will show the approval rule name when hovering over the Level or Seq field in the Approval History Tab.
 
-**Common questions this answers:**
-- What is SHOW_RULE_INFO?
-- What does SHOW_RULE_INFO do?
-- What is the default value for SHOW_RULE_INFO?
-- How do I configure SHOW_RULE_INFO?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting will show the approval rule name when hovering over the Level or Se
 | **Owner** | Power Users |
 | **Default Value** | TRUE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

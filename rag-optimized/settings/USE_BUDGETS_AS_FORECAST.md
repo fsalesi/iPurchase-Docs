@@ -4,13 +4,11 @@
 
 Allow full budget functionality but allow reqs to be created and processed even if overbudget.
 
-**Common questions this answers:**
-- What is USE_BUDGETS_AS_FORECAST?
-- What does USE_BUDGETS_AS_FORECAST do?
-- What is the default value for USE_BUDGETS_AS_FORECAST?
-- How do I configure USE_BUDGETS_AS_FORECAST?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Allow full budget functionality but allow reqs to be created and processed even 
 | **Owner** | Admin |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

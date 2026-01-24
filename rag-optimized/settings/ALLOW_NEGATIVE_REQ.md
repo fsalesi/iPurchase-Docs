@@ -4,13 +4,11 @@
 
 This setting will allow negative total requisition cost if set to True.
 
-**Common questions this answers:**
-- What is ALLOW_NEGATIVE_REQ?
-- What does ALLOW_NEGATIVE_REQ do?
-- What is the default value for ALLOW_NEGATIVE_REQ?
-- How do I configure ALLOW_NEGATIVE_REQ?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting will allow negative total requisition cost if set to True.
 | **Owner** | Power Users |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

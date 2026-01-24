@@ -2,16 +2,13 @@
 
 **Category:** Email Configuration
 
-This setting allows the administrator to set the body of the email that is sent to users when a new user is created. Special tokens that can be inserted in email are $User ID, $PASSWORD, $URL.  The...
+This setting allows the administrator to set the body of the email that is sent to users when a new user is created. Special tokens that can be inserted in email are $User ID, $PASSWORD, $URL.  These tokens will be substituted with the actual values.
 
-**Common questions this answers:**
-- What is EMAIL_NEW_USER_BODY?
-- What does EMAIL_NEW_USER_BODY do?
-- What is the default value for EMAIL_NEW_USER_BODY?
-- How do I configure EMAIL_NEW_USER_BODY?
-- How does EMAIL_NEW_USER_BODY affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ This setting allows the administrator to set the body of the email that is sent 
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

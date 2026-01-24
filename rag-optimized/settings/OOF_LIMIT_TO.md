@@ -4,13 +4,19 @@
 
 Comma separated list of User ID's or Group ID's that that can be chosen as delegates. Asterisk indicates everyone, a blank indicates no one.
 
-**Common questions this answers:**
-- What is OOF_LIMIT_TO?
-- What does OOF_LIMIT_TO do?
-- What is the default value for OOF_LIMIT_TO?
-- How do I configure OOF_LIMIT_TO?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Comma separated list of User ID's or Group ID's that that can be chosen as deleg
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

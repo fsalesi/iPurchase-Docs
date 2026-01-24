@@ -4,14 +4,11 @@
 
 Allows the administrator to create a custom email body for new PO.
 
-**Common questions this answers:**
-- What is EMAIL_PO_BODY?
-- What does EMAIL_PO_BODY do?
-- What is the default value for EMAIL_PO_BODY?
-- How do I configure EMAIL_PO_BODY?
-- How does EMAIL_PO_BODY affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ Allows the administrator to create a custom email body for new PO.
 | **Owner** | Admin |
 | **Default Value** | This should be line one. <br><br> |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

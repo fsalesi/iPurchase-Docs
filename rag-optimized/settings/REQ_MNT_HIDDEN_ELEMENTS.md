@@ -4,13 +4,11 @@
 
 Technical - Do Not Modify without consulting ISS
 
-**Common questions this answers:**
-- What is REQ_MNT_HIDDEN_ELEMENTS?
-- What does REQ_MNT_HIDDEN_ELEMENTS do?
-- What is the default value for REQ_MNT_HIDDEN_ELEMENTS?
-- How do I configure REQ_MNT_HIDDEN_ELEMENTS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Technical - Do Not Modify without consulting ISS
 | **Owner** | Power Users |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

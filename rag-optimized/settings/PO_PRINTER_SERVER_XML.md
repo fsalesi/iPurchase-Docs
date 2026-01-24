@@ -2,15 +2,13 @@
 
 **Category:** Purchase Orders
 
-This setting points iPurchase to PO printer server configuration file. ex:  or apps or test or qdt or envs or test or configs or server.xml QAD EE 2012 and above allows the ability to print fancy p...
+This setting points iPurchase to PO printer server configuration file. ex:  or apps or test or qdt or envs or test or configs or server.xml QAD EE 2012 and above allows the ability to print fancy purchase orders. Requirements: Names QAD user. Settings QAD_AUTHENTICATION_USER and QAD_AUTHENTICATION_PASSWORD must be set. The user specified in QAD_AUTHENTICATION_USER must be setup in QAD with a role of "rptAdmin"
 
-**Common questions this answers:**
-- What is PO_PRINTER_SERVER_XML?
-- What does PO_PRINTER_SERVER_XML do?
-- What is the default value for PO_PRINTER_SERVER_XML?
-- How do I configure PO_PRINTER_SERVER_XML?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting points iPurchase to PO printer server configuration file. ex:  or a
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -2,15 +2,13 @@
 
 **Category:** Purchase Orders
 
-The value of this setting is a path to the physical file name on the app server. Ex. " or apps or iPurchase or logo or frank.jpg". If the logo is in the wdm or agents folder then you only need to p...
+The value of this setting is a path to the physical file name on the app server. Ex. " or apps or iPurchase or logo or frank.jpg". If the logo is in the wdm or agents folder then you only need to put filename not path. Ex. "logo.jpg". The PO Logo will be placed in the top left hand corner of the purchase order if using the GRAPHICAL PO_PRINT_PDF_FORMAT
 
-**Common questions this answers:**
-- What is PO_LOGO?
-- What does PO_LOGO do?
-- What is the default value for PO_LOGO?
-- How do I configure PO_LOGO?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ The value of this setting is a path to the physical file name on the app server.
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

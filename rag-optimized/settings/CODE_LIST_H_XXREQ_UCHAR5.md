@@ -4,13 +4,11 @@
 
 List for User Field 5
 
-**Common questions this answers:**
-- What is CODE_LIST_H_XXREQ_UCHAR5?
-- What does CODE_LIST_H_XXREQ_UCHAR5 do?
-- What is the default value for CODE_LIST_H_XXREQ_UCHAR5?
-- How do I configure CODE_LIST_H_XXREQ_UCHAR5?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ List for User Field 5
 | **Owner** | Admin |
 | **Default Value** | List:True:Choice 1,False:Choice 2 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

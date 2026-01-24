@@ -2,15 +2,21 @@
 
 **Category:** Reporting & Inquiry
 
-Comma separated list of User ID's or Group ID's who only gets to see "Views" on inquiry screen and does not see all the filter fields. This can be used as requisition security. Asterisk indicates e...
+Comma separated list of User ID's or Group ID's who only gets to see "Views" on inquiry screen and does not see all the filter fields. This can be used as requisition security. Asterisk indicates everyone, a blank indicates no one.
 
-**Common questions this answers:**
-- What is INQUIRY_SIMPLE_MODE?
-- What does INQUIRY_SIMPLE_MODE do?
-- What is the default value for INQUIRY_SIMPLE_MODE?
-- How do I configure INQUIRY_SIMPLE_MODE?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Comma separated list of User ID's or Group ID's who only gets to see "Views" on 
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

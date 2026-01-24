@@ -4,15 +4,16 @@
 
 True or False - Include link to Approve in email that goes out to approver. Default FALSE
 
-**Common questions this answers:**
-- What is EMAIL_NO_APPROVE_LINK?
-- What does EMAIL_NO_APPROVE_LINK do?
-- What is the default value for EMAIL_NO_APPROVE_LINK?
-- How do I configure EMAIL_NO_APPROVE_LINK?
-- How does EMAIL_NO_APPROVE_LINK affect approval routing?
-- How does EMAIL_NO_APPROVE_LINK affect email notifications?
+### How It Works
 
-## Setting Details
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `TRUE` | Enabled |
+| `FALSE` | Disabled |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -21,7 +22,7 @@ True or False - Include link to Approve in email that goes out to approver. Defa
 | **Owner** | Admin |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

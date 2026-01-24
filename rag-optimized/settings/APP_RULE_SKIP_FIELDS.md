@@ -4,13 +4,11 @@
 
 List of fields from xxreq_mstr and xxreqd_det that you don't want to show in the Approval Rule Maintenance Screen.
 
-**Common questions this answers:**
-- What is APP_RULE_SKIP_FIELDS?
-- What does APP_RULE_SKIP_FIELDS do?
-- What is the default value for APP_RULE_SKIP_FIELDS?
-- How do I configure APP_RULE_SKIP_FIELDS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ List of fields from xxreq_mstr and xxreqd_det that you don't want to show in the
 | **Owner** | ISS |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

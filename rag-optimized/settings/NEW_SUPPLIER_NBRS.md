@@ -4,13 +4,19 @@
 
 Comma separated list of supplier numbers which should not allow final approval.
 
-**Common questions this answers:**
-- What is NEW_SUPPLIER_NBRS?
-- What does NEW_SUPPLIER_NBRS do?
-- What is the default value for NEW_SUPPLIER_NBRS?
-- How do I configure NEW_SUPPLIER_NBRS?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Comma separated list of supplier numbers which should not allow final approval.
 | **Owner** |  |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

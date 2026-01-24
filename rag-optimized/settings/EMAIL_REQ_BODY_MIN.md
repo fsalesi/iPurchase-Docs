@@ -2,16 +2,18 @@
 
 **Category:** Email Configuration
 
-When this is TRUE, only the supplier's number and name along with the cost of the requisition are embedded in the email. If the requisition is a change order, then the words "Change Order" will als...
+When this is TRUE, only the supplier's number and name along with the cost of the requisition are embedded in the email. If the requisition is a change order, then the words "Change Order" will also appear. This requires NO_EMAIL_REQ_BODY set to false, otherwise EMAIL_REQ_BODY_MIN will have no affect.
 
-**Common questions this answers:**
-- What is EMAIL_REQ_BODY_MIN?
-- What does EMAIL_REQ_BODY_MIN do?
-- What is the default value for EMAIL_REQ_BODY_MIN?
-- How do I configure EMAIL_REQ_BODY_MIN?
-- How does EMAIL_REQ_BODY_MIN affect email notifications?
+### How It Works
 
-## Setting Details
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `TRUE` | Enabled |
+| `FALSE` | Disabled |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +22,7 @@ When this is TRUE, only the supplier's number and name along with the cost of th
 | **Owner** | Admin |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

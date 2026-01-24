@@ -4,13 +4,11 @@
 
 This setting allows the administrator to print a signature on a reprint of a Purchase Order.
 
-**Common questions this answers:**
-- What is PO_SIGNATURE_ON_REPRINT?
-- What does PO_SIGNATURE_ON_REPRINT do?
-- What is the default value for PO_SIGNATURE_ON_REPRINT?
-- How do I configure PO_SIGNATURE_ON_REPRINT?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting allows the administrator to print a signature on a reprint of a Pur
 | **Owner** | Power Users |
 | **Default Value** | TRUE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

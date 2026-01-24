@@ -4,13 +4,11 @@
 
 [LEGACY/OBSOLETE] Field name for tax class in data upgrades. Commented out in code.
 
-**Common questions this answers:**
-- What is TAX_CLASS_FIELD?
-- What does TAX_CLASS_FIELD do?
-- What is the default value for TAX_CLASS_FIELD?
-- How do I configure TAX_CLASS_FIELD?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@
 | **Owner** | Finance |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

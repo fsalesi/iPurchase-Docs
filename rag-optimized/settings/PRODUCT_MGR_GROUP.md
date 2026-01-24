@@ -4,13 +4,11 @@
 
 Group ID for product managers. Customer-specific product management setting.
 
-**Common questions this answers:**
-- What is PRODUCT_MGR_GROUP?
-- What does PRODUCT_MGR_GROUP do?
-- What is the default value for PRODUCT_MGR_GROUP?
-- How do I configure PRODUCT_MGR_GROUP?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Group ID for product managers. Customer-specific product management setting.
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

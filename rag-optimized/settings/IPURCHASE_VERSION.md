@@ -4,13 +4,11 @@
 
 Do Not Modify
 
-**Common questions this answers:**
-- What is IPURCHASE_VERSION?
-- What does IPURCHASE_VERSION do?
-- What is the default value for IPURCHASE_VERSION?
-- How do I configure IPURCHASE_VERSION?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Do Not Modify
 | **Owner** | ISS |
 | **Default Value** | 2023.0426 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

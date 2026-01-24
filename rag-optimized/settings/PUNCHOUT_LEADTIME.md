@@ -4,13 +4,11 @@
 
 The number of days to add to today's date in order to calculate the Need Date for the requisition header. Can change by supplier in Supplier Maintenance (iPurchase)
 
-**Common questions this answers:**
-- What is PUNCHOUT_LEADTIME?
-- What does PUNCHOUT_LEADTIME do?
-- What is the default value for PUNCHOUT_LEADTIME?
-- How do I configure PUNCHOUT_LEADTIME?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ The number of days to add to today's date in order to calculate the Need Date fo
 | **Owner** | Admin |
 | **Default Value** | 3 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

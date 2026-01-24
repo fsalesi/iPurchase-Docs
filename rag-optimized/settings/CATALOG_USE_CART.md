@@ -4,13 +4,19 @@
 
 Comma Separated list of User ID's or Group ID's that will use the catalog functionality in the "New Catalog Req" screen. Asterisk indicates everyone, a blank indicates no one.
 
-**Common questions this answers:**
-- What is CATALOG_USE_CART?
-- What does CATALOG_USE_CART do?
-- What is the default value for CATALOG_USE_CART?
-- How do I configure CATALOG_USE_CART?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Comma Separated list of User ID's or Group ID's that will use the catalog functi
 | **Owner** | Admin |
 | **Default Value** | * |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -2,15 +2,13 @@
 
 **Category:** Approval Workflow
 
-This setting determines how many supervisors up the supervisor tree (organization chart) are allowed to approve or reject a requisition. A value of one will only allow the approver's immediate supe...
+This setting determines how many supervisors up the supervisor tree (organization chart) are allowed to approve or reject a requisition. A value of one will only allow the approver's immediate supervisor to approve. See SUPERVISOR_ESCALATION_DAYS and ALLOW_SUPERVISORS_TO_APPROVE for additional settings related to this one.
 
-**Common questions this answers:**
-- What is SUPERVISOR_ESCALATION_LEVEL?
-- What does SUPERVISOR_ESCALATION_LEVEL do?
-- What is the default value for SUPERVISOR_ESCALATION_LEVEL?
-- How do I configure SUPERVISOR_ESCALATION_LEVEL?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,11 +17,9 @@ This setting determines how many supervisors up the supervisor tree (organizatio
 | **Owner** | Admin |
 | **Default Value** | 99 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'SUPERVISOR_ESCALATION_LEVEL'
 ```
-
-**Related settings:** SUPERVISOR_ESCALATION_DAYS, ALLOW_SUPERVISORS_TO_APPROVE

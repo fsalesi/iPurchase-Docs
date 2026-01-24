@@ -4,14 +4,11 @@
 
 HTML content. Custom header included in email templates. Used for branding/styling emails.
 
-**Common questions this answers:**
-- What is EMAIL_HEADER?
-- What does EMAIL_HEADER do?
-- What is the default value for EMAIL_HEADER?
-- How do I configure EMAIL_HEADER?
-- How does EMAIL_HEADER affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ HTML content. Custom header included in email templates. Used for branding/styli
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -4,13 +4,19 @@
 
 Comma Separated list of User ID's or Group ID's who are allowed to create new budgets in iPurchase. Asterisk indicates everyone, a blank indicates no one.
 
-**Common questions this answers:**
-- What is BUDGET_ALLOW_NEW?
-- What does BUDGET_ALLOW_NEW do?
-- What is the default value for BUDGET_ALLOW_NEW?
-- How do I configure BUDGET_ALLOW_NEW?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Comma Separated list of User ID's or Group ID's who are allowed to create new bu
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

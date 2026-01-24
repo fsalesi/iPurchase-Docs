@@ -4,13 +4,11 @@
 
 Full application URL (e.g., https://ipurchase.company.com). Used by scheduled jobs for email links. On test/backup systems, should be updated to match environment.
 
-**Common questions this answers:**
-- What is APPLICATION_URL?
-- What does APPLICATION_URL do?
-- What is the default value for APPLICATION_URL?
-- How do I configure APPLICATION_URL?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Full application URL (e.g., https://ipurchase.company.com). Used by scheduled jo
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

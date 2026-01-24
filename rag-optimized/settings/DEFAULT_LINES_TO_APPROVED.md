@@ -2,16 +2,18 @@
 
 **Category:** Approval Workflow
 
-If using Line Approvals, then setting this to a value of TRUE will set each line to Approved (Green) as the default each time the requisition is submitted for approval. A value of FALSE will set ea...
+If using Line Approvals, then setting this to a value of TRUE will set each line to Approved (Green) as the default each time the requisition is submitted for approval. A value of FALSE will set each requisition to neither approved nor rejected (Yellow).
 
-**Common questions this answers:**
-- What is DEFAULT_LINES_TO_APPROVED?
-- What does DEFAULT_LINES_TO_APPROVED do?
-- What is the default value for DEFAULT_LINES_TO_APPROVED?
-- How do I configure DEFAULT_LINES_TO_APPROVED?
-- How does DEFAULT_LINES_TO_APPROVED affect approval routing?
+### How It Works
 
-## Setting Details
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `TRUE` | Enabled |
+| `FALSE` | Disabled |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +22,7 @@ If using Line Approvals, then setting this to a value of TRUE will set each line
 | **Owner** | Power Users |
 | **Default Value** | TRUE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

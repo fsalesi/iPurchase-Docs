@@ -2,15 +2,13 @@
 
 **Category:** Uncategorized
 
-This setting allows the administrator to allow the use of Lync within the iPurchase solution. Requirements: Office 2010+ with Lync installed on desktop. iPurchase website must be in the "TRUSTED SI...
+This setting allows the administrator to allow the use of Lync within the iPurchase solution. Requirements: Office 2010+ with Lync installed on desktop. iPurchase website must be in the "TRUSTED SITES" security zone in the Internet Options or Security tab. Does not work with office for Mac Does not work with mobile devices Does not work with certain browsers. Not all trading partners that use Lync will allow you to see the presence of employees. Works with IE9+. Not supported for other PC browsers, however it does work. On requisition workbench, the following fields will show Lync Presence status icons: Supplier Email Buyer Originator OBO Deliver To All Approvers in approval history tab.
 
-**Common questions this answers:**
-- What is USE_LYNC?
-- What does USE_LYNC do?
-- What is the default value for USE_LYNC?
-- How do I configure USE_LYNC?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting allows the administrator to allow the use of Lync within the iPurch
 | **Owner** | Admin |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

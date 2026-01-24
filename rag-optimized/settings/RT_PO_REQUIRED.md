@@ -2,15 +2,13 @@
 
 **Category:** Purchase Orders
 
-This setting is a list of requisition types that would set the PO Required field to True or Yes.  For example if you do not require a PO for credit card purchases and CREDIT_CARD is a Requisition T...
+This setting is a list of requisition types that would set the PO Required field to True or Yes.  For example if you do not require a PO for credit card purchases and CREDIT_CARD is a Requisition Type, then list all the other Requisition Types here. The default is TRUE unless an item appears in this list. The list should be in the format EXPENSE,CAPITAL,TOOLING
 
-**Common questions this answers:**
-- What is RT_PO_REQUIRED?
-- What does RT_PO_REQUIRED do?
-- What is the default value for RT_PO_REQUIRED?
-- How do I configure RT_PO_REQUIRED?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting is a list of requisition types that would set the PO Required field
 | **Owner** | Power Users |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

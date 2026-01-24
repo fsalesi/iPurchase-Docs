@@ -4,13 +4,11 @@
 
 Will export a consolidated view of the requisition when the Excel link is clicked in Requisition Inquiry. Default FALSE
 
-**Common questions this answers:**
-- What is EXCEL_EXPORT_ONE_TAB?
-- What does EXCEL_EXPORT_ONE_TAB do?
-- What is the default value for EXCEL_EXPORT_ONE_TAB?
-- How do I configure EXCEL_EXPORT_ONE_TAB?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Will export a consolidated view of the requisition when the Excel link is clicke
 | **Owner** | Power Users |
 | **Default Value** | TRUE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

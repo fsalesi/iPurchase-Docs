@@ -4,13 +4,11 @@
 
 QAD program name which prints blankets, should not be modified.
 
-**Common questions this answers:**
-- What is PO_BLANKET_PRINT_PROGRAM?
-- What does PO_BLANKET_PRINT_PROGRAM do?
-- What is the default value for PO_BLANKET_PRINT_PROGRAM?
-- How do I configure PO_BLANKET_PRINT_PROGRAM?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ QAD program name which prints blankets, should not be modified.
 | **Owner** | Admin |
 | **Default Value** | us/po/poblrp03.p |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

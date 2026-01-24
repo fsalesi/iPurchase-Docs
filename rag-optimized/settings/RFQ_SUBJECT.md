@@ -4,13 +4,11 @@
 
 Email subject for RFQ emails.
 
-**Common questions this answers:**
-- What is RFQ_SUBJECT?
-- What does RFQ_SUBJECT do?
-- What is the default value for RFQ_SUBJECT?
-- How do I configure RFQ_SUBJECT?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Email subject for RFQ emails.
 | **Owner** | Purchasing |
 | **Default Value** | Request for Quote |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

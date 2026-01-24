@@ -4,13 +4,11 @@
 
 Update the order date on the change order PO to today's date
 
-**Common questions this answers:**
-- What is CO_UPDATE_ORDER_DATE?
-- What does CO_UPDATE_ORDER_DATE do?
-- What is the default value for CO_UPDATE_ORDER_DATE?
-- How do I configure CO_UPDATE_ORDER_DATE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Update the order date on the change order PO to today's date
 | **Owner** | Purchasing |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

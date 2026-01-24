@@ -2,15 +2,13 @@
 
 **Category:** Uncategorized
 
-Within a catalog requisition, iPurchase will add up the quantities of all the items chosen by default.  If the administrator sets this setting to true the system will display number of lines instea...
+Within a catalog requisition, iPurchase will add up the quantities of all the items chosen by default.  If the administrator sets this setting to true the system will display number of lines instead of adding up the quantities.
 
-**Common questions this answers:**
-- What is CART_SUM_LINES?
-- What does CART_SUM_LINES do?
-- What is the default value for CART_SUM_LINES?
-- How do I configure CART_SUM_LINES?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Within a catalog requisition, iPurchase will add up the quantities of all the it
 | **Owner** | Admin |
 | **Default Value** | False  |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

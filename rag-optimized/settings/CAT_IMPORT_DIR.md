@@ -4,13 +4,11 @@
 
 The administrator will choose a folder on application server where catalog files will be dropped (when catalogs are sent directly from supplier - not supported in base).
 
-**Common questions this answers:**
-- What is CAT_IMPORT_DIR?
-- What does CAT_IMPORT_DIR do?
-- What is the default value for CAT_IMPORT_DIR?
-- How do I configure CAT_IMPORT_DIR?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ The administrator will choose a folder on application server where catalog files
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

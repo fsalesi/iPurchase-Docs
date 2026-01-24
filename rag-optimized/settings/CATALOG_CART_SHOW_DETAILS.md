@@ -4,13 +4,11 @@
 
 This setting will show supplier, lead time, manufacturer, and UOM in the cart for a catalog if set to true.
 
-**Common questions this answers:**
-- What is CATALOG_CART_SHOW_DETAILS?
-- What does CATALOG_CART_SHOW_DETAILS do?
-- What is the default value for CATALOG_CART_SHOW_DETAILS?
-- How do I configure CATALOG_CART_SHOW_DETAILS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting will show supplier, lead time, manufacturer, and UOM in the cart fo
 | **Owner** | Admin |
 | **Default Value** | TRUE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

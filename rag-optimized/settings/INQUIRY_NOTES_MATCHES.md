@@ -4,13 +4,11 @@
 
 When searching requisitions by using the notes field, use 'matches' vs 'contains', matches can be much slower but more flexible.
 
-**Common questions this answers:**
-- What is INQUIRY_NOTES_MATCHES?
-- What does INQUIRY_NOTES_MATCHES do?
-- What is the default value for INQUIRY_NOTES_MATCHES?
-- How do I configure INQUIRY_NOTES_MATCHES?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ When searching requisitions by using the notes field, use 'matches' vs 'contains
 | **Owner** | Admin |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

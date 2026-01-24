@@ -2,15 +2,13 @@
 
 **Category:** Purchase Orders
 
-This setting allows the administrator to set the Queue that the report will be processed on.  ex: "POPrint" QAD EE 2012 and above allows the ability to print fancy purchase orders. Requirements: Na...
+This setting allows the administrator to set the Queue that the report will be processed on.  ex: "POPrint" QAD EE 2012 and above allows the ability to print fancy purchase orders. Requirements: Names QAD user. Settings QAD_AUTHENTICATION_USER and QAD_AUTHENTICATION_PASSWORD must be set. The user specified in QAD_AUTHENTICATION_USER must be setup in QAD with a role of "rptAdmin"
 
-**Common questions this answers:**
-- What is PO_PRINTER_BATCH_NAME?
-- What does PO_PRINTER_BATCH_NAME do?
-- What is the default value for PO_PRINTER_BATCH_NAME?
-- How do I configure PO_PRINTER_BATCH_NAME?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting allows the administrator to set the Queue that the report will be p
 | **Owner** | Admin |
 | **Default Value** | QADSVC |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

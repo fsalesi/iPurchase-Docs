@@ -4,13 +4,19 @@
 
 Comma-Separated List of paths and files. This is a list of files which is to be emailed to the supplier as attachments to the Purchase Order.
 
-**Common questions this answers:**
-- What is SUPPLIER_PO_ATTACHMENTS?
-- What does SUPPLIER_PO_ATTACHMENTS do?
-- What is the default value for SUPPLIER_PO_ATTACHMENTS?
-- How do I configure SUPPLIER_PO_ATTACHMENTS?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Comma-Separated List of paths and files. This is a list of files which is to be 
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

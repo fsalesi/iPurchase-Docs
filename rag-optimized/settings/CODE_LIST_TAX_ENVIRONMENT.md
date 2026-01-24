@@ -4,13 +4,11 @@
 
 LIST format. Dropdown values for tax environment field. Format: LIST:code:description,code:description
 
-**Common questions this answers:**
-- What is CODE_LIST_TAX_ENVIRONMENT?
-- What does CODE_LIST_TAX_ENVIRONMENT do?
-- What is the default value for CODE_LIST_TAX_ENVIRONMENT?
-- How do I configure CODE_LIST_TAX_ENVIRONMENT?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ LIST format. Dropdown values for tax environment field. Format: LIST:code:descri
 | **Owner** | Finance |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

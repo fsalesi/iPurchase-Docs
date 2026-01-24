@@ -4,13 +4,19 @@
 
 Comma Separated list of User ID's or Group ID's that will be directed to the catalog screen as their landing page. Asterisk indicates everyone, a blank indicates no one.
 
-**Common questions this answers:**
-- What is LOGIN_GOTO_CATALOG?
-- What does LOGIN_GOTO_CATALOG do?
-- What is the default value for LOGIN_GOTO_CATALOG?
-- How do I configure LOGIN_GOTO_CATALOG?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Comma Separated list of User ID's or Group ID's that will be directed to the cat
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

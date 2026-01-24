@@ -4,13 +4,11 @@
 
 Numeric. Days before sending reminder emails to pending approvers.
 
-**Common questions this answers:**
-- What is REMINDER_DAYS?
-- What does REMINDER_DAYS do?
-- What is the default value for REMINDER_DAYS?
-- How do I configure REMINDER_DAYS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Numeric. Days before sending reminder emails to pending approvers.
 | **Owner** | Admin |
 | **Default Value** | 3 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

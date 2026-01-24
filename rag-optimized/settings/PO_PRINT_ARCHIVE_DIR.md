@@ -2,15 +2,13 @@
 
 **Category:** Purchase Orders
 
-Directory on application server. Enter the path to a directory on the application server where all purchase orders will be saved to when printing a revision through iPurchase for the first time. Th...
+Directory on application server. Enter the path to a directory on the application server where all purchase orders will be saved to when printing a revision through iPurchase for the first time. This keeps an archive of physical purchase orders.
 
-**Common questions this answers:**
-- What is PO_PRINT_ARCHIVE_DIR?
-- What does PO_PRINT_ARCHIVE_DIR do?
-- What is the default value for PO_PRINT_ARCHIVE_DIR?
-- How do I configure PO_PRINT_ARCHIVE_DIR?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Directory on application server. Enter the path to a directory on the applicatio
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -4,13 +4,11 @@
 
 Windows Task Scheduler task name for iPurchase scheduled jobs.
 
-**Common questions this answers:**
-- What is WINDOWS_TASK_NAME?
-- What does WINDOWS_TASK_NAME do?
-- What is the default value for WINDOWS_TASK_NAME?
-- How do I configure WINDOWS_TASK_NAME?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Windows Task Scheduler task name for iPurchase scheduled jobs.
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

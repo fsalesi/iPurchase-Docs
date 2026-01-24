@@ -4,13 +4,11 @@
 
 Internal network URL for application. Used when APPLICATION_URL/BASE_URL are external-facing.
 
-**Common questions this answers:**
-- What is INTERNAL_URL?
-- What does INTERNAL_URL do?
-- What is the default value for INTERNAL_URL?
-- How do I configure INTERNAL_URL?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Internal network URL for application. Used when APPLICATION_URL/BASE_URL are ext
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

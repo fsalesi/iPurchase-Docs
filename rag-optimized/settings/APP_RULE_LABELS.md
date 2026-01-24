@@ -4,13 +4,11 @@
 
 List of labels for the fields listed in setting APP_RULE_FIELDS
 
-**Common questions this answers:**
-- What is APP_RULE_LABELS?
-- What does APP_RULE_LABELS do?
-- What is the default value for APP_RULE_LABELS?
-- How do I configure APP_RULE_LABELS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ List of labels for the fields listed in setting APP_RULE_FIELDS
 | **Owner** | ISS |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

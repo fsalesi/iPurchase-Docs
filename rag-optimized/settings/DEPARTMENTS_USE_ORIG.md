@@ -2,15 +2,18 @@
 
 **Category:** GL Accounts & Finance
 
-This setting allows the administrator to set the drop down list of departments at the line entry. If set to TRUE the list will be based on the originator.  If set to FALSE, the department is set ba...
+This setting allows the administrator to set the drop down list of departments at the line entry. If set to TRUE the list will be based on the originator.  If set to FALSE, the department is set based on the on behalf of field. User departments are defined in user maintenance. This setting is related to Restrict User Department.
 
-**Common questions this answers:**
-- What is DEPARTMENTS_USE_ORIG?
-- What does DEPARTMENTS_USE_ORIG do?
-- What is the default value for DEPARTMENTS_USE_ORIG?
-- How do I configure DEPARTMENTS_USE_ORIG?
+### How It Works
 
-## Setting Details
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `TRUE` | Enabled |
+| `FALSE` | Disabled |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +22,7 @@ This setting allows the administrator to set the drop down list of departments a
 | **Owner** | Admin |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

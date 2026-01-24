@@ -4,13 +4,11 @@
 
 If this is set to something like en-us"
 
-**Common questions this answers:**
-- What is USE_SINGLE_LANGUAGE?
-- What does USE_SINGLE_LANGUAGE do?
-- What is the default value for USE_SINGLE_LANGUAGE?
-- How do I configure USE_SINGLE_LANGUAGE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ If this is set to something like en-us"
 | **Owner** | then this will be the language selected for all users and the language selection box on the login screen will not be displayed." |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

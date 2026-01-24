@@ -4,13 +4,11 @@
 
 Version of the qxtend PO method for this environment
 
-**Common questions this answers:**
-- What is QX_PO_VERSION?
-- What does QX_PO_VERSION do?
-- What is the default value for QX_PO_VERSION?
-- How do I configure QX_PO_VERSION?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Version of the qxtend PO method for this environment
 | **Owner** |  |
 | **Default Value** | eB2_3 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

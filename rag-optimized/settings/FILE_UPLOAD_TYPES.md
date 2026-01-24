@@ -4,13 +4,11 @@
 
 Comma-separated file extensions. Allowed file types for document uploads (e.g., pdf,doc,docx,xlsx).
 
-**Common questions this answers:**
-- What is FILE_UPLOAD_TYPES?
-- What does FILE_UPLOAD_TYPES do?
-- What is the default value for FILE_UPLOAD_TYPES?
-- How do I configure FILE_UPLOAD_TYPES?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Comma-separated file extensions. Allowed file types for document uploads (e.g., 
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

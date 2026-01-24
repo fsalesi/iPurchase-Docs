@@ -4,13 +4,11 @@
 
 This settings controls if users can copy paste in the requisition workbench. Sometimes copying from internet or PDF files cause item number
 
-**Common questions this answers:**
-- What is ALLOW_COPY_PASTE?
-- What does ALLOW_COPY_PASTE do?
-- What is the default value for ALLOW_COPY_PASTE?
-- How do I configure ALLOW_COPY_PASTE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This settings controls if users can copy paste in the requisition workbench. Som
 | **Owner** | description |
 | **Default Value** | true |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

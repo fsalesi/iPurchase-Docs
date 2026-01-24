@@ -4,13 +4,19 @@
 
 Can-Do list. Users to ignore when calculating supervisor approval workload in load balancing.
 
-**Common questions this answers:**
-- What is IGNORE_SPVSR_LOAD?
-- What does IGNORE_SPVSR_LOAD do?
-- What is the default value for IGNORE_SPVSR_LOAD?
-- How do I configure IGNORE_SPVSR_LOAD?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Can-Do list. Users to ignore when calculating supervisor approval workload in lo
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

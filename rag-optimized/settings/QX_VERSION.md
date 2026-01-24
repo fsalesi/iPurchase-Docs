@@ -4,13 +4,11 @@
 
 Qxtend version number.
 
-**Common questions this answers:**
-- What is QX_VERSION?
-- What does QX_VERSION do?
-- What is the default value for QX_VERSION?
-- How do I configure QX_VERSION?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Qxtend version number.
 | **Owner** | ISS |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -4,14 +4,19 @@
 
 Can-Do list. Users who receive receipt notification emails.
 
-**Common questions this answers:**
-- What is RECEIPT_EMAIL_USERS?
-- What does RECEIPT_EMAIL_USERS do?
-- What is the default value for RECEIPT_EMAIL_USERS?
-- How do I configure RECEIPT_EMAIL_USERS?
-- How does RECEIPT_EMAIL_USERS affect email notifications?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +25,7 @@ Can-Do list. Users who receive receipt notification emails.
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

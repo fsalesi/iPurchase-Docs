@@ -4,13 +4,11 @@
 
 You can control the list of requisition types that will allow a change order, or * for all requisition types.
 
-**Common questions this answers:**
-- What is PO_UPDATE_REQ_TYPES?
-- What does PO_UPDATE_REQ_TYPES do?
-- What is the default value for PO_UPDATE_REQ_TYPES?
-- How do I configure PO_UPDATE_REQ_TYPES?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ You can control the list of requisition types that will allow a change order, or
 | **Owner** | Purchasing |
 | **Default Value** | * |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

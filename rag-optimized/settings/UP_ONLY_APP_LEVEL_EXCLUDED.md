@@ -4,13 +4,11 @@
 
 Comma-separated approval levels. Approval levels to exclude from UP_ONLY rule evaluation.
 
-**Common questions this answers:**
-- What is UP_ONLY_APP_LEVEL_EXCLUDED?
-- What does UP_ONLY_APP_LEVEL_EXCLUDED do?
-- What is the default value for UP_ONLY_APP_LEVEL_EXCLUDED?
-- How do I configure UP_ONLY_APP_LEVEL_EXCLUDED?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Comma-separated approval levels. Approval levels to exclude from UP_ONLY rule ev
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

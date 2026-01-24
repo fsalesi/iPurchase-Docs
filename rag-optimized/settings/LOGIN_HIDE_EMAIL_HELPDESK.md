@@ -4,14 +4,11 @@
 
 Hide the Email Helpdesk link on the login screen
 
-**Common questions this answers:**
-- What is LOGIN_HIDE_EMAIL_HELPDESK?
-- What does LOGIN_HIDE_EMAIL_HELPDESK do?
-- What is the default value for LOGIN_HIDE_EMAIL_HELPDESK?
-- How do I configure LOGIN_HIDE_EMAIL_HELPDESK?
-- How does LOGIN_HIDE_EMAIL_HELPDESK affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ Hide the Email Helpdesk link on the login screen
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

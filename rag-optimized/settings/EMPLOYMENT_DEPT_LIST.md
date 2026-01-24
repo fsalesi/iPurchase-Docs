@@ -4,13 +4,11 @@
 
 Comma-separated department codes. Valid departments for user employment records/profiles.
 
-**Common questions this answers:**
-- What is EMPLOYMENT_DEPT_LIST?
-- What does EMPLOYMENT_DEPT_LIST do?
-- What is the default value for EMPLOYMENT_DEPT_LIST?
-- How do I configure EMPLOYMENT_DEPT_LIST?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Comma-separated department codes. Valid departments for user employment records/
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

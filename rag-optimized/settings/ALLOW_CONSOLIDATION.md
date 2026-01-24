@@ -4,13 +4,11 @@
 
 This setting allows the administrator to turn On or Off the consolidation feature.
 
-**Common questions this answers:**
-- What is ALLOW_CONSOLIDATION?
-- What does ALLOW_CONSOLIDATION do?
-- What is the default value for ALLOW_CONSOLIDATION?
-- How do I configure ALLOW_CONSOLIDATION?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting allows the administrator to turn On or Off the consolidation featur
 | **Owner** | Power Users |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

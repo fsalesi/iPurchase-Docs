@@ -4,13 +4,11 @@
 
 This setting indicates whether or not attachments are copied when a requisition is copied
 
-**Common questions this answers:**
-- What is COPY_ATTACHMENTS?
-- What does COPY_ATTACHMENTS do?
-- What is the default value for COPY_ATTACHMENTS?
-- How do I configure COPY_ATTACHMENTS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting indicates whether or not attachments are copied when a requisition 
 | **Owner** | Admin |
 | **Default Value** | TRUE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

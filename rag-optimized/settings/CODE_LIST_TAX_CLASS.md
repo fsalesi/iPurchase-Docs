@@ -4,13 +4,11 @@
 
 
 
-**Common questions this answers:**
-- What is CODE_LIST_TAX_CLASS?
-- What does CODE_LIST_TAX_CLASS do?
-- What is the default value for CODE_LIST_TAX_CLASS?
-- How do I configure CODE_LIST_TAX_CLASS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@
 | **Owner** | Finance |
 | **Default Value** | comma-separated list of tax classes. List: is not needed on this setting |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -4,13 +4,11 @@
 
 Comma-separated field names. Custom user profile fields to display/edit.
 
-**Common questions this answers:**
-- What is USER_PROFILE_FIELDS?
-- What does USER_PROFILE_FIELDS do?
-- What is the default value for USER_PROFILE_FIELDS?
-- How do I configure USER_PROFILE_FIELDS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Comma-separated field names. Custom user profile fields to display/edit.
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -4,13 +4,11 @@
 
 Do not show vendor parts (vp_mstr) when searching for items in line entry.
 
-**Common questions this answers:**
-- What is ITEM_LOOKUP_NO_VP?
-- What does ITEM_LOOKUP_NO_VP do?
-- What is the default value for ITEM_LOOKUP_NO_VP?
-- How do I configure ITEM_LOOKUP_NO_VP?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Do not show vendor parts (vp_mstr) when searching for items in line entry.
 | **Owner** | Purchasing |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

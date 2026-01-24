@@ -2,16 +2,13 @@
 
 **Category:** Approval Workflow
 
-This setting determines whether supervisors can approve or reject individual line items. Only those line items which are approved will be added to the PO. If there are any items which are neither a...
+This setting determines whether supervisors can approve or reject individual line items. Only those line items which are approved will be added to the PO. If there are any items which are neither approved nor rejected, then the final approval will be disallowed until all items are either approved or rejected.
 
-**Common questions this answers:**
-- What is USE_LINE_APPROVALS?
-- What does USE_LINE_APPROVALS do?
-- What is the default value for USE_LINE_APPROVALS?
-- How do I configure USE_LINE_APPROVALS?
-- How does USE_LINE_APPROVALS affect approval routing?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,11 +17,9 @@ This setting determines whether supervisors can approve or reject individual lin
 | **Owner** | Power Users |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'USE_LINE_APPROVALS'
 ```
-
-**Related settings:** DEFAULT_LINES_TO_APPROVED, DEFAULT_LINES_TO_APPROVED_AUTO

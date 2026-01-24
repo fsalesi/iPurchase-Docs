@@ -4,14 +4,19 @@
 
 Can-Do list. Groups allowed to perform batch approval as the final approver. Restricts batch approval to specific approval steps.
 
-**Common questions this answers:**
-- What is BATCH_APPROVE_GROUPS_FINAL?
-- What does BATCH_APPROVE_GROUPS_FINAL do?
-- What is the default value for BATCH_APPROVE_GROUPS_FINAL?
-- How do I configure BATCH_APPROVE_GROUPS_FINAL?
-- How does BATCH_APPROVE_GROUPS_FINAL affect approval routing?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,11 +25,9 @@ Can-Do list. Groups allowed to perform batch approval as the final approver. Res
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'BATCH_APPROVE_GROUPS_FINAL'
 ```
-
-**Related settings:** BATCH_APPROVE_GROUPS

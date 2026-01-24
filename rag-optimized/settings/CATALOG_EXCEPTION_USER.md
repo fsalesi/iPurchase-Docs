@@ -4,13 +4,19 @@
 
 Can-Do list. Users/groups exempt from catalog-only purchasing restrictions. Can create requisitions outside catalog.
 
-**Common questions this answers:**
-- What is CATALOG_EXCEPTION_USER?
-- What does CATALOG_EXCEPTION_USER do?
-- What is the default value for CATALOG_EXCEPTION_USER?
-- How do I configure CATALOG_EXCEPTION_USER?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Can-Do list. Users/groups exempt from catalog-only purchasing restrictions. Can 
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

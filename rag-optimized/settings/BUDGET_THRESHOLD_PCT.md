@@ -4,13 +4,11 @@
 
 Threshold pct added to defined budget amount before error that you can not create another item using that budget.
 
-**Common questions this answers:**
-- What is BUDGET_THRESHOLD_PCT?
-- What does BUDGET_THRESHOLD_PCT do?
-- What is the default value for BUDGET_THRESHOLD_PCT?
-- How do I configure BUDGET_THRESHOLD_PCT?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Threshold pct added to defined budget amount before error that you can not creat
 | **Owner** | Power Users |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

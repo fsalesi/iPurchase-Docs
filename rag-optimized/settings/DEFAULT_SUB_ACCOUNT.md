@@ -2,15 +2,13 @@
 
 **Category:** GL Accounts & Finance
 
-The default sub account is used when creating requisition from catalogs and punchouts. The order in which iPurchase determines the sub account for a requisition created from a Punchout or Catalog i...
+The default sub account is used when creating requisition from catalogs and punchouts. The order in which iPurchase determines the sub account for a requisition created from a Punchout or Catalog is as follows: First it checks if an account or sub-account is setup for the UNSPSC code being ordered. If one is found then those are assigned. If none are found then it will use the Default_Account value (described above), and the setting in this Default_Sub_Account value. Lastly, if there are overrides at the requisition level (the codes which start "RT" below) then those are used and will override the UNSPSC settings.
 
-**Common questions this answers:**
-- What is DEFAULT_SUB_ACCOUNT?
-- What does DEFAULT_SUB_ACCOUNT do?
-- What is the default value for DEFAULT_SUB_ACCOUNT?
-- How do I configure DEFAULT_SUB_ACCOUNT?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ The default sub account is used when creating requisition from catalogs and punc
 | **Owner** | Finance |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

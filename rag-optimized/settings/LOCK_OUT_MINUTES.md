@@ -4,13 +4,11 @@
 
 The number of minutes a user will be locked out after failing to login more than the value of setting FAILED_LOGIN_ATTEMPTS
 
-**Common questions this answers:**
-- What is LOCK_OUT_MINUTES?
-- What does LOCK_OUT_MINUTES do?
-- What is the default value for LOCK_OUT_MINUTES?
-- How do I configure LOCK_OUT_MINUTES?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ The number of minutes a user will be locked out after failing to login more than
 | **Owner** | Admin |
 | **Default Value** | 10 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

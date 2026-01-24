@@ -4,13 +4,11 @@
 
 Directory path on application server. Folder where user import files are placed for processing.
 
-**Common questions this answers:**
-- What is USER_IMPORT_FOLDER?
-- What does USER_IMPORT_FOLDER do?
-- What is the default value for USER_IMPORT_FOLDER?
-- How do I configure USER_IMPORT_FOLDER?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Directory path on application server. Folder where user import files are placed 
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

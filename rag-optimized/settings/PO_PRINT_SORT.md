@@ -4,13 +4,11 @@
 
 This setting determines the value which will be used to sort the Purchase Order on the PO Print screen.
 
-**Common questions this answers:**
-- What is PO_PRINT_SORT?
-- What does PO_PRINT_SORT do?
-- What is the default value for PO_PRINT_SORT?
-- How do I configure PO_PRINT_SORT?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting determines the value which will be used to sort the Purchase Order 
 | **Owner** | Purchasing |
 | **Default Value** | LINE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -4,13 +4,11 @@
 
 Enter how many minutes of inactivity the system will wait until it logs a user off.
 
-**Common questions this answers:**
-- What is LOGOFF_MINUTES?
-- What does LOGOFF_MINUTES do?
-- What is the default value for LOGOFF_MINUTES?
-- How do I configure LOGOFF_MINUTES?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Enter how many minutes of inactivity the system will wait until it logs a user o
 | **Owner** | Power Users |
 | **Default Value** | 0 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

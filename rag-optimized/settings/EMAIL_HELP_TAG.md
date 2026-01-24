@@ -4,14 +4,11 @@
 
 Include -- If questions, email the helpdesk link on all internal emails."
 
-**Common questions this answers:**
-- What is EMAIL_HELP_TAG?
-- What does EMAIL_HELP_TAG do?
-- What is the default value for EMAIL_HELP_TAG?
-- How do I configure EMAIL_HELP_TAG?
-- How does EMAIL_HELP_TAG affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ Include -- If questions, email the helpdesk link on all internal emails."
 | **Owner** | Admin |
 | **Default Value** | If questions, email the $HELPDESK, or contact the originator, or approver. |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

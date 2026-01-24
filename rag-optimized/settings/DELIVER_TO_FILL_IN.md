@@ -4,13 +4,11 @@
 
 Rather than the Deliver To field being a drop down list of users defined in iPurchase, setting this to TRUE makes the deliver to field an non-validated text field.
 
-**Common questions this answers:**
-- What is DELIVER_TO_FILL_IN?
-- What does DELIVER_TO_FILL_IN do?
-- What is the default value for DELIVER_TO_FILL_IN?
-- How do I configure DELIVER_TO_FILL_IN?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Rather than the Deliver To field being a drop down list of users defined in iPur
 | **Owner** | Power Users |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

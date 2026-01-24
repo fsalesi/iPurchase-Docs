@@ -2,16 +2,21 @@
 
 **Category:** Approval Workflow
 
-Comma separated list of User ID's or group id's that are re-directed to the pending queue once they have approved a requisition. Asterisk indicates everyone, a blank indicates no one. This setting ...
+Comma separated list of User ID's or group id's that are re-directed to the pending queue once they have approved a requisition. Asterisk indicates everyone, a blank indicates no one. This setting determines whether control goes back to the find screen after a requisition has been Approved, or whether it redisplay's the requisition.
 
-**Common questions this answers:**
-- What is INQUIRY_AFTER_APPROVAL?
-- What does INQUIRY_AFTER_APPROVAL do?
-- What is the default value for INQUIRY_AFTER_APPROVAL?
-- How do I configure INQUIRY_AFTER_APPROVAL?
-- How does INQUIRY_AFTER_APPROVAL affect approval routing?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +25,7 @@ Comma separated list of User ID's or group id's that are re-directed to the pend
 | **Owner** | Power Users |
 | **Default Value** | * |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

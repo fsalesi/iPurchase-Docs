@@ -4,13 +4,19 @@
 
 Can-Do list. Users allowed to see profit margins.
 
-**Common questions this answers:**
-- What is SHOW_MARGIN?
-- What does SHOW_MARGIN do?
-- What is the default value for SHOW_MARGIN?
-- How do I configure SHOW_MARGIN?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Can-Do list. Users allowed to see profit margins.
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

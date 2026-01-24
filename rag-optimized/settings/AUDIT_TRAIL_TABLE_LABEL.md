@@ -4,13 +4,11 @@
 
 Technical - Do Not Modify without consulting ISS
 
-**Common questions this answers:**
-- What is AUDIT_TRAIL_TABLE_LABEL?
-- What does AUDIT_TRAIL_TABLE_LABEL do?
-- What is the default value for AUDIT_TRAIL_TABLE_LABEL?
-- How do I configure AUDIT_TRAIL_TABLE_LABEL?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Technical - Do Not Modify without consulting ISS
 | **Owner** | ISS |
 | **Default Value** | ,Requisition Detail,Requisition Header,Rule Field,Rule Header,System Settings,Group Master,User Group Relations,User Master |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -4,13 +4,11 @@
 
 This setting will display the supplier terms on the requisition header.
 
-**Common questions this answers:**
-- What is TERMS_DISPLAY?
-- What does TERMS_DISPLAY do?
-- What is the default value for TERMS_DISPLAY?
-- How do I configure TERMS_DISPLAY?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting will display the supplier terms on the requisition header.
 | **Owner** | Purchasing |
 | **Default Value** | TRUE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

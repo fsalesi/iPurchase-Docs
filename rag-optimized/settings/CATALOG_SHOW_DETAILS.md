@@ -4,13 +4,11 @@
 
 If true, the catalog screen will display supplier, lead time, minimum quantity.
 
-**Common questions this answers:**
-- What is CATALOG_SHOW_DETAILS?
-- What does CATALOG_SHOW_DETAILS do?
-- What is the default value for CATALOG_SHOW_DETAILS?
-- How do I configure CATALOG_SHOW_DETAILS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ If true, the catalog screen will display supplier, lead time, minimum quantity.
 | **Owner** | Admin |
 | **Default Value** | TRUE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

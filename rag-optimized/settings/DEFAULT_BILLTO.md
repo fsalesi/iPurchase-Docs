@@ -4,13 +4,11 @@
 
 The administrator can enter a default value for the "Bill To" field.
 
-**Common questions this answers:**
-- What is DEFAULT_BILLTO?
-- What does DEFAULT_BILLTO do?
-- What is the default value for DEFAULT_BILLTO?
-- How do I configure DEFAULT_BILLTO?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ The administrator can enter a default value for the "Bill To" field.
 | **Owner** | Finance |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

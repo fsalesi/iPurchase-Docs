@@ -4,13 +4,11 @@
 
 URL for AD authentication service.
 
-**Common questions this answers:**
-- What is LOGIN_USE_AD_URL?
-- What does LOGIN_USE_AD_URL do?
-- What is the default value for LOGIN_USE_AD_URL?
-- How do I configure LOGIN_USE_AD_URL?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ URL for AD authentication service.
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

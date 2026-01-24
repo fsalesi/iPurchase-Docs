@@ -4,13 +4,11 @@
 
 Directory path on application server. Folder where AS400 catalog XML files are written. Files are named [req_nbr].xml. Used in catalog integration.
 
-**Common questions this answers:**
-- What is AS400OUTBOUNDFOLDER?
-- What does AS400OUTBOUNDFOLDER do?
-- What is the default value for AS400OUTBOUNDFOLDER?
-- How do I configure AS400OUTBOUNDFOLDER?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Directory path on application server. Folder where AS400 catalog XML files are w
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

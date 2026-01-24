@@ -4,13 +4,11 @@
 
 Phone numbers for SMS notifications.
 
-**Common questions this answers:**
-- What is SMS_TO?
-- What does SMS_TO do?
-- What is the default value for SMS_TO?
-- How do I configure SMS_TO?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Phone numbers for SMS notifications.
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

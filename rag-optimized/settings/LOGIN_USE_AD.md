@@ -4,13 +4,11 @@
 
 Auto login user if using NTLM Active Directory security.
 
-**Common questions this answers:**
-- What is LOGIN_USE_AD?
-- What does LOGIN_USE_AD do?
-- What is the default value for LOGIN_USE_AD?
-- How do I configure LOGIN_USE_AD?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Auto login user if using NTLM Active Directory security.
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

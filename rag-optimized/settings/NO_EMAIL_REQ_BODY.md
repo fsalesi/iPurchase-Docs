@@ -4,14 +4,11 @@
 
 Do not include the requisition print in emails. Only includes the text.
 
-**Common questions this answers:**
-- What is NO_EMAIL_REQ_BODY?
-- What does NO_EMAIL_REQ_BODY do?
-- What is the default value for NO_EMAIL_REQ_BODY?
-- How do I configure NO_EMAIL_REQ_BODY?
-- How does NO_EMAIL_REQ_BODY affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ Do not include the requisition print in emails. Only includes the text.
 | **Owner** | Power Users |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

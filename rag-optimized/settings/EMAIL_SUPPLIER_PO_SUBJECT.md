@@ -2,16 +2,13 @@
 
 **Category:** Email Configuration
 
-This text will be used as the subject of the email going to the supplier. If you'd like the PO number(s) to appear in the subject, add the text "$NBR" without the quotes in the position that you wa...
+This text will be used as the subject of the email going to the supplier. If you'd like the PO number(s) to appear in the subject, add the text "$NBR" without the quotes in the position that you want the PO number to appear.
 
-**Common questions this answers:**
-- What is EMAIL_SUPPLIER_PO_SUBJECT?
-- What does EMAIL_SUPPLIER_PO_SUBJECT do?
-- What is the default value for EMAIL_SUPPLIER_PO_SUBJECT?
-- How do I configure EMAIL_SUPPLIER_PO_SUBJECT?
-- How does EMAIL_SUPPLIER_PO_SUBJECT affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ This text will be used as the subject of the email going to the supplier. If you
 | **Owner** | Purchasing |
 | **Default Value** | New Purchase Order  - $NBR |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

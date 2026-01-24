@@ -4,13 +4,11 @@
 
 How often the system automatically refreshes the inquiry screen in seconds.
 
-**Common questions this answers:**
-- What is INQUIRY_REFRESH_SECONDS?
-- What does INQUIRY_REFRESH_SECONDS do?
-- What is the default value for INQUIRY_REFRESH_SECONDS?
-- How do I configure INQUIRY_REFRESH_SECONDS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ How often the system automatically refreshes the inquiry screen in seconds.
 | **Owner** | Power Users |
 | **Default Value** | 120 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

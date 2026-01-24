@@ -4,13 +4,11 @@
 
 Comma-separated req types. Types where tax is calculated. If blank, all types are taxable.
 
-**Common questions this answers:**
-- What is RT_REQ_TAXABLE?
-- What does RT_REQ_TAXABLE do?
-- What is the default value for RT_REQ_TAXABLE?
-- How do I configure RT_REQ_TAXABLE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Comma-separated req types. Types where tax is calculated. If blank, all types ar
 | **Owner** | Finance |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

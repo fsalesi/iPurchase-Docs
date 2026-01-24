@@ -2,15 +2,13 @@
 
 **Category:** Purchase Orders
 
-Store Purchase Order PDF files in database. A setting of true will display a clock icon next to Purchase Order numbers in iPurchase. Clicking the clock icon will display a list of all original prin...
+Store Purchase Order PDF files in database. A setting of true will display a clock icon next to Purchase Order numbers in iPurchase. Clicking the clock icon will display a list of all original prints for the given Purchase Order.
 
-**Common questions this answers:**
-- What is PO_PRINT_ARCHIVE_IN_DB?
-- What does PO_PRINT_ARCHIVE_IN_DB do?
-- What is the default value for PO_PRINT_ARCHIVE_IN_DB?
-- How do I configure PO_PRINT_ARCHIVE_IN_DB?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Store Purchase Order PDF files in database. A setting of true will display a clo
 | **Owner** | Admin |
 | **Default Value** | TRUE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

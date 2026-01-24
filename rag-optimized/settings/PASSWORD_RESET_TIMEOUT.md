@@ -4,13 +4,11 @@
 
 Technical - Do Not Modify without consulting ISS
 
-**Common questions this answers:**
-- What is PASSWORD_RESET_TIMEOUT?
-- What does PASSWORD_RESET_TIMEOUT do?
-- What is the default value for PASSWORD_RESET_TIMEOUT?
-- How do I configure PASSWORD_RESET_TIMEOUT?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Technical - Do Not Modify without consulting ISS
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

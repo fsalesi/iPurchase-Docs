@@ -4,14 +4,11 @@
 
 Email addresses (comma-separated). Recipients of new user registration notifications.
 
-**Common questions this answers:**
-- What is EMAIL_REGISTRATIONS?
-- What does EMAIL_REGISTRATIONS do?
-- What is the default value for EMAIL_REGISTRATIONS?
-- How do I configure EMAIL_REGISTRATIONS?
-- How does EMAIL_REGISTRATIONS affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ Email addresses (comma-separated). Recipients of new user registration notificat
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

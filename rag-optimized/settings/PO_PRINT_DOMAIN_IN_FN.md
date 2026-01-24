@@ -4,13 +4,11 @@
 
 Technical - Do Not Modify without consulting ISS
 
-**Common questions this answers:**
-- What is PO_PRINT_DOMAIN_IN_FN?
-- What does PO_PRINT_DOMAIN_IN_FN do?
-- What is the default value for PO_PRINT_DOMAIN_IN_FN?
-- How do I configure PO_PRINT_DOMAIN_IN_FN?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Technical - Do Not Modify without consulting ISS
 | **Owner** | ISS |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

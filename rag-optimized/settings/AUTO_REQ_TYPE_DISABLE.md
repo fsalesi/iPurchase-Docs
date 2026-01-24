@@ -4,13 +4,11 @@
 
 Disable the requisition type field when there is at least one line item on a requisition - DO NOT MODIFY
 
-**Common questions this answers:**
-- What is AUTO_REQ_TYPE_DISABLE?
-- What does AUTO_REQ_TYPE_DISABLE do?
-- What is the default value for AUTO_REQ_TYPE_DISABLE?
-- How do I configure AUTO_REQ_TYPE_DISABLE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Disable the requisition type field when there is at least one line item on a req
 | **Owner** | Admin |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

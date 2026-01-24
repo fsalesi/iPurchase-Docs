@@ -2,15 +2,13 @@
 
 **Category:** Purchase Orders
 
-Possible Values: Blank, Punchout, Catalog, Lowest.  During a punchout, if an item ordered via a punchout site also exists in the catalog, do you want to use the Catalog's price rather than the pric...
+Possible Values: Blank, Punchout, Catalog, Lowest.  During a punchout, if an item ordered via a punchout site also exists in the catalog, do you want to use the Catalog's price rather than the price returned from the punchout?
 
-**Common questions this answers:**
-- What is CATALOG_PO_DIFFERENCE?
-- What does CATALOG_PO_DIFFERENCE do?
-- What is the default value for CATALOG_PO_DIFFERENCE?
-- How do I configure CATALOG_PO_DIFFERENCE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Possible Values: Blank, Punchout, Catalog, Lowest.  During a punchout, if an ite
 | **Owner** | Power Users |
 | **Default Value** | Lowest |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

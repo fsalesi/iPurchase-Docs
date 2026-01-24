@@ -4,14 +4,11 @@
 
 Comma-separated email addresses. Additional recipients for purchase order emails beyond default recipients.
 
-**Common questions this answers:**
-- What is EMAIL_PO_ADDITIONAL?
-- What does EMAIL_PO_ADDITIONAL do?
-- What is the default value for EMAIL_PO_ADDITIONAL?
-- How do I configure EMAIL_PO_ADDITIONAL?
-- How does EMAIL_PO_ADDITIONAL affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ Comma-separated email addresses. Additional recipients for purchase order emails
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

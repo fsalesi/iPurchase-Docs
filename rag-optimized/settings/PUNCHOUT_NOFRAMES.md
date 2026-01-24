@@ -2,15 +2,13 @@
 
 **Category:** Catalog & Vendors
 
-iPurchase uses an HTML FRAMESET to display the Punchout website as well as the Return to iPurchase button at the top left. Some suppliers, like Amazon, will not allow the Return to iPurchase button...
+iPurchase uses an HTML FRAMESET to display the Punchout website as well as the Return to iPurchase button at the top left. Some suppliers, like Amazon, will not allow the Return to iPurchase button on top. If the Punchout Supplier that you're working with does not allow the button, then add their Supplier Address Code in this setting as a comma-separated value.
 
-**Common questions this answers:**
-- What is PUNCHOUT_NOFRAMES?
-- What does PUNCHOUT_NOFRAMES do?
-- What is the default value for PUNCHOUT_NOFRAMES?
-- How do I configure PUNCHOUT_NOFRAMES?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ iPurchase uses an HTML FRAMESET to display the Punchout website as well as the R
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

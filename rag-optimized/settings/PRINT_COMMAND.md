@@ -4,13 +4,11 @@
 
 OS command for printing documents (e.g., lp, lpr).
 
-**Common questions this answers:**
-- What is PRINT_COMMAND?
-- What does PRINT_COMMAND do?
-- What is the default value for PRINT_COMMAND?
-- How do I configure PRINT_COMMAND?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ OS command for printing documents (e.g., lp, lpr).
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -4,13 +4,11 @@
 
 In this setting the administrator can set the default value for "Requisition Type" field.
 
-**Common questions this answers:**
-- What is DEFAULT_REQTYPE?
-- What does DEFAULT_REQTYPE do?
-- What is the default value for DEFAULT_REQTYPE?
-- How do I configure DEFAULT_REQTYPE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ In this setting the administrator can set the default value for "Requisition Typ
 | **Owner** | Power Users |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

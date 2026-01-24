@@ -4,15 +4,11 @@
 
 Replies to approval email should go to who? Leave blank for originator. Set to 'OBO' for On behalf of. Set to any single email address.
 
-**Common questions this answers:**
-- What is APPROVAL_EMAIL_REPLY_TO?
-- What does APPROVAL_EMAIL_REPLY_TO do?
-- What is the default value for APPROVAL_EMAIL_REPLY_TO?
-- How do I configure APPROVAL_EMAIL_REPLY_TO?
-- How does APPROVAL_EMAIL_REPLY_TO affect approval routing?
-- How does APPROVAL_EMAIL_REPLY_TO affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -21,7 +17,7 @@ Replies to approval email should go to who? Leave blank for originator. Set to '
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

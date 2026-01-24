@@ -4,13 +4,16 @@
 
 True/false to Show/Hide allocation codes in the account dropdown in req line maintenance.
 
-**Common questions this answers:**
-- What is SHOW_ALLOCATION_CODES?
-- What does SHOW_ALLOCATION_CODES do?
-- What is the default value for SHOW_ALLOCATION_CODES?
-- How do I configure SHOW_ALLOCATION_CODES?
+### How It Works
 
-## Setting Details
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `TRUE` | Enabled |
+| `FALSE` | Disabled |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +22,7 @@ True/false to Show/Hide allocation codes in the account dropdown in req line mai
 | **Owner** | Admin |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

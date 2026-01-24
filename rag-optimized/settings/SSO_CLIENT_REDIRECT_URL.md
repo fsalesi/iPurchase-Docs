@@ -4,13 +4,11 @@
 
 URL to redirect to after SSO authentication.
 
-**Common questions this answers:**
-- What is SSO_CLIENT_REDIRECT_URL?
-- What does SSO_CLIENT_REDIRECT_URL do?
-- What is the default value for SSO_CLIENT_REDIRECT_URL?
-- How do I configure SSO_CLIENT_REDIRECT_URL?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ URL to redirect to after SSO authentication.
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

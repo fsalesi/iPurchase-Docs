@@ -4,13 +4,11 @@
 
 Base URL/hostname (e.g., https://server.company.com). Used in email notifications and scheduled job links. Should be updated on test/backup systems.
 
-**Common questions this answers:**
-- What is BASE_URL?
-- What does BASE_URL do?
-- What is the default value for BASE_URL?
-- How do I configure BASE_URL?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Base URL/hostname (e.g., https://server.company.com). Used in email notification
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

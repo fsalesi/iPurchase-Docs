@@ -4,13 +4,11 @@
 
 Technical - Do Not Modify without consulting ISS
 
-**Common questions this answers:**
-- What is AUDIT_TRAIL_ACTION_LIST?
-- What does AUDIT_TRAIL_ACTION_LIST do?
-- What is the default value for AUDIT_TRAIL_ACTION_LIST?
-- How do I configure AUDIT_TRAIL_ACTION_LIST?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Technical - Do Not Modify without consulting ISS
 | **Owner** | ISS |
 | **Default Value** | ,Create,Delete,Write |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

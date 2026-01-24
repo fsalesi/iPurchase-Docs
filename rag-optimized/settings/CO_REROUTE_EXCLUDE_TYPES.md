@@ -4,13 +4,11 @@
 
 Comma-separated requisition types. Types excluded from change order re-routing even when changes are material.
 
-**Common questions this answers:**
-- What is CO_REROUTE_EXCLUDE_TYPES?
-- What does CO_REROUTE_EXCLUDE_TYPES do?
-- What is the default value for CO_REROUTE_EXCLUDE_TYPES?
-- How do I configure CO_REROUTE_EXCLUDE_TYPES?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Comma-separated requisition types. Types excluded from change order re-routing e
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

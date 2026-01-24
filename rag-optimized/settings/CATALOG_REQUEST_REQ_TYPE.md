@@ -4,13 +4,11 @@
 
 Technical - Do Not Modify
 
-**Common questions this answers:**
-- What is CATALOG_REQUEST_REQ_TYPE?
-- What does CATALOG_REQUEST_REQ_TYPE do?
-- What is the default value for CATALOG_REQUEST_REQ_TYPE?
-- How do I configure CATALOG_REQUEST_REQ_TYPE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Technical - Do Not Modify
 | **Owner** | ISS |
 | **Default Value** | Catalog Request |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

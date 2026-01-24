@@ -4,13 +4,11 @@
 
 LIST format. Dropdown values for credit terms. Format: LIST:code:description,code:description
 
-**Common questions this answers:**
-- What is CODE_LIST_H_CREDIT_TERMS?
-- What does CODE_LIST_H_CREDIT_TERMS do?
-- What is the default value for CODE_LIST_H_CREDIT_TERMS?
-- How do I configure CODE_LIST_H_CREDIT_TERMS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ LIST format. Dropdown values for credit terms. Format: LIST:code:description,cod
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

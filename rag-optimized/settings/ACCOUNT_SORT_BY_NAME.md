@@ -4,13 +4,11 @@
 
 A value of true will show the accounts sorted by name. Any other value will sort by number.
 
-**Common questions this answers:**
-- What is ACCOUNT_SORT_BY_NAME?
-- What does ACCOUNT_SORT_BY_NAME do?
-- What is the default value for ACCOUNT_SORT_BY_NAME?
-- How do I configure ACCOUNT_SORT_BY_NAME?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ A value of true will show the accounts sorted by name. Any other value will sort
 | **Owner** | Power Users |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

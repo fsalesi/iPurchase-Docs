@@ -4,13 +4,11 @@
 
 This setting allows the administrator to set how many days before the password expires to notify user when logging in.
 
-**Common questions this answers:**
-- What is PASSWORD_REMINDER_DAYS?
-- What does PASSWORD_REMINDER_DAYS do?
-- What is the default value for PASSWORD_REMINDER_DAYS?
-- How do I configure PASSWORD_REMINDER_DAYS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting allows the administrator to set how many days before the password e
 | **Owner** | Admin |
 | **Default Value** | 7 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

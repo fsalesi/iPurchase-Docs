@@ -2,15 +2,13 @@
 
 **Category:** Purchase Orders
 
-Use this setting to automatically attach comments to every Purchase Order REVISION - CHANGE ORDER. This is a pointer to the code_mstr field name (code_fldname) value to be used. Example: List:Buyer...
+Use this setting to automatically attach comments to every Purchase Order REVISION - CHANGE ORDER. This is a pointer to the code_mstr field name (code_fldname) value to be used. Example: List:Buyer1:MC1^REF1^Type1^Lang1^Page1| MC2^REF1^Type1^Lang1^Page2, Buyer2:MC2^REF1^Type1^Lang1^Page1 Ex: REF1^Type1^Lang1^Page1| REF1^Type1^Lang1^Page2| REF1^Type1^Lang1^Page1 The Type, Lang, and Page options are all optional.
 
-**Common questions this answers:**
-- What is AUTO_COMMENTS_CO?
-- What does AUTO_COMMENTS_CO do?
-- What is the default value for AUTO_COMMENTS_CO?
-- How do I configure AUTO_COMMENTS_CO?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Use this setting to automatically attach comments to every Purchase Order REVISI
 | **Owner** | Power Users |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

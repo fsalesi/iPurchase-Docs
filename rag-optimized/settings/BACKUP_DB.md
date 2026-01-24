@@ -4,13 +4,11 @@
 
 iPurchase provides a rudimentary backup system. List the full pathname and database name of the iPurchase database
 
-**Common questions this answers:**
-- What is BACKUP_DB?
-- What does BACKUP_DB do?
-- What is the default value for BACKUP_DB?
-- How do I configure BACKUP_DB?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ iPurchase provides a rudimentary backup system. List the full pathname and datab
 | **Owner** | Admin |
 | **Default Value** | ../db/ipurchase.db |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

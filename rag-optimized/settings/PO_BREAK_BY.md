@@ -2,15 +2,21 @@
 
 **Category:** Purchase Orders
 
-Comma separated list of fields on a requisition that will be used to split the requisition into multiple PO's. Or Comma separated list of fields on a requisition that will be used to consolidate PO...
+Comma separated list of fields on a requisition that will be used to split the requisition into multiple PO's. Or Comma separated list of fields on a requisition that will be used to consolidate PO's from multiple requisitions. Ex: xxreqd_vendor,xxreq_site
 
-**Common questions this answers:**
-- What is PO_BREAK_BY?
-- What does PO_BREAK_BY do?
-- What is the default value for PO_BREAK_BY?
-- How do I configure PO_BREAK_BY?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Comma separated list of fields on a requisition that will be used to split the r
 | **Owner** | Power Users |
 | **Default Value** | xxreqd_vendor |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

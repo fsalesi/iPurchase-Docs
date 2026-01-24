@@ -2,15 +2,13 @@
 
 **Category:** System Configuration
 
-The Default Account is used when creating requisition from catalogs and punchouts. The order in which iPurchase determines the account for a requisition created from a Punchout or Catalog is as fol...
+The Default Account is used when creating requisition from catalogs and punchouts. The order in which iPurchase determines the account for a requisition created from a Punchout or Catalog is as follows: First it checks if an account or sub-account is setup for the UNSPSC code being ordered. If one is found then those are assigned. If none are found then it will use the Default_Account value in this setting, and the setting in the Default_Sub_Account value. Lastly, if there are overrides at the requisition level (the codes which start "RT" below) then those are used and will override the UNSPSC settings.
 
-**Common questions this answers:**
-- What is DEFAULT_ACCT?
-- What does DEFAULT_ACCT do?
-- What is the default value for DEFAULT_ACCT?
-- How do I configure DEFAULT_ACCT?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ The Default Account is used when creating requisition from catalogs and punchout
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

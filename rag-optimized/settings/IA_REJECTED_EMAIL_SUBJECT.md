@@ -4,14 +4,11 @@
 
 Email subject line when iApprove document is rejected.
 
-**Common questions this answers:**
-- What is IA_REJECTED_EMAIL_SUBJECT?
-- What does IA_REJECTED_EMAIL_SUBJECT do?
-- What is the default value for IA_REJECTED_EMAIL_SUBJECT?
-- How do I configure IA_REJECTED_EMAIL_SUBJECT?
-- How does IA_REJECTED_EMAIL_SUBJECT affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ Email subject line when iApprove document is rejected.
 | **Owner** | Admin |
 | **Default Value** | Rejected |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

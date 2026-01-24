@@ -4,14 +4,11 @@
 
 Custom text included in supplier confirmation reminder emails.
 
-**Common questions this answers:**
-- What is EMAIL_SUPPLIER_CONFIRMATION_REMINDER_TEXT?
-- What does EMAIL_SUPPLIER_CONFIRMATION_REMINDER_TEXT do?
-- What is the default value for EMAIL_SUPPLIER_CONFIRMATION_REMINDER_TEXT?
-- How do I configure EMAIL_SUPPLIER_CONFIRMATION_REMINDER_TEXT?
-- How does EMAIL_SUPPLIER_CONFIRMATION_REMINDER_TEXT affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ Custom text included in supplier confirmation reminder emails.
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

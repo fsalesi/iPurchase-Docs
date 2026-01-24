@@ -4,13 +4,11 @@
 
 This setting will set the number of days to add to today's date in order to calculate the Need Date on the requisition header.
 
-**Common questions this answers:**
-- What is DEFAULT_LEADTIME?
-- What does DEFAULT_LEADTIME do?
-- What is the default value for DEFAULT_LEADTIME?
-- How do I configure DEFAULT_LEADTIME?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting will set the number of days to add to today's date in order to calc
 | **Owner** | Purchasing |
 | **Default Value** | 0 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

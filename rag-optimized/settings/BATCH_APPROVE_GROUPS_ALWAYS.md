@@ -2,16 +2,21 @@
 
 **Category:** Approval Workflow
 
-Comma-Separated list of User ID's or Group ID's. By default, the setting BATCH_APPROVE_GROUPS will only allow you to batch approve for requisitions that specifically include yourself. Batch approva...
+Comma-Separated list of User ID's or Group ID's. By default, the setting BATCH_APPROVE_GROUPS will only allow you to batch approve for requisitions that specifically include yourself. Batch approval is disabled for requisitions which are delegated to you. Any member of this group setting will be allowed to always batch approve, including delegated requisitions. Asterisk indicates everyone, a blank indicates no one. The Final Approver will not be allowed to batch approve a requisition.
 
-**Common questions this answers:**
-- What is BATCH_APPROVE_GROUPS_ALWAYS?
-- What does BATCH_APPROVE_GROUPS_ALWAYS do?
-- What is the default value for BATCH_APPROVE_GROUPS_ALWAYS?
-- How do I configure BATCH_APPROVE_GROUPS_ALWAYS?
-- How does BATCH_APPROVE_GROUPS_ALWAYS affect approval routing?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,11 +25,9 @@ Comma-Separated list of User ID's or Group ID's. By default, the setting BATCH_A
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'BATCH_APPROVE_GROUPS_ALWAYS'
 ```
-
-**Related settings:** BATCH_APPROVE_GROUPS

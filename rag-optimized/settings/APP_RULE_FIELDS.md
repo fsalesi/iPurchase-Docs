@@ -2,15 +2,13 @@
 
 **Category:** Uncategorized
 
-List of field name from xxreq_mstr and xxreqd_det which appear in the Approval Rule Maintenance Screen for which you want to change the labels for. This list must match in size with the list in set...
+List of field name from xxreq_mstr and xxreqd_det which appear in the Approval Rule Maintenance Screen for which you want to change the labels for. This list must match in size with the list in setting APP_RULE_LABELS. Each field must have an associated label.
 
-**Common questions this answers:**
-- What is APP_RULE_FIELDS?
-- What does APP_RULE_FIELDS do?
-- What is the default value for APP_RULE_FIELDS?
-- How do I configure APP_RULE_FIELDS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ List of field name from xxreq_mstr and xxreqd_det which appear in the Approval R
 | **Owner** | ISS |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

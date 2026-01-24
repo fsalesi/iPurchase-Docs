@@ -2,15 +2,13 @@
 
 **Category:** Approval Workflow
 
-This is the number of days which must elapse before an approver can Approve or Reject a requisition on behalf of someone else who reports to this given supervisor. See SUPERVISOR_ESCALATION_LEVEL a...
+This is the number of days which must elapse before an approver can Approve or Reject a requisition on behalf of someone else who reports to this given supervisor. See SUPERVISOR_ESCALATION_LEVEL and ALLOW_SUPERVISORS_TO_APPROVE for additional settings related to this one.
 
-**Common questions this answers:**
-- What is SUPERVISOR_ESCALATION_DAYS?
-- What does SUPERVISOR_ESCALATION_DAYS do?
-- What is the default value for SUPERVISOR_ESCALATION_DAYS?
-- How do I configure SUPERVISOR_ESCALATION_DAYS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,11 +17,9 @@ This is the number of days which must elapse before an approver can Approve or R
 | **Owner** | Power Users |
 | **Default Value** | 3 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'SUPERVISOR_ESCALATION_DAYS'
 ```
-
-**Related settings:** SUPERVISOR_ESCALATION_LEVEL, ALLOW_SUPERVISORS_TO_APPROVE

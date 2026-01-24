@@ -2,15 +2,13 @@
 
 **Category:** Purchase Orders
 
-This setting holds the report code for the print version you are using. ex: Custom_PurchaseOrderPrint. QAD EE 2012 and above allows the ability to print fancy purchase orders. Requirements: Names Q...
+This setting holds the report code for the print version you are using. ex: Custom_PurchaseOrderPrint. QAD EE 2012 and above allows the ability to print fancy purchase orders. Requirements: Names QAD user. Settings QAD_AUTHENTICATION_USER and QAD_AUTHENTICATION_PASSWORD must be set. The user specified in QAD_AUTHENTICATION_USER must be setup in QAD with a role of "rptAdmin"
 
-**Common questions this answers:**
-- What is PO_PRINTER_REPORT_CODE?
-- What does PO_PRINTER_REPORT_CODE do?
-- What is the default value for PO_PRINTER_REPORT_CODE?
-- How do I configure PO_PRINTER_REPORT_CODE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting holds the report code for the print version you are using. ex: Cust
 | **Owner** | Admin |
 | **Default Value** | PurchaseOrderPrint  |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

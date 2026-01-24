@@ -4,13 +4,11 @@
 
 Does not print the PO when requisition is approved.
 
-**Common questions this answers:**
-- What is PO_DO_NOT_PRINT?
-- What does PO_DO_NOT_PRINT do?
-- What is the default value for PO_DO_NOT_PRINT?
-- How do I configure PO_DO_NOT_PRINT?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Does not print the PO when requisition is approved.
 | **Owner** | Power Users |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

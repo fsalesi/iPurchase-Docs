@@ -4,13 +4,11 @@
 
 In this setting the administrator can set the default value for the "Site" field. Must be a valid site.
 
-**Common questions this answers:**
-- What is DEFAULT_SITE?
-- What does DEFAULT_SITE do?
-- What is the default value for DEFAULT_SITE?
-- How do I configure DEFAULT_SITE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ In this setting the administrator can set the default value for the "Site" field
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

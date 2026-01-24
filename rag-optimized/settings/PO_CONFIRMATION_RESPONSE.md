@@ -4,13 +4,11 @@
 
 Message to display to the supplier when the supplier confirms receipt of the PO by clicking on the Confirm Receipt link in their email message.
 
-**Common questions this answers:**
-- What is PO_CONFIRMATION_RESPONSE?
-- What does PO_CONFIRMATION_RESPONSE do?
-- What is the default value for PO_CONFIRMATION_RESPONSE?
-- How do I configure PO_CONFIRMATION_RESPONSE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Message to display to the supplier when the supplier confirms receipt of the PO 
 | **Owner** | Power Users |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

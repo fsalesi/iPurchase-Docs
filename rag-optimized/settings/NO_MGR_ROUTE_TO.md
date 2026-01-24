@@ -4,13 +4,11 @@
 
 User/group. Skip supervisor chain routing and route directly to this approver.
 
-**Common questions this answers:**
-- What is NO_MGR_ROUTE_TO?
-- What does NO_MGR_ROUTE_TO do?
-- What is the default value for NO_MGR_ROUTE_TO?
-- How do I configure NO_MGR_ROUTE_TO?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ User/group. Skip supervisor chain routing and route directly to this approver.
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

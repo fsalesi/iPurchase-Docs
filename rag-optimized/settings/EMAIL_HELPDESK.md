@@ -4,14 +4,11 @@
 
 Helpdesk Email Address Enter the email address for the helpdesk. Used on login screen as well as all emails.
 
-**Common questions this answers:**
-- What is EMAIL_HELPDESK?
-- What does EMAIL_HELPDESK do?
-- What is the default value for EMAIL_HELPDESK?
-- How do I configure EMAIL_HELPDESK?
-- How does EMAIL_HELPDESK affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ Helpdesk Email Address Enter the email address for the helpdesk. Used on login s
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

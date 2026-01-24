@@ -4,13 +4,19 @@
 
 Comma separated list of User ID's or Group ID's that are allowed to access the requisition inquiry screen Asterisk indicates everyone, a blank indicates no one.
 
-**Common questions this answers:**
-- What is ALLOW_REQ_INQUIRY?
-- What does ALLOW_REQ_INQUIRY do?
-- What is the default value for ALLOW_REQ_INQUIRY?
-- How do I configure ALLOW_REQ_INQUIRY?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Comma separated list of User ID's or Group ID's that are allowed to access the r
 | **Owner** | Admin |
 | **Default Value** | * |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

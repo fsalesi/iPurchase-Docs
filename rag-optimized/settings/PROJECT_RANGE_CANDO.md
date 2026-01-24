@@ -4,13 +4,19 @@
 
 Can-Do list. Valid project codes. Default * allows all.
 
-**Common questions this answers:**
-- What is PROJECT_RANGE_CANDO?
-- What does PROJECT_RANGE_CANDO do?
-- What is the default value for PROJECT_RANGE_CANDO?
-- How do I configure PROJECT_RANGE_CANDO?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Can-Do list. Valid project codes. Default * allows all.
 | **Owner** | Finance |
 | **Default Value** | * |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

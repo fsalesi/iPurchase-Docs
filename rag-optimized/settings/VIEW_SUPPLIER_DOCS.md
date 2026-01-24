@@ -4,13 +4,16 @@
 
 True or False or list of users groups. Default value is blank. Will give the users access to the "Contacts" button in Requisition Workbench
 
-**Common questions this answers:**
-- What is VIEW_SUPPLIER_DOCS?
-- What does VIEW_SUPPLIER_DOCS do?
-- What is the default value for VIEW_SUPPLIER_DOCS?
-- How do I configure VIEW_SUPPLIER_DOCS?
+### How It Works
 
-## Setting Details
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `TRUE` | Enabled |
+| `FALSE` | Disabled |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +22,7 @@ True or False or list of users groups. Default value is blank. Will give the use
 | **Owner** | Admin |
 | **Default Value** | buyers,admin |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

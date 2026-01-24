@@ -4,13 +4,11 @@
 
 This setting allows the administrator to globally change the format of the date fields in iPurchase.
 
-**Common questions this answers:**
-- What is DATE_FORMAT?
-- What does DATE_FORMAT do?
-- What is the default value for DATE_FORMAT?
-- How do I configure DATE_FORMAT?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting allows the administrator to globally change the format of the date 
 | **Owner** | Admin |
 | **Default Value** | mdy |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

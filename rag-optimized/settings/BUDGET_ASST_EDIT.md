@@ -4,13 +4,11 @@
 
 Allow the budget assistant managers specified in a budget the ability to modify the sub budgets. Assistant Managers can't modify the budget header.
 
-**Common questions this answers:**
-- What is BUDGET_ASST_EDIT?
-- What does BUDGET_ASST_EDIT do?
-- What is the default value for BUDGET_ASST_EDIT?
-- How do I configure BUDGET_ASST_EDIT?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Allow the budget assistant managers specified in a budget the ability to modify 
 | **Owner** | Admin |
 | **Default Value** | * |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

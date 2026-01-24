@@ -4,13 +4,11 @@
 
 This is the Approval Level or Sequence when adding supervisors to the approval routing.
 
-**Common questions this answers:**
-- What is APP_SUPERVISOR_SEQ?
-- What does APP_SUPERVISOR_SEQ do?
-- What is the default value for APP_SUPERVISOR_SEQ?
-- How do I configure APP_SUPERVISOR_SEQ?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This is the Approval Level or Sequence when adding supervisors to the approval r
 | **Owner** | Admin |
 | **Default Value** | 10 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

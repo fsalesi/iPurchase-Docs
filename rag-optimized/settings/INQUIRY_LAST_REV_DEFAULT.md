@@ -2,15 +2,13 @@
 
 **Category:** Reporting & Inquiry
 
-Setting this to true will check the Last Revision Only in the requisition inquiry. This is useful when you only want to see the requisition for the last revision of a PO. As opposed to all the requ...
+Setting this to true will check the Last Revision Only in the requisition inquiry. This is useful when you only want to see the requisition for the last revision of a PO. As opposed to all the requisitions for the PO.
 
-**Common questions this answers:**
-- What is INQUIRY_LAST_REV_DEFAULT?
-- What does INQUIRY_LAST_REV_DEFAULT do?
-- What is the default value for INQUIRY_LAST_REV_DEFAULT?
-- How do I configure INQUIRY_LAST_REV_DEFAULT?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Setting this to true will check the Last Revision Only in the requisition inquir
 | **Owner** |  |
 | **Default Value** | TRUE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

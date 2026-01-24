@@ -4,13 +4,11 @@
 
 Report code used for printing blanket purchase orders.
 
-**Common questions this answers:**
-- What is PO_PRINTER_REPORT_CODE_BLANKET?
-- What does PO_PRINTER_REPORT_CODE_BLANKET do?
-- What is the default value for PO_PRINTER_REPORT_CODE_BLANKET?
-- How do I configure PO_PRINTER_REPORT_CODE_BLANKET?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Report code used for printing blanket purchase orders.
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

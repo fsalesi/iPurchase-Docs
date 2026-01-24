@@ -4,14 +4,11 @@
 
 Comma-separated req types. Types that trigger receipt emails.
 
-**Common questions this answers:**
-- What is RECEIPT_EMAIL_REQ_TYPES?
-- What does RECEIPT_EMAIL_REQ_TYPES do?
-- What is the default value for RECEIPT_EMAIL_REQ_TYPES?
-- How do I configure RECEIPT_EMAIL_REQ_TYPES?
-- How does RECEIPT_EMAIL_REQ_TYPES affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ Comma-separated req types. Types that trigger receipt emails.
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

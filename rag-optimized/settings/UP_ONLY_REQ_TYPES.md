@@ -4,13 +4,11 @@
 
 Comma-separated requisition types. Types that use UP_ONLY (Update PO Only) routing rule.
 
-**Common questions this answers:**
-- What is UP_ONLY_REQ_TYPES?
-- What does UP_ONLY_REQ_TYPES do?
-- What is the default value for UP_ONLY_REQ_TYPES?
-- How do I configure UP_ONLY_REQ_TYPES?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Comma-separated requisition types. Types that use UP_ONLY (Update PO Only) routi
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -4,13 +4,11 @@
 
 The background color of the Archive System - default brown
 
-**Common questions this answers:**
-- What is BG_COLOR_ARCHIVE?
-- What does BG_COLOR_ARCHIVE do?
-- What is the default value for BG_COLOR_ARCHIVE?
-- How do I configure BG_COLOR_ARCHIVE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ The background color of the Archive System - default brown
 | **Owner** | Admin |
 | **Default Value** | #FAE0A0 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

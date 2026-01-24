@@ -4,13 +4,11 @@
 
 Product line categorization for Ortho business unit. Customer-specific.
 
-**Common questions this answers:**
-- What is PROD_LINES_ORTHO?
-- What does PROD_LINES_ORTHO do?
-- What is the default value for PROD_LINES_ORTHO?
-- How do I configure PROD_LINES_ORTHO?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Product line categorization for Ortho business unit. Customer-specific.
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

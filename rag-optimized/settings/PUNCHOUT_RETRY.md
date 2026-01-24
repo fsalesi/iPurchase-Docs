@@ -4,13 +4,11 @@
 
 Numeric. Number of retry attempts for failed punchout connections.
 
-**Common questions this answers:**
-- What is PUNCHOUT_RETRY?
-- What does PUNCHOUT_RETRY do?
-- What is the default value for PUNCHOUT_RETRY?
-- How do I configure PUNCHOUT_RETRY?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Numeric. Number of retry attempts for failed punchout connections.
 | **Owner** | Purchasing |
 | **Default Value** | 3 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

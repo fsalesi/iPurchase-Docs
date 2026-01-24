@@ -4,13 +4,11 @@
 
 This setting allows the system to use the current supplier data from the ERP system when a requisition is copied instead of the supplier data coming from the requisition that is being copied.
 
-**Common questions this answers:**
-- What is COPY_USE_CURRENT_CONTACT?
-- What does COPY_USE_CURRENT_CONTACT do?
-- What is the default value for COPY_USE_CURRENT_CONTACT?
-- How do I configure COPY_USE_CURRENT_CONTACT?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting allows the system to use the current supplier data from the ERP sys
 | **Owner** | Power Users |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

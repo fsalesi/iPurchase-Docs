@@ -4,13 +4,19 @@
 
 Can-Do list. Users/groups allowed to access budget monthly reports. Automatically disabled in archive systems.
 
-**Common questions this answers:**
-- What is BUDGET_MONTHLY_REPORT?
-- What does BUDGET_MONTHLY_REPORT do?
-- What is the default value for BUDGET_MONTHLY_REPORT?
-- How do I configure BUDGET_MONTHLY_REPORT?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Can-Do list. Users/groups allowed to access budget monthly reports. Automaticall
 | **Owner** | Finance |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

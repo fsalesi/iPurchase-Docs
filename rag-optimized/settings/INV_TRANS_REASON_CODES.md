@@ -4,13 +4,11 @@
 
 Comma-separated reason codes. Valid transaction reason codes for inventory movements.
 
-**Common questions this answers:**
-- What is INV_TRANS_REASON_CODES?
-- What does INV_TRANS_REASON_CODES do?
-- What is the default value for INV_TRANS_REASON_CODES?
-- How do I configure INV_TRANS_REASON_CODES?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Comma-separated reason codes. Valid transaction reason codes for inventory movem
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

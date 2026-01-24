@@ -4,14 +4,16 @@
 
 A value of True will turn off email functionality. A value of False will turn on email functionality.
 
-**Common questions this answers:**
-- What is NO_EMAILS?
-- What does NO_EMAILS do?
-- What is the default value for NO_EMAILS?
-- How do I configure NO_EMAILS?
-- How does NO_EMAILS affect email notifications?
+### How It Works
 
-## Setting Details
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `TRUE` | Enabled |
+| `FALSE` | Disabled |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +22,7 @@ A value of True will turn off email functionality. A value of False will turn on
 | **Owner** | Admin |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

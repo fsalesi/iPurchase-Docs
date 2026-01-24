@@ -4,13 +4,11 @@
 
 Prefix for requisition numbers in iApprove EAM JE integration.
 
-**Common questions this answers:**
-- What is IAEAMJE_MSTR_REQ_PREFIX?
-- What does IAEAMJE_MSTR_REQ_PREFIX do?
-- What is the default value for IAEAMJE_MSTR_REQ_PREFIX?
-- How do I configure IAEAMJE_MSTR_REQ_PREFIX?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Prefix for requisition numbers in iApprove EAM JE integration.
 | **Owner** | ISS |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

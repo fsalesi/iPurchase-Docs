@@ -4,13 +4,11 @@
 
 Software license key for iPurchase application.
 
-**Common questions this answers:**
-- What is LICENSE?
-- What does LICENSE do?
-- What is the default value for LICENSE?
-- How do I configure LICENSE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Software license key for iPurchase application.
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

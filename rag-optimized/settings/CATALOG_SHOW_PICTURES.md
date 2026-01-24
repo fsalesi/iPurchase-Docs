@@ -4,13 +4,11 @@
 
 If true, images of items will appear in catalogs.
 
-**Common questions this answers:**
-- What is CATALOG_SHOW_PICTURES?
-- What does CATALOG_SHOW_PICTURES do?
-- What is the default value for CATALOG_SHOW_PICTURES?
-- How do I configure CATALOG_SHOW_PICTURES?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ If true, images of items will appear in catalogs.
 | **Owner** | Admin |
 | **Default Value** | TRUE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

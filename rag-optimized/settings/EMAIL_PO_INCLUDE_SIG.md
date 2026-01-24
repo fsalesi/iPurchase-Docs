@@ -2,16 +2,13 @@
 
 **Category:** Email Configuration
 
-This setting includes the buyer's contact information for emails automatically sent to suppliers when PO is created. It also includes logged in user's contact information in emails which are manual...
+This setting includes the buyer's contact information for emails automatically sent to suppliers when PO is created. It also includes logged in user's contact information in emails which are manually sent through iPurchase.
 
-**Common questions this answers:**
-- What is EMAIL_PO_INCLUDE_SIG?
-- What does EMAIL_PO_INCLUDE_SIG do?
-- What is the default value for EMAIL_PO_INCLUDE_SIG?
-- How do I configure EMAIL_PO_INCLUDE_SIG?
-- How does EMAIL_PO_INCLUDE_SIG affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ This setting includes the buyer's contact information for emails automatically s
 | **Owner** | Purchasing |
 | **Default Value** | TRUE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

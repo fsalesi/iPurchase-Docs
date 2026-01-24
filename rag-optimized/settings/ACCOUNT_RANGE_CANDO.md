@@ -2,15 +2,21 @@
 
 **Category:** GL Accounts & Finance
 
-This is a comma separated list of accounts that can be used with iPurchase. The field uses the Progress �Can-Do� function. See Progress help if needed. A sample value can be 5521,!5622,56*,7*,!* Th...
+This is a comma separated list of accounts that can be used with iPurchase. The field uses the Progress �Can-Do� function. See Progress help if needed. A sample value can be 5521,!5622,56*,7*,!* This is interpreted as account 5521 is valid, account 5622 is not valid, any accounts that begin with 56 (except 5622) are valid, any accounts that begin with a 7 are valid, and finally, all other accounts are invalid. These can be further restricted by Requisition Type with other settings.
 
-**Common questions this answers:**
-- What is ACCOUNT_RANGE_CANDO?
-- What does ACCOUNT_RANGE_CANDO do?
-- What is the default value for ACCOUNT_RANGE_CANDO?
-- How do I configure ACCOUNT_RANGE_CANDO?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ This is a comma separated list of accounts that can be used with iPurchase. The 
 | **Owner** | Finance |
 | **Default Value** | * |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

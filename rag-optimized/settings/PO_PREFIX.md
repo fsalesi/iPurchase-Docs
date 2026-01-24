@@ -4,13 +4,11 @@
 
 Prefix added to purchase order numbers (e.g., PO- results in PO-12345).
 
-**Common questions this answers:**
-- What is PO_PREFIX?
-- What does PO_PREFIX do?
-- What is the default value for PO_PREFIX?
-- How do I configure PO_PREFIX?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Prefix added to purchase order numbers (e.g., PO- results in PO-12345).
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

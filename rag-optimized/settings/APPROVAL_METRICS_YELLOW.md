@@ -4,14 +4,11 @@
 
 This setting allows the administrator to set how long the approval time should take before it will turn yellow on the approval metrics. MINUTES
 
-**Common questions this answers:**
-- What is APPROVAL_METRICS_YELLOW?
-- What does APPROVAL_METRICS_YELLOW do?
-- What is the default value for APPROVAL_METRICS_YELLOW?
-- How do I configure APPROVAL_METRICS_YELLOW?
-- How does APPROVAL_METRICS_YELLOW affect approval routing?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ This setting allows the administrator to set how long the approval time should t
 | **Owner** | Admin |
 | **Default Value** | 30 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

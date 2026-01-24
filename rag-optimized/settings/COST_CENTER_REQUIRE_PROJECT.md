@@ -4,13 +4,19 @@
 
 Can-Do list. Cost centers that require a project code. Validation error if project is blank for these cost centers.
 
-**Common questions this answers:**
-- What is COST_CENTER_REQUIRE_PROJECT?
-- What does COST_CENTER_REQUIRE_PROJECT do?
-- What is the default value for COST_CENTER_REQUIRE_PROJECT?
-- How do I configure COST_CENTER_REQUIRE_PROJECT?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Can-Do list. Cost centers that require a project code. Validation error if proje
 | **Owner** | Finance |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

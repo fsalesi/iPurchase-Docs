@@ -4,13 +4,11 @@
 
 Administrator can set the default Cost Center or Departments for Punchouts and Catalog orders.
 
-**Common questions this answers:**
-- What is DEFAULT_CC?
-- What does DEFAULT_CC do?
-- What is the default value for DEFAULT_CC?
-- How do I configure DEFAULT_CC?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Administrator can set the default Cost Center or Departments for Punchouts and C
 | **Owner** | Finance |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

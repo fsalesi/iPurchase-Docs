@@ -4,13 +4,11 @@
 
 Sort field for MRP (Material Requirements Planning) item listings.
 
-**Common questions this answers:**
-- What is MRP_SORT?
-- What does MRP_SORT do?
-- What is the default value for MRP_SORT?
-- How do I configure MRP_SORT?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Sort field for MRP (Material Requirements Planning) item listings.
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -4,14 +4,11 @@
 
 This setting determines whether attachments are added to the email that will go to the supplier when the requisition is approved.
 
-**Common questions this answers:**
-- What is EMAIL_SUPPLIER_ATTACH_FILES?
-- What does EMAIL_SUPPLIER_ATTACH_FILES do?
-- What is the default value for EMAIL_SUPPLIER_ATTACH_FILES?
-- How do I configure EMAIL_SUPPLIER_ATTACH_FILES?
-- How does EMAIL_SUPPLIER_ATTACH_FILES affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ This setting determines whether attachments are added to the email that will go 
 | **Owner** | Admin |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

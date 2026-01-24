@@ -2,15 +2,13 @@
 
 **Category:** ACH Integration
 
-Directory path on application server. Folder where incoming ACH files (*.txt) are placed for processing by the ACH polling job. Processed files are moved to ACH_ARCHIVE_FOLDER. Used in job_iaach_po...
+Directory path on application server. Folder where incoming ACH files (*.txt) are placed for processing by the ACH polling job. Processed files are moved to ACH_ARCHIVE_FOLDER. Used in job_iaach_poller.p.
 
-**Common questions this answers:**
-- What is ACH_POLLING_FOLDER?
-- What does ACH_POLLING_FOLDER do?
-- What is the default value for ACH_POLLING_FOLDER?
-- How do I configure ACH_POLLING_FOLDER?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Directory path on application server. Folder where incoming ACH files (*.txt) ar
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

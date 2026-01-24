@@ -4,15 +4,11 @@
 
 A value of true will send a copy of the supplier email to the final approver when the PO is created.
 
-**Common questions this answers:**
-- What is EMAIL_SUPPLIER_PO_TO_FINAL_APPROVER?
-- What does EMAIL_SUPPLIER_PO_TO_FINAL_APPROVER do?
-- What is the default value for EMAIL_SUPPLIER_PO_TO_FINAL_APPROVER?
-- How do I configure EMAIL_SUPPLIER_PO_TO_FINAL_APPROVER?
-- How does EMAIL_SUPPLIER_PO_TO_FINAL_APPROVER affect approval routing?
-- How does EMAIL_SUPPLIER_PO_TO_FINAL_APPROVER affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -21,7 +17,7 @@ A value of true will send a copy of the supplier email to the final approver whe
 | **Owner** | Power Users |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

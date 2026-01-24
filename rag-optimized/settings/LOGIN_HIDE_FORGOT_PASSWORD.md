@@ -4,13 +4,11 @@
 
 Hide the Forgot Password link on the login screen
 
-**Common questions this answers:**
-- What is LOGIN_HIDE_FORGOT_PASSWORD?
-- What does LOGIN_HIDE_FORGOT_PASSWORD do?
-- What is the default value for LOGIN_HIDE_FORGOT_PASSWORD?
-- How do I configure LOGIN_HIDE_FORGOT_PASSWORD?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Hide the Forgot Password link on the login screen
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

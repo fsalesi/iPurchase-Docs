@@ -4,14 +4,11 @@
 
 
 
-**Common questions this answers:**
-- What is EMAIL_OPEN_PO_INCLUDE_USERS?
-- What does EMAIL_OPEN_PO_INCLUDE_USERS do?
-- What is the default value for EMAIL_OPEN_PO_INCLUDE_USERS?
-- How do I configure EMAIL_OPEN_PO_INCLUDE_USERS?
-- How does EMAIL_OPEN_PO_INCLUDE_USERS affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@
 | **Owner** |  |
 | **Default Value** | * |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

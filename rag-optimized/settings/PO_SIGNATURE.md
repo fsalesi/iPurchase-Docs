@@ -2,15 +2,13 @@
 
 **Category:** Purchase Orders
 
-The value of this setting is a path to the physical file name on the app server. Ex " or apps or iPurchase or signatures or frank.jpg". If the signature is in the wdm or agents folder then you only...
+The value of this setting is a path to the physical file name on the app server. Ex " or apps or iPurchase or signatures or frank.jpg". If the signature is in the wdm or agents folder then you only need to put filename not path. Ex "frank.jpg".
 
-**Common questions this answers:**
-- What is PO_SIGNATURE?
-- What does PO_SIGNATURE do?
-- What is the default value for PO_SIGNATURE?
-- How do I configure PO_SIGNATURE?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ The value of this setting is a path to the physical file name on the app server.
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

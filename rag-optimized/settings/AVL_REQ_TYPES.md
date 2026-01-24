@@ -4,13 +4,11 @@
 
 Comma-separated requisition types. Requisition types that require Approved Vendor List validation. Related: SIG_AVL_REQ_TYPES, USE_SIG_AVL
 
-**Common questions this answers:**
-- What is AVL_REQ_TYPES?
-- What does AVL_REQ_TYPES do?
-- What is the default value for AVL_REQ_TYPES?
-- How do I configure AVL_REQ_TYPES?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Comma-separated requisition types. Requisition types that require Approved Vendo
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

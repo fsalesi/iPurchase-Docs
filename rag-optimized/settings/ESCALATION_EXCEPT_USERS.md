@@ -4,13 +4,19 @@
 
 Can-Do list. Users/groups exempt from approval escalation timeouts. Their pending approvals won't escalate.
 
-**Common questions this answers:**
-- What is ESCALATION_EXCEPT_USERS?
-- What does ESCALATION_EXCEPT_USERS do?
-- What is the default value for ESCALATION_EXCEPT_USERS?
-- How do I configure ESCALATION_EXCEPT_USERS?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Can-Do list. Users/groups exempt from approval escalation timeouts. Their pendin
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

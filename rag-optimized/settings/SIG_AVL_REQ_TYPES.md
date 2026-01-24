@@ -4,13 +4,11 @@
 
 Comma-separated types. Types using signature-based approved vendor list. Related: AVL_REQ_TYPES, USE_SIG_AVL
 
-**Common questions this answers:**
-- What is SIG_AVL_REQ_TYPES?
-- What does SIG_AVL_REQ_TYPES do?
-- What is the default value for SIG_AVL_REQ_TYPES?
-- How do I configure SIG_AVL_REQ_TYPES?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Comma-separated types. Types using signature-based approved vendor list. Related
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

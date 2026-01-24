@@ -4,13 +4,11 @@
 
 Comma-separated transaction types. Valid inventory transaction types.
 
-**Common questions this answers:**
-- What is INV_TRANS_TYPES?
-- What does INV_TRANS_TYPES do?
-- What is the default value for INV_TRANS_TYPES?
-- How do I configure INV_TRANS_TYPES?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Comma-separated transaction types. Valid inventory transaction types.
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -4,13 +4,11 @@
 
 Technical - Do Not Modify without consulting ISS
 
-**Common questions this answers:**
-- What is AUDIT_TRAIL_DOMAIN_EXEMPTION?
-- What does AUDIT_TRAIL_DOMAIN_EXEMPTION do?
-- What is the default value for AUDIT_TRAIL_DOMAIN_EXEMPTION?
-- How do I configure AUDIT_TRAIL_DOMAIN_EXEMPTION?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Technical - Do Not Modify without consulting ISS
 | **Owner** | ISS |
 | **Default Value** | pf_mstr,wus_mstr,wgr_mstr,wugr_mstr |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

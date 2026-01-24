@@ -4,13 +4,11 @@
 
 Printer name defined in QAD. If you're using Optio, Jetforms, Pics, etc, to print graphical purchase orders, enter the name of the printer here, otherwise leave blank.
 
-**Common questions this answers:**
-- What is PO_PRINTER?
-- What does PO_PRINTER do?
-- What is the default value for PO_PRINTER?
-- How do I configure PO_PRINTER?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Printer name defined in QAD. If you're using Optio, Jetforms, Pics, etc, to prin
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

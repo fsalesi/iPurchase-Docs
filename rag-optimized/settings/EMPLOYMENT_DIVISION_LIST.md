@@ -4,13 +4,11 @@
 
 Comma-separated division codes. Valid divisions for user employment records/profiles.
 
-**Common questions this answers:**
-- What is EMPLOYMENT_DIVISION_LIST?
-- What does EMPLOYMENT_DIVISION_LIST do?
-- What is the default value for EMPLOYMENT_DIVISION_LIST?
-- How do I configure EMPLOYMENT_DIVISION_LIST?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Comma-separated division codes. Valid divisions for user employment records/prof
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -4,13 +4,11 @@
 
 Default deliver-to value used when deliver-to field is left blank on requisition.
 
-**Common questions this answers:**
-- What is DELIVER_TO_BLANK_DEFAULT?
-- What does DELIVER_TO_BLANK_DEFAULT do?
-- What is the default value for DELIVER_TO_BLANK_DEFAULT?
-- How do I configure DELIVER_TO_BLANK_DEFAULT?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Default deliver-to value used when deliver-to field is left blank on requisition
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

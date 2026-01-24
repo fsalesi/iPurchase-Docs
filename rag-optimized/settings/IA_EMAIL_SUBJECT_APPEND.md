@@ -4,14 +4,11 @@
 
 Text appended to all iApprove email subject lines. Used for environment identification (e.g., [TEST]).
 
-**Common questions this answers:**
-- What is IA_EMAIL_SUBJECT_APPEND?
-- What does IA_EMAIL_SUBJECT_APPEND do?
-- What is the default value for IA_EMAIL_SUBJECT_APPEND?
-- How do I configure IA_EMAIL_SUBJECT_APPEND?
-- How does IA_EMAIL_SUBJECT_APPEND affect email notifications?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +17,7 @@ Text appended to all iApprove email subject lines. Used for environment identifi
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

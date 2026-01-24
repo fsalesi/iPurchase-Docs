@@ -4,13 +4,11 @@
 
 This setting will use OBO as the Requested By. If you set QAD_REQUESTED_BY to "ORIGINATOR" then the req originator (xxreq_userid) will be used.
 
-**Common questions this answers:**
-- What is QAD_REQUESTED_BY?
-- What does QAD_REQUESTED_BY do?
-- What is the default value for QAD_REQUESTED_BY?
-- How do I configure QAD_REQUESTED_BY?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ This setting will use OBO as the Requested By. If you set QAD_REQUESTED_BY to "O
 | **Owner** | Power Users |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

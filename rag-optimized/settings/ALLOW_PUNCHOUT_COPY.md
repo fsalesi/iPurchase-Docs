@@ -4,13 +4,19 @@
 
 Comma separated list of User ID's or Group ID's that are allowed to copy punchout requisitions (prices may no longer be valid). Asterisk indicates everyone, a blank indicates no one.
 
-**Common questions this answers:**
-- What is ALLOW_PUNCHOUT_COPY?
-- What does ALLOW_PUNCHOUT_COPY do?
-- What is the default value for ALLOW_PUNCHOUT_COPY?
-- How do I configure ALLOW_PUNCHOUT_COPY?
+### How It Works
 
-## Setting Details
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone/all users |
+| Blank/empty | No one/disabled |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +25,7 @@ Comma separated list of User ID's or Group ID's that are allowed to copy punchou
 | **Owner** | Power Users |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

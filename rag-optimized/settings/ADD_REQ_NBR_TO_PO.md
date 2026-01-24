@@ -4,13 +4,11 @@
 
 When a PO is created do you want to add the requisition number and line to pod_req and pod_req_line fields. This should be set to False if using 2009SE or above; or if GRS is being used
 
-**Common questions this answers:**
-- What is ADD_REQ_NBR_TO_PO?
-- What does ADD_REQ_NBR_TO_PO do?
-- What is the default value for ADD_REQ_NBR_TO_PO?
-- How do I configure ADD_REQ_NBR_TO_PO?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ When a PO is created do you want to add the requisition number and line to pod_r
 | **Owner** | Purchasing |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

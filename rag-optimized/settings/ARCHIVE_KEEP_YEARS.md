@@ -4,13 +4,11 @@
 
 The number of years to keep requisitions. Note: Pending Requisitions can't be archived.
 
-**Common questions this answers:**
-- What is ARCHIVE_KEEP_YEARS?
-- What does ARCHIVE_KEEP_YEARS do?
-- What is the default value for ARCHIVE_KEEP_YEARS?
-- How do I configure ARCHIVE_KEEP_YEARS?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ The number of years to keep requisitions. Note: Pending Requisitions can't be ar
 | **Owner** | Finance |
 | **Default Value** | 3 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

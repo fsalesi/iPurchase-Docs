@@ -4,13 +4,11 @@
 
 Qxtend broker server address for Qxtend integration.
 
-**Common questions this answers:**
-- What is QX_BROKER?
-- What does QX_BROKER do?
-- What is the default value for QX_BROKER?
-- How do I configure QX_BROKER?
+### How It Works
 
-## Setting Details
+See the description above for valid values and usage.
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +17,7 @@ Qxtend broker server address for Qxtend integration.
 | **Owner** | ISS |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
