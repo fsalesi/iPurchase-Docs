@@ -807,7 +807,7 @@ pf_mstr
 
 ## See Also
 
-- [iPurchase Tab Documentation](./01b-users-and-groups-ipurchase-tab.md) - Approval limits, supervisor settings
-- [Groups Tab Documentation](./01c-users-and-groups-groups-tab.md) - Group membership
-- [Approval Workflow](../workflows/approval-routing.md) - How user settings affect approvals
-- [Database Schema Reference](../technical/database-schema.md) - Complete wus_mstr schema
+
+
+- Approval Workflow - How user settings affect approvals (documentation pending)
+- Database Schema Reference - Complete wus_mstr schema (documentation pending)

@@ -1,48 +1,51 @@
 # iPurchase Documentation
 
-User and administrator documentation for iPurchase procurement system.
+Comprehensive documentation for iPurchase and iApprove applications.
 
 ## Structure
 
 ```
-ipurchase-docs/
-├── screens/          # Screen-by-screen documentation
-├── components/       # Reusable UI component documentation
-├── workflows/        # Business process workflows
-├── technical/        # Technical reference (database, API, etc.)
-└── screenshots/      # Screenshots organized by topic
-    ├── users-and-groups/
-    └── components/
+├── admin/                  # Shared Administration (iPurchase + iApprove)
+│   ├── screens/            # Admin screen documentation
+│   ├── components/         # Reusable admin UI components
+│   └── screenshots/        # Admin screen screenshots
+│
+├── ipurchase/              # iPurchase End User Documentation
+│   ├── screens/            # User-facing screen documentation
+│   ├── components/         # Reusable user UI components
+│   └── screenshots/        # User screen screenshots
+│
+├── iapprove/               # iApprove Documentation (by module)
+│
+├── implementation/         # Implementation guides
+│
+├── functional/             # Business process documentation
+│
+├── technical/              # Database schemas, APIs
+│
+└── reference/              # Quick reference materials
 ```
 
-## Screens
+## Admin Screens (Shared)
 
-| Screen | Description | Status |
-|--------|-------------|--------|
-| [Users and Groups](screens/01-users-and-groups.md) | User account management, groups, permissions | ✅ Complete |
+Administration screens are shared between iPurchase and iApprove:
 
-## Components
+- [Users and Groups](admin/screens/01-users-and-groups.md) - User account management, groups, permissions
+- [System Settings](admin/screens/02-system-settings.md) - System-wide configuration (550+ settings)
 
-Reusable UI components that appear across multiple screens:
+### Admin Components
 
-| Component | Description |
-|-----------|-------------|
-| [Admin Browse Grid](components/admin-browse.md) | Standard data grid with search, sort, export |
+- [Admin Browse Grid](admin/components/admin-browse.md) - Standard data grid used across all admin screens
 
-## Contributing
+## iPurchase User Screens
 
-When documenting a new screen:
+*(Documentation in progress)*
 
-1. Create the markdown file in `screens/` with naming convention `NN-screen-name.md`
-2. Add screenshots to `screenshots/screen-name/`
-3. Reference shared components rather than duplicating documentation
-4. Include database field mappings for all UI fields
-5. Document business rules and common issues
+## iApprove Modules
 
-## Database Reference
+*(Documentation in progress)*
 
-iPurchase uses OpenEdge/Progress databases:
-- **wdm** - iPurchase application database
-- **mfg** - QAD ERP database
+## Quick Reference
 
-See the [MCP technical schema](../mcp/docs/technical-schema.md) for complete database documentation.
+- **Can-Do List Format**: Comma-separated values, `!` for exclusion, `*` for wildcard, left-to-right evaluation
+- **Setting Patterns**: `RT_[type]_*` for requisition type settings, `RT_[type][site]_*` for site-specific
