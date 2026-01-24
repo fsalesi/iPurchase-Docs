@@ -5,7 +5,7 @@ Comprehensive documentation for iPurchase and iApprove applications.
 ## Quick Links
 
 - [INDEX.md](INDEX.md) - Raw GitHub links for AI assistants
-- [System Settings Reference](reference/system-settings-reference.md) - Complete catalog of 550+ settings by category
+- [System Settings Reference](reference/system-settings-reference.md#table-of-contents) - Complete catalog of 550+ settings by category
 
 ---
 
@@ -77,7 +77,7 @@ Administration screens are shared between iPurchase and iApprove:
 
 ### System Settings
 
-- [System Settings Reference](reference/system-settings-reference.md) - Complete catalog organized by category:
+- [System Settings Reference](reference/system-settings-reference.md#table-of-contents) - Complete catalog organized by category:
   - [Approval Workflow](reference/system-settings-reference.md#approval-workflow) (46 settings)
   - [Email Configuration](reference/system-settings-reference.md#email-configuration) (62 settings)
   - [Purchase Orders](reference/system-settings-reference.md#purchase-orders) (58 settings)

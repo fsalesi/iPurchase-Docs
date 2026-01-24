@@ -33,4 +33,4 @@ This index provides direct raw links to all documentation files for easy access 
 
 ## Reference
 
-- [System Settings Reference](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/reference/system-settings-reference.md) - Complete catalog of 550+ system settings organized by category
+- [System Settings Reference](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/reference/system-settings-reference.md#table-of-contents) - Complete catalog of 550+ system settings organized by category

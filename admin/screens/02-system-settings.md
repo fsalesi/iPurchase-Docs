@@ -446,5 +446,5 @@ ORDER BY pf_attr
 
 ## Related Documentation
 
-- [System Settings Reference](../../reference/system-settings-reference.md) - Complete catalog of all 550+ settings with categories and descriptions
+- [System Settings Reference](../../reference/system-settings-reference.md#table-of-contents) - Complete catalog of all 550+ settings with categories and descriptions
 - [Approval Rules (Complex)](./ipurchase-01-approval-rules.md) - How approval settings affect workflow routing
