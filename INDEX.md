@@ -30,3 +30,7 @@ This index provides direct raw links to all documentation files for easy access 
 ## iPurchase Configuration Screens
 
 - [Approval Rules (Complex)](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/ipurchase-01-approval-rules.md)
+
+## Reference
+
+- [System Settings Bible (CSV)](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/reference/system-settings-bible.csv) - Complete catalog of 550+ system settings with categories

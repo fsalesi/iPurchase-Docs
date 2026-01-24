@@ -297,15 +297,15 @@ Click the magnifying glass next to User/Group List to open the approver picker.
 
 ### User Role Variables
 
-Variables like `$Cost Center:Manager` are defined in the [User Roles](./ipurchase-03-user-roles.md) screen. These dynamically resolve based on field values:
+Variables like `$Cost Center:Manager` are defined in the [User Roles](./ipurchase-03-user-roles.md) screen. The available roles (Manager, Director, VP, SVP, etc.) are configurable via system settings. These variables dynamically resolve based on field values on the requisition:
 
 | Variable | Meaning |
 |----------|---------|
 | `$Cost Center:Manager` | Manager for the cost center on the line |
+| `$Cost Center:VP` | VP for the cost center |
+| `$Cost Center:SVP` | SVP for the cost center |
 | `$Cost Center:Director` | Director for the cost center |
-| `$Account:Director` | Director for the GL account |
 | `$Project:Manager` | Manager for the project code |
-| `$Site:Manager` | Manager for the site |
 
 ---
 
@@ -432,3 +432,15 @@ Every iPurchase implementation includes these default rules:
 - [User Roles](./ipurchase-03-user-roles.md) - Define role-based approvers by cost center, account, project, etc.
 - [Supervisor Chart](./ipurchase-08-supervisor-chart.md) - View organizational hierarchy
 - [Approval Report](./ipurchase-09-approval-report.md) - Report on approval rule configuration
+
+---
+
+## Related System Settings
+
+For approval-related system settings, see the [System Settings Reference](../../reference/system-settings-bible.csv) and filter by Category = "Approval Workflow".
+
+Key settings include:
+- **MULTIPLE_APPROVALS** - How to handle duplicate approvers (keep_all, keep_first, keep_last)
+- **AUTO_APPROVE_FORWARD** - Auto-approve future instances after first approval
+- **ALLOW_SUPERVISORS_TO_APPROVE** - Who can approve for subordinates
+- **USE_APP_AMOUNT_OWN_REQS** - Whether users can self-approve based on their approval limit
