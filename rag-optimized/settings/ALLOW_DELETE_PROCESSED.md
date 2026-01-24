@@ -2,15 +2,30 @@
 
 **Category:** User Management
 
-Comma separated list of User ID's or Group ID's who are allowed to delete a requisition that has been approved and a PO is already created.  Asterisk indicates everyone, a blank indicates no one.
+Controls which users can delete requisitions that have already been approved and converted to purchase orders. This is a sensitive permission as it allows removal of records that have completed the approval process.
 
-**Common questions this answers:**
+### How It Works
+
+When a user attempts to delete a requisition that has been fully approved and has a PO created, the system checks if the user is in this list. Only users in this list can delete processed requisitions.
+
+### Valid Values
+
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md).
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone can delete processed requisitions |
+| Blank/empty | No one can delete processed requisitions |
+| User/Group list | Only specified users or groups can delete |
+
+### Common Questions
+
 - What is ALLOW_DELETE_PROCESSED?
-- What does ALLOW_DELETE_PROCESSED do?
-- What is the default value for ALLOW_DELETE_PROCESSED?
-- How do I configure ALLOW_DELETE_PROCESSED?
+- Who can delete approved requisitions?
+- How do I allow admins to delete processed reqs?
+- Can I restrict requisition deletion?
 
-## Setting Details
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,9 +34,14 @@ Comma separated list of User ID's or Group ID's who are allowed to delete a requ
 | **Owner** | Admin |
 | **Default Value** | admin |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALLOW_DELETE_PROCESSED'
 ```
+
+### Related Settings
+
+- **ALLOW_DELETE_APPROVED** - Delete approved but not yet processed reqs
+- **ALLOW_DELETE_NOT_SUBMITTED** - Delete draft requisitions

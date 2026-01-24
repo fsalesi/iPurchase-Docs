@@ -2,15 +2,30 @@
 
 **Category:** User Management
 
-Comma separated list of User ID's or Group ID's that are allowed to print a purchase order. Use an asterisk for everyone. Leave blank for no one.
+Controls which users can print or view purchase order documents. This is typically used to restrict PO visibility to purchasing staff and management.
 
-**Common questions this answers:**
+### How It Works
+
+When a user attempts to print or view a PO document, the system checks if they are in this list. Users not in the list cannot access PO print functionality.
+
+### Valid Values
+
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md).
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone can print POs (DEFAULT) |
+| Blank/empty | No one can print POs |
+| User/Group list | Only specified users or groups can print |
+
+### Common Questions
+
 - What is ALLOW_PO_PRINT?
-- What does ALLOW_PO_PRINT do?
-- What is the default value for ALLOW_PO_PRINT?
-- How do I configure ALLOW_PO_PRINT?
+- Who can print purchase orders?
+- How do I restrict PO printing to buyers only?
+- Can I allow specific groups to print POs?
 
-## Setting Details
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,9 +34,14 @@ Comma separated list of User ID's or Group ID's that are allowed to print a purc
 | **Owner** | Power Users |
 | **Default Value** | * |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALLOW_PO_PRINT'
 ```
+
+### Related Settings
+
+- **PO_PRINT_PDF_FORMAT** - PDF format for printed POs
+- **EMAIL_SUPPLIER_PO** - Auto-email POs to suppliers

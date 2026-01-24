@@ -1,27 +1,59 @@
 # PO_UPDATE_TOLERANCE_PCT - iPurchase System Setting
 
-**Category:** Purchase Orders
+**Category:** Change Orders
 
-This is the percentage that a requisition can be increased by without requiring re-routing the requisition for approval. This is only for those requisitions that are UPDATING a purchase order.
+Defines the maximum percentage a change order can increase without requiring re-approval. If the change order increases the PO value by less than this percentage, it may bypass the approval workflow (subject to other tolerance settings).
 
-**Common questions this answers:**
+### How It Works
+
+When a user submits a change order, the system calculates the percentage increase from the original PO value. If the increase is within this tolerance percentage, the change order may skip re-routing for approval.
+
+Works in conjunction with PO_UPDATE_TOLERANCE_AMOUNT - both conditions must be met for the change to be considered within tolerance.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| Number | Maximum allowed increase as percentage (e.g., "10" for 10%) |
+| 0 or blank | Any percentage increase requires re-approval |
+
+### Example
+
+```
+Original PO: $1,000
+PO_UPDATE_TOLERANCE_PCT: 10
+PO_UPDATE_TOLERANCE_AMOUNT: 100
+
+Change order to $1,080 (+$80, +8%) -> Within both tolerances, may skip approval
+Change order to $1,150 (+$150, +15%) -> Exceeds 10%, requires approval
+Change order to $1,050 (+$50, +5%) -> Within both tolerances
+```
+
+### Common Questions
+
 - What is PO_UPDATE_TOLERANCE_PCT?
-- What does PO_UPDATE_TOLERANCE_PCT do?
-- What is the default value for PO_UPDATE_TOLERANCE_PCT?
-- How do I configure PO_UPDATE_TOLERANCE_PCT?
+- How do I set change order percentage tolerance?
+- Why did my small change require re-approval?
+- How do tolerance amount and percentage work together?
 
-## Setting Details
+### Setting Details
 
 | Property | Value |
 |----------|-------|
 | **Setting Name** | PO_UPDATE_TOLERANCE_PCT |
-| **Category** | Purchase Orders |
+| **Category** | Change Orders |
 | **Owner** | Admin |
 | **Default Value** | 10 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'PO_UPDATE_TOLERANCE_PCT'
 ```
+
+### Related Settings
+
+- **PO_UPDATE_TOLERANCE_AMOUNT** - Maximum dollar increase allowed
+- **PO_UPDATE_CHECK_REROUTE** - Check if approvers changed regardless of tolerance
+- **CO_HEADER_REROUTE_FIELDS** - Header fields that force re-routing
