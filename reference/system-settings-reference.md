@@ -7,7 +7,7 @@ Complete catalog of 550+ system settings organized by category.
 ## Table of Contents
 
 - [ACH Integration](#ach-integration) (4 settings)
-- [Approval Workflow](#approval-workflow) (46 settings)
+- [Approval Workflow](#approval-workflow) (48 settings)
 - [Catalog & Vendors](#catalog-and-vendors) (41 settings)
 - [Change Orders](#change-orders) (16 settings)
 - [Code Lists & Dropdowns](#code-lists-and-dropdowns) (10 settings)
@@ -27,7 +27,7 @@ Complete catalog of 550+ system settings organized by category.
 - [Requisitions](#requisitions) (51 settings)
 - [Security & Authentication](#security-and-authentication) (27 settings)
 - [System Configuration](#system-configuration) (29 settings)
-- [Uncategorized](#uncategorized) (66 settings)
+- [Uncategorized](#uncategorized) (65 settings)
 - [User Management](#user-management) (45 settings)
 - [iApprove Integration](#iapprove-integration) (13 settings)
 
@@ -84,6 +84,8 @@ Complete catalog of 550+ system settings organized by category.
 | **REMOVE_APPROVER_FROM_GROUPS** | Admin | `FALSE` | TRUE \| FALSE. If TRUE, removes approver from later groups if they already approved. |
 | **REMOVE_APPROVER_ROLE_LIST** | Admin | `admin` | Comma separated list of User ID's or Group ID's that are allowed to remove an Approver from any requisition. Asterisk indicates everyone, a blank indicates no one. |
 | **REMOVE_ORIGINATOR_FROM_GROUP_CO** | Admin | `FALSE` | TRUE \| FALSE. If TRUE, removes originator from approval routing on change orders. |
+| **ROLES** | Admin |  | Comma-separated list of role names that can be assigned in the User Roles screen. These roles are combined with hard-coded Types (Account, Cost Center, Project, Site, Sub Account) to create approva... |
+| **ROLE_MISSING_SKIP_LIST** | Admin |  | Comma-separated list of Types (Cost Center, Account, Project, Sub Account, Site). If a role mapping is missing for a Type in this list, the approval engine skips that approver silently. If a Type i... |
 | **SHOW_APPROVER_METRICS** | Admin | `buyers,admin` | Comma separated list of User ID's or group id's that have access to view approval time metrics in the Requisition Inquiry. Asterisk indicates everyone, a blank indicates no one. |
 | **SUPERVISOR_APPROVAL_FIELD** | Admin | `wus_supervisor` | Field name. Database field used to determine supervisor chain (default: wus_supervisor). |
 | **SUPERVISOR_ESCALATION_ANYTIME** | Admin | `FALSE` | TRUE \| FALSE. If TRUE, supervisors can approve/reject anytime, not just when pending. |
@@ -623,7 +625,6 @@ Complete catalog of 550+ system settings organized by category.
 | **REMOVE_ORIGINATOR_FROM_GROUP** | Admin | `TRUE` | If the originator is listed as a member of a group on the approval routing, if this person should be removed from the group set this setting to TRUE. |
 | **REMOVE_ORIG_CO** | Admin | `FALSE` | This setting does not allow originator to be an approver for their own requisition for Change Orders if set to true. |
 | **REMOVE_ORIG_RELEASE** | Admin | `FALSE` | If set to true, this setting will remove the originator from the approver list on blanket release requisitions. |
-| **ROLE_MISSING_SKIP_LIST** | Admin |  | Values are Cost Center,Account,Project,Sub Account,Site. Only used if using User Roles and special approvers. If a role doesn't have a userid assigned then the rules engine will continue without ad... |
 | **SHOW_ALLOCATION_CODES** | Admin | `FALSE` | True/false to Show/Hide allocation codes in the account dropdown in req line maintenance. |
 | **SHOW_GRAPH** | Admin | `buyers,admin` | Comma separated list of User ID's or group ID's that have access to the graphing functionality. Asterisk indicates everyone, a blank indicates no one. |
 | **SHOW_RULE_INFO** | Power Users | `TRUE` | This setting will show the approval rule name when hovering over the Level or Seq field in the Approval History Tab. |
