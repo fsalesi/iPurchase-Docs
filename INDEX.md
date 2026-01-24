@@ -57,8 +57,14 @@ This index provides direct raw links to all documentation files for easy access 
 
 **Repository:** [github.com/fsalesi/iPurchase-Docs](https://github.com/fsalesi/iPurchase-Docs)
 
+
 ## FAQ
 
 - [FAQ Index](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/README.md) - Frequently asked questions
 - [SSO Azure Setup](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/sso-azure-setup.md) - Azure AD/Entra ID SSO configuration
 - [Requisition Rerouting](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/reroute-rules.md) - Why requisitions reroute
+- [Approvals](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/approvals.md) - Self-approval, escalation, delegation
+- [Change Orders](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/change-orders.md) - Change order behavior and tolerances
+- [User Management](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/user-management.md) - Passwords, permissions, groups
+- [Purchase Orders](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/purchase-orders.md) - PO creation, printing, emailing
+- [Requisition Entry](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/requisition-entry.md) - Types, defaults, accounts

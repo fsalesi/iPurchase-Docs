@@ -161,11 +161,17 @@ Key tables documented across screens:
 
 ---
 
+
 ## FAQ
 
 - [FAQ Index](faq/README.md) - Frequently asked questions
   - [SSO Azure Setup](faq/sso-azure-setup.md) - Azure AD/Entra ID configuration
   - [Requisition Rerouting](faq/reroute-rules.md) - Why requisitions reroute
+  - [Approvals](faq/approvals.md) - Self-approval, escalation, delegation
+  - [Change Orders](faq/change-orders.md) - Tolerances, field monitoring
+  - [User Management](faq/user-management.md) - Passwords, permissions, groups
+  - [Purchase Orders](faq/purchase-orders.md) - PO creation, printing, emailing
+  - [Requisition Entry](faq/requisition-entry.md) - Types, defaults, accounts
 
 ## Contributing
 
