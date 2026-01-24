@@ -110,6 +110,23 @@ Administration screens are shared between iPurchase and iApprove:
   - [Change Orders](reference/system-settings-reference.md#change-orders) (16 settings)
   - [And 18 more categories...](reference/system-settings-reference.md#table-of-contents)
 
+### Approval Workflows
+
+- [Approval Systems Reference](reference/approval-systems.md) - Complete approval workflow documentation:
+  - Simple rules (xxapp_mstr) vs Complex rules (xxAppRule)
+  - Rule evaluation logic and sequence ordering
+  - Special approver variables ($SUPERVISORS, $FIRST_SUPERVISOR, etc.)
+  - Validation rules and notification rules
+  - Change order approval routing
+
+### Administration
+
+- [Admin Guide](reference/admin-guide.md) - Administrative procedures and best practices:
+  - User setup and management
+  - Approval rule configuration
+  - Troubleshooting workflows
+  - Common administrative tasks
+
 ### Quick Reference
 
 - **Can-Do List Format**: See [Can-Do List Format](reference/can-do-list-format.md) - Pattern matching for permissions and filters
