@@ -89,7 +89,7 @@ Administration screens are shared between iPurchase and iApprove:
 
 ### Quick Reference
 
-- **Can-Do List Format**: Comma-separated values, `!` for exclusion, `*` for wildcard, left-to-right evaluation
+- **Can-Do List Format**: See [Can-Do List Format](reference/can-do-list-format.md) - Pattern matching for permissions and filters
 - **Setting Patterns**: `RT_[type]_*` for requisition type settings, `RT_[type][site]_*` for site-specific overrides
 - **Environment Variables**: Set `TEST_SYSTEM=TRUE` on broker/PASOE for dev/test environments
 

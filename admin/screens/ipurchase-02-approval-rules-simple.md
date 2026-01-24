@@ -249,6 +249,10 @@ All filter fields use **Can-Do list** format. A rule triggers only when ALL filt
 
 ## Can-Do List Format
 
+For complete documentation, see [Can-Do List Format Reference](../../reference/can-do-list-format.md).
+
+Quick reference:
+
 Simple Rules use Can-Do list format for all filter fields:
 
 | Pattern | Meaning |

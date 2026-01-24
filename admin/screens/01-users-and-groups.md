@@ -678,6 +678,10 @@ pf_mstr
 
 ---
 
+## Related Documentation
+
+- [Can-Do List Format](../../reference/can-do-list-format.md) - Pattern matching syntax used for domain/site/CC access
+
 ## Related Screens
 
 - [System Settings](./02-system-settings.md) - System-wide configuration
