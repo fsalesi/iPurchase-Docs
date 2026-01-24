@@ -72,3 +72,4 @@ Displays the current Propath configuration for the selected broker - the list of
 1. **Select correct broker** - Each broker may have different Propath settings
 2. **compile System** takes time - Use for full deployments only
 3. **Check Show Details** - To see compilation errors if something fails
+4. **Directory order** - When entering multiple directories, enter them in reverse order
