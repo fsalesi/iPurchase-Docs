@@ -229,6 +229,7 @@ PO_UPDATE_CHECK_REROUTE = FALSE
 - [Approval Strategy Guide](../../reference/approval-strategy-guide.md) - Change order rules section
 - [System Settings Reference](../../reference/system-settings-reference.md) - All tolerance settings
 - [Change Orders FAQ](change-orders.md) - More change order questions
+- [Approvals FAQ](approvals.md) - Approval workflow questions
 
 ---
 

@@ -252,7 +252,7 @@ RT_EXPENSE_10000_DEFAULT_BUYER = site10_buyer
 
 ## See Also
 
-- [System Settings Reference](../../../reference/system-settings-reference.md) - Complete settings catalog
+- [System Settings Reference](../../reference/system-settings-reference.md) - Complete settings catalog
 - [Requisition Entry FAQ](../ipurchase/requisition-entry.md) - More on defaults and required fields
 
 ---

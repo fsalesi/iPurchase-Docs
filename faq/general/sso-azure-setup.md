@@ -173,7 +173,7 @@ Once testing is successful:
 ## See Also
 
 - [System Settings Reference](../../reference/system-settings-reference.md) - Complete settings catalog
-- [Users and Groups](../admin/screens/01-users-and-groups.md) - User email configuration
+- [Users and Groups](../../admin/screens/01-users-and-groups.md) - User email configuration
 
 ---
 

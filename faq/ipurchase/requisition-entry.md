@@ -246,7 +246,8 @@ A req type where lines are memo/notes only - no items, quantities, or costs.
 
 - [System Settings Reference](../../reference/system-settings-reference.md) - All RT_ settings
 - [Approvals FAQ](approvals.md) - Approval routing
-- [User Management FAQ](user-management.md) - Department restrictions
+- [User Management FAQ](../general/user-management.md) - Department restrictions
+- [System Settings FAQ](../general/system-settings.md) - CODE_LIST and RT_ settings
 
 ---
 

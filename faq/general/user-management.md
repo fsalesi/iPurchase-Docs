@@ -205,7 +205,7 @@ Set `wus_disable = TRUE` in their user profile.
 
 ## See Also
 
-- [Users and Groups Screen](../admin/screens/01-users-and-groups.md) - Administration screen
+- [Users and Groups Screen](../../admin/screens/01-users-and-groups.md) - Administration screen
 - [Approvals FAQ](../ipurchase/approvals.md) - Delegation and escalation
 - [SSO Azure Setup](sso-azure-setup.md) - Single Sign-On configuration
 

@@ -190,6 +190,7 @@ Yes, using the "Add Approver" function.
 - [Approval Strategy Guide](../../reference/approval-strategy-guide.md) - Rule configuration
 - [Requisition Rerouting](reroute-rules.md) - When approvals reroute
 - [User Management](../general/user-management.md) - User setup and permissions
+- [System Settings FAQ](../general/system-settings.md) - Domain-specific settings
 
 ---
 
