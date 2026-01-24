@@ -14,6 +14,8 @@ If the requisition has an "On Behalf Of" user specified, the OBO user's approval
 
 ### Valid Values
 
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md).
+
 | Value | Behavior |
 |-------|----------|
 | `*` (asterisk) | Everyone can self-approve within their limit |

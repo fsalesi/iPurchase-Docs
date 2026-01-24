@@ -12,11 +12,13 @@ When a user approves a requisition and they appear again later in the approval c
 
 ### Valid Values
 
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md).
+
 | Value | Behavior |
 |-------|----------|
 | `TRUE` | Enable auto-forward for all users |
 | `FALSE` | Disable - users must approve each instance manually |
-| Can-Do list | Enable for specific users/groups only |
+| User/Group list | Enable for specific users/groups only |
 
 ### Example
 

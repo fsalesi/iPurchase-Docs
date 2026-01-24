@@ -2,15 +2,38 @@
 
 **Category:** Change Orders
 
-Comma Separated list of item fields which will force a change order to automatically re-route if they are changed.
+Specifies which requisition line item fields, when changed in a change order, will automatically force re-routing for approval regardless of tolerance settings.
 
-**Common questions this answers:**
+### How It Works
+
+When a user modifies line items in a change order, the system checks if any of the fields listed in this setting have been changed from their original values. If so, the change order is flagged as a "material change" and must go through the full approval workflow.
+
+### Valid Values
+
+Comma-separated list of line field names from the xxreqd_det table.
+
+| Example Value | Meaning |
+|---------------|---------|
+| `xxreqd_cc` | Changing cost center forces re-approval |
+| `xxreqd_cc,xxreqd_acct` | Changing cost center OR account forces re-approval |
+| (blank) | No line fields force re-routing |
+
+### Common Line Fields
+
+- `xxreqd_cc` - Cost center
+- `xxreqd_acct` - GL account
+- `xxreqd_sub` - Sub-account
+- `xxreqd_project` - Project code
+- `xxreqd_site` - Line site
+
+### Common Questions
+
 - What is CO_ITEM_REROUTE_FIELDS?
-- What does CO_ITEM_REROUTE_FIELDS do?
-- What is the default value for CO_ITEM_REROUTE_FIELDS?
-- How do I configure CO_ITEM_REROUTE_FIELDS?
+- Why did my change order require re-approval when I only changed the cost center?
+- How do I control which line changes require re-approval?
+- What line fields can I monitor for changes?
 
-## Setting Details
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,9 +42,16 @@ Comma Separated list of item fields which will force a change order to automatic
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'CO_ITEM_REROUTE_FIELDS'
 ```
+
+### Related Settings
+
+- **CO_HEADER_REROUTE_FIELDS** - Header fields that force re-routing
+- **CO_ITEM_REROUTE_NEW** - Whether new lines force re-routing
+- **PO_UPDATE_TOLERANCE_AMOUNT** - Dollar tolerance for changes
+- **PO_UPDATE_TOLERANCE_PCT** - Percentage tolerance for changes

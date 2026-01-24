@@ -10,6 +10,8 @@ When enabled, a supervisor can approve or reject requisitions that are pending f
 
 ### Valid Values
 
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md).
+
 | Value | Behavior |
 |-------|----------|
 | `*` (asterisk) | All supervisors can approve for their subordinates |
