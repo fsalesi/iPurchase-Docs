@@ -56,3 +56,9 @@ This index provides direct raw links to all documentation files for easy access 
 **Raw Index URL:** `https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/INDEX.md`
 
 **Repository:** [github.com/fsalesi/iPurchase-Docs](https://github.com/fsalesi/iPurchase-Docs)
+
+## FAQ
+
+- [FAQ Index](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/README.md) - Frequently asked questions
+- [SSO Azure Setup](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/sso-azure-setup.md) - Azure AD/Entra ID SSO configuration
+- [Requisition Rerouting](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/reroute-rules.md) - Why requisitions reroute

@@ -161,6 +161,12 @@ Key tables documented across screens:
 
 ---
 
+## FAQ
+
+- [FAQ Index](faq/README.md) - Frequently asked questions
+  - [SSO Azure Setup](faq/sso-azure-setup.md) - Azure AD/Entra ID configuration
+  - [Requisition Rerouting](faq/reroute-rules.md) - Why requisitions reroute
+
 ## Contributing
 
 Documentation follows these conventions:
