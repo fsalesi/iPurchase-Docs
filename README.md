@@ -61,7 +61,7 @@ Administration screens are shared between iPurchase and iApprove:
 | 06 | [UNSPSC Accounts](admin/screens/ipurchase-06-unspsc-accounts.md) | UNSPSC to GL account mapping | ✅ Complete |
 | 07 | [Supplier Location Maintenance](admin/screens/ipurchase-07-supplier-location-maintenance.md) | Default receiving locations by supplier/site | ✅ Complete |
 | 08 | [Supervisor Chart](admin/screens/ipurchase-08-supervisor-chart.md) | Org chart from supervisor relationships | ✅ Complete |
-| 09 | Approval Report | Approval rule configuration report | 🔜 Planned |
+| 09 | [Approval Report](admin/screens/ipurchase-09-approval-report.md) | Audit report of all approval rules | ✅ Complete |
 | 10 | PO Number Prefix | Purchase order numbering by site/type | 🔜 Planned |
 | 11 | Purpose Maintenance | Requisition purpose codes | 🔜 Planned |
 
