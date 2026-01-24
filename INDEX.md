@@ -9,6 +9,7 @@ This index provides direct raw links to all documentation files for easy access 
 - [Approval Systems](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/reference/approval-systems.md) - Approval workflow logic and routing
 - [Admin Guide](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/reference/admin-guide.md) - Administrative procedures
 - [Can-Do List Format](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/reference/can-do-list-format.md) - Pattern matching syntax
+- [Approval Strategy Guide](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/reference/approval-strategy-guide.md) - Practical approval implementation guide
 
 ## Administration Screens
 

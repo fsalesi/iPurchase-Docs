@@ -119,6 +119,15 @@ Administration screens are shared between iPurchase and iApprove:
   - Validation rules and notification rules
   - Change order approval routing
 
+### Approval Strategy
+
+- [Approval Strategy Guide](reference/approval-strategy-guide.md) - Practical implementation guide:
+  - When to use Simple vs Complex vs Role-Based rules
+  - Executive-level approvals (CFO/CEO/Board)
+  - Supervisor chain variables and cross-department charging
+  - Approver list behavior (comma-separated = ALL must approve)
+  - Best practices for groups, Stop/Notify options, default rules
+
 ### Administration
 
 - [Admin Guide](reference/admin-guide.md) - Administrative procedures and best practices:
