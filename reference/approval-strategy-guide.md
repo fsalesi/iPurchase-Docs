@@ -52,12 +52,58 @@ For each cost center, you typically need 4-5 rules to handle the approval hierar
 
 | Seq | Description | Approver | Min Amount | Max Amount | Cost Center |
 |-----|-------------|----------|------------|------------|-------------|
-| 100 | CC8100 Supervisor | john.smith | $0 | $999.99 | 8100 |
-| 101 | CC8100 Manager | mary.jones | $1,000 | $4,999.99 | 8100 |
-| 102 | CC8100 Director | bob.wilson | $5,000 | $24,999.99 | 8100 |
-| 103 | CC8100 VP | sarah.chen | $25,000 | $99,999.99 | 8100 |
+| 200 | CC8100 Supervisor | cc8100_supervisor | $0 | $999.99 | 8100 |
+| 250 | CC8100 Manager | cc8100_manager | $1,000 | $4,999.99 | 8100 |
+| 300 | CC8100 Director | cc8100_director | $5,000 | $24,999.99 | 8100 |
+| 400 | CC8100 VP | cc8100_vp | $25,000 | $99,999.99 | 8100 |
 
 **Note:** Rules at $100,000+ should typically be handled by Complex Rules (see next section).
+
+### Amount Range Strategy: Two Approaches
+
+There are two valid strategies for setting amount ranges, each with different approval behavior:
+
+#### Approach 1: Strict Ranges (Only Matching Level Approves)
+
+Set each level's maximum to just below the next level's minimum:
+
+| Seq | Approver | Min Amount | Max Amount | Effect |
+|-----|----------|------------|------------|--------|
+| 200 | Supervisor | $0 | $999.99 | ONLY approves $0-$999.99 |
+| 250 | Manager | $1,000 | $4,999.99 | ONLY approves $1K-$4,999.99 |
+| 300 | Director | $5,000 | $24,999.99 | ONLY approves $5K-$24,999.99 |
+| 400 | VP | $25,000 | $99,999.99 | ONLY approves $25K-$99,999.99 |
+
+**Result for a $50,000 requisition:** Only the VP approves (one approval).
+
+**Use when:** You want the minimum number of approvals—only the level with authority for that amount.
+
+#### Approach 2: Open Ranges (Full Chain Approval)
+
+Set maximum to a very high number (e.g., $9,999,999) for all levels:
+
+| Seq | Approver | Min Amount | Max Amount | Effect |
+|-----|----------|------------|------------|--------|
+| 200 | Supervisor | $0 | $9,999,999 | Approves ALL amounts |
+| 250 | Manager | $1,000 | $9,999,999 | Approves $1K and above |
+| 300 | Director | $5,000 | $9,999,999 | Approves $5K and above |
+| 400 | VP | $25,000 | $9,999,999 | Approves $25K and above |
+
+**Result for a $50,000 requisition:** Supervisor → Manager → Director → VP (four approvals in sequence).
+
+**Use when:** You want full visibility up the chain. Even though the Supervisor can't unilaterally approve a $50K requisition, they still review and approve as part of the chain. This ensures every level is aware of significant purchases in their area.
+
+#### Choosing the Right Approach
+
+| Consideration | Strict Ranges | Open Ranges |
+|---------------|---------------|-------------|
+| Number of approvals | Fewer | More |
+| Processing time | Faster | Slower |
+| Visibility | Only final approver sees it | Entire chain sees it |
+| Audit trail | Single approval | Full chain documented |
+| Common use | High-volume, low-risk purchases | Significant expenditures requiring oversight |
+
+Many organizations use a **hybrid approach**: strict ranges for routine purchases under $5K, open ranges for larger amounts where chain visibility is valuable.
 
 ### The Cost Center Multiplication Problem
 
@@ -70,9 +116,72 @@ This is where Role-Based Approvals can help (see [Role-Based Approvals](#role-ba
 
 ### Configuration Tips
 
-1. **Use Amount Ranges:** Set both minimum and maximum amounts to prevent overlap
-2. **Sequence Numbers:** Use a consistent numbering scheme (e.g., 100-199 for CC 8100, 200-299 for CC 8200)
-3. **Which Cost Field:** Use "Header" for total requisition cost, "Line" for line-by-line evaluation
+#### 1. Sequence Number Strategy
+
+Use a consistent sequence numbering scheme that groups rules by **approval level**, not by cost center:
+
+| Sequence Range | Approval Level |
+|----------------|----------------|
+| 200-249 | All Supervisors |
+| 250-299 | All Managers |
+| 300-399 | All Directors |
+| 400-499 | All VPs |
+| 500-599 | CFO (Complex Rules) |
+| 600-699 | CEO (Complex Rules) |
+| 700-799 | Board (Complex Rules) |
+| 900-999 | Default/Safety Net Rules |
+
+**Why this matters:** When a requisition is evaluated, rules are processed in sequence order. By grouping all supervisors together (seq 200-249), all supervisors across all cost centers approve at the same "level" before any managers are considered. This creates a clean, predictable approval flow.
+
+**Example:**
+```
+Seq 200: CC8100 Supervisor
+Seq 201: CC8200 Supervisor  
+Seq 202: CC8300 Supervisor
+Seq 250: CC8100 Manager
+Seq 251: CC8200 Manager
+Seq 252: CC8300 Manager
+...
+```
+
+#### 2. Which Cost Field: Header vs. Line
+
+This setting determines how the rule's amount thresholds are compared:
+
+**Header (Total Requisition Cost)**
+- Compares against the **total requisition amount**
+- Creates **one approval record** if the rule matches
+- Best for: "If the total req exceeds $10K, VP must approve"
+
+**Line (Individual Line Evaluation)**
+- Compares against **each line item's amount separately**
+- Can create **multiple approval records** from a single rule
+- Best for: Cross-department charging, commodity-specific approvals
+
+**Example Scenario:**
+
+A $15,000 requisition with 3 lines:
+- Line 1: $8,000 to Cost Center 8100
+- Line 2: $5,000 to Cost Center 8200  
+- Line 3: $2,000 to Cost Center 8300
+
+**With "Header" setting:**
+- Rule checks: Is $15,000 (total) within my amount range?
+- Result: One approval based on total
+
+**With "Line" setting:**
+- Rule checks each line separately: Is $8,000 within range? Is $5,000? Is $2,000?
+- Result: Could generate up to 3 separate approvals (one per line)
+
+**When to use "Line":**
+- Cross-department requisitions where each department should approve their portion
+- Different approval requirements based on what's being purchased (by UNSPSC code)
+- When you need granular control over who approves what
+
+**When to use "Header":**
+- Executive-level rules (CFO approves total spend over $100K)
+- Most standard cost center approvals
+- When you want simpler, faster routing
 
 ---
 
@@ -143,12 +252,9 @@ Instead of creating rules for every cost center, assign **roles** to users and c
 ### How It Works
 
 1. **Define Roles:** Manager, Director, VP, etc.
-2. **Assign Roles to Users:** 
-   - John Smith is "Manager" for Cost Center 8100
-   - Mary Jones is "Manager" for Cost Center 8200
-3. **Create One Rule:**
-   - "Cost Center Manager must approve $1,000 - $4,999"
-   - System automatically routes to the right person based on cost center
+2. **Assign Roles to Users:** Each assignment links a user, role, and cost center
+3. **Create One Rule:** "Cost Center Manager must approve $1,000 - $4,999"
+4. **System Routes Automatically:** Based on the requisition's cost center, finds the user with that role
 
 ### Example Setup
 
@@ -157,19 +263,32 @@ Instead of creating rules for every cost center, assign **roles** to users and c
 | User | Role | Cost Center |
 |------|------|-------------|
 | john.smith | Manager | 8100 |
+| john.smith | Manager | 8150 |
 | mary.jones | Manager | 8200 |
-| bob.wilson | Director | 8100,8200 |
-| sarah.chen | VP | 81*,82* |
+| bob.wilson | Director | 8100 |
+| bob.wilson | Director | 8200 |
+| sarah.chen | VP | 81* |
+| sarah.chen | VP | 82* |
+
+**Important:** Each row is a separate role assignment. If John Smith is the Manager for both CC 8100 and CC 8150, you need **two rows**—one for each cost center. The system looks up "who is the Manager for this specific cost center" when routing.
 
 **Approval Rules:**
 
 | Seq | Description | Approver | Min Amount | Max Amount |
 |-----|-------------|----------|------------|------------|
-| 100 | CC Manager | $ROLE:Manager | $1,000 | $4,999 |
-| 200 | CC Director | $ROLE:Director | $5,000 | $24,999 |
-| 300 | CC VP | $ROLE:VP | $25,000 | $99,999 |
+| 250 | CC Manager | $ROLE:Manager | $1,000 | $4,999 |
+| 300 | CC Director | $ROLE:Director | $5,000 | $24,999 |
+| 400 | CC VP | $ROLE:VP | $25,000 | $99,999 |
 
-**Result:** 3 rules instead of potentially hundreds!
+**Result:** 3 rules handle the entire organization instead of potentially hundreds!
+
+### Wildcard Cost Centers
+
+Notice Sarah Chen's VP assignments use wildcards: `81*` and `82*`. This means she's the VP approver for:
+- All cost centers starting with 81 (8100, 8110, 8150, etc.)
+- All cost centers starting with 82 (8200, 8210, 8250, etc.)
+
+This is powerful for executives who oversee entire divisions.
 
 ### The Catch: Exception Handling
 
@@ -185,8 +304,8 @@ Role-based rules work beautifully **until one cost center behaves differently**.
 
 | Seq | Description | Approver | Cost Center Filter |
 |-----|-------------|----------|-------------------|
-| 100 | CC Manager (except 9999) | $ROLE:Manager | !9999,* |
-| 150 | CC9999 VP | vp_exec | 9999 |
+| 250 | CC Manager (except 9999) | $ROLE:Manager | !9999,* |
+| 255 | CC9999 VP | vp_exec | 9999 |
 
 ---
 
@@ -403,12 +522,16 @@ Conditions: Approval routing is empty
 │  1. VALIDATION RULES (Seq -999 to -1)                      │
 │     └─ Block submission if conditions not met              │
 │                                                             │
-│  2. SIMPLE RULES - Cost Center Based (Seq 1-499)           │
-│     └─ Supervisor → Manager → Director (by CC)             │
-│     └─ OR use Role-Based rules                             │
+│  2. COST CENTER RULES (Seq 200-499)                        │
+│     └─ Seq 200-249: Supervisors                            │
+│     └─ Seq 250-299: Managers                               │
+│     └─ Seq 300-399: Directors                              │
+│     └─ Seq 400-499: VPs                                    │
 │                                                             │
-│  3. COMPLEX RULES - Executive (Seq 500-799)                │
-│     └─ CFO → CEO → Board (by amount, not CC)               │
+│  3. EXECUTIVE RULES (Seq 500-799)                          │
+│     └─ Seq 500-599: CFO                                    │
+│     └─ Seq 600-699: CEO                                    │
+│     └─ Seq 700-799: Board                                  │
 │                                                             │
 │  4. SPECIAL RULES (Seq 800-899)                            │
 │     └─ Inventory, special projects, exceptions             │
@@ -424,9 +547,9 @@ Conditions: Approval routing is empty
 
 ### Example: Complete Expense Requisition Setup
 
-**Simple Rules (Cost Center Level):**
-- Seq 100-199: Cost Center supervisors ($0 - $999)
-- Seq 200-299: Cost Center managers ($1,000 - $4,999)
+**Simple/Role-Based Rules (Cost Center Level):**
+- Seq 200-249: Cost Center supervisors ($0 - $999)
+- Seq 250-299: Cost Center managers ($1,000 - $4,999)
 - Seq 300-399: Cost Center directors ($5,000 - $24,999)
 - Seq 400-499: Cost Center VPs ($25,000 - $99,999)
 
@@ -446,7 +569,7 @@ If you have hundreds of simple rules and want to consolidate:
 
 1. **Identify Patterns:** Which rules follow the same structure?
 2. **Create Roles:** Define Manager, Director, VP roles
-3. **Assign Users:** Map users to roles for their cost centers
+3. **Assign Users:** Map users to roles for their cost centers (one row per user/cost center combination)
 4. **Create Role Rules:** One rule per role level
 5. **Handle Exceptions:** Create specific rules for unique cost centers
 6. **Disable Old Rules:** Mark old simple rules inactive
