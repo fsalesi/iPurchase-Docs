@@ -54,7 +54,7 @@ Administration screens are shared between iPurchase and iApprove:
 | # | Screen | Description | Status |
 |---|--------|-------------|--------|
 | 01 | [Approval Rules (Complex)](admin/screens/ipurchase-01-approval-rules.md) | AND/OR conditional approval routing | ✅ Complete |
-| 02 | Approval Rules - Simple | Straightforward AND-based approval rules | 🔜 Next |
+| 02 | [Approval Rules - Simple](admin/screens/ipurchase-02-approval-rules-simple.md) | Straightforward AND-based approval rules | ✅ Complete |
 | 03 | User Roles | Role-based approvers (Manager, Director, VP, etc.) | 🔜 Planned |
 | 04 | Supplier Maintenance | Vendor catalog management | 🔜 Planned |
 | 05 | UNSPSC Maintenance | Commodity code management | 🔜 Planned |

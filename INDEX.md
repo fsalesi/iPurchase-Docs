@@ -15,22 +15,19 @@ This index provides direct raw links to all documentation files for easy access 
 - [AppSrvr Configuration](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/09-appsrvr-configuration.md)
 - [AppSrvr Caching](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/10-appsrvr-caching.md)
 
+## iPurchase Configuration Screens
+
+- [Approval Rules (Complex)](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/ipurchase-01-approval-rules.md)
+- [Approval Rules - Simple](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/ipurchase-02-approval-rules-simple.md)
+
 ## Shared Components
 
 - [Admin Browse Component](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/components/admin-browse.md)
 
-## iPurchase Screens
+## Reference
 
-*Coming soon*
+- [System Settings Reference](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/reference/system-settings-reference.md#table-of-contents) - Complete catalog of 550+ system settings organized by category
 
 ---
 
 **Raw Index URL:** `https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/INDEX.md`
-
-## iPurchase Configuration Screens
-
-- [Approval Rules (Complex)](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/ipurchase-01-approval-rules.md)
-
-## Reference
-
-- [System Settings Reference](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/reference/system-settings-reference.md#table-of-contents) - Complete catalog of 550+ system settings organized by category
