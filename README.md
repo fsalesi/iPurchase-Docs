@@ -39,6 +39,7 @@ Administration screens are shared between iPurchase and iApprove:
 - [eMail Queue](admin/screens/07-email-queue.md) - Outbound email queue and log
 - [Security](admin/screens/08-security.md) - Password policies and authentication (placeholder)
 - [AppSrvr Configuration](admin/screens/09-appsrvr-configuration.md) - QAD domain connections via ISS Connector
+- [AppSrvr Caching](admin/screens/10-appsrvr-caching.md) - Cache settings for QAD data (legacy)
 
 ### Admin Components
 
