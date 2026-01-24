@@ -439,13 +439,12 @@ ORDER BY pf_attr
 ## Related Screens
 
 - [Users and Groups](./01-users-and-groups.md) - User-specific settings stored in pf_mstr
-- Approval Rules - Settings that affect approval workflow (documentation pending)
-- Security - Password and login-related settings (documentation pending)
+- [Approval Rules (Complex)](./ipurchase-01-approval-rules.md) - Settings that affect approval workflow
+- [Security](./08-security.md) - Password and login-related settings
 
 ---
 
 ## Related Documentation
 
-- **system-settings.md** - Technical documentation of setting categories and values
-- **system-settings-bible.csv** - Complete catalog of all 550+ settings with descriptions
-- **approval-systems.md** - How approval settings affect workflow routing
+- [System Settings Bible (CSV)](../../reference/system-settings-bible.csv) - Complete catalog of all 550+ settings with categories and descriptions
+- [Approval Rules (Complex)](./ipurchase-01-approval-rules.md) - How approval settings affect workflow routing
