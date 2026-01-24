@@ -172,6 +172,7 @@ Key tables documented across screens:
   - [User Management](faq/user-management.md) - Passwords, permissions, groups
   - [Purchase Orders](faq/purchase-orders.md) - PO creation, printing, emailing
   - [Requisition Entry](faq/requisition-entry.md) - Types, defaults, accounts
+  - [System Settings](faq/system-settings.md) - Domain-specific settings, value formats
 
 ## Contributing
 

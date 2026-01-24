@@ -68,3 +68,4 @@ This index provides direct raw links to all documentation files for easy access 
 - [User Management](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/user-management.md) - Passwords, permissions, groups
 - [Purchase Orders](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/purchase-orders.md) - PO creation, printing, emailing
 - [Requisition Entry](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/requisition-entry.md) - Types, defaults, accounts
+- [System Settings](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/system-settings.md) - Domain-specific settings, value formats

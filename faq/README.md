@@ -13,6 +13,7 @@ Frequently asked questions organized by topic.
 - [User Management](user-management.md) - Passwords, permissions, departments, groups
 - [Purchase Orders](purchase-orders.md) - PO creation, printing, emailing, blankets
 - [Requisition Entry](requisition-entry.md) - Types, defaults, accounts, required fields
+- [System Settings](system-settings.md) - Domain-specific settings, value formats, naming patterns
 
 ---
 
