@@ -680,10 +680,9 @@ pf_mstr
 
 ## Related Screens
 
-- [Group Setup](./02-group-setup.md) - Manage groups and membership
-- [Approval Rules](./03-approval-rules.md) - Configure approval workflows
-- [System Settings](./04-system-settings.md) - System-wide configuration
-- [Security](./05-security.md) - Password policies, login restrictions
+- [System Settings](./02-system-settings.md) - System-wide configuration
+- Approval Rules - Configure approval workflows (documentation pending)
+- Security - Password policies, login restrictions (documentation pending)
 
 ---
 
