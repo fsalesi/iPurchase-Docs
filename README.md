@@ -75,10 +75,9 @@ Administration screens are shared between iPurchase and iApprove:
 | 03 | [VST Locks](admin/screens/iframework-03-vst-locks.md) | View locked database records (Developer) | ✅ Complete |
 | 04 | [Compiler](admin/screens/iframework-04-compiler.md) | Code compilation (Developer) | ✅ Complete |
 | 05 | [Query Tester](admin/screens/iframework-05-query-tester.md) | getData.p tester (Developer) | ✅ Complete |
-| 06 | Schema Browser | Database schema viewer (Developer) | 🔜 Planned |
-| 07 | Languages | Language configuration | 🔜 Planned |
-| 08 | Custom Data | Custom data management (Developer) | 🔜 Planned |
-| 09 | Translations | Translation management | 🔜 Planned |
+| 06 | [Languages](admin/screens/iframework-06-languages.md) | Language and locale configuration | ✅ Complete |
+| 07 | Custom Data | Custom data management (Developer) | 🔜 Planned |
+| 08 | Translations | Translation management | 🔜 Planned |
 
 ---
 
