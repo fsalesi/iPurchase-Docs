@@ -19,6 +19,7 @@ This index provides direct raw links to all documentation files for easy access 
 
 - [Approval Rules (Complex)](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/ipurchase-01-approval-rules.md)
 - [Approval Rules - Simple](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/ipurchase-02-approval-rules-simple.md)
+- [User Roles](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/ipurchase-03-user-roles.md)
 
 ## Shared Components
 
