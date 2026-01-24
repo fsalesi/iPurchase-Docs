@@ -312,3 +312,9 @@ Restart the PASOE instance through your standard PASOE administration procedures
 - [AppSrvr Caching](./10-appsrvr-caching.md) - Configure what data is cached
 - [System Settings](./02-system-settings.md) - ALLOWED_DOMAINS and domain-specific settings
 - [Users and Groups](./01-users-and-groups.md) - User domain access (wus_domains)
+
+---
+
+## Related System Settings
+
+See also: [QAD Integration Settings](../../reference/system-settings-reference.md#qad-integration)

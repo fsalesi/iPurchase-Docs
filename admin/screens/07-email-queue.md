@@ -239,3 +239,4 @@ The screen consists of:
 
 - [Jobs](./03-jobs.md) - Email Processor job configuration
 - [System Settings](./02-system-settings.md) - Email configuration settings
+- [Email Configuration Settings](../../reference/system-settings-reference.md#email-configuration) - Complete list of email-related settings

@@ -681,8 +681,10 @@ pf_mstr
 ## Related Screens
 
 - [System Settings](./02-system-settings.md) - System-wide configuration
-- Approval Rules - Configure approval workflows (documentation pending)
-- Security - Password policies, login restrictions (documentation pending)
+- [User Management Settings](../../reference/system-settings-reference.md#user-management) - User-related system settings
+- [Approval Rules](./ipurchase-01-approval-rules.md) - Configure approval workflows
+- [Security](./08-security.md) - Password policies, login restrictions
+- [Security & Authentication Settings](../../reference/system-settings-reference.md#security-and-authentication) - Security-related system settings
 
 ---
 
