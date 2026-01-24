@@ -64,7 +64,6 @@
 | `i` | Indexed - field is part of an index |
 | `m` | Mandatory - field requires a value |
 | `c` | Case sensitive |
-| `v` | View component |
 
 ---
 
