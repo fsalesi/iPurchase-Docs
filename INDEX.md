@@ -21,6 +21,8 @@ This index provides direct raw links to all documentation files for easy access 
 - [Approval Rules - Simple](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/ipurchase-02-approval-rules-simple.md)
 - [User Roles](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/ipurchase-03-user-roles.md)
 - [Supplier Maintenance](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/ipurchase-04-supplier-maintenance.md)
+- [UNSPSC Maintenance](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/ipurchase-05-unspsc-maintenance.md)
+- [UNSPSC Accounts](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/ipurchase-06-unspsc-accounts.md)
 
 ## Shared Components
 

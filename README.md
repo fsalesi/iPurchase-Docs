@@ -57,7 +57,7 @@ Administration screens are shared between iPurchase and iApprove:
 | 02 | [Approval Rules - Simple](admin/screens/ipurchase-02-approval-rules-simple.md) | Straightforward AND-based approval rules | ✅ Complete |
 | 03 | [User Roles](admin/screens/ipurchase-03-user-roles.md) | Role-based approvers (Manager, Director, VP, etc.) | ✅ Complete |
 | 04 | [Supplier Maintenance](admin/screens/ipurchase-04-supplier-maintenance.md) | Vendor catalog and punchout configuration | ✅ Complete |
-| 05 | UNSPSC Maintenance | Commodity code management | 🔜 Planned |
+| 05 | [UNSPSC Maintenance](admin/screens/ipurchase-05-unspsc-maintenance.md) | Commodity code management | ✅ Complete |
 | 06 | UNSPSC Accounts | Account mapping by commodity code | 🔜 Planned |
 | 07 | Supplier Location Maintenance | Vendor location management | 🔜 Planned |
 | 08 | Supervisor Chart | Organizational hierarchy visualization | 🔜 Planned |
