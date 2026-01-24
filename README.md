@@ -66,6 +66,22 @@ Administration screens are shared between iPurchase and iApprove:
 
 ---
 
+## iFramework Configuration Screens
+
+| # | Screen | Description | Status |
+|---|--------|-------------|--------|
+| 01 | [Workbench](admin/screens/iframework-01-workbench.md) | Development workbench | 🔜 Planned |
+| 02 | [Menu Maintenance](admin/screens/iframework-02-menu-maintenance.md) | Navigation menu configuration | ✅ Complete |
+| 03 | [VST Locks](admin/screens/iframework-03-vst-locks.md) | View locked database records (Developer) | ✅ Complete |
+| 04 | Compiler | Code compilation (Developer) | 🔜 Planned |
+| 05 | Query Tester | SQL query testing (Developer) | 🔜 Planned |
+| 06 | Schema Browser | Database schema viewer (Developer) | 🔜 Planned |
+| 07 | Languages | Language configuration | 🔜 Planned |
+| 08 | Custom Data | Custom data management (Developer) | 🔜 Planned |
+| 09 | Translations | Translation management | 🔜 Planned |
+
+---
+
 ## Admin Components
 
 - [Admin Browse Grid](admin/components/admin-browse.md) - Standard data grid used across all admin screens
@@ -122,16 +138,3 @@ Documentation follows these conventions:
 5. **Sections**: Overview, Access Path, Screenshots, Fields, Buttons, Business Rules, Related
 
 
-## iFramework Configuration Screens
-
-| # | Screen | Description | Status |
-|---|--------|-------------|--------|
-| 01 | [Workbench](admin/screens/iframework-01-workbench.md) | Development workbench | 🔜 Planned |
-| 02 | [Menu Maintenance](admin/screens/iframework-02-menu-maintenance.md) | Navigation menu configuration | ✅ Complete |
-| 03 | [VST Locks](admin/screens/iframework-03-vst-locks.md) | View locked database records (Developer) | ✅ Complete |
-| 04 | Compiler | Code compilation | 🔜 Planned |
-| 05 | Query Tester | SQL query testing | 🔜 Planned |
-| 06 | Schema Browser | Database schema viewer | 🔜 Planned |
-| 07 | Languages | Language configuration | 🔜 Planned |
-| 08 | Custom Data | Custom data management | 🔜 Planned |
-| 09 | Translations | Translation management | 🔜 Planned |
