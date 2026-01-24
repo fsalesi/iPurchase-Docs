@@ -127,7 +127,7 @@ Documentation follows these conventions:
 | # | Screen | Description | Status |
 |---|--------|-------------|--------|
 | 01 | [Workbench](admin/screens/iframework-01-workbench.md) | Development workbench | 🔜 Planned |
-| 02 | Menu Maintenance | Menu configuration | 🔜 Planned |
+| 02 | [Menu Maintenance](admin/screens/iframework-02-menu-maintenance.md) | Navigation menu configuration | ✅ Complete |
 | 03 | VST Locks | Virtual system table locks | 🔜 Planned |
 | 04 | Compiler | Code compilation | 🔜 Planned |
 | 05 | Query Tester | SQL query testing | 🔜 Planned |
