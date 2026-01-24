@@ -33,4 +33,4 @@ This index provides direct raw links to all documentation files for easy access 
 
 ## Reference
 
-- [System Settings Bible (CSV)](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/reference/system-settings-bible.csv) - Complete catalog of 550+ system settings with categories
+- [System Settings Reference](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/reference/system-settings-reference.md) - Complete catalog of 550+ system settings organized by category

@@ -437,7 +437,7 @@ Every iPurchase implementation includes these default rules:
 
 ## Related System Settings
 
-For approval-related system settings, see the [System Settings Reference](../../reference/system-settings-bible.csv) and filter by Category = "Approval Workflow".
+For approval-related system settings, see the [System Settings Reference](../../reference/system-settings-reference.md) and filter by Category = "Approval Workflow".
 
 Key settings include:
 - **MULTIPLE_APPROVALS** - How to handle duplicate approvers (keep_all, keep_first, keep_last)
