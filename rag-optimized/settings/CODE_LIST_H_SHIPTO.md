@@ -2,24 +2,41 @@
 
 **Category:** Code Lists & Dropdowns
 
-code_fldname  or  blank This is a pointer to the code_mstr field name (code_fldname) value to be used for the Header Ship To selection list and validation.  Leaving this value blank will tell iPurc...
+Configures the source for the Header Ship To dropdown list in requisitions.
 
-**Common questions this answers:**
-- What is CODE_LIST_H_SHIPTO?
-- What does CODE_LIST_H_SHIPTO do?
-- What is the default value for CODE_LIST_H_SHIPTO?
-- How do I configure CODE_LIST_H_SHIPTO?
+### How It Works
 
-## Setting Details
+This setting controls where iPurchase gets the list of valid values for the Header Ship To field. It can point to:
+- A QAD table (like si_mstr)
+- A code_mstr field name
+- An inline LIST definition
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| Blank | Use default QAD table (si_mstr) |
+| `code_fldname` | Use code_mstr where code_fldname matches |
+| `LIST:val1,val2` | Inline list of values |
+| `LIST:code1:name1,code2:name2` | Inline list with codes and descriptions |
+
+### Example
+
+```
+LIST:EA,BX,PK
+LIST:EA:Each,BX:Box,PK:Pack
+```
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
 | **Setting Name** | CODE_LIST_H_SHIPTO |
 | **Category** | Code Lists & Dropdowns |
 | **Owner** | Admin |
-| **Default Value** | (none) |
+| **Default Value** | (varies) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

@@ -2,16 +2,23 @@
 
 **Category:** Approval Workflow
 
-Comma separated list of User ID's or Group ID's that are allowed to view an Approval Simulation. Asterisk indicates everyone, a blank indicates no one.
+Controls which users can view approval simulation results. Approval simulation shows who would approve a requisition before it's submitted.
 
-**Common questions this answers:**
-- What is ALLOW_APPROVAL_SIMULATION?
-- What does ALLOW_APPROVAL_SIMULATION do?
-- What is the default value for ALLOW_APPROVAL_SIMULATION?
-- How do I configure ALLOW_APPROVAL_SIMULATION?
-- How does ALLOW_APPROVAL_SIMULATION affect approval routing?
+### How It Works
 
-## Setting Details
+Users in this list can click "Simulate Approval" to see the projected approval path without actually submitting the requisition. Useful for testing approval rules or previewing routing.
+
+### Valid Values
+
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md).
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone can simulate (DEFAULT) |
+| Blank/empty | No one can simulate |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +27,7 @@ Comma separated list of User ID's or Group ID's that are allowed to view an Appr
 | **Owner** | Admin |
 | **Default Value** | * |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

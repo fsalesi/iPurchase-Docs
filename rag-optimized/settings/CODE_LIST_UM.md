@@ -2,24 +2,41 @@
 
 **Category:** Code Lists & Dropdowns
 
-code_fldname This is a pointer to the code_mstr field name (code_fldname) value to be used for the Line Unit of Measure selection list and validation. A value of blank or a non-existing setting wil...
+Configures the source for the Unit of Measure dropdown list in requisitions.
 
-**Common questions this answers:**
-- What is CODE_LIST_UM?
-- What does CODE_LIST_UM do?
-- What is the default value for CODE_LIST_UM?
-- How do I configure CODE_LIST_UM?
+### How It Works
 
-## Setting Details
+This setting controls where iPurchase gets the list of valid values for the Unit of Measure field. It can point to:
+- A QAD table (like um_mstr)
+- A code_mstr field name
+- An inline LIST definition
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| Blank | Use default QAD table (um_mstr) |
+| `code_fldname` | Use code_mstr where code_fldname matches |
+| `LIST:val1,val2` | Inline list of values |
+| `LIST:code1:name1,code2:name2` | Inline list with codes and descriptions |
+
+### Example
+
+```
+LIST:EA,BX,PK
+LIST:EA:Each,BX:Box,PK:Pack
+```
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
 | **Setting Name** | CODE_LIST_UM |
 | **Category** | Code Lists & Dropdowns |
-| **Owner** | Finance |
-| **Default Value** | pt_um |
+| **Owner** | Admin |
+| **Default Value** | (varies) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

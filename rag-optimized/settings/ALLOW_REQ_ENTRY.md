@@ -2,15 +2,23 @@
 
 **Category:** User Management
 
-Comma separated list of User ID's or Group ID's that are allowed to access to the requisition entry screen.   Asterisk indicates everyone, a blank indicates no one.
+Controls which users can access the requisition entry screen to create new requisitions.
 
-**Common questions this answers:**
-- What is ALLOW_REQ_ENTRY?
-- What does ALLOW_REQ_ENTRY do?
-- What is the default value for ALLOW_REQ_ENTRY?
-- How do I configure ALLOW_REQ_ENTRY?
+### How It Works
 
-## Setting Details
+Users in this list see the "New Requisition" option and can create requisitions. Users not in this list can only view existing requisitions (if permitted).
+
+### Valid Values
+
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md).
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone can create requisitions (DEFAULT) |
+| Blank/empty | No one can create requisitions |
+| User/Group list | Only specified users/groups |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,7 +27,7 @@ Comma separated list of User ID's or Group ID's that are allowed to access to th
 | **Owner** | Admin |
 | **Default Value** | * |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

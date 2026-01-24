@@ -2,26 +2,38 @@
 
 **Category:** Purchase Orders
 
-Comma Separated list of User ID's or Group ID's that can convert an approved requisition into a PO (only when PO is not created automatically upon final approval) Thios setting also controls if a u...
+Specifies which groups can use batch PO creation functionality.
 
-**Common questions this answers:**
-- What is BATCH_CREATE_PO_GROUPS?
-- What does BATCH_CREATE_PO_GROUPS do?
-- What is the default value for BATCH_CREATE_PO_GROUPS?
-- How do I configure BATCH_CREATE_PO_GROUPS?
+### How It Works
 
-## Setting Details
+Users in listed groups can create multiple POs at once using batch processing. Requires ALLOW_BATCH_PO to be enabled.
+
+### Valid Values
+
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md).
+
+| Value | Behavior |
+|-------|----------|
+| Group list | Members can use batch PO creation |
+| `*` (asterisk) | Everyone can use batch creation |
+| Blank/empty | No one can use batch creation |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
 | **Setting Name** | BATCH_CREATE_PO_GROUPS |
 | **Category** | Purchase Orders |
 | **Owner** | Admin |
-| **Default Value** | buyers |
+| **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'BATCH_CREATE_PO_GROUPS'
 ```
+
+### Related Settings
+
+- [ALLOW_BATCH_PO](ALLOW_BATCH_PO.md) - Enable batch PO functionality

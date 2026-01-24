@@ -1,25 +1,30 @@
 # AUTO_ADD_DROPSHIP - iPurchase System Setting
 
-**Category:** Uncategorized
+**Category:** Purchase Orders
 
-True or False - Default FALSE. Automatically adds "Dropship" as an option in the Ship To dropdown field in Requisition Workbench
+Controls whether drop ship address is automatically added to requisitions based on certain conditions.
 
-**Common questions this answers:**
-- What is AUTO_ADD_DROPSHIP?
-- What does AUTO_ADD_DROPSHIP do?
-- What is the default value for AUTO_ADD_DROPSHIP?
-- How do I configure AUTO_ADD_DROPSHIP?
+### How It Works
 
-## Setting Details
+When enabled, the system automatically populates the drop ship address field based on requisition type, user, or other criteria.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `TRUE` | Auto-add drop ship address |
+| `FALSE` | Manual drop ship entry |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
 | **Setting Name** | AUTO_ADD_DROPSHIP |
-| **Category** | Uncategorized |
+| **Category** | Purchase Orders |
 | **Owner** | Admin |
-| **Default Value** | FALSE |
+| **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

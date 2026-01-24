@@ -1,25 +1,42 @@
 # CODE_LIST_H_SHIPVIA_XREF - iPurchase System Setting
 
-**Category:** iApprove Integration
+**Category:** Code Lists & Dropdowns
 
-This setting defines a cross-reference between the selected iPurchase ship via, and the code or description that the vendor needs to see on their electronic purchase order. Only applies to Punchout...
+Configures the source for the Ship Via Cross-Reference dropdown list in requisitions.
 
-**Common questions this answers:**
-- What is CODE_LIST_H_SHIPVIA_XREF?
-- What does CODE_LIST_H_SHIPVIA_XREF do?
-- What is the default value for CODE_LIST_H_SHIPVIA_XREF?
-- How do I configure CODE_LIST_H_SHIPVIA_XREF?
+### How It Works
 
-## Setting Details
+This setting controls where iPurchase gets the list of valid values for the Ship Via Cross-Reference field. It can point to:
+- A QAD table (like code_mstr)
+- A code_mstr field name
+- An inline LIST definition
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| Blank | Use default QAD table (code_mstr) |
+| `code_fldname` | Use code_mstr where code_fldname matches |
+| `LIST:val1,val2` | Inline list of values |
+| `LIST:code1:name1,code2:name2` | Inline list with codes and descriptions |
+
+### Example
+
+```
+LIST:EA,BX,PK
+LIST:EA:Each,BX:Box,PK:Pack
+```
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
 | **Setting Name** | CODE_LIST_H_SHIPVIA_XREF |
-| **Category** | iApprove Integration |
-| **Owner** | Purchasing |
-| **Default Value** | (none) |
+| **Category** | Code Lists & Dropdowns |
+| **Owner** | Admin |
+| **Default Value** | (varies) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

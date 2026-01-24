@@ -2,24 +2,29 @@
 
 **Category:** Purchase Orders
 
-Use this setting to automatically attach comments to every Purchase Order when a particular buyer or bill to or ship to or site or line site is used. This is a pointer to the code_mstr field name (...
+Specifies fields whose values are automatically added to PO line comments.
 
-**Common questions this answers:**
-- What is AUTO_COMMENTS_OTHER?
-- What does AUTO_COMMENTS_OTHER do?
-- What is the default value for AUTO_COMMENTS_OTHER?
-- How do I configure AUTO_COMMENTS_OTHER?
+### How It Works
 
-## Setting Details
+When a PO is created, the system automatically adds comments containing the values of fields listed here. Useful for passing requisition information to suppliers.
+
+### Valid Values
+
+| Value | Example |
+|-------|---------|
+| Comma-separated field names | `xxreqd_project,xxreqd_cc` |
+| Blank | No auto-comments |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
 | **Setting Name** | AUTO_COMMENTS_OTHER |
 | **Category** | Purchase Orders |
-| **Owner** | Power Users |
+| **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

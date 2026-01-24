@@ -1,25 +1,42 @@
 # CODE_LIST_H_XXREQ_UCHAR2 - iPurchase System Setting
 
-**Category:** Requisitions
+**Category:** Code Lists & Dropdowns
 
-List for User Field 2
+Configures the source for the User Character Field 2 dropdown list in requisitions.
 
-**Common questions this answers:**
-- What is CODE_LIST_H_XXREQ_UCHAR2?
-- What does CODE_LIST_H_XXREQ_UCHAR2 do?
-- What is the default value for CODE_LIST_H_XXREQ_UCHAR2?
-- How do I configure CODE_LIST_H_XXREQ_UCHAR2?
+### How It Works
 
-## Setting Details
+This setting controls where iPurchase gets the list of valid values for the User Character Field 2 field. It can point to:
+- A QAD table (like code_mstr)
+- A code_mstr field name
+- An inline LIST definition
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| Blank | Use default QAD table (code_mstr) |
+| `code_fldname` | Use code_mstr where code_fldname matches |
+| `LIST:val1,val2` | Inline list of values |
+| `LIST:code1:name1,code2:name2` | Inline list with codes and descriptions |
+
+### Example
+
+```
+LIST:EA,BX,PK
+LIST:EA:Each,BX:Box,PK:Pack
+```
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
 | **Setting Name** | CODE_LIST_H_XXREQ_UCHAR2 |
-| **Category** | Requisitions |
+| **Category** | Code Lists & Dropdowns |
 | **Owner** | Admin |
-| **Default Value** | List:1:Maybe,2:Maybe Not |
+| **Default Value** | (varies) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

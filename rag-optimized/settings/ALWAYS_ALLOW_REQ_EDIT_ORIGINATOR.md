@@ -1,27 +1,36 @@
 # ALWAYS_ALLOW_REQ_EDIT_ORIGINATOR - iPurchase System Setting
 
-**Category:** User Management
+**Category:** Approval Workflow
 
-The users listed here will be allowed to modify a requisition while it's being approved if the following scenarios are true: 1) They are listed as the originator or on behalf of. 2) They are an app...
+Controls whether the requisition originator can always edit their own requisitions.
 
-**Common questions this answers:**
-- What is ALWAYS_ALLOW_REQ_EDIT_ORIGINATOR?
-- What does ALWAYS_ALLOW_REQ_EDIT_ORIGINATOR do?
-- What is the default value for ALWAYS_ALLOW_REQ_EDIT_ORIGINATOR?
-- How do I configure ALWAYS_ALLOW_REQ_EDIT_ORIGINATOR?
+### How It Works
 
-## Setting Details
+When TRUE, the person who created a requisition can edit it at any stage. Works in conjunction with ALWAYS_ALLOW_REQ_EDITS for role-based edit permissions.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `TRUE` | Originator can always edit their own reqs |
+| `FALSE` | Normal edit restrictions apply to originator |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
 | **Setting Name** | ALWAYS_ALLOW_REQ_EDIT_ORIGINATOR |
-| **Category** | User Management |
-| **Owner** | Power Users |
+| **Category** | Approval Workflow |
+| **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALWAYS_ALLOW_REQ_EDIT_ORIGINATOR'
 ```
+
+### Related Settings
+
+- [ALWAYS_ALLOW_REQ_EDITS](ALWAYS_ALLOW_REQ_EDITS.md) - Role-based edit permissions

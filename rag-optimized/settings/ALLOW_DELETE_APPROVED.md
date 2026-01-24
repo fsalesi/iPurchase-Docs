@@ -2,16 +2,23 @@
 
 **Category:** Approval Workflow
 
-Comma separated list of User ID's or Group ID's who are allowed to delete an approved requisition.  Asterisk indicates everyone, a blank indicates no one.
+Controls which users can delete requisitions that have already been approved.
 
-**Common questions this answers:**
-- What is ALLOW_DELETE_APPROVED?
-- What does ALLOW_DELETE_APPROVED do?
-- What is the default value for ALLOW_DELETE_APPROVED?
-- How do I configure ALLOW_DELETE_APPROVED?
-- How does ALLOW_DELETE_APPROVED affect approval routing?
+### How It Works
 
-## Setting Details
+Users/groups in this list can delete approved requisitions. This is a sensitive permission - approved reqs may have POs created against them.
+
+### Valid Values
+
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md).
+
+| Value | Behavior |
+|-------|----------|
+| User/Group list | Specified users/groups can delete approved reqs |
+| `*` (asterisk) | Everyone can delete (not recommended) |
+| Blank/empty | No one can delete approved reqs |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,9 +27,14 @@ Comma separated list of User ID's or Group ID's who are allowed to delete an app
 | **Owner** | Admin |
 | **Default Value** | admin |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALLOW_DELETE_APPROVED'
 ```
+
+### Related Settings
+
+- [ALLOW_DELETE_NOT_SUBMITTED](ALLOW_DELETE_NOT_SUBMITTED.md) - Delete draft requisitions
+- [ALLOW_DELETE_PROCESSED](ALLOW_DELETE_PROCESSED.md) - Delete processed (PO created) requisitions

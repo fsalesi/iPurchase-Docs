@@ -2,16 +2,22 @@
 
 **Category:** Approval Workflow
 
-Any member of a group in this list will be allowed to add approvers.  If Allow_Approver_Changes_Remove_Approver is also enabled, then any member of these groups is also allowed to remove approvers....
+Specifies which groups can add approvers to routing. Members can also remove approvers if ALLOW_APPROVER_CHANGES_REMOVE_APPROVER is enabled.
 
-**Common questions this answers:**
-- What is ALLOW_APPROVER_CHANGES_ROLES?
-- What does ALLOW_APPROVER_CHANGES_ROLES do?
-- What is the default value for ALLOW_APPROVER_CHANGES_ROLES?
-- How do I configure ALLOW_APPROVER_CHANGES_ROLES?
-- How does ALLOW_APPROVER_CHANGES_ROLES affect approval routing?
+### How It Works
 
-## Setting Details
+Any member of a group listed here can add approvers to the approval routing. Requires ALLOW_APPROVER_CHANGES = TRUE.
+
+### Valid Values
+
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md).
+
+| Value | Behavior |
+|-------|----------|
+| Group list | Members of listed groups can add approvers |
+| Blank/empty | No one can add approvers via roles |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,9 +26,14 @@ Any member of a group in this list will be allowed to add approvers.  If Allow_A
 | **Owner** | Admin |
 | **Default Value** | admin |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALLOW_APPROVER_CHANGES_ROLES'
 ```
+
+### Related Settings
+
+- [ALLOW_APPROVER_CHANGES](ALLOW_APPROVER_CHANGES.md) - Master switch (must be TRUE)
+- [ALLOW_APPROVER_CHANGES_REMOVE_APPROVER](ALLOW_APPROVER_CHANGES_REMOVE_APPROVER.md) - Allow removing approvers

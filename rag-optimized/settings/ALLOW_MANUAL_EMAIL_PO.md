@@ -2,16 +2,23 @@
 
 **Category:** Email Configuration
 
-Comma-Separated list of User ID's or Group ID's. that will have the "Email PO" option which would allow a user to email the PO through iPurchase. Asterisk indicates everyone, a blank indicates no one.
+Controls which users see the "Email PO" button to manually email purchase orders to suppliers.
 
-**Common questions this answers:**
-- What is ALLOW_MANUAL_EMAIL_PO?
-- What does ALLOW_MANUAL_EMAIL_PO do?
-- What is the default value for ALLOW_MANUAL_EMAIL_PO?
-- How do I configure ALLOW_MANUAL_EMAIL_PO?
-- How does ALLOW_MANUAL_EMAIL_PO affect email notifications?
+### How It Works
 
-## Setting Details
+Users in this list can manually trigger PO emails to suppliers, even if automatic emailing is disabled or has already occurred.
+
+### Valid Values
+
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md).
+
+| Value | Behavior |
+|-------|----------|
+| User/Group list | Specified users/groups see Email PO button |
+| `*` (asterisk) | Everyone can email POs |
+| Blank/empty | No one can manually email POs (DEFAULT) |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,9 +27,14 @@ Comma-Separated list of User ID's or Group ID's. that will have the "Email PO" o
 | **Owner** | Admin |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALLOW_MANUAL_EMAIL_PO'
 ```
+
+### Related Settings
+
+- [EMAIL_SUPPLIER_PO](EMAIL_SUPPLIER_PO.md) - Auto-email POs to suppliers
+- [EMAILSERVER](EMAILSERVER.md) - SMTP server configuration

@@ -2,15 +2,23 @@
 
 **Category:** User Management
 
-Comma separated list of User ID's or Group ID's who are allowed to delete a requisition that has not been submitted.  Asterisk indicates everyone, a blank indicates no one.
+Controls which users can delete requisitions that have not yet been submitted.
 
-**Common questions this answers:**
-- What is ALLOW_DELETE_NOT_SUBMITTED?
-- What does ALLOW_DELETE_NOT_SUBMITTED do?
-- What is the default value for ALLOW_DELETE_NOT_SUBMITTED?
-- How do I configure ALLOW_DELETE_NOT_SUBMITTED?
+### How It Works
 
-## Setting Details
+Users/groups in this list can delete draft (unsubmitted) requisitions. Typically more permissive than ALLOW_DELETE_APPROVED since no approval workflow has started.
+
+### Valid Values
+
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md).
+
+| Value | Behavior |
+|-------|----------|
+| User/Group list | Specified users/groups can delete drafts |
+| `*` (asterisk) | Everyone can delete their own drafts |
+| Blank/empty | No one can delete drafts |
+
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,9 +27,14 @@ Comma separated list of User ID's or Group ID's who are allowed to delete a requ
 | **Owner** | Admin |
 | **Default Value** | admin |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALLOW_DELETE_NOT_SUBMITTED'
 ```
+
+### Related Settings
+
+- [ALLOW_DELETE_APPROVED](ALLOW_DELETE_APPROVED.md) - Delete approved requisitions
+- [ALLOW_DELETE_PROCESSED](ALLOW_DELETE_PROCESSED.md) - Delete processed requisitions
