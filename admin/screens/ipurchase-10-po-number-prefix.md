@@ -26,6 +26,8 @@ iPurchase → PO Number Prefix
 
 ## Screenshot
 
+**Note:** The screen displays a helpful message: "Currently using the next QAD Number. For a unique sequence for each prefix, setup PO_NBR_USE_QAD = false in system settings"
+
 ![PO Number Prefix](../screenshots/ipurchase-po-number-prefix/01-main-screen.png)
 
 ## Screen Layout
@@ -44,7 +46,7 @@ The screen consists of:
 - **Database**: `pf_attr`
 - **Description**: Domain this sequence applies to. Use `*` for all domains.
 
-### Field: Entity/Site
+### Field: xxreq_domain Value
 
 - **Type**: Text
 - **Database**: `pf_value`
@@ -84,13 +86,13 @@ PO prefix sequences are stored in `pf_mstr` with:
 | `pf_us_id` | `SYSTEM` |
 | `pf_group` | `POSEQ` |
 | `pf_attr` | Domain (`*` = all) |
-| `pf_value` | Entity/Site value |
+| `pf_value` | xxreq_domain Value value |
 | `pf_alt_value` | Prefix |
 | `pf_seq` | Next number |
 
 **Query Example:**
 ```sql
-SELECT pf_attr AS domain, pf_value AS entity_site, 
+SELECT pf_attr AS domain, pf_value AS xxreq_domain_value, 
        pf_alt_value AS prefix, pf_seq AS next_nbr
 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'POSEQ'
@@ -122,7 +124,7 @@ ORDER BY pf_attr, pf_value
 
 ### Example 1: Single Prefix for All
 
-| Domain | Entity/Site | Prefix | Next Nbr |
+| Domain | xxreq_domain Value | Prefix | Next Nbr |
 |--------|-------------|--------|----------|
 | * | demo1 | D | 133633 |
 
@@ -130,7 +132,7 @@ All POs get "D" prefix: D133633, D133634, D133635...
 
 ### Example 2: Site-Specific Prefixes
 
-| Domain | Entity/Site | Prefix | Next Nbr |
+| Domain | xxreq_domain Value | Prefix | Next Nbr |
 |--------|-------------|--------|----------|
 | demo1 | 10000 | A | 50000 |
 | demo1 | 12000 | B | 75000 |
@@ -142,7 +144,7 @@ All POs get "D" prefix: D133633, D133634, D133635...
 
 ### Example 3: Domain-Specific Prefixes
 
-| Domain | Entity/Site | Prefix | Next Nbr |
+| Domain | xxreq_domain Value | Prefix | Next Nbr |
 |--------|-------------|--------|----------|
 | demo1 | * | D1 | 100000 |
 | demo2 | * | D2 | 200000 |
