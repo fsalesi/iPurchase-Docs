@@ -1,25 +1,37 @@
 # ALLOWED_DOMAINS - iPurchase System Setting
 
-**Category:** Uncategorized
+**Category:** System Configuration
 
-Enter a comma-separated list of domain codes to be allowed in iPurchase. This can be changed for a given user in User Maintenance
+Defines which QAD domains (companies) are available in iPurchase. Users can only access domains listed here and in their user profile.
 
-**Common questions this answers:**
+### How It Works
+
+This setting defines the master list of domains available in the system. Individual users may be further restricted via their user profile (wus_domains field). A user can only access domains that appear in both this setting AND their profile.
+
+### Valid Values
+
+| Value | Example |
+|-------|---------|
+| Comma-separated domain codes | `QAD,DEMO,PROD` |
+| Single domain | `QAD` |
+
+### Common Questions
+
 - What is ALLOWED_DOMAINS?
-- What does ALLOWED_DOMAINS do?
-- What is the default value for ALLOWED_DOMAINS?
-- How do I configure ALLOWED_DOMAINS?
+- How do I add a new domain to iPurchase?
+- Why can't users see a specific domain?
+- How do domain permissions work?
 
-## Setting Details
+### Setting Details
 
 | Property | Value |
 |----------|-------|
 | **Setting Name** | ALLOWED_DOMAINS |
-| **Category** | Uncategorized |
+| **Category** | System Configuration |
 | **Owner** | ISS |
 | **Default Value** | QAD |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr

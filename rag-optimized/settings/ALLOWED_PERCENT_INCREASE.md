@@ -2,15 +2,27 @@
 
 **Category:** Approval Workflow
 
-Specify the amount that an approver can increase the requisition by without having it re-routed. If the requisition amount is increased greater than the value specified here, then the requisition w...
+Controls the maximum percentage an approver can increase a requisition's value before it gets automatically re-routed for approval. Works alongside ALLOWED_DOLLAR_INCREASE.
 
-**Common questions this answers:**
+### How It Works
+
+When an approver with edit permissions makes changes that increase the requisition total by more than this percentage, the requisition is automatically re-routed for approval when they click Approve.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| Number | Maximum percentage increase allowed (e.g., "10" for 10%) |
+| 0 | Any increase is allowed without re-routing |
+| 0.01 | Any percentage increase triggers re-routing |
+
+### Common Questions
+
 - What is ALLOWED_PERCENT_INCREASE?
-- What does ALLOWED_PERCENT_INCREASE do?
-- What is the default value for ALLOWED_PERCENT_INCREASE?
-- How do I configure ALLOWED_PERCENT_INCREASE?
+- Why did my requisition re-route when I approved it?
+- How do I limit approver changes by percentage?
 
-## Setting Details
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,11 +31,14 @@ Specify the amount that an approver can increase the requisition by without havi
 | **Owner** | Finance |
 | **Default Value** | 10 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALLOWED_PERCENT_INCREASE'
 ```
 
-**Related settings:** ALLOWED_DOLLAR_INCREASE, CO_TOLERANCE_PERCENT
+### Related Settings
+
+- [ALLOWED_DOLLAR_INCREASE](ALLOWED_DOLLAR_INCREASE.md) - Maximum dollar increase allowed
+- [ALLOW_AUTO_REROUTE](ALLOW_AUTO_REROUTE.md) - Enable automatic re-routing

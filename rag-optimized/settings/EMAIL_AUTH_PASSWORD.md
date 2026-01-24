@@ -2,16 +2,25 @@
 
 **Category:** Email Configuration
 
-Technical - Do Not Modify without consulting ISS
+⚠️ **SENSITIVE** - SMTP authentication password. Do not modify without consulting ISS.
 
-**Common questions this answers:**
+### Purpose
+
+Password used to authenticate with the SMTP server when sending emails. Required when your email server requires authentication.
+
+### Security Notes
+
+- This value should be treated as sensitive
+- Coordinate with your IT team when changing
+- Ensure proper access controls on system settings
+
+### Common Questions
+
 - What is EMAIL_AUTH_PASSWORD?
-- What does EMAIL_AUTH_PASSWORD do?
-- What is the default value for EMAIL_AUTH_PASSWORD?
-- How do I configure EMAIL_AUTH_PASSWORD?
-- How does EMAIL_AUTH_PASSWORD affect email notifications?
+- How do I configure SMTP authentication?
+- Why are emails failing to send?
 
-## Setting Details
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,10 +28,18 @@ Technical - Do Not Modify without consulting ISS
 | **Category** | Email Configuration |
 | **Owner** | Admin |
 | **Default Value** | (none) |
+| **Sensitivity** | ⚠️ SENSITIVE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAIL_AUTH_PASSWORD'
 ```
+
+### Related Settings
+
+- [EMAILSERVER](EMAILSERVER.md) - SMTP server address
+- [EMAIL_AUTH_USER](EMAIL_AUTH_USER.md) - SMTP authentication username
+- [EMAIL_AUTH_TYPE](EMAIL_AUTH_TYPE.md) - Authentication method
+- [EMAILFROM](EMAILFROM.md) - Sender email address

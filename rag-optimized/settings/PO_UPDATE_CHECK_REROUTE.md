@@ -2,15 +2,44 @@
 
 **Category:** Change Orders
 
-As part of the approval process, do you want the system to compare the approvers from the original requisition to the new requisition? If there are any changes then the new requisition will be re-r...
+Controls whether the system compares approval routing between the original requisition and a change order. When enabled, any difference in approvers forces re-routing regardless of tolerance settings.
 
-**Common questions this answers:**
+### How It Works
+
+During change order submission, the system:
+1. Calculates who would approve the change order with current values
+2. Compares to who approved the original requisition
+3. If different, forces re-routing even if dollar/percentage tolerances are met
+
+This ensures that changes affecting approval routing get proper oversight.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `TRUE` | Compare approvers and re-route if different (DEFAULT) |
+| `FALSE` | Only use tolerance settings to determine re-routing |
+
+### Example
+
+```
+Original req: $500, routes to Manager A
+Change order: $520 (+$20, within tolerance), but now routes to Manager B
+
+With PO_UPDATE_CHECK_REROUTE = TRUE:
+-> Re-routes because approvers changed (Manager A vs Manager B)
+
+With PO_UPDATE_CHECK_REROUTE = FALSE:
+-> No re-route because within dollar/percentage tolerance
+```
+
+### Common Questions
+
 - What is PO_UPDATE_CHECK_REROUTE?
-- What does PO_UPDATE_CHECK_REROUTE do?
-- What is the default value for PO_UPDATE_CHECK_REROUTE?
-- How do I configure PO_UPDATE_CHECK_REROUTE?
+- Why did my change order re-route when it was within tolerance?
+- How do I control re-routing based on approver changes?
 
-## Setting Details
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,9 +48,15 @@ As part of the approval process, do you want the system to compare the approvers
 | **Owner** | Admin |
 | **Default Value** | TRUE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'PO_UPDATE_CHECK_REROUTE'
 ```
+
+### Related Settings
+
+- [PO_UPDATE_TOLERANCE_AMOUNT](PO_UPDATE_TOLERANCE_AMOUNT.md) - Dollar tolerance for changes
+- [PO_UPDATE_TOLERANCE_PCT](PO_UPDATE_TOLERANCE_PCT.md) - Percentage tolerance for changes
+- [CO_HEADER_REROUTE_FIELDS](CO_HEADER_REROUTE_FIELDS.md) - Header fields forcing re-route

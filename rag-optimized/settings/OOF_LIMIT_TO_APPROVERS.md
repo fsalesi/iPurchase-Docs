@@ -2,16 +2,26 @@
 
 **Category:** Approval Workflow
 
-A setting of TRUE will allow a user to delegate only to other Approvers. A False value will allow a user to delegate to anyone.
+Restricts Out of Office delegation to only users who are themselves approvers. When enabled, users can only delegate to people who have approval authority.
 
-**Common questions this answers:**
+### How It Works
+
+When TRUE, the system filters the delegate selection list to only show users who appear in approval rules or have approval authority. This ensures delegated approvals go to qualified approvers.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `TRUE` | Delegates must be approvers |
+| `FALSE` | Delegates can be any user (DEFAULT) |
+
+### Common Questions
+
 - What is OOF_LIMIT_TO_APPROVERS?
-- What does OOF_LIMIT_TO_APPROVERS do?
-- What is the default value for OOF_LIMIT_TO_APPROVERS?
-- How do I configure OOF_LIMIT_TO_APPROVERS?
-- How does OOF_LIMIT_TO_APPROVERS affect approval routing?
+- Why can't I select certain users as delegates?
+- How do I restrict delegation to approvers only?
 
-## Setting Details
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -20,11 +30,15 @@ A setting of TRUE will allow a user to delegate only to other Approvers. A False
 | **Owner** | Admin |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'OOF_LIMIT_TO_APPROVERS'
 ```
 
-**Related settings:** USE_CHAINED_DELEGATES
+### Related Settings
+
+- [ALLOW_OOF](ALLOW_OOF.md) - Enable Out of Office functionality
+- [OOF_LIMIT_BY_DEPT](OOF_LIMIT_BY_DEPT.md) - Restrict delegates to same department
+- [OOF_LIMIT_BY_DOLLARS](OOF_LIMIT_BY_DOLLARS.md) - Restrict delegates by approval limit

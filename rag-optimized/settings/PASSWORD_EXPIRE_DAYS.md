@@ -2,15 +2,27 @@
 
 **Category:** Security & Authentication
 
-This setting allows the administrator to set how often passwords need to be reset.
+Defines how many days a password remains valid before the user must change it. Set to 0 to disable password expiration.
 
-**Common questions this answers:**
+### How It Works
+
+iPurchase tracks the last password change date for each user. When the current date exceeds last change date + PASSWORD_EXPIRE_DAYS, the user is forced to change their password at next login.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| Number | Days until password expires (e.g., "45") |
+| 0 | Passwords never expire |
+
+### Common Questions
+
 - What is PASSWORD_EXPIRE_DAYS?
-- What does PASSWORD_EXPIRE_DAYS do?
-- What is the default value for PASSWORD_EXPIRE_DAYS?
-- How do I configure PASSWORD_EXPIRE_DAYS?
+- How often do passwords expire?
+- How do I disable password expiration?
+- Why am I being asked to change my password?
 
-## Setting Details
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,9 +31,14 @@ This setting allows the administrator to set how often passwords need to be rese
 | **Owner** | Admin |
 | **Default Value** | 45 |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'PASSWORD_EXPIRE_DAYS'
 ```
+
+### Related Settings
+
+- [PASSWORD_RULES](PASSWORD_RULES.md) - Password complexity requirements
+- [PASSWORD_REMINDER_DAYS](PASSWORD_REMINDER_DAYS.md) - Days before expiration to warn user

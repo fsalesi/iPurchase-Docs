@@ -2,15 +2,32 @@
 
 **Category:** Purchase Orders
 
-This is the userid of the default buyer to be used on all new requisitions. This can be overridden by DEFAULT_BUYER_[SITE], RT_[REQ_TYPE]_DEFAULT_BUYER, RT_[REQ_TYPE]_[SITE]_DEFAULT_BUYER, and vd_b...
+Specifies the default buyer assigned to new requisitions. Can be overridden at multiple levels including by site, requisition type, or vendor.
 
-**Common questions this answers:**
+### How It Works
+
+When a new requisition is created, this buyer is automatically assigned. The assignment can be overridden by more specific settings in this order:
+1. Vendor buyer (vd_buyer)
+2. RT_[TYPE]_[SITE]_DEFAULT_BUYER
+3. RT_[TYPE]_DEFAULT_BUYER
+4. DEFAULT_BUYER_[SITE]
+5. DEFAULT_BUYER (this setting)
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| User ID | Buyer's user ID to assign |
+| Blank | No default buyer assigned |
+
+### Common Questions
+
 - What is DEFAULT_BUYER?
-- What does DEFAULT_BUYER do?
-- What is the default value for DEFAULT_BUYER?
-- How do I configure DEFAULT_BUYER?
+- How do I set the default buyer?
+- Why is a different buyer being assigned?
+- How do site-specific buyers work?
 
-## Setting Details
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,9 +36,14 @@ This is the userid of the default buyer to be used on all new requisitions. This
 | **Owner** | Purchasing |
 | **Default Value** | (none) |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'DEFAULT_BUYER'
 ```
+
+### Related Settings
+
+- DEFAULT_BUYER_[SITE] - Site-specific default buyer
+- RT_[TYPE]_DEFAULT_BUYER - Type-specific default buyer

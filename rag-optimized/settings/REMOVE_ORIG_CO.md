@@ -1,27 +1,43 @@
 # REMOVE_ORIG_CO - iPurchase System Setting
 
-**Category:** Uncategorized
+**Category:** Approval Workflow
 
-This setting does not allow originator to be an approver for their own requisition for Change Orders if set to true.
+Controls whether the requisition originator is automatically removed from the approval routing for change orders. When enabled, users cannot approve their own change orders.
 
-**Common questions this answers:**
+### How It Works
+
+When a change order is submitted, if this setting is TRUE, the system removes the originator from any approval step where they would otherwise appear. This ensures someone other than the person making the change must approve it.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| `TRUE` | Remove originator from change order approval routing |
+| `FALSE` | Originator can appear in change order approval routing (DEFAULT) |
+
+### Common Questions
+
 - What is REMOVE_ORIG_CO?
-- What does REMOVE_ORIG_CO do?
-- What is the default value for REMOVE_ORIG_CO?
-- How do I configure REMOVE_ORIG_CO?
+- Can I approve my own change order?
+- How do I prevent self-approval of change orders?
 
-## Setting Details
+### Setting Details
 
 | Property | Value |
 |----------|-------|
 | **Setting Name** | REMOVE_ORIG_CO |
-| **Category** | Uncategorized |
+| **Category** | Approval Workflow |
 | **Owner** | Admin |
 | **Default Value** | FALSE |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'REMOVE_ORIG_CO'
 ```
+
+### Related Settings
+
+- [REMOVE_ORIG](REMOVE_ORIG.md) - Remove originator from regular requisition approval
+- [REMOVE_ORIGINATOR_FROM_GROUP](REMOVE_ORIGINATOR_FROM_GROUP.md) - Remove from group-based approval

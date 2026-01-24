@@ -2,15 +2,33 @@
 
 **Category:** User Management
 
-Comma separated list of User ID's or Group ID's that are allowed to set Out of office. Asterisk indicates everyone, a blank indicates no one. This setting determines whether the system will support...
+Controls which users can configure Out of Office (delegation) settings. When enabled, users can designate another person to approve requisitions on their behalf during absences.
 
-**Common questions this answers:**
+### How It Works
+
+When a user is in this list, they can access the Out of Office functionality to:
+- Set a delegate to handle their approvals
+- Specify start/end dates for the delegation
+- Have pending approvals forwarded to the delegate
+
+### Valid Values
+
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md).
+
+| Value | Behavior |
+|-------|----------|
+| `*` (asterisk) | Everyone can set OOF (DEFAULT) |
+| Blank/empty | No one can set OOF |
+| User/Group list | Only specified users or groups can set OOF |
+
+### Common Questions
+
 - What is ALLOW_OOF?
-- What does ALLOW_OOF do?
-- What is the default value for ALLOW_OOF?
-- How do I configure ALLOW_OOF?
+- How do I enable Out of Office?
+- Who can set up delegation?
+- How do I restrict OOF to certain users?
 
-## Setting Details
+### Setting Details
 
 | Property | Value |
 |----------|-------|
@@ -19,9 +37,17 @@ Comma separated list of User ID's or Group ID's that are allowed to set Out of o
 | **Owner** | Admin |
 | **Default Value** | * |
 
-## How to Query
+### How to Query
 
 ```sql
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALLOW_OOF'
 ```
+
+### Related Settings
+
+- [OOF_LIMIT_TO_APPROVERS](OOF_LIMIT_TO_APPROVERS.md) - Restrict delegates to approvers only
+- [OOF_LIMIT_BY_DEPT](OOF_LIMIT_BY_DEPT.md) - Restrict delegates to same department
+- [OOF_LIMIT_BY_DOLLARS](OOF_LIMIT_BY_DOLLARS.md) - Restrict delegates by approval limit
+- [OOF_NOTIFY_OLD](OOF_NOTIFY_OLD.md) - Email pending reqs to new delegate
+- [USE_CHAINED_DELEGATES](USE_CHAINED_DELEGATES.md) - Allow delegate chains
