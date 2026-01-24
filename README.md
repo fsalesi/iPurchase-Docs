@@ -35,6 +35,7 @@ Administration screens are shared between iPurchase and iApprove:
 - [Jobs](admin/screens/03-jobs.md) - Background job scheduling and monitoring
 - [Audit Trail](admin/screens/04-audit-trail.md) - Track all database changes by user and date
 - [Requisition Audit Trail](admin/screens/05-requisition-audit-trail.md) - Requisition workflow history (placeholder)
+- [Group Report](admin/screens/06-group-report.md) - Export user/group membership to Excel for auditors
 
 ### Admin Components
 
