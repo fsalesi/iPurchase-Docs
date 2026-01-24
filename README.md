@@ -89,6 +89,15 @@ Administration screens are shared between iPurchase and iApprove:
 
 ## Reference
 
+### Database Schema
+
+- [Database Schema Reference](reference/database-schema.md) - Complete schema for 25 documented tables:
+  - Core Tables: `wus_mstr`, `wgr_mstr`, `wugr_mstr`, `pf_mstr`
+  - Requisition Tables: `xxreq_mstr`, `xxreqd_det`, `xxreq_audit`, `xxreq_attach`
+  - Approval Tables: `xxapp_mstr`, `xxAppRule`, `xxAppField`
+  - Archive Tables: `xxpo_archive`, `xxnote_mstr`, `xxmaild_det`
+  - And more...
+
 ### System Settings
 
 - [System Settings Reference](reference/system-settings-reference.md#table-of-contents) - Complete catalog organized by category:
