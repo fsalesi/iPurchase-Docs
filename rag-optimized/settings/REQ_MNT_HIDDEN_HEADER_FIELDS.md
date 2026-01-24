@@ -6,15 +6,7 @@ Comma separated list of fields that are hidden at the header. This should not be
 
 ### How It Works
 
-This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
-
-### Valid Values
-
-| Value | Behavior |
-|-------|----------|
-| `*` (asterisk) | Everyone/all users |
-| Blank/empty | No one/disabled |
-| User/Group list | Only specified users/groups |
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

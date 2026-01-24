@@ -6,7 +6,7 @@ Threshold amount added to defined budget amount before error that you can not cr
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

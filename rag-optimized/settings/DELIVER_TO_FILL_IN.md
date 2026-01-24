@@ -4,9 +4,16 @@
 
 Rather than the Deliver To field being a drop down list of users defined in iPurchase, setting this to TRUE makes the deliver to field an non-validated text field.
 
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| **TRUE** | Enables this feature |
+| **FALSE** | Disables this feature |
+
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

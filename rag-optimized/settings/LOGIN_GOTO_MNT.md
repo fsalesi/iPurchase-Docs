@@ -4,17 +4,22 @@
 
 Comma separated list of User ID's or Group ID's that will always be logged into the requisition workbench. This only applies to non-approvers. Asterisk indicates everyone, a blank indicates no one.
 
-### How It Works
-
-This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
-
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| `*` (asterisk) | Everyone/all users |
-| Blank/empty | No one/disabled |
-| User/Group list | Only specified users/groups |
+| **TRUE** | Enables this feature |
+| **FALSE** | Disables this feature |
+
+### How It Works
+
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+**Common patterns:**
+- `*` - Everyone/all values allowed
+- (blank) - No one/feature disabled
+- `user1,user2` - Specific users only
+- `group1,!user1` - Group members except specific user
 
 ### Setting Details
 

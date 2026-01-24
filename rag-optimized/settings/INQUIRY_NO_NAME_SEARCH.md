@@ -4,14 +4,16 @@
 
 If this setting is set to true then when a user searches for a supplier they will not be allowed to search by name, only by supplier number. a value of false enables the user to search by both supplier number and name.
 
-### How It Works
-
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| `TRUE` | Enabled |
-| `FALSE` | Disabled |
+| **TRUE** | Enables this feature |
+| **FALSE** | Disables this feature |
+
+### How It Works
+
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

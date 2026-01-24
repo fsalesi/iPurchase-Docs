@@ -2,11 +2,32 @@
 
 **Category:** User Management
 
-Comma-separated field names. Custom user profile fields to display/edit.
+Specifies custom user profile fields to display and allow editing in the user management screens.
 
 ### How It Works
 
-See the description above for valid values and usage.
+iPurchase user records contain standard fields (name, email, department, etc.) plus custom fields that can be organization-specific. This setting controls which custom fields appear in the user profile interface.
+
+**Use cases:**
+- Display employee ID or badge number
+- Show cost center assignments
+- Include department codes
+- Add custom organizational attributes
+
+### Valid Values
+
+Comma-separated list of field names from the user table (wus_mstr).
+
+**Example:**
+```sql
+USER_PROFILE_FIELDS = "wus_emp_id,wus_badge,wus_division"
+```
+
+### Common Questions
+
+- How do I add custom fields to user profiles?
+- What user fields can I display?
+- How do I show employee ID on user screens?
 
 ### Setting Details
 

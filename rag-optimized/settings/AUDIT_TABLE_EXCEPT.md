@@ -6,7 +6,7 @@ Comma-separated field names. Fields to exclude from audit trail for the specifie
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

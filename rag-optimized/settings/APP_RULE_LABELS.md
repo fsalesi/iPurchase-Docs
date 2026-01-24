@@ -6,7 +6,7 @@ List of labels for the fields listed in setting APP_RULE_FIELDS
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

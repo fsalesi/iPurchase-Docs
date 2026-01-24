@@ -6,7 +6,7 @@ These are the list of fields that are hidden at the line level. These should not
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

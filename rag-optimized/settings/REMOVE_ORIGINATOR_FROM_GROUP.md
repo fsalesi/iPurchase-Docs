@@ -4,9 +4,16 @@
 
 If the originator is listed as a member of a group on the approval routing, if this person should be removed from the group set this setting to TRUE.
 
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| **TRUE** | Enables this feature |
+| **FALSE** | Disables this feature |
+
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

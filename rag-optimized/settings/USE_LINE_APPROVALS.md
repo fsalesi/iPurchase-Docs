@@ -4,9 +4,16 @@
 
 This setting determines whether supervisors can approve or reject individual line items. Only those line items which are approved will be added to the PO. If there are any items which are neither approved nor rejected, then the final approval will be disallowed until all items are either approved or rejected.
 
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| **TRUE** | Enables this feature |
+| **FALSE** | Disables this feature |
+
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

@@ -6,7 +6,7 @@ This setting holds the report code for the print version you are using. ex: Cust
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

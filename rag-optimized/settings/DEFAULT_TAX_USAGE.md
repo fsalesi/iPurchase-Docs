@@ -6,7 +6,7 @@ You can use this to set the Tax Usage field in QAD. If set this will default for
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 
@@ -14,7 +14,7 @@ See the description above for valid values and usage.
 |----------|-------|
 | **Setting Name** | DEFAULT_TAX_USAGE |
 | **Category** | GL Accounts & Finance |
-| **Owner** |  |
+| **Owner** | Admin |
 | **Default Value** | (none) |
 
 ### How to Query

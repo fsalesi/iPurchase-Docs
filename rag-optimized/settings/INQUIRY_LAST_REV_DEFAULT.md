@@ -4,9 +4,16 @@
 
 Setting this to true will check the Last Revision Only in the requisition inquiry. This is useful when you only want to see the requisition for the last revision of a PO. As opposed to all the requisitions for the PO.
 
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| **TRUE** | Enables this feature |
+| **FALSE** | Disables this feature |
+
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 
@@ -14,7 +21,7 @@ See the description above for valid values and usage.
 |----------|-------|
 | **Setting Name** | INQUIRY_LAST_REV_DEFAULT |
 | **Category** | Reporting & Inquiry |
-| **Owner** |  |
+| **Owner** | Admin |
 | **Default Value** | TRUE |
 
 ### How to Query

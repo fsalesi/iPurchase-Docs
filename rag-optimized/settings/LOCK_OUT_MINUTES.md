@@ -6,7 +6,7 @@ The number of minutes a user will be locked out after failing to login more than
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

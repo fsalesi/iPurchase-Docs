@@ -6,7 +6,7 @@ Do not use QAD passwords for users that are also in QAD. Let iPurchase manage th
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

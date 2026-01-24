@@ -6,7 +6,28 @@ Company name displayed on reports, purchase orders, and printed documents.
 
 ### How It Works
 
-See the description above for valid values and usage.
+This setting defines the company name that appears throughout the iPurchase system:
+- Purchase order headers and footers
+- Printed reports and documents
+- Email communications
+- System-generated PDFs
+
+The value should match your organization's official legal or trading name as you want it to appear on external documents sent to suppliers.
+
+### Valid Values
+
+Any text string representing your company name.
+
+**Examples:**
+- `Acme Corporation`
+- `ABC Manufacturing, Inc.`
+- `Global Supply Co.`
+
+### Common Questions
+
+- How do I change the company name on purchase orders?
+- Where does the company name appear in iPurchase?
+- How do I update the company name displayed on reports?
 
 ### Setting Details
 

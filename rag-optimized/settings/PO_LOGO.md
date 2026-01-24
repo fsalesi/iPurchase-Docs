@@ -6,7 +6,7 @@ The value of this setting is a path to the physical file name on the app server.
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

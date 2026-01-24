@@ -4,9 +4,16 @@
 
 If set to True then a user can search for a supplier using any character in the suppliers name.  If set to True, the supplier lookup will run slower.
 
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| **TRUE** | Enables this feature |
+| **FALSE** | Disables this feature |
+
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

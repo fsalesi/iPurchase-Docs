@@ -6,15 +6,7 @@ Comma separated list of supplier numbers which should not allow final approval.
 
 ### How It Works
 
-This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
-
-### Valid Values
-
-| Value | Behavior |
-|-------|----------|
-| `*` (asterisk) | Everyone/all users |
-| Blank/empty | No one/disabled |
-| User/Group list | Only specified users/groups |
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 
@@ -22,7 +14,7 @@ This setting uses [Can-Do list format](../../reference/can-do-list-format.md) fo
 |----------|-------|
 | **Setting Name** | NEW_SUPPLIER_NBRS |
 | **Category** | Catalog & Vendors |
-| **Owner** |  |
+| **Owner** | Admin |
 | **Default Value** | (none) |
 
 ### How to Query

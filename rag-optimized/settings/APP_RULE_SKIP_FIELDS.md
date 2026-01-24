@@ -6,7 +6,7 @@ List of fields from xxreq_mstr and xxreqd_det that you don't want to show in the
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

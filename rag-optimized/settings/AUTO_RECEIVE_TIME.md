@@ -6,7 +6,7 @@ Time value. Timestamp used when AUTO_RECEIVE creates automatic receipt records. 
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

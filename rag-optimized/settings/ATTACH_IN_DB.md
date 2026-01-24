@@ -4,14 +4,16 @@
 
 Store attachments in iPurchase database (True) or store attachments on disk (False).
 
-### How It Works
-
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| `TRUE` | Enabled |
-| `FALSE` | Disabled |
+| **TRUE** | Enables this feature |
+| **FALSE** | Disables this feature |
+
+### How It Works
+
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

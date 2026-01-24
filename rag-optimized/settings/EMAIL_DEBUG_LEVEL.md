@@ -6,7 +6,7 @@ Numeric 0-3. Email system debug verbosity. 0=off, 1=basic, 2=detailed, 3=verbose
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

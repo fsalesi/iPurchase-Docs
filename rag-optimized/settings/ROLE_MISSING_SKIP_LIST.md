@@ -2,19 +2,41 @@
 
 **Category:** Approval Workflow
 
-Comma-separated list of Types (Cost Center, Account, Project, Sub Account, Site). If a role mapping is missing for a Type in this list, the approval engine skips that approver silently. If a Type is NOT in this list and has no role mapping, the engine throws an error blocking submission. Example: If Cost Center is in this list and CC 8200 has no Manager defined, the rule skips that approval. If Cost Center is NOT in this list, user gets error: No Manager defined for Cost Center 8200.
+Controls which approval role types are silently skipped when no role mapping exists, versus which types throw an error blocking submission.
 
 ### How It Works
 
-This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+iPurchase uses role-based approval variables like `$Cost Center:Manager` or `$Project:Director`. These require role mappings to be defined in the User Roles screen. But what happens when a mapping is missing?
+
+This setting lists the Types (Cost Center, Account, Project, Sub Account, Site) that should be **silently skipped** if no role mapping exists.
+
+**Behavior:**
+- Type **IN** this list + no mapping = approver silently skipped, req proceeds
+- Type **NOT IN** this list + no mapping = error thrown, submission blocked
+
+**Example:**
+```sql
+ROLE_MISSING_SKIP_LIST = "Cost Center,Project"
+```
+
+- Req uses CC 8200, no Manager defined for 8200 → skip that approver, continue
+- Req uses Account 5100, no Manager defined for 5100 → ERROR: "No Manager defined for Account 5100"
 
 ### Valid Values
 
-| Value | Behavior |
-|-------|----------|
-| `*` (asterisk) | Everyone/all users |
-| Blank/empty | No one/disabled |
-| User/Group list | Only specified users/groups |
+Comma-separated list of role types:
+- `Cost Center`
+- `Account`
+- `Project`
+- `Sub Account`
+- `Site`
+
+### Common Questions
+
+- Why am I getting "No Manager defined for Cost Center" errors?
+- How do I skip missing role mappings instead of blocking submission?
+- What happens when a role mapping doesn't exist?
+- How do I make certain role types optional?
 
 ### Setting Details
 
@@ -31,3 +53,7 @@ This setting uses [Can-Do list format](../../reference/can-do-list-format.md) fo
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ROLE_MISSING_SKIP_LIST'
 ```
+
+### Related Settings
+
+- [ROLES](ROLES.md) - Defines available role names

@@ -4,14 +4,16 @@
 
 True or False Do not check the QAD user's active flag. Normally a user (if the QAD User ID matches the iPurchase User ID) needs to be active in QAD in order to login to iPurchase. This does not always work for companies. This flag bypasses the check and allows the user to login.
 
-### How It Works
-
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| `TRUE` | Enabled |
-| `FALSE` | Disabled |
+| **TRUE** | Enables this feature |
+| **FALSE** | Disables this feature |
+
+### How It Works
+
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

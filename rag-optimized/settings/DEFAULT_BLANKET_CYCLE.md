@@ -6,7 +6,7 @@ After the administrator has added values to the CODE_LIST_H_BLANKET_CYCLE settin
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

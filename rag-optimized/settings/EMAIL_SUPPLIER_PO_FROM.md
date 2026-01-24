@@ -6,7 +6,7 @@ This is the email address to be used as the "From" field on the email. This can 
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

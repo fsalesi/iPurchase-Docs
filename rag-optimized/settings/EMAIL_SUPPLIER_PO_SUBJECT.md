@@ -6,7 +6,7 @@ This text will be used as the subject of the email going to the supplier. If you
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

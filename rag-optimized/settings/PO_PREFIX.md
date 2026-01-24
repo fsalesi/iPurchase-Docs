@@ -6,7 +6,7 @@ Prefix added to purchase order numbers (e.g., PO- results in PO-12345).
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

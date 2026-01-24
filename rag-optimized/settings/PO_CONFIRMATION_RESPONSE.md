@@ -6,7 +6,7 @@ Message to display to the supplier when the supplier confirms receipt of the PO 
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

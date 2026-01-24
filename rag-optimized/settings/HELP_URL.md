@@ -6,7 +6,7 @@ If you've developed customized help, then enter the URL to that file here. ex. h
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 
@@ -14,7 +14,7 @@ See the description above for valid values and usage.
 |----------|-------|
 | **Setting Name** | HELP_URL |
 | **Category** | Uncategorized |
-| **Owner** |  |
+| **Owner** | Admin |
 | **Default Value** | (none) |
 
 ### How to Query

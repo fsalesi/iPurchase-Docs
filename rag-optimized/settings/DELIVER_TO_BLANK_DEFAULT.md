@@ -6,7 +6,7 @@ Default deliver-to value used when deliver-to field is left blank on requisition
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

@@ -6,7 +6,7 @@ If the taxable amounts need to figure into the approval rules, then use this set
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

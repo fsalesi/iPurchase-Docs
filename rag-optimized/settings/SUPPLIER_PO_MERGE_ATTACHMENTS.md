@@ -6,7 +6,7 @@ This setting is where the filename, with the full path to the pdf file or a spac
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

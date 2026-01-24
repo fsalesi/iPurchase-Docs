@@ -6,7 +6,7 @@ Comma-separated req types. Types where tax is calculated. If blank, all types ar
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

@@ -6,7 +6,7 @@ This is the name of the Progress Program which integrates with a document manage
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

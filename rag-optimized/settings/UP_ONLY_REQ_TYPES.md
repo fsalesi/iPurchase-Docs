@@ -6,7 +6,7 @@ Comma-separated requisition types. Types that use UP_ONLY (Update PO Only) routi
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

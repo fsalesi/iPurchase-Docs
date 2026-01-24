@@ -6,7 +6,7 @@ iPurchase uses an HTML FRAMESET to display the Punchout website as well as the R
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

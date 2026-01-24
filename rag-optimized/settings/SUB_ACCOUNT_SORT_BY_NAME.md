@@ -6,12 +6,7 @@ True or False A value of TRUE will show the sub-accounts sorted by name. Any oth
 
 ### How It Works
 
-### Valid Values
-
-| Value | Behavior |
-|-------|----------|
-| `TRUE` | Enabled |
-| `FALSE` | Disabled |
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

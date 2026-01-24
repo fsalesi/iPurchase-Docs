@@ -2,19 +2,17 @@
 
 **Category:** GL Accounts & Finance
 
-This is a comma separated list of accounts that can be used with iPurchase. The field uses the Progress �Can-Do� function. See Progress help if needed. A sample value can be 5521,!5622,56*,7*,!* This is interpreted as account 5521 is valid, account 5622 is not valid, any accounts that begin with 56 (except 5622) are valid, any accounts that begin with a 7 are valid, and finally, all other accounts are invalid. These can be further restricted by Requisition Type with other settings.
+This is a comma separated list of accounts that can be used with iPurchase. The field uses the Progress 'Can-Do' function. See Progress help if needed. A sample value can be 5521,!5622,56*,7*,!* This is interpreted as account 5521 is valid, account 5622 is not valid, any accounts that begin with 56 (except 5622) are valid, any accounts that begin with a 7 are valid, and finally, all other accounts are invalid. These can be further restricted by Requisition Type with other settings.
 
 ### How It Works
 
 This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
 
-### Valid Values
-
-| Value | Behavior |
-|-------|----------|
-| `*` (asterisk) | Everyone/all users |
-| Blank/empty | No one/disabled |
-| User/Group list | Only specified users/groups |
+**Common patterns:**
+- `*` - Everyone/all values allowed
+- (blank) - No one/feature disabled
+- `user1,user2` - Specific users only
+- `group1,!user1` - Group members except specific user
 
 ### Setting Details
 

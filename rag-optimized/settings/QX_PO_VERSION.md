@@ -6,7 +6,7 @@ Version of the qxtend PO method for this environment
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 
@@ -14,7 +14,7 @@ See the description above for valid values and usage.
 |----------|-------|
 | **Setting Name** | QX_PO_VERSION |
 | **Category** | Purchase Orders |
-| **Owner** |  |
+| **Owner** | Admin |
 | **Default Value** | eB2_3 |
 
 ### How to Query

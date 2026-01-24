@@ -6,7 +6,7 @@ This setting is a list of requisition types that would set the PO Required field
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

@@ -6,7 +6,7 @@ List of requisition types which will allow a Item Location to be entered during 
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

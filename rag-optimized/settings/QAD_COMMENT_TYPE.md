@@ -6,7 +6,7 @@ This is the comment type to be used when creating PO Header and PO Line comments
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

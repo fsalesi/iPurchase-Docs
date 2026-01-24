@@ -6,7 +6,7 @@ Name of the qxtend instance for Purchase Orders in this environment
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 
@@ -14,7 +14,7 @@ See the description above for valid values and usage.
 |----------|-------|
 | **Setting Name** | QX_PO_NAME |
 | **Category** | Purchase Orders |
-| **Owner** |  |
+| **Owner** | Admin |
 | **Default Value** | QADERP |
 
 ### How to Query

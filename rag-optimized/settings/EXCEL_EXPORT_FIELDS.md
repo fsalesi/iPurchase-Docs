@@ -6,7 +6,7 @@ This is the list of fields that will be exported from the requisition workbench.
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

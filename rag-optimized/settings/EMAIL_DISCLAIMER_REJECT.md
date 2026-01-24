@@ -6,7 +6,7 @@ If questions, please contact the approver that rejected the requisition
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 
@@ -14,7 +14,7 @@ See the description above for valid values and usage.
 |----------|-------|
 | **Setting Name** | EMAIL_DISCLAIMER_REJECT |
 | **Category** | Email Configuration |
-| **Owner** |  |
+| **Owner** | Admin |
 | **Default Value** | If questions, please contact the approver that rejected the requisition |
 
 ### How to Query

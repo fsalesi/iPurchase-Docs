@@ -6,7 +6,7 @@ If you currently have the Out-Of-Office setting on, this setting can automatical
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

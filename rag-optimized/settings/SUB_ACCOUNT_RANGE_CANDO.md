@@ -6,7 +6,13 @@ This is the same as ACCOUNT_RANGE_CANDO except this applies to sub accounts. USE
 
 ### How It Works
 
-See the description above for valid values and usage.
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+
+**Common patterns:**
+- `*` - Everyone/all values allowed
+- (blank) - No one/feature disabled
+- `user1,user2` - Specific users only
+- `group1,!user1` - Group members except specific user
 
 ### Setting Details
 

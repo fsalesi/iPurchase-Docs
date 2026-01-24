@@ -6,7 +6,7 @@ Directory path on application server. Folder where user import files are placed 
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

@@ -2,11 +2,37 @@
 
 **Category:** System Configuration
 
-Windows Task Scheduler task name for iPurchase scheduled jobs.
+Specifies the Windows Task Scheduler task name used for iPurchase scheduled jobs.
 
 ### How It Works
 
-See the description above for valid values and usage.
+iPurchase uses Windows Task Scheduler to run background jobs such as:
+- Email queue processing
+- PO creation batches
+- Escalation notifications
+- Data synchronization
+
+This setting stores the name of the scheduled task so iPurchase can monitor and manage it.
+
+**Typical setup:**
+1. Windows Task Scheduler runs the iPurchase job processor on a schedule
+2. This setting stores the task name for reference
+3. iPurchase can check task status and trigger runs
+
+### Valid Values
+
+Windows Task Scheduler task name string.
+
+**Example:**
+```sql
+WINDOWS_TASK_NAME = "iPurchase_JobProcessor"
+```
+
+### Common Questions
+
+- What scheduled task does iPurchase use?
+- How do I configure iPurchase background jobs?
+- Where do I find the Windows Task Scheduler task for iPurchase?
 
 ### Setting Details
 
@@ -23,3 +49,8 @@ See the description above for valid values and usage.
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'WINDOWS_TASK_NAME'
 ```
+
+### Related Settings
+
+- [WORK_DAY_START_TIME](WORK_DAY_START_TIME.md) - Business hours start
+- [WORK_DAY_STOP_TIME](WORK_DAY_STOP_TIME.md) - Business hours end

@@ -4,14 +4,16 @@
 
 If using Line Approvals, then setting this to a value of TRUE will set each line to Approved (Green) as the default each time the requisition is submitted for approval. A value of FALSE will set each requisition to neither approved nor rejected (Yellow).
 
-### How It Works
-
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| `TRUE` | Enabled |
-| `FALSE` | Disabled |
+| **TRUE** | Enables this feature |
+| **FALSE** | Disables this feature |
+
+### How It Works
+
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

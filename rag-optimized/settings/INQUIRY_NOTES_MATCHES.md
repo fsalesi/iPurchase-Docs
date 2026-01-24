@@ -4,9 +4,16 @@
 
 When searching requisitions by using the notes field, use 'matches' vs 'contains', matches can be much slower but more flexible.
 
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| **TRUE** | Enables this feature |
+| **FALSE** | Disables this feature |
+
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

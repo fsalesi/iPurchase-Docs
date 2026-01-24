@@ -6,7 +6,7 @@ Is a directory on the iPurchase application server where the QAD Reporting Frame
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

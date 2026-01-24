@@ -6,12 +6,7 @@ True or False or list of users groups. Default value is blank. Will give the use
 
 ### How It Works
 
-### Valid Values
-
-| Value | Behavior |
-|-------|----------|
-| `TRUE` | Enabled |
-| `FALSE` | Disabled |
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

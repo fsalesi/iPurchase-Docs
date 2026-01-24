@@ -6,15 +6,7 @@ Comma-Separated list of fields from xxreq_mstr and xxreqd_det tables. You can li
 
 ### How It Works
 
-This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
-
-### Valid Values
-
-| Value | Behavior |
-|-------|----------|
-| `*` (asterisk) | Everyone/all users |
-| Blank/empty | No one/disabled |
-| User/Group list | Only specified users/groups |
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

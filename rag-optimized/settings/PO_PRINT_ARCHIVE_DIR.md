@@ -6,7 +6,7 @@ Directory on application server. Enter the path to a directory on the applicatio
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

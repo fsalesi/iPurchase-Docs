@@ -6,7 +6,7 @@ Prints the POs using the built in iPurchase look. Valid choices are GRAPHICAL an
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

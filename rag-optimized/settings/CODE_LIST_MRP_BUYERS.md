@@ -6,7 +6,7 @@ Only use this setting if you want to have a different buyer list show up in the 
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

@@ -6,7 +6,7 @@ The number of years to keep requisitions. Note: Pending Requisitions can't be ar
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

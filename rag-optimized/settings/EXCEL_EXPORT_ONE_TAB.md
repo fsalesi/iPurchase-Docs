@@ -4,9 +4,16 @@
 
 Will export a consolidated view of the requisition when the Excel link is clicked in Requisition Inquiry. Default FALSE
 
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| **TRUE** | Enables this feature |
+| **FALSE** | Disables this feature |
+
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

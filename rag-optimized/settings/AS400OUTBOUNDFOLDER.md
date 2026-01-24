@@ -6,7 +6,7 @@ Directory path on application server. Folder where AS400 catalog XML files are w
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

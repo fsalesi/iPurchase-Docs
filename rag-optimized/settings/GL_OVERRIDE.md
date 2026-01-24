@@ -2,11 +2,18 @@
 
 **Category:** GL Accounts & Finance
 
-If you set this setting to true, then all items entered in the line entry screen will have the account, sub-account, and cost center set to the values which QAD would dictate based on the vendor and item.  This setting will override all other account, sub-account, and cost center settings. This setting can also be at the requisition type level � see RT_[Requisition Type]_GL_Override
+If you set this setting to true, then all items entered in the line entry screen will have the account, sub-account, and cost center set to the values which QAD would dictate based on the vendor and item.  This setting will override all other account, sub-account, and cost center settings. This setting can also be at the requisition type level ' see RT_[Requisition Type]_GL_Override
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| **TRUE** | Enables this feature |
+| **FALSE** | Disables this feature |
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 

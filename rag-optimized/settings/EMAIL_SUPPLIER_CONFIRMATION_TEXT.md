@@ -6,7 +6,7 @@ This is the text that is to be inserted above the link which is included in the 
 
 ### How It Works
 
-See the description above for valid values and usage.
+See the description above for details on how this setting affects system behavior.
 
 ### Setting Details
 
