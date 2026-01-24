@@ -41,12 +41,12 @@ Clicking Group Report immediately generates and downloads an Excel file. There i
 | Created on | wus_mstr.wus_created_date | Account creation date |
 | Created By | wus_mstr.wus_created_by | Who created the account |
 | Disabled | wus_mstr.wus_disable | Whether account is disabled |
-| Password Expire Date | wus_mstr.wus_pwd_expire | When password expires |
+| Password Expire Date | wus_mstr.wus_expire | When password expires |
 | Approval Amt | wus_mstr.wus_app_amt | Approval limit |
 | Supervisor | wus_mstr.wus_supervisor | Supervisor's user ID |
 | Domains | wus_mstr.wus_domains | Domains user can access |
 | Last Login | wus_mstr.wus_last_login | Last login timestamp |
-| Departments | wus_mstr.wus_depts | Departments user belongs to |
+| Departments | pf_mstr (user defaults) | Departments user belongs to |
 
 ## Use Cases
 
