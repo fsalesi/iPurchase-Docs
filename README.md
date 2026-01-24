@@ -121,3 +121,17 @@ Documentation follows these conventions:
 4. **Front matter**: Include screen_id, database_tables, related_screens
 5. **Sections**: Overview, Access Path, Screenshots, Fields, Buttons, Business Rules, Related
 
+
+## iFramework Configuration Screens
+
+| # | Screen | Description | Status |
+|---|--------|-------------|--------|
+| 01 | [Workbench](admin/screens/iframework-01-workbench.md) | Development workbench | 🔜 Planned |
+| 02 | Menu Maintenance | Menu configuration | 🔜 Planned |
+| 03 | VST Locks | Virtual system table locks | 🔜 Planned |
+| 04 | Compiler | Code compilation | 🔜 Planned |
+| 05 | Query Tester | SQL query testing | 🔜 Planned |
+| 06 | Schema Browser | Database schema viewer | 🔜 Planned |
+| 07 | Languages | Language configuration | 🔜 Planned |
+| 08 | Custom Data | Custom data management | 🔜 Planned |
+| 09 | Translations | Translation management | 🔜 Planned |
