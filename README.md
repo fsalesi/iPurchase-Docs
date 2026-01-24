@@ -12,20 +12,36 @@ Comprehensive documentation for iPurchase and iApprove applications.
 ## Structure
 
 ```
-├── admin/                  # Shared Administration (iPurchase + iApprove)
-│   ├── screens/            # Admin screen documentation
-│   ├── components/         # Reusable admin UI components
-│   └── screenshots/        # Admin screen screenshots
+├── admin/                      # Shared Administration (iPurchase + iApprove)
+│   ├── screens/                # Admin screen documentation (10 shared + 10 iPurchase + 8 iFramework)
+│   ├── components/             # Reusable admin UI components
+│   └── screenshots/            # Admin screen screenshots
 │
-├── reference/              # Reference materials
+├── reference/                  # Reference materials
 │   ├── system-settings-reference.md   # 550+ settings by category
-│   └── system-settings-bible.csv      # Raw settings data
+│   ├── system-settings-bible.csv      # Raw settings data
+│   ├── database-schema.md             # 23 core tables documented
+│   ├── approval-systems.md            # Approval workflow logic
+│   ├── approval-strategy-guide.md     # Designing approval rules
+│   ├── admin-guide.md                 # Administrative procedures
+│   └── can-do-list-format.md          # Pattern matching syntax
 │
-├── ipurchase/              # iPurchase End User Documentation (planned)
-├── iapprove/               # iApprove Documentation (planned)
-├── implementation/         # Implementation guides (planned)
-├── functional/             # Business process documentation (planned)
-└── technical/              # Database schemas, APIs (planned)
+├── faq/                        # Frequently Asked Questions
+│   ├── general/                # General (all iFramework apps)
+│   │   ├── sso-azure-setup.md         # Azure AD/Entra ID SSO
+│   │   ├── system-settings.md         # Domain settings, CODE_LIST, RT_
+│   │   └── user-management.md         # Passwords, groups, permissions
+│   └── ipurchase/              # iPurchase-specific
+│       ├── approvals.md               # Self-approval, escalation, OOF
+│       ├── change-orders.md           # Tolerances, field monitoring
+│       ├── purchase-orders.md         # PO creation, printing, emailing
+│       ├── requisition-entry.md       # Types, defaults, accounts
+│       └── reroute-rules.md           # Why requisitions reroute
+│
+├── ipurchase/                  # iPurchase End User Documentation (planned)
+├── iapprove/                   # iApprove Documentation (planned)
+├── implementation/             # Implementation guides (planned)
+└── functional/                 # Business process documentation (planned)
 ```
 
 ---
