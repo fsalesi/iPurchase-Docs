@@ -1,6 +1,12 @@
 # System Settings FAQ
 
-Common questions about configuring iPurchase system settings.
+Common questions about configuring system settings.
+
+---
+
+# General (All Apps)
+
+These concepts apply to all iFramework-based applications.
 
 ---
 
@@ -12,27 +18,27 @@ Yes! Any setting can be configured for:
 - **All Domains** - Select "All Domains" in the Domain field
 - **Specific Domain** - Select a specific domain code
 
-**How iPurchase resolves settings:**
+**How settings are resolved:**
 1. First looks for a setting specific to the current domain
 2. If not found, uses the "All Domains" setting
 3. If neither exists, uses the system default
 
 ### Examples
 
-**Example 1: Different default buyers per domain**
+**Example 1: Different default values per domain**
 
 | Domain | Setting | Value |
 |--------|---------|-------|
-| All Domains | `RT_EXPENSE_DEFAULT_BUYER` | john.smith |
-| USCO | `RT_EXPENSE_DEFAULT_BUYER` | mary.jones |
-| EURO | `RT_EXPENSE_DEFAULT_BUYER` | hans.mueller |
+| All Domains | `DEFAULT_BUYER` | john.smith |
+| USCO | `DEFAULT_BUYER` | mary.jones |
+| EURO | `DEFAULT_BUYER` | hans.mueller |
 
 Result:
 - USCO domain → mary.jones
 - EURO domain → hans.mueller
 - Any other domain → john.smith
 
-**Example 2: Different approval tolerances per domain**
+**Example 2: Different tolerances per domain**
 
 | Domain | Setting | Value |
 |--------|---------|-------|
@@ -43,23 +49,65 @@ Result:
 - CORP domain → $500 tolerance
 - All other domains → $100 tolerance
 
-**Example 3: Different ship-to lists per domain**
-
-| Domain | Setting | Value |
-|--------|---------|-------|
-| All Domains | `CODE_LIST_H_SHIPTO` | (blank - uses QAD si_mstr) |
-| MFGCO | `CODE_LIST_H_SHIPTO` | LIST:WH1:Warehouse 1,WH2:Warehouse 2 |
-
-Result:
-- MFGCO domain → Only two hardcoded ship-to options
-- All other domains → Full list from QAD
-
 ### When should I use domain-specific settings?
 
 - Different business units have different processes
-- Regional requirements (tax rates, currencies, ship-to addresses)
-- Subsidiaries with different approval hierarchies
+- Regional requirements (tax rates, currencies, addresses)
+- Subsidiaries with different hierarchies
 - Testing new settings in one domain before rolling out
+
+---
+
+## Setting Value Formats
+
+### What formats do settings support?
+
+**Boolean (Yes/No):**
+```
+USE_FEATURE = TRUE
+ALLOW_ACTION = FALSE
+```
+
+**Numbers:**
+```
+TOLERANCE_AMOUNT = 100
+EXPIRE_DAYS = 90
+```
+
+**Text/Strings:**
+```
+DEFAULT_USER = john.smith
+PREFIX = R
+```
+
+**Comma-Separated Lists:**
+```
+ALLOWED_GROUPS = buyers,admin
+EXCEPT_USERS = ceo,cfo
+```
+
+**Can-Do Lists (Pattern Matching):**
+```
+ACCOUNT_RANGE = 8*,!8999
+ALLOWED_USERS = buyers,!trainee
+```
+
+---
+
+## Finding Settings
+
+### How do I find the right setting?
+
+**In the application:**
+1. Go to Admin → System Settings
+2. Use the search/filter to find settings by name or description
+3. The Help column describes what each setting does
+
+---
+
+# iPurchase Specific
+
+These settings and patterns are specific to iPurchase.
 
 ---
 
@@ -67,7 +115,7 @@ Result:
 
 ### How do CODE_LIST settings work?
 
-CODE_LIST settings control what appears in drop-down menus. You have two options:
+CODE_LIST settings control what appears in drop-down menus. You have three options:
 
 #### Option 1: Hardcoded List
 
@@ -78,7 +126,7 @@ Use `LIST:` prefix with comma-separated values:
 LIST:EA,BX,PK
 ```
 
-**Code and description:**
+**Code and description (recommended):**
 ```
 LIST:EA:Each,BX:Box,PK:Pack
 ```
@@ -185,10 +233,27 @@ RT_EXPENSE_10000_DEFAULT_BUYER = site10_buyer
 
 ---
 
+## iPurchase Setting Naming Patterns
+
+| Prefix | Category |
+|--------|----------|
+| `RT_[TYPE]_` | Requisition type settings |
+| `CODE_LIST_` | Drop-down list values |
+| `DEFAULT_` | Default values |
+| `ALLOW_` | Permission/enable settings |
+| `USE_` | Feature toggles |
+| `PO_` | Purchase order settings |
+| `CO_` | Change order settings |
+| `OOF_` | Out of office/delegation |
+| `SSO_` | Single sign-on |
+| `EMAIL_` | Email settings |
+
+---
+
 ## See Also
 
-- [System Settings Reference](../reference/system-settings-reference.md) - Complete settings catalog
-- [Requisition Entry FAQ](requisition-entry.md) - More on defaults and required fields
+- [System Settings Reference](../../../reference/system-settings-reference.md) - Complete settings catalog
+- [Requisition Entry FAQ](../ipurchase/requisition-entry.md) - More on defaults and required fields
 
 ---
 

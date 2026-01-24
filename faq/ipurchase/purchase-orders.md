@@ -149,7 +149,7 @@ Yes. Master comments can be used at header and line level.
 
 ## See Also
 
-- [System Settings Reference](../reference/system-settings-reference.md) - All PO_ settings
+- [System Settings Reference](../../reference/system-settings-reference.md) - All PO_ settings
 - [Change Orders FAQ](change-orders.md) - PO modifications
 
 ---

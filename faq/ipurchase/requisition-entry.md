@@ -126,7 +126,7 @@ Site 11000 has more restrictive account range.
 
 ### How do I control what appears in drop-down lists?
 
-Use CODE_LIST settings. See [System Settings FAQ - Drop-Down Lists](system-settings.md#drop-down-list-settings-code_list) for complete details.
+Use CODE_LIST settings. See [System Settings FAQ - Drop-Down Lists](../general/system-settings.md#drop-down-list-settings-code_list) for complete details.
 
 **Quick Summary - Three Options:**
 
@@ -244,7 +244,7 @@ A req type where lines are memo/notes only - no items, quantities, or costs.
 
 ## See Also
 
-- [System Settings Reference](../reference/system-settings-reference.md) - All RT_ settings
+- [System Settings Reference](../../reference/system-settings-reference.md) - All RT_ settings
 - [Approvals FAQ](approvals.md) - Approval routing
 - [User Management FAQ](user-management.md) - Department restrictions
 

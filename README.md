@@ -165,14 +165,18 @@ Key tables documented across screens:
 ## FAQ
 
 - [FAQ Index](faq/README.md) - Frequently asked questions
-  - [SSO Azure Setup](faq/sso-azure-setup.md) - Azure AD/Entra ID configuration
-  - [Requisition Rerouting](faq/reroute-rules.md) - Why requisitions reroute
-  - [Approvals](faq/approvals.md) - Self-approval, escalation, delegation
-  - [Change Orders](faq/change-orders.md) - Tolerances, field monitoring
-  - [User Management](faq/user-management.md) - Passwords, permissions, groups
-  - [Purchase Orders](faq/purchase-orders.md) - PO creation, printing, emailing
-  - [Requisition Entry](faq/requisition-entry.md) - Types, defaults, accounts
-  - [System Settings](faq/system-settings.md) - Domain-specific settings, value formats
+
+**General (All Apps):**
+  - [SSO Azure Setup](faq/general/sso-azure-setup.md) - Azure AD/Entra ID configuration
+  - [System Settings](faq/general/system-settings.md) - Domain-specific settings, value formats
+  - [User Management](faq/general/user-management.md) - Passwords, permissions, groups
+
+**iPurchase:**
+  - [Approvals](faq/ipurchase/approvals.md) - Self-approval, escalation, delegation
+  - [Change Orders](faq/ipurchase/change-orders.md) - Tolerances, field monitoring
+  - [Purchase Orders](faq/ipurchase/purchase-orders.md) - PO creation, printing, emailing
+  - [Requisition Entry](faq/ipurchase/requisition-entry.md) - Types, defaults, accounts
+  - [Requisition Rerouting](faq/ipurchase/reroute-rules.md) - Why requisitions reroute
 
 ## Contributing
 

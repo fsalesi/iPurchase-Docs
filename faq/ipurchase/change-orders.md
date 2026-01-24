@@ -183,8 +183,8 @@ Changes exceeding $100/10%, new lines, or field changes trigger full re-approval
 ## See Also
 
 - [Requisition Rerouting](reroute-rules.md) - Complete reroute logic
-- [Approval Strategy Guide](../reference/approval-strategy-guide.md) - Change order rules
-- [System Settings Reference](../reference/system-settings-reference.md) - All CO_ settings
+- [Approval Strategy Guide](../../reference/approval-strategy-guide.md) - Change order rules
+- [System Settings Reference](../../reference/system-settings-reference.md) - All CO_ settings
 
 ---
 

@@ -187,9 +187,9 @@ Yes, using the "Add Approver" function.
 
 ## See Also
 
-- [Approval Strategy Guide](../reference/approval-strategy-guide.md) - Rule configuration
+- [Approval Strategy Guide](../../reference/approval-strategy-guide.md) - Rule configuration
 - [Requisition Rerouting](reroute-rules.md) - When approvals reroute
-- [User Management](user-management.md) - User setup and permissions
+- [User Management](../general/user-management.md) - User setup and permissions
 
 ---
 
