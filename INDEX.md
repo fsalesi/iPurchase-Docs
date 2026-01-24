@@ -26,3 +26,7 @@ This index provides direct raw links to all documentation files for easy access 
 ---
 
 **Raw Index URL:** `https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/INDEX.md`
+
+## iPurchase Configuration Screens
+
+- [Approval Rules (Complex)](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/ipurchase-01-approval-rules.md)
