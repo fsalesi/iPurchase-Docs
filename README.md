@@ -32,6 +32,7 @@ Administration screens are shared between iPurchase and iApprove:
 
 - [Users and Groups](admin/screens/01-users-and-groups.md) - User account management, groups, permissions
 - [System Settings](admin/screens/02-system-settings.md) - System-wide configuration (550+ settings)
+- [Jobs](admin/screens/03-jobs.md) - Background job scheduling and monitoring
 
 ### Admin Components
 

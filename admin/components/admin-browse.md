@@ -174,3 +174,39 @@ Disabled Equal To [unchecked]
 - Search criteria persist for the session but reset on logout
 - Column selections can be saved as system default (affects all users)
 - Export includes only visible columns and currently filtered rows
+
+---
+
+## Batch Operations
+
+Some browse grids support batch operations on multiple selected records. When available, these features appear as:
+
+### Selection Checkbox Column
+
+A checkbox column appears as the first column in the browse. Use these to select multiple records:
+- Click individual checkboxes to select specific records
+- Selected records are highlighted
+
+### Batch Operation Icons
+
+Located at the bottom right of the browse (near pagination controls):
+
+| Icon | Name | Action |
+|------|------|--------|
+| 🗑️ (Trash) | Batch Delete | Deletes all selected records |
+| ✏️ (Pencil) | Batch Edit | Opens dialog to edit a field across all selected records |
+
+### Batch Edit Workflow
+
+1. Select multiple records using checkboxes
+2. Click the Pencil icon
+3. Select the field to modify
+4. Enter the new value
+5. Confirm to apply change to all selected records
+
+**Use Cases:**
+- Change Status on multiple jobs from "Complete" to "Active"
+- Update a field value across many records at once
+- Bulk cleanup operations
+
+**Note:** Not all browse grids support batch operations. The checkbox column and batch icons only appear on grids where this functionality is enabled.
