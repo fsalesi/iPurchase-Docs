@@ -128,7 +128,7 @@ Documentation follows these conventions:
 |---|--------|-------------|--------|
 | 01 | [Workbench](admin/screens/iframework-01-workbench.md) | Development workbench | 🔜 Planned |
 | 02 | [Menu Maintenance](admin/screens/iframework-02-menu-maintenance.md) | Navigation menu configuration | ✅ Complete |
-| 03 | VST Locks | Virtual system table locks | 🔜 Planned |
+| 03 | [VST Locks](admin/screens/iframework-03-vst-locks.md) | View locked database records (Developer) | ✅ Complete |
 | 04 | Compiler | Code compilation | 🔜 Planned |
 | 05 | Query Tester | SQL query testing | 🔜 Planned |
 | 06 | Schema Browser | Database schema viewer | 🔜 Planned |
