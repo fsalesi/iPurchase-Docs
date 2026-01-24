@@ -77,7 +77,7 @@ Administration screens are shared between iPurchase and iApprove:
 | 05 | [Query Tester](admin/screens/iframework-05-query-tester.md) | getData.p tester (Developer) | ✅ Complete |
 | 06 | [Languages](admin/screens/iframework-06-languages.md) | Language and locale configuration | ✅ Complete |
 | 07 | Custom Data | Custom data management (Developer) | 🔜 Planned |
-| 08 | Translations | Translation management | 🔜 Planned |
+| 08 | [Translations](admin/screens/iframework-09-translations.md) | UI text translations by language | ✅ Complete |
 
 ---
 
