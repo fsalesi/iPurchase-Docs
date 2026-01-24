@@ -26,6 +26,7 @@ This index provides direct raw links to all documentation files for easy access 
 - [Supplier Location Maintenance](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/ipurchase-07-supplier-location-maintenance.md)
 - [Supervisor Chart](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/ipurchase-08-supervisor-chart.md)
 - [Approval Report](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/ipurchase-09-approval-report.md)
+- [PO Number Prefix](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/screens/ipurchase-10-po-number-prefix.md)
 
 ## Shared Components
 

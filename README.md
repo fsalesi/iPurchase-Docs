@@ -62,7 +62,7 @@ Administration screens are shared between iPurchase and iApprove:
 | 07 | [Supplier Location Maintenance](admin/screens/ipurchase-07-supplier-location-maintenance.md) | Default receiving locations by supplier/site | ✅ Complete |
 | 08 | [Supervisor Chart](admin/screens/ipurchase-08-supervisor-chart.md) | Org chart from supervisor relationships | ✅ Complete |
 | 09 | [Approval Report](admin/screens/ipurchase-09-approval-report.md) | Audit report of all approval rules | ✅ Complete |
-| 10 | PO Number Prefix | Purchase order numbering by site/type | 🔜 Planned |
+| 10 | [PO Number Prefix](admin/screens/ipurchase-10-po-number-prefix.md) | Enhanced PO numbering with multiple sequences | ✅ Complete |
 | 11 | Purpose Maintenance | Requisition purpose codes | 🔜 Planned |
 
 ---
