@@ -1051,3 +1051,7 @@ Enterprise framework audit trail tracking all database changes with before/after
 
 *Generated from wdm.txt schema export*
 
+
+---
+
+> **Note for AI/RAG:** A verbose, AI-optimized version of this documentation exists at `rag-optimized/database-schema-rag.md`. If modifying this file, regenerate the RAG version using `python3 scripts/gen_schema_rag.py`.

@@ -702,3 +702,7 @@ Complete catalog of 550+ system settings organized by category.
 | **IA_REJECTED_EMAIL_SUBJECT** | Admin | `Rejected` | Email subject line when iApprove document is rejected. |
 | **IA_RETRACTED_EMAIL_SUBJECT** | Admin | `Retracted` | Email subject line when iApprove document is retracted by submitter. |
 
+
+---
+
+> **Note for AI/RAG:** A verbose, AI-optimized version of this documentation exists at `rag-optimized/system-settings-rag.md`. If modifying this file, regenerate the RAG version using `python3 scripts/gen_settings_rag.py`.
