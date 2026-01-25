@@ -57,6 +57,4 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'PO_UPDATE_CHEC
 
 ### Related Settings
 
-- [PO_UPDATE_TOLERANCE_AMOUNT](PO_UPDATE_TOLERANCE_AMOUNT.md) - Dollar tolerance for changes
-- [PO_UPDATE_TOLERANCE_PCT](PO_UPDATE_TOLERANCE_PCT.md) - Percentage tolerance for changes
-- [CO_HEADER_REROUTE_FIELDS](CO_HEADER_REROUTE_FIELDS.md) - Header fields forcing re-route
+- [PO_UPDATE_CHECK_REROUTE_RELEASES](PO_UPDATE_CHECK_REROUTE_RELEASES.md)

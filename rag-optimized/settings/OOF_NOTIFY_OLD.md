@@ -36,7 +36,3 @@ When TRUE, all requisitions currently pending the user's approval are sent via e
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'OOF_NOTIFY_OLD'
 ```
-
-### Related Settings
-
-- [ALLOW_OOF](ALLOW_OOF.md) - Enable Out of Office functionality

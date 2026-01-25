@@ -43,8 +43,3 @@ Full base URL string with protocol.
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'BASE_URL'
 ```
-
-### Related Settings
-
-- [APPLICATION_URL](APPLICATION_URL.md) - Full application URL for email links
-- [INTERNAL_URL](INTERNAL_URL.md) - Internal network URL

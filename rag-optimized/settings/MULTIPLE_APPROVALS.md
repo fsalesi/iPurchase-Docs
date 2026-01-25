@@ -55,8 +55,3 @@ KEEP_LAST:  Bob approves at 200, Jane approves at 300 (Jane's seq 100 removed)
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'MULTIPLE_APPROVALS'
 ```
-
-### Related Settings
-
-- [AUTO_APPROVE_FORWARD](AUTO_APPROVE_FORWARD.md) - Automatically approves future instances after first approval
-- **REMOVE_APPROVER_FROM_GROUPS** - Controls group membership handling in routing

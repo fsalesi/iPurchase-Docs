@@ -43,5 +43,6 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALLOW_PO_PRINT
 
 ### Related Settings
 
-- [PO_PRINT_PDF_FORMAT](PO_PRINT_PDF_FORMAT.md) - PDF format for printed POs
-- [EMAIL_SUPPLIER_PO](EMAIL_SUPPLIER_PO.md) - Auto-email POs to suppliers
+- [ALLOW_BATCH_PO](ALLOW_BATCH_PO.md)
+- [ALLOW_BLANKET_RELEASE](ALLOW_BLANKET_RELEASE.md)
+- [ALLOW_BUG](ALLOW_BUG.md)

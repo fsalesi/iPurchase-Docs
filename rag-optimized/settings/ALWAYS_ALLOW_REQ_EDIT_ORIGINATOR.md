@@ -30,7 +30,3 @@ When TRUE, the person who created a requisition can edit it at any stage. Works 
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALWAYS_ALLOW_REQ_EDIT_ORIGINATOR'
 ```
-
-### Related Settings
-
-- [ALWAYS_ALLOW_REQ_EDITS](ALWAYS_ALLOW_REQ_EDITS.md) - Role-based edit permissions

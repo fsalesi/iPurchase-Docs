@@ -49,4 +49,4 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'NO_PASSWORD_ON
 
 ### Related Settings
 
-- [PASSWORD_RULES](PASSWORD_RULES.md) - Password complexity requirements
+- [NO_QAD_AUTHENTICATION](NO_QAD_AUTHENTICATION.md)

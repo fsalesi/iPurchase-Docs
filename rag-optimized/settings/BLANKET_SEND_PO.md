@@ -30,8 +30,3 @@ When TRUE, blanket purchase orders are automatically emailed to suppliers upon c
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'BLANKET_SEND_PO'
 ```
-
-### Related Settings
-
-- [EMAIL_SUPPLIER_PO](EMAIL_SUPPLIER_PO.md) - Auto-email regular POs
-- [ALLOW_BLANKET_RELEASE](ALLOW_BLANKET_RELEASE.md) - Who can create blanket releases

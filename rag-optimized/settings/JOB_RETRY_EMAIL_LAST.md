@@ -55,7 +55,3 @@ Job fails 3 times, max retries reached:
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'JOB_RETRY_EMAIL_LAST'
 ```
-
-### Related Settings
-
-- [EMAIL_PURGE_DAYS](EMAIL_PURGE_DAYS.md) - How long to keep failed email records

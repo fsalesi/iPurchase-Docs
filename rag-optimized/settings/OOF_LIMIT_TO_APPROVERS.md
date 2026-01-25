@@ -36,9 +36,3 @@ When TRUE, the system filters the delegate selection list to only show users who
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'OOF_LIMIT_TO_APPROVERS'
 ```
-
-### Related Settings
-
-- [ALLOW_OOF](ALLOW_OOF.md) - Enable Out of Office functionality
-- [OOF_LIMIT_BY_DEPT](OOF_LIMIT_BY_DEPT.md) - Restrict delegates to same department
-- [OOF_LIMIT_BY_DOLLARS](OOF_LIMIT_BY_DOLLARS.md) - Restrict delegates by approval limit

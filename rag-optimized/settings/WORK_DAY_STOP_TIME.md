@@ -53,5 +53,4 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'WORK_DAY_STOP_
 
 ### Related Settings
 
-- [WORK_DAY_START_TIME](WORK_DAY_START_TIME.md) - Start of business day
-- [WINDOWS_TASK_NAME](WINDOWS_TASK_NAME.md) - Scheduled job configuration
+- [WORK_DAY_START_TIME](WORK_DAY_START_TIME.md)

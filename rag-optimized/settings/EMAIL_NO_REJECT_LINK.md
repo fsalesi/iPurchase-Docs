@@ -44,4 +44,6 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAIL_NO_REJEC
 
 ### Related Settings
 
-- [EMAIL_NO_APPROVE_LINK](EMAIL_NO_APPROVE_LINK.md) - Hide approve link from emails
+- [EMAIL_AUTH_PASSWORD](EMAIL_AUTH_PASSWORD.md)
+- [EMAIL_AUTH_TYPE](EMAIL_AUTH_TYPE.md)
+- [EMAIL_AUTH_USER](EMAIL_AUTH_USER.md)

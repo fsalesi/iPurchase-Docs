@@ -48,8 +48,3 @@ Comma-separated email addresses, or blank to disable.
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAILS_TO'
 ```
-
-### Related Settings
-
-- [NO_EMAILS](NO_EMAILS.md) - Completely disable email sending
-- [TEST_SYSTEM](TEST_SYSTEM.md) - Test mode indicator

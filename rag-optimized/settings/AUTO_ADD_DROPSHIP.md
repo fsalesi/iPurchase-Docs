@@ -30,3 +30,9 @@ When enabled, the system automatically populates the drop ship address field bas
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'AUTO_ADD_DROPSHIP'
 ```
+
+### Related Settings
+
+- [AUTO_COMMENTS_BUYER](AUTO_COMMENTS_BUYER.md)
+- [AUTO_COMMENTS_CO](AUTO_COMMENTS_CO.md)
+- [AUTO_COMMENTS_LINE_SITE](AUTO_COMMENTS_LINE_SITE.md)

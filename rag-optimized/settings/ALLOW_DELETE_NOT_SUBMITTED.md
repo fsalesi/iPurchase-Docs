@@ -36,5 +36,6 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALLOW_DELETE_N
 
 ### Related Settings
 
-- [ALLOW_DELETE_APPROVED](ALLOW_DELETE_APPROVED.md) - Delete approved requisitions
-- [ALLOW_DELETE_PROCESSED](ALLOW_DELETE_PROCESSED.md) - Delete processed requisitions
+- [ALLOW_BATCH_PO](ALLOW_BATCH_PO.md)
+- [ALLOW_BLANKET_RELEASE](ALLOW_BLANKET_RELEASE.md)
+- [ALLOW_BUG](ALLOW_BUG.md)

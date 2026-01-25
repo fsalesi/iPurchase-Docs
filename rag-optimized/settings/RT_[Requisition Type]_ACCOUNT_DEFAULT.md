@@ -27,5 +27,5 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'RT_[Requisitio
 ### Related Settings
 
 - [RT_INVENTORY_ITEM_ONLY](RT_INVENTORY_ITEM_ONLY.md)
-- [RT_[Requisition Type]_ACCESS](RT_[Requisition Type]_ACCESS.md)
-- [RT_[Requisition Type]_ACCOUNT_RANGE](RT_[Requisition Type]_ACCOUNT_RANGE.md)
+- [RT_[Requisition Type]_ACCESS](<RT_[Requisition Type]_ACCESS.md>)
+- [RT_[Requisition Type]_ACCOUNT_RANGE](<RT_[Requisition Type]_ACCOUNT_RANGE.md>)

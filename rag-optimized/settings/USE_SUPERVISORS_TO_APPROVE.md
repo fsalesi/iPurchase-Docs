@@ -59,4 +59,5 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'USE_SUPERVISOR
 
 ### Related Settings
 
-- [ALLOW_SUPERVISORS_TO_APPROVE](ALLOW_SUPERVISORS_TO_APPROVE.md) - Allow supervisor override approvals
+- [USE_APP_AMOUNT_OWN_REQS](USE_APP_AMOUNT_OWN_REQS.md)
+- [USE_LINE_APPROVALS](USE_LINE_APPROVALS.md)

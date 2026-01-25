@@ -62,10 +62,3 @@ Tom can now approve Jane's $1M requisitions!
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'USE_CHAINED_DELEGATES'
 ```
-
-### Related Settings
-
-- [ALLOW_OOF](ALLOW_OOF.md) - Enable/disable Out of Office feature
-- [OOF_LIMIT_TO](OOF_LIMIT_TO.md) - Restrict who can be a delegate
-- [OOF_LIMIT_BY_DEPT](OOF_LIMIT_BY_DEPT.md) - Require same department
-- [OOF_LIMIT_BY_DOLLARS](OOF_LIMIT_BY_DOLLARS.md) - Require sufficient approval limit

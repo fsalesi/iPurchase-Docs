@@ -44,3 +44,7 @@ If you have this setting configured in pf_mstr, it will be ignored. Remove it an
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'TEST_SYSTEM'
 ```
+
+### Related Settings
+
+- [TEST_SETTINGS](TEST_SETTINGS.md)

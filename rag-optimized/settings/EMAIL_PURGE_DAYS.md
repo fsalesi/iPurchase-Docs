@@ -47,5 +47,6 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAIL_PURGE_DA
 
 ### Related Settings
 
-- [JOB_RETRY_EMAIL_LAST](JOB_RETRY_EMAIL_LAST.md) - Controls retry notification behavior
-- [NO_EMAILS](NO_EMAILS.md) - Disable all email sending
+- [EMAIL_AUTH_PASSWORD](EMAIL_AUTH_PASSWORD.md)
+- [EMAIL_AUTH_TYPE](EMAIL_AUTH_TYPE.md)
+- [EMAIL_AUTH_USER](EMAIL_AUTH_USER.md)

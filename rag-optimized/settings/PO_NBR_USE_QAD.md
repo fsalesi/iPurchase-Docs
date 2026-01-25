@@ -51,4 +51,6 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'PO_NBR_USE_QAD
 
 ### Related Settings
 
-- [PO_PREFIX_FIELD](PO_PREFIX_FIELD.md) - Field used to determine PO prefix
+- [PO_BLANKET_PRINT_PROGRAM](PO_BLANKET_PRINT_PROGRAM.md)
+- [PO_BREAK_BY](PO_BREAK_BY.md)
+- [PO_CONFIRMATION_RESPONSE](PO_CONFIRMATION_RESPONSE.md)

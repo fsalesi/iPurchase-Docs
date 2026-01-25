@@ -45,5 +45,6 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAIL_HELPDESK
 
 ### Related Settings
 
-- [EMAIL_HELP_TAG](EMAIL_HELP_TAG.md) - Help text included in emails
-- [LOGIN_HIDE_EMAIL_HELPDESK](LOGIN_HIDE_EMAIL_HELPDESK.md) - Hide helpdesk on login
+- [EMAIL_AUTH_PASSWORD](EMAIL_AUTH_PASSWORD.md)
+- [EMAIL_AUTH_TYPE](EMAIL_AUTH_TYPE.md)
+- [EMAIL_AUTH_USER](EMAIL_AUTH_USER.md)

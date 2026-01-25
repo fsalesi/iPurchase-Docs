@@ -47,8 +47,3 @@ Full URL string including protocol.
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'APPLICATION_URL'
 ```
-
-### Related Settings
-
-- [BASE_URL](BASE_URL.md) - Base hostname for email links
-- [INTERNAL_URL](INTERNAL_URL.md) - Internal network URL

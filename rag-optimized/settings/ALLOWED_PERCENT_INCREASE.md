@@ -40,5 +40,4 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALLOWED_PERCEN
 
 ### Related Settings
 
-- [ALLOWED_DOLLAR_INCREASE](ALLOWED_DOLLAR_INCREASE.md) - Maximum dollar increase allowed
-- [ALLOW_AUTO_REROUTE](ALLOW_AUTO_REROUTE.md) - Enable automatic re-routing
+- [ALLOWED_DOLLAR_INCREASE](ALLOWED_DOLLAR_INCREASE.md)

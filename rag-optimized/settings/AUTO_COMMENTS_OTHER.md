@@ -30,3 +30,9 @@ When a PO is created, the system automatically adds comments containing the valu
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'AUTO_COMMENTS_OTHER'
 ```
+
+### Related Settings
+
+- [AUTO_COMMENTS_BUYER](AUTO_COMMENTS_BUYER.md)
+- [AUTO_COMMENTS_CO](AUTO_COMMENTS_CO.md)
+- [AUTO_COMMENTS_LINE_SITE](AUTO_COMMENTS_LINE_SITE.md)

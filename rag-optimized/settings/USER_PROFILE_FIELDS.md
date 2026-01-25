@@ -44,3 +44,7 @@ USER_PROFILE_FIELDS = "wus_emp_id,wus_badge,wus_division"
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'USER_PROFILE_FIELDS'
 ```
+
+### Related Settings
+
+- [USER_IMPORT_FOLDER](USER_IMPORT_FOLDER.md)

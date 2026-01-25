@@ -53,7 +53,3 @@ Comma-separated list of role types:
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ROLE_MISSING_SKIP_LIST'
 ```
-
-### Related Settings
-
-- [ROLES](ROLES.md) - Defines available role names

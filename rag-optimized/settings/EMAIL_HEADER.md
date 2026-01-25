@@ -49,5 +49,6 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAIL_HEADER'
 
 ### Related Settings
 
-- [EMAIL_PO_LOGO](EMAIL_PO_LOGO.md) - Logo for PO emails
-- [PO_LOGO](PO_LOGO.md) - Logo on printed PO documents
+- [EMAIL_AUTH_PASSWORD](EMAIL_AUTH_PASSWORD.md)
+- [EMAIL_AUTH_TYPE](EMAIL_AUTH_TYPE.md)
+- [EMAIL_AUTH_USER](EMAIL_AUTH_USER.md)

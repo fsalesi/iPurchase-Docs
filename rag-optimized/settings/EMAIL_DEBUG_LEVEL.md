@@ -47,5 +47,6 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAIL_DEBUG_LE
 
 ### Related Settings
 
-- [EMAILSERVER](EMAILSERVER.md) - SMTP server address
-- [EMAIL_AUTH_TYPE](EMAIL_AUTH_TYPE.md) - Authentication method
+- [EMAIL_AUTH_PASSWORD](EMAIL_AUTH_PASSWORD.md)
+- [EMAIL_AUTH_TYPE](EMAIL_AUTH_TYPE.md)
+- [EMAIL_AUTH_USER](EMAIL_AUTH_USER.md)

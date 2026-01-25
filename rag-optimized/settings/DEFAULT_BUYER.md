@@ -45,5 +45,6 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'DEFAULT_BUYER'
 
 ### Related Settings
 
-- DEFAULT_BUYER_[SITE] - Site-specific default buyer
-- RT_[TYPE]_DEFAULT_BUYER - Type-specific default buyer
+- [DEFAULT_BUYER_[SITE]](<DEFAULT_BUYER_[SITE].md>)
+- [DEFAULT_SHIPTO](DEFAULT_SHIPTO.md)
+- [DEFAULT_SHIPVIA](DEFAULT_SHIPVIA.md)

@@ -51,6 +51,6 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'CO_HEADER_RERO
 
 ### Related Settings
 
-- [CO_ITEM_REROUTE_FIELDS](CO_ITEM_REROUTE_FIELDS.md) - Line fields that force re-routing
-- [CO_ITEM_REROUTE_NEW](CO_ITEM_REROUTE_NEW.md) - Whether new lines force re-routing
-- [PO_UPDATE_CHECK_REROUTE](PO_UPDATE_CHECK_REROUTE.md) - Check if approvers changed
+- [CO_DELETE_CANCELLED_LINES](CO_DELETE_CANCELLED_LINES.md)
+- [CO_IGNORE_COST](CO_IGNORE_COST.md)
+- [CO_ITEM_REROUTE_FIELDS](CO_ITEM_REROUTE_FIELDS.md)

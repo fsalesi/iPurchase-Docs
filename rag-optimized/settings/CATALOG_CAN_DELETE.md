@@ -32,6 +32,6 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'CATALOG_CAN_DE
 
 ### Related Settings
 
-- [CATALOG_ACCESS_[Supplier NBR]](CATALOG_ACCESS_[Supplier NBR].md)
+- [CATALOG_ACCESS_[Supplier NBR]](<CATALOG_ACCESS_[Supplier NBR].md>)
 - [CATALOG_CAN_RATE](CATALOG_CAN_RATE.md)
 - [CATALOG_CART_SHOW_DETAILS](CATALOG_CART_SHOW_DETAILS.md)

@@ -39,6 +39,4 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'OOF_LIMIT_BY_D
 
 ### Related Settings
 
-- [ALLOW_OOF](ALLOW_OOF.md) - Enable Out of Office functionality
-- [OOF_LIMIT_TO_APPROVERS](OOF_LIMIT_TO_APPROVERS.md) - Restrict delegates to approvers
-- [OOF_LIMIT_BY_DEPT](OOF_LIMIT_BY_DEPT.md) - Restrict delegates to same department
+- [OOF_LIMIT_TO_APPROVERS](OOF_LIMIT_TO_APPROVERS.md)

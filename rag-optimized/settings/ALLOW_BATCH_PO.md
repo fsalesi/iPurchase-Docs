@@ -48,7 +48,3 @@ Add `-CONSOLIDATE` suffix to enable PO consolidation by default:
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALLOW_BATCH_PO'
 ```
-
-### Related Settings
-
-- [BATCH_CREATE_PO_GROUPS](BATCH_CREATE_PO_GROUPS.md) - Groups allowed to run batch PO creation

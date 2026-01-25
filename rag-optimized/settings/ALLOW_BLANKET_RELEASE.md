@@ -33,7 +33,3 @@ This setting uses [Can-Do list format](../../reference/can-do-list-format.md).
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALLOW_BLANKET_RELEASE'
 ```
-
-### Related Settings
-
-- [BLANKET_SEND_PO](BLANKET_SEND_PO.md) - Auto-send blanket PO emails

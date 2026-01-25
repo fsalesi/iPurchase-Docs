@@ -40,5 +40,6 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'PASSWORD_EXPIR
 
 ### Related Settings
 
-- [PASSWORD_RULES](PASSWORD_RULES.md) - Password complexity requirements
-- [PASSWORD_REMINDER_DAYS](PASSWORD_REMINDER_DAYS.md) - Days before expiration to warn user
+- [PASSWORD_REMINDER_DAYS](PASSWORD_REMINDER_DAYS.md)
+- [PASSWORD_RESET_TIMEOUT](PASSWORD_RESET_TIMEOUT.md)
+- [PASSWORD_RULES](PASSWORD_RULES.md)

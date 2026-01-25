@@ -55,9 +55,3 @@ With ALLOW_AUTO_REROUTE = FALSE:
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALLOW_AUTO_REROUTE'
 ```
-
-### Related Settings
-
-- [ALLOWED_DOLLAR_INCREASE](ALLOWED_DOLLAR_INCREASE.md) - Dollar threshold before re-routing
-- [ALLOWED_PERCENT_INCREASE](ALLOWED_PERCENT_INCREASE.md) - Percentage threshold before re-routing
-- [PO_UPDATE_CHECK_REROUTE](PO_UPDATE_CHECK_REROUTE.md) - Check approver changes for change orders

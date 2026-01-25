@@ -47,7 +47,6 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAIL_SUPPLIER
 
 ### Related Settings
 
-- [EMAILSERVER](EMAILSERVER.md) - SMTP server for sending emails
-- [EMAIL_SUPPLIER_PO_CC](EMAIL_SUPPLIER_PO_CC.md) - CC recipients for supplier PO emails
-- [EMAIL_SUPPLIER_ATTACH_FILES](EMAIL_SUPPLIER_ATTACH_FILES.md) - Attach files to PO emails
-- [ALLOW_MANUAL_EMAIL_PO](ALLOW_MANUAL_EMAIL_PO.md) - Who can manually email POs
+- [EMAIL_AUTH_PASSWORD](EMAIL_AUTH_PASSWORD.md)
+- [EMAIL_AUTH_TYPE](EMAIL_AUTH_TYPE.md)
+- [EMAIL_AUTH_USER](EMAIL_AUTH_USER.md)

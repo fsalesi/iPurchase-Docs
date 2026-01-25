@@ -42,8 +42,3 @@ Some organizations want to reduce email volume by limiting approval notification
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'APPROVAL_EMAIL_ONLY_NOPO'
 ```
-
-### Related Settings
-
-- [NO_APPROVAL_EMAILS](NO_APPROVAL_EMAILS.md) - Disable all approval emails
-- [NO_EMAILS](NO_EMAILS.md) - Disable all system emails

@@ -47,11 +47,3 @@ OOF_LIMIT_TO = "mgrs,leads"  -- Only managers and leads groups
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'OOF_LIMIT_TO'
 ```
-
-### Related Settings
-
-- [OOF_LIMIT_BY_DEPT](OOF_LIMIT_BY_DEPT.md) - Require delegate from same department
-- [OOF_LIMIT_BY_DOLLARS](OOF_LIMIT_BY_DOLLARS.md) - Require delegate with sufficient approval limit
-- [OOF_LIMIT_TO_APPROVERS](OOF_LIMIT_TO_APPROVERS.md) - Limit to users who are approvers
-- [USE_CHAINED_DELEGATES](USE_CHAINED_DELEGATES.md) - Allow delegation chains
-- [ALLOW_OOF](ALLOW_OOF.md) - Enable/disable OOF feature

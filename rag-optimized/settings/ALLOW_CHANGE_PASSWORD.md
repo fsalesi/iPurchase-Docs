@@ -36,5 +36,4 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALLOW_CHANGE_P
 
 ### Related Settings
 
-- [PASSWORD_RULES](PASSWORD_RULES.md) - Password complexity requirements
-- [PASSWORD_EXPIRE_DAYS](PASSWORD_EXPIRE_DAYS.md) - Password expiration period
+- [ALLOW_MULTIPLE_SESSIONS](ALLOW_MULTIPLE_SESSIONS.md)

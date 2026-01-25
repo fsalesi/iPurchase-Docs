@@ -33,7 +33,3 @@ This setting uses [Can-Do list format](../../reference/can-do-list-format.md).
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'BATCH_CREATE_PO_GROUPS'
 ```
-
-### Related Settings
-
-- [ALLOW_BATCH_PO](ALLOW_BATCH_PO.md) - Enable batch PO functionality

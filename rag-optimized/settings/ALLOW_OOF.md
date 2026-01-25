@@ -46,8 +46,6 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALLOW_OOF'
 
 ### Related Settings
 
-- [OOF_LIMIT_TO_APPROVERS](OOF_LIMIT_TO_APPROVERS.md) - Restrict delegates to approvers only
-- [OOF_LIMIT_BY_DEPT](OOF_LIMIT_BY_DEPT.md) - Restrict delegates to same department
-- [OOF_LIMIT_BY_DOLLARS](OOF_LIMIT_BY_DOLLARS.md) - Restrict delegates by approval limit
-- [OOF_NOTIFY_OLD](OOF_NOTIFY_OLD.md) - Email pending reqs to new delegate
-- [USE_CHAINED_DELEGATES](USE_CHAINED_DELEGATES.md) - Allow delegate chains
+- [ALLOW_BATCH_PO](ALLOW_BATCH_PO.md)
+- [ALLOW_BLANKET_RELEASE](ALLOW_BLANKET_RELEASE.md)
+- [ALLOW_BUG](ALLOW_BUG.md)

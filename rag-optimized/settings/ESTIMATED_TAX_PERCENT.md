@@ -26,4 +26,4 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ESTIMATED_TAX_
 
 ### Related Settings
 
-- [ESTIMATED_TAX_PERCENT_[ship to code]](ESTIMATED_TAX_PERCENT_[ship to code].md)
+- [ESTIMATED_TAX_PERCENT_[ship to code]](<ESTIMATED_TAX_PERCENT_[ship to code].md>)

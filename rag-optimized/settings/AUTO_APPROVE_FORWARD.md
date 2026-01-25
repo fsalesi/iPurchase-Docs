@@ -58,7 +58,3 @@ Jane approves at seq 100
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'AUTO_APPROVE_FORWARD'
 ```
-
-### Related Settings
-
-- [MULTIPLE_APPROVALS](MULTIPLE_APPROVALS.md) - Controls which instance is kept when duplicates exist

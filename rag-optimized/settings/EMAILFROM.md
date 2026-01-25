@@ -45,6 +45,6 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAILFROM'
 
 ### Related Settings
 
-- [EMAILSERVER](EMAILSERVER.md) - SMTP server for sending emails
-- [EMAIL_AUTH_USER](EMAIL_AUTH_USER.md) - SMTP authentication username
-- [EMAIL_AUTH_PASSWORD](EMAIL_AUTH_PASSWORD.md) - SMTP authentication password
+- [EMAILSERVER](EMAILSERVER.md)
+- [EMAILS_TO](EMAILS_TO.md)
+- [EMAIL_AUTH_PASSWORD](EMAIL_AUTH_PASSWORD.md)

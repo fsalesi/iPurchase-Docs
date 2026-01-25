@@ -39,7 +39,6 @@ WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAIL_AUTH_PAS
 
 ### Related Settings
 
-- [EMAILSERVER](EMAILSERVER.md) - SMTP server address
-- [EMAIL_AUTH_USER](EMAIL_AUTH_USER.md) - SMTP authentication username
-- [EMAIL_AUTH_TYPE](EMAIL_AUTH_TYPE.md) - Authentication method
-- [EMAILFROM](EMAILFROM.md) - Sender email address
+- [EMAIL_AUTH_TYPE](EMAIL_AUTH_TYPE.md)
+- [EMAIL_AUTH_USER](EMAIL_AUTH_USER.md)
+- [EMAIL_DEBUG_LEVEL](EMAIL_DEBUG_LEVEL.md)

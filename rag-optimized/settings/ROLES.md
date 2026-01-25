@@ -61,7 +61,3 @@ Comma-separated list of role names. Names should be:
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ROLES'
 ```
-
-### Related Settings
-
-- [ROLE_MISSING_SKIP_LIST](ROLE_MISSING_SKIP_LIST.md) - Handle missing role mappings

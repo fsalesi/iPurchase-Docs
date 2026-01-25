@@ -33,8 +33,3 @@ This setting uses [Can-Do list format](../../reference/can-do-list-format.md).
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALWAYS_ALLOW_REQ_EDITS'
 ```
-
-### Related Settings
-
-- [ALWAYS_ALLOW_REQ_EDIT_ORIGINATOR](ALWAYS_ALLOW_REQ_EDIT_ORIGINATOR.md) - Let originator always edit
-- [ALWAYS_ALLOW_ATTACHMENTS](ALWAYS_ALLOW_ATTACHMENTS.md) - Always allow attachments

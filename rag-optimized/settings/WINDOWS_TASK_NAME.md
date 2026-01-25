@@ -49,8 +49,3 @@ WINDOWS_TASK_NAME = "iPurchase_JobProcessor"
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'WINDOWS_TASK_NAME'
 ```
-
-### Related Settings
-
-- [WORK_DAY_START_TIME](WORK_DAY_START_TIME.md) - Business hours start
-- [WORK_DAY_STOP_TIME](WORK_DAY_STOP_TIME.md) - Business hours end

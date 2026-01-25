@@ -48,3 +48,7 @@ iPurchase supports multi-currency requisitions where different lines can use dif
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'USE_SINGLE_CURRENCY'
 ```
+
+### Related Settings
+
+- [USE_EAM_ACCOUNTS](USE_EAM_ACCOUNTS.md)
