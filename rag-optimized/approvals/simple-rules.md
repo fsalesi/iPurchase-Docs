@@ -7,7 +7,7 @@
 Simple rules are ideal when:
 - Approval is based on cost center ownership
 - All conditions must be true (AND logic only)
-- You need straightforward "if this, then that" routing
+- You need simple "if this, then that" routing
 - The bulk of your expense and capital requisitions
 
 ### Typical Setup for Expense/Capital Requisitions
