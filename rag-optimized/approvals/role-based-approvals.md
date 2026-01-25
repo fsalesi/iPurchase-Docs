@@ -2,19 +2,16 @@
 
 **Purpose:** Reduce rule maintenance by using roles instead of creating rules for every cost center.
 
-Instead of creating separate approval rules for every cost center (which can mean hundreds of rules), assign **roles** to users and create **one rule per role**.
+### The Solution to Rule Multiplication
 
-### The Problem: Rule Multiplication
+Instead of creating rules for every cost center, assign **roles** to users and create **one rule per role**.
 
-With simple rules, you need rules for each cost center:
-- 50 cost centers × 4 approval levels = **200 rules** just for expense requisitions
-
-### The Solution: Role-Based Rules
+### How It Works
 
 1. **Define Roles:** Manager, Director, VP, etc.
 2. **Assign Roles to Users:** Each assignment links a user, role, and cost center
 3. **Create One Rule:** "Cost Center Manager must approve $1,000 - $4,999"
-4. **System Routes Automatically:** Based on requisition's cost center, finds user with that role
+4. **System Routes Automatically:** Based on the requisition's cost center, finds the user with that role
 
 ### Example Setup
 
@@ -30,9 +27,9 @@ With simple rules, you need rules for each cost center:
 | sarah.chen | VP | 81* |
 | sarah.chen | VP | 82* |
 
-**Important:** Each row is a separate assignment. If John manages both CC 8100 and 8150, you need two rows.
+**Important:** Each row is a separate role assignment. If John Smith is the Manager for both CC 8100 and CC 8150, you need **two rows**—one for each cost center. The system looks up "who is the Manager for this specific cost center" when routing.
 
-**Approval Rules using $ROLE variable:**
+**Approval Rules:**
 
 | Seq | Description | Approver | Min Amount | Max Amount |
 |-----|-------------|----------|------------|------------|
@@ -40,35 +37,31 @@ With simple rules, you need rules for each cost center:
 | 300 | CC Director | $ROLE:Director | $5,000 | $24,999 |
 | 400 | CC VP | $ROLE:VP | $25,000 | $99,999 |
 
-**Result:** 3 rules handle the entire organization instead of hundreds!
+**Result:** 3 rules handle the entire organization instead of potentially hundreds!
 
 ### Wildcard Cost Centers
 
-Sarah Chen's VP assignments use wildcards (`81*`, `82*`), meaning she's the VP approver for all cost centers starting with 81 or 82. Powerful for executives who oversee entire divisions.
+Notice Sarah Chen's VP assignments use wildcards: `81*` and `82*`. This means she's the VP approver for:
+- All cost centers starting with 81 (8100, 8110, 8150, etc.)
+- All cost centers starting with 82 (8200, 8210, 8250, etc.)
 
-### Handling Exceptions
+This is powerful for executives who oversee entire divisions.
 
-Role-based rules work until one cost center needs different behavior.
+### The Catch: Exception Handling
 
-**Example:** Cost Center 9999 (Executive Office) requires VP approval for everything over $500.
+Role-based rules work beautifully **until one cost center behaves differently**.
+
+**Scenario:** Cost Center 9999 (Executive Office) requires VP approval for everything over $500.
 
 **Solution:**
-1. Exclude CC 9999 from role-based rules using Can-Do: `!9999,*`
+1. Exclude CC 9999 from the role-based rules using Can-Do syntax: `!9999,*`
 2. Create specific rules for CC 9999
+
+**Example:**
 
 | Seq | Description | Approver | Cost Center Filter |
 |-----|-------------|----------|-------------------|
 | 250 | CC Manager (except 9999) | $ROLE:Manager | !9999,* |
 | 255 | CC9999 VP | vp_exec | 9999 |
 
-### Common Questions
-
-- How do I reduce the number of approval rules?
-- How do I assign roles to users for specific cost centers?
-- What is the $ROLE variable in approval rules?
-- How do I handle cost centers that need different approval rules?
-
-### Related
-
-- User Roles screen for assigning roles
-- [ROLES](../settings/ROLES.md) setting - defines available role names
+---

@@ -1,10 +1,10 @@
 # Supervisor Chain Variables - iPurchase Approval Routing
 
-**Purpose:** Dynamically determine approvers based on the organizational hierarchy.
+**Purpose:** Dynamically determine approvers based on the organizational hierarchy ($SUPERVISORS, $FIRST_SUPERVISOR, $LAST_SUPERVISOR).
 
-Supervisor chain variables route approvals based on the `wus_supervisor` field in user records, automatically following the org chart.
+### Overview
 
-### Available Variables
+Supervisor chain variables dynamically determine approvers based on the organizational hierarchy defined in user records (wus_supervisor field).
 
 | Variable | Behavior |
 |----------|----------|
@@ -12,65 +12,36 @@ Supervisor chain variables route approvals based on the `wus_supervisor` field i
 | `$FIRST_SUPERVISOR` | Routes to immediate supervisor only |
 | `$LAST_SUPERVISOR` | Skips to the supervisor with sufficient approval limit |
 
-### How It Works
+### Cross-Department Charging Scenario
 
-The supervisor chain is defined in the `wus_mstr` table. Each user's `wus_supervisor` field points to their manager, creating a hierarchy:
+**Problem:** A purchasing clerk creates a requisition for office supplies that will be charged to 7 different departments. Who approves?
 
-```
-Employee (wus_supervisor = "manager1")
-  → Manager1 (wus_supervisor = "director1") 
-    → Director1 (wus_supervisor = "vp1")
-      → VP1 (wus_supervisor = "ceo")
-```
+**Solution:** Use `$FIRST_SUPERVISOR` to ensure the requisitioner's supervisor approves first, then route to each department for their portion.
 
-### $SUPERVISORS - Full Chain Until Authority Found
+**Example Rule:**
 
-Routes through each level until finding someone whose `wus_app_amt` (approval amount limit) is sufficient.
+| Rule Name | Approver | Eval Lines | Description |
+|-----------|----------|------------|-------------|
+| Originator-Supervisor | $FIRST_SUPERVISOR | No | Requisitioner's boss approves first |
+| Dept-Approval | $ROLE:Manager | Yes | Each line routes to its cost center's manager |
 
-**Example:** $15,000 requisition
-- Employee's supervisor (Manager, limit $5,000) - insufficient, continue
-- Manager's supervisor (Director, limit $25,000) - sufficient, stops here
+### Evaluate by Lines vs. Header
 
-### $FIRST_SUPERVISOR - Immediate Manager Only
+**Header (Total Requisition Cost):**
+- Amount comparison uses the total requisition value
+- One approval record per rule match
+- Best for: "Total req over $10K needs VP approval"
 
-Always routes to just the immediate supervisor, regardless of amount.
+**Line (Evaluate Each Line):**
+- Each line is evaluated separately
+- Can create multiple approval records from one rule
+- Best for: Cross-department charging, line-specific approvers
 
-**Use case:** Requisitioner's supervisor should always see the request first, even if they can't fully approve it.
+**Example:** $50K requisition with 5 lines across 5 departments
 
-### $LAST_SUPERVISOR - Skip to Final Authority
+| Setting | Result |
+|---------|--------|
+| Eval Lines = No | One approval routed based on $50K total |
+| Eval Lines = Yes | Five approvals, one per department based on each line's amount |
 
-Jumps directly to the supervisor with sufficient approval authority, skipping intermediate levels.
-
-**Use case:** Fast-track high-dollar approvals to the decision-maker.
-
-### Cross-Department Charging Example
-
-**Problem:** A clerk creates a requisition charged to 7 different departments. Who approves?
-
-**Solution:** 
-```
-Rule 1: $FIRST_SUPERVISOR (Eval Lines = No)
-  → Requisitioner's boss approves first
-
-Rule 2: $ROLE:Manager (Eval Lines = Yes)  
-  → Each line routes to its cost center's manager
-```
-
-### Evaluate by Lines vs Header
-
-| Setting | Behavior |
-|---------|----------|
-| **Eval Lines = No** | One approval based on total requisition amount |
-| **Eval Lines = Yes** | Separate approval for each line (useful for cross-department) |
-
-### Common Questions
-
-- How do I route approvals based on the org chart?
-- What's the difference between $SUPERVISORS and $FIRST_SUPERVISOR?
-- How do I handle cross-department requisitions?
-- How does the approval limit (wus_app_amt) affect routing?
-
-### Related Fields
-
-- `wus_supervisor` - User's manager (creates the chain)
-- `wus_app_amt` - User's approval amount limit
+---

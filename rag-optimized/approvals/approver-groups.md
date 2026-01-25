@@ -1,8 +1,8 @@
 # Approval Groups and Approver Lists - iPurchase
 
-**Purpose:** Understanding how approver fields work with groups, lists, and dynamic variables.
+**Purpose:** Understanding how approver fields work with groups, comma-separated lists, and dynamic variables.
 
-### Critical Rule: Comma-Separated Lists Require ALL to Approve
+### Critical: Comma-Separated Lists Require ALL to Approve
 
 **This is commonly misunderstood:**
 
@@ -17,7 +17,7 @@ When the Approver field contains a comma-separated list, **ALL entities in the l
 
 ### Single Group = Any Member
 
-When the Approver is a single group, only ONE member needs to approve:
+When the Approver is a single group, only ONE member of that group needs to approve:
 
 ```
 Approver: "ap_approvers"
@@ -40,15 +40,20 @@ Approver: "$xxreq_userid,$FIRST_SUPERVISOR"
 → The originator AND their supervisor must both approve
 ```
 
-### Why Always Use Groups (Even with One Member)
+---
+
+### Why Use Groups (Even with One Member)?
 
 **Always use a group in the Approver field, even if it only has one member.**
 
 **Benefits:**
-- **Easy Personnel Changes:** When Bob retires and Jane takes over, just update group membership—no rule changes
-- **Vacation Coverage:** Add a backup approver to the group temporarily
-- **Audit Trail:** Group membership changes tracked separately from rule changes
-- **Future Flexibility:** Easy to add members later
+
+1. **Easy Personnel Changes:** When Bob retires and Jane takes over, just update the group membership—no rule changes needed
+2. **Vacation Coverage:** Add a backup approver to the group temporarily
+3. **Audit Trail:** Group membership changes are tracked separately from approval rule changes
+4. **Future Flexibility:** Easy to add members later without modifying rules
+
+### Example
 
 **Instead of:**
 ```
@@ -60,6 +65,10 @@ Approver: "bob.wilson"  ❌ Bad - hardcoded user
 Approver: "cc8100_director"  ✅ Good - group with Bob as member
 ```
 
+When Bob leaves:
+- ❌ Bad way: Find all rules with "bob.wilson", update each one
+- ✅ Good way: Remove Bob from group, add Jane to group—done!
+
 ### Group Naming Conventions
 
 | Pattern | Example | Use Case |
@@ -68,14 +77,4 @@ Approver: "cc8100_director"  ✅ Good - group with Bob as member
 | `[function]_approvers` | ap_approvers | Functional approvers |
 | `[level]_approval` | executive_approval | Level-based groups |
 
-### Common Questions
-
-- Why do I need multiple approvals when I only listed one group?
-- How do comma-separated approvers work?
-- Should I use user IDs or groups in approval rules?
-- How do I set up vacation coverage for approvers?
-
-### Related Tables
-
-- `wgr_mstr` - Group definitions
-- `wugr_mstr` - User-to-group membership
+---
