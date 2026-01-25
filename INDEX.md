@@ -4,12 +4,49 @@ This index provides direct raw links to all documentation files for easy access 
 
 ## Reference Documents
 
-- [Database Schema](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/reference/database-schema.md) - 23 tables with field descriptions
+- [Database Schema](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/reference/database-schema.md) - Index of 23 tables
 - [System Settings Reference](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/reference/system-settings-reference.md) - 550+ configuration parameters
 - [Approval Systems](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/reference/approval-systems.md) - Approval workflow logic and routing
+- [Approval Strategy Guide](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/reference/approval-strategy-guide.md) - Practical approval implementation guide
 - [Admin Guide](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/reference/admin-guide.md) - Administrative procedures
 - [Can-Do List Format](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/reference/can-do-list-format.md) - Pattern matching syntax
-- [Approval Strategy Guide](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/reference/approval-strategy-guide.md) - Practical approval implementation guide
+
+## RAG-Optimized Documentation
+
+For AI retrieval, use these focused single-topic files:
+
+**Approvals:**
+- [Simple Rules](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/approvals/simple-rules.md)
+- [Complex Rules](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/approvals/complex-rules.md)
+- [Role-Based Approvals](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/approvals/role-based-approvals.md)
+- [Supervisor Chain](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/approvals/supervisor-chain.md)
+- [Approver Groups](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/approvals/approver-groups.md)
+- [Default Rules](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/approvals/default-rules.md)
+- [Special Options](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/approvals/special-options.md)
+- [Rule Evaluation Algorithm](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/approvals/rule-evaluation-algorithm.md)
+- [Validation Rules](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/approvals/validation-rules.md)
+- [Duplicate Approvers](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/approvals/duplicate-approvers.md)
+- [Delegation](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/approvals/delegation.md)
+- [Supervisor Override](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/approvals/supervisor-override.md)
+- [Notification Rules](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/approvals/notification-rules.md)
+- [Approval Troubleshooting](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/approvals/approval-troubleshooting.md)
+
+**Admin:**
+- [User Management](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/admin/user-management.md)
+- [Approval Rules Setup](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/admin/approval-rules-setup.md)
+- [Requisition Types](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/admin/requisition-types.md)
+- [Change Order Config](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/admin/change-order-config.md)
+- [Delegation Config](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/admin/delegation-config.md)
+- [Testing & Validation](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/admin/testing-validation.md)
+- [Admin Troubleshooting](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/admin/admin-troubleshooting.md)
+- [Security Best Practices](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/admin/security-best-practices.md)
+
+**Other:**
+- [Can-Do List Format](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/rag-optimized/can-do-list-format.md)
+
+**Settings & Schema:**
+- 550 individual setting files in `rag-optimized/settings/`
+- 48 table field/index files in `rag-optimized/schema/`
 
 ## Administration Screens
 
@@ -51,25 +88,23 @@ This index provides direct raw links to all documentation files for easy access 
 
 - [Admin Browse Component](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/admin/components/admin-browse.md)
 
+## FAQ
+
+**General (All Apps):**
+- [FAQ Index](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/README.md)
+- [SSO Azure Setup](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/general/sso-azure-setup.md)
+- [System Settings](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/general/system-settings.md)
+- [User Management](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/general/user-management.md)
+
+**iPurchase:**
+- [Approvals](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/ipurchase/approvals.md)
+- [Change Orders](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/ipurchase/change-orders.md)
+- [Purchase Orders](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/ipurchase/purchase-orders.md)
+- [Requisition Entry](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/ipurchase/requisition-entry.md)
+- [Requisition Rerouting](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/ipurchase/reroute-rules.md)
+
 ---
 
 **Raw Index URL:** `https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/INDEX.md`
 
 **Repository:** [github.com/fsalesi/iPurchase-Docs](https://github.com/fsalesi/iPurchase-Docs)
-
-
-
-## FAQ
-
-**General (All Apps):**
-- [FAQ Index](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/README.md) - Frequently asked questions
-- [SSO Azure Setup](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/general/sso-azure-setup.md) - Azure AD/Entra ID configuration
-- [System Settings](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/general/system-settings.md) - Domain-specific settings, value formats
-- [User Management](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/general/user-management.md) - Passwords, permissions, groups
-
-**iPurchase:**
-- [Approvals](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/ipurchase/approvals.md) - Self-approval, escalation, delegation
-- [Change Orders](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/ipurchase/change-orders.md) - Tolerances, field monitoring
-- [Purchase Orders](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/ipurchase/purchase-orders.md) - PO creation, printing, emailing
-- [Requisition Entry](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/ipurchase/requisition-entry.md) - Types, defaults, accounts
-- [Requisition Rerouting](https://raw.githubusercontent.com/fsalesi/iPurchase-Docs/master/faq/ipurchase/reroute-rules.md) - Why requisitions reroute

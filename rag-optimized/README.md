@@ -1,48 +1,86 @@
 # RAG-Optimized Documentation
 
-This folder contains verbose, AI-friendly documentation optimized for vector search (RAG - Retrieval Augmented Generation).
+This folder contains AI-friendly documentation optimized for vector search (RAG - Retrieval Augmented Generation).
 
 ## Purpose
 
-The main documentation files (e.g., `reference/database-schema.md`, `reference/system-settings-reference.md`) are designed for human readability with clean, scannable tables.
+The main documentation files in `reference/` are designed for human readability with tables and navigation.
 
-These RAG-optimized versions split content into individual pages with added context to improve semantic search matching. Each page is designed to be a single chunk in the vector database.
+These RAG-optimized versions use `###` headers (not `##`) so each file remains a single chunk in the vector database. Each page includes added context to improve semantic search matching.
 
 ## Structure
 
 ```
 rag-optimized/
-├── schema/                    # One file per database table
-│   ├── xxapp_mstr_fields.md   # Table fields with context
+├── schema/                    # 48 files - Database tables
+│   ├── xxapp_mstr_fields.md   # Table fields with descriptions
 │   ├── xxapp_mstr_indexes.md  # Table indexes
 │   └── ...
-├── settings/                  # One file per system setting
+├── settings/                  # 550 files - System settings
 │   ├── MULTIPLE_APPROVALS.md
 │   ├── AUTO_APPROVE_FORWARD.md
 │   └── ...
+├── approvals/                 # 15 files - Approval workflow topics
+│   ├── simple-rules.md
+│   ├── complex-rules.md
+│   ├── supervisor-chain.md
+│   └── ...
+├── admin/                     # 8 files - Administration topics
+│   ├── user-management.md
+│   ├── approval-rules-setup.md
+│   └── ...
+├── can-do-list-format.md      # Can-Do pattern matching syntax
 └── README.md
-```
-
-## Maintenance
-
-**IMPORTANT:** When you modify the source files, regenerate the RAG pages:
-
-| Source File | RAG Folder | Regenerate Command |
-|-------------|------------|-------------------|
-| `reference/database-schema.md` | `rag-optimized/schema/` | `python3 scripts/gen_schema_pages.py` |
-| `reference/system-settings-reference.md` | `rag-optimized/settings/` | `python3 scripts/gen_settings_pages.py` |
-
-After regenerating, rebuild the vector index:
-```bash
-cd /home/frank/iassist-vectordb
-python3 build_index.py
 ```
 
 ## File Counts
 
-- Schema: 46 files (23 tables × 2: fields + indexes)
-- Settings: 458 files (one per setting)
+| Folder | Files | Source |
+|--------|-------|--------|
+| `schema/` | 48 | Database schema export |
+| `settings/` | 550 | System settings catalog |
+| `approvals/` | 15 | approval-systems.md + approval-strategy-guide.md |
+| `admin/` | 8 | admin-guide.md |
 
-## Do Not Edit Directly
+## Maintenance
 
-These files are generated. Edit the source files in `reference/` and regenerate.
+### When Reference Docs Change
+
+Run the regeneration script:
+```bash
+./scripts/regenerate-rag-docs.sh
+```
+
+This updates:
+- `rag-optimized/approvals/` from `reference/approval-*.md`
+- `rag-optimized/admin/` from `reference/admin-guide.md`
+- `rag-optimized/can-do-list-format.md` from `reference/can-do-list-format.md`
+
+### When Database Schema Changes
+
+Manually update files in `rag-optimized/schema/`
+
+### When System Settings Change
+
+1. Manually update/add files in `rag-optimized/settings/`
+2. Run `python3 scripts/add-setting-links.py` to update reference doc links
+
+## Header Format
+
+All files use `###` headers (not `##`) to ensure single-chunk retrieval:
+
+```markdown
+# Title - iPurchase
+
+**Purpose:** Brief description
+
+### Section 1
+Content...
+
+### Section 2
+Content...
+```
+
+## Do Not Edit Schema/Settings Directly
+
+The `schema/` and `settings/` files are generated. For approval and admin topics, source files are in `reference/` - edit those and regenerate.

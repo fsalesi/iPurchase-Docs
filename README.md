@@ -15,9 +15,6 @@ Comprehensive documentation for iPurchase and iApprove applications.
 
 **FAQ:**
 - [FAQ Index](faq/README.md) - All frequently asked questions
-- [SSO Setup](faq/general/sso-azure-setup.md) - Azure AD configuration
-- [System Settings](faq/general/system-settings.md) - Domain-specific, CODE_LIST, RT_
-- [Requisition Rerouting](faq/ipurchase/reroute-rules.md) - Why reqs reroute
 
 ---
 
@@ -25,30 +22,32 @@ Comprehensive documentation for iPurchase and iApprove applications.
 
 ```
 ├── admin/                      # Shared Administration (iPurchase + iApprove)
-│   ├── screens/                # Admin screen documentation (10 shared + 10 iPurchase + 8 iFramework)
+│   ├── screens/                # Admin screen documentation
 │   ├── components/             # Reusable admin UI components
 │   └── screenshots/            # Admin screen screenshots
 │
-├── reference/                  # Reference materials
-│   ├── system-settings-reference.md   # 550+ settings by category
-│   ├── system-settings-bible.csv      # Raw settings data
-│   ├── database-schema.md             # 23 core tables documented
+├── reference/                  # Reference materials (human-readable indexes)
+│   ├── system-settings-reference.md   # 550+ settings by category (links to RAG)
+│   ├── database-schema.md             # 23 tables (links to RAG)
 │   ├── approval-systems.md            # Approval workflow logic
 │   ├── approval-strategy-guide.md     # Designing approval rules
 │   ├── admin-guide.md                 # Administrative procedures
 │   └── can-do-list-format.md          # Pattern matching syntax
 │
+├── rag-optimized/              # AI-optimized chunked documentation
+│   ├── settings/               # 550 individual setting files
+│   ├── schema/                 # 48 table field/index files
+│   ├── approvals/              # 15 approval topic files
+│   ├── admin/                  # 8 admin topic files
+│   └── can-do-list-format.md   # Can-Do syntax reference
+│
 ├── faq/                        # Frequently Asked Questions
 │   ├── general/                # General (all iFramework apps)
-│   │   ├── sso-azure-setup.md         # Azure AD/Entra ID SSO
-│   │   ├── system-settings.md         # Domain settings, CODE_LIST, RT_
-│   │   └── user-management.md         # Passwords, groups, permissions
 │   └── ipurchase/              # iPurchase-specific
-│       ├── approvals.md               # Self-approval, escalation, OOF
-│       ├── change-orders.md           # Tolerances, field monitoring
-│       ├── purchase-orders.md         # PO creation, printing, emailing
-│       ├── requisition-entry.md       # Types, defaults, accounts
-│       └── reroute-rules.md           # Why requisitions reroute
+│
+├── scripts/                    # Documentation maintenance scripts
+│   ├── regenerate-rag-docs.sh  # Regenerate RAG from reference docs
+│   └── add-setting-links.py    # Add links to settings reference
 │
 ├── ipurchase/                  # iPurchase End User Documentation (planned)
 ├── iapprove/                   # iApprove Documentation (planned)
@@ -59,8 +58,6 @@ Comprehensive documentation for iPurchase and iApprove applications.
 ---
 
 ## Administration Screens (Shared)
-
-Administration screens are shared between iPurchase and iApprove:
 
 | # | Screen | Description | Status |
 |---|--------|-------------|--------|
@@ -109,111 +106,47 @@ Administration screens are shared between iPurchase and iApprove:
 
 ---
 
-## Admin Components
+## RAG-Optimized Documentation
 
-- [Admin Browse Grid](admin/components/admin-browse.md) - Standard data grid used across all admin screens
+The `rag-optimized/` folder contains AI-optimized documentation with single-chunk retrieval:
 
----
+| Folder | Files | Content |
+|--------|-------|---------|
+| `settings/` | 550 | Individual system setting documentation |
+| `schema/` | 48 | Database table fields and indexes |
+| `approvals/` | 15 | Approval workflow topics |
+| `admin/` | 8 | Administration topics |
 
-## Reference
-
-### Database Schema
-
-- [Database Schema Reference](reference/database-schema.md) - Complete schema for 23 documented tables:
-  - Core Tables: `wus_mstr`, `wgr_mstr`, `wugr_mstr`, `pf_mstr`
-  - Requisition Tables: `xxreq_mstr`, `xxreqd_det`, `xxreq_audit`, `xxreq_attach`
-  - Approval Tables: `xxapp_mstr`, `xxAppRule`, `xxAppField`
-  - Archive Tables: `xxpo_archive`, `xxnote_mstr`, `xxmaild_det`
-  - And more...
-
-### System Settings
-
-- [System Settings Reference](reference/system-settings-reference.md#table-of-contents) - Complete catalog organized by category:
-  - [Approval Workflow](reference/system-settings-reference.md#approval-workflow) (46 settings)
-  - [Email Configuration](reference/system-settings-reference.md#email-configuration) (62 settings)
-  - [Purchase Orders](reference/system-settings-reference.md#purchase-orders) (58 settings)
-  - [Requisitions](reference/system-settings-reference.md#requisitions) (51 settings)
-  - [User Management](reference/system-settings-reference.md#user-management) (45 settings)
-  - [Security & Authentication](reference/system-settings-reference.md#security-and-authentication) (27 settings)
-  - [Change Orders](reference/system-settings-reference.md#change-orders) (16 settings)
-  - [And 18 more categories...](reference/system-settings-reference.md#table-of-contents)
-
-### Approval Workflows
-
-- [Approval Systems Reference](reference/approval-systems.md) - Complete approval workflow documentation:
-  - Simple rules (xxapp_mstr) vs Complex rules (xxAppRule)
-  - Rule evaluation logic and sequence ordering
-  - Special approver variables ($SUPERVISORS, $FIRST_SUPERVISOR, etc.)
-  - Validation rules and notification rules
-  - Change order approval routing
-
-### Approval Strategy
-
-- [Approval Strategy Guide](reference/approval-strategy-guide.md) - Practical implementation guide:
-  - When to use Simple vs Complex vs Role-Based rules
-  - Executive-level approvals (CFO/CEO/Board)
-  - Supervisor chain variables and cross-department charging
-  - Approver list behavior (comma-separated = ALL must approve)
-  - Best practices for groups, Stop/Notify options, default rules
-
-### Administration
-
-- [Admin Guide](reference/admin-guide.md) - Administrative procedures and best practices:
-  - User setup and management
-  - Approval rule configuration
-  - Troubleshooting workflows
-  - Common administrative tasks
-
-### Quick Reference
-
-- **Can-Do List Format**: See [Can-Do List Format](reference/can-do-list-format.md) - Pattern matching for permissions and filters
-- **Setting Patterns**: `RT_[type]_*` for requisition type settings, `RT_[type][site]_*` for site-specific overrides
-- **Environment Variables**: Set `TEST_SYSTEM=TRUE` on broker/PASOE for dev/test environments
+**Maintenance:**
+- Run `./scripts/regenerate-rag-docs.sh` when reference docs change
+- Update `rag-optimized/schema/` when database schema changes
+- Update `rag-optimized/settings/` when adding new settings
 
 ---
 
-## Database Tables
+## Reference Documents
 
-Key tables documented across screens:
-
-| Table | Purpose | Primary Screen |
-|-------|---------|----------------|
-| `wus_mstr` | User master | Users and Groups |
-| `wgr_mstr` | Group definitions | Users and Groups |
-| `wugr_mstr` | User-group membership | Users and Groups |
-| `pf_mstr` | System settings | System Settings |
-| `efw_audit` | Audit trail | Audit Trail |
-| `xxAppRule` | Complex approval rules | Approval Rules |
-| `xxAppField` | Approval rule conditions | Approval Rules |
-| `xxapp_mstr` | Simple approval rules | Approval Rules - Simple |
+- [Database Schema](reference/database-schema.md) - Index of 23 tables (links to RAG files)
+- [System Settings Reference](reference/system-settings-reference.md) - 550+ settings (links to RAG files)
+- [Approval Systems](reference/approval-systems.md) - Technical approval workflow logic
+- [Approval Strategy Guide](reference/approval-strategy-guide.md) - Practical implementation guide
+- [Admin Guide](reference/admin-guide.md) - Administrative procedures
+- [Can-Do List Format](reference/can-do-list-format.md) - Pattern matching syntax
 
 ---
-
 
 ## FAQ
 
-- [FAQ Index](faq/README.md) - Frequently asked questions
+- [FAQ Index](faq/README.md)
 
-**General (All Apps):**
-  - [SSO Azure Setup](faq/general/sso-azure-setup.md) - Azure AD/Entra ID configuration
-  - [System Settings](faq/general/system-settings.md) - Domain-specific settings, value formats
-  - [User Management](faq/general/user-management.md) - Passwords, permissions, groups
+**General:**
+- [SSO Azure Setup](faq/general/sso-azure-setup.md) - Azure AD/Entra ID configuration
+- [System Settings](faq/general/system-settings.md) - Domain-specific settings
+- [User Management](faq/general/user-management.md) - Passwords, permissions, groups
 
 **iPurchase:**
-  - [Approvals](faq/ipurchase/approvals.md) - Self-approval, escalation, delegation
-  - [Change Orders](faq/ipurchase/change-orders.md) - Tolerances, field monitoring
-  - [Purchase Orders](faq/ipurchase/purchase-orders.md) - PO creation, printing, emailing
-  - [Requisition Entry](faq/ipurchase/requisition-entry.md) - Types, defaults, accounts
-  - [Requisition Rerouting](faq/ipurchase/reroute-rules.md) - Why requisitions reroute
-
-## Contributing
-
-Documentation follows these conventions:
-
-1. **Screen docs**: One markdown file per screen in `admin/screens/`
-2. **Screenshots**: Stored in `admin/screenshots/{screen-name}/`
-3. **Naming**: Use lowercase with hyphens, prefix iPurchase screens with `ipurchase-`
-4. **Front matter**: Include screen_id, database_tables, related_screens
-5. **Sections**: Overview, Access Path, Screenshots, Fields, Buttons, Business Rules, Related
-
-
+- [Approvals](faq/ipurchase/approvals.md) - Self-approval, escalation, delegation
+- [Change Orders](faq/ipurchase/change-orders.md) - Tolerances, field monitoring
+- [Purchase Orders](faq/ipurchase/purchase-orders.md) - PO creation, printing, emailing
+- [Requisition Entry](faq/ipurchase/requisition-entry.md) - Types, defaults, accounts
+- [Requisition Rerouting](faq/ipurchase/reroute-rules.md) - Why requisitions reroute

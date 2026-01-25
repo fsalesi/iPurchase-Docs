@@ -10,7 +10,7 @@ related_screens:
   - approval_rules
 related_documentation:
   - system-settings.md (MCP docs)
-  - system-settings-bible.csv
+  - system-settings-reference.md
 screenshot: ../screenshots/system-settings/01-main-screen.png
 last_updated: 2025-01-23
 author: Frank Salesi
@@ -255,7 +255,7 @@ iPurchase settings are organized into functional categories. While the browse di
 | Security & Authentication | `PASSWORD_*`, `LOGIN_*`, `ALLOW_CHANGE_PASSWORD`, `FAILED_LOGIN*` | 29 |
 | System Configuration | `COMPANY_NAME`, `DEFAULT_*`, `LICENSE`, `TEST_SYSTEM` | 29 |
 
-For complete setting documentation, see the **system-settings-bible.csv** reference file.
+For complete setting documentation, see the [System Settings Reference](/reference/system-settings-reference.md).
 
 ---
 
