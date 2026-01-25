@@ -2,18 +2,18 @@
 
 **Category:** Change Orders
 
-TRUE | FALSE. If TRUE, cost changes are ignored when determining if change order is material (requires re-routing).
+TRUE | FALSE.
 
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| **TRUE** | Enables this feature |
+| **TRUE** | cost changes are ignored when determining if change order is material (requires re-routing) |
 | **FALSE** | Disables this feature |
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures change orders behavior in iPurchase.
 
 ### Setting Details
 
@@ -30,3 +30,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'CO_IGNORE_COST'
 ```
+
+### Related Settings
+
+- [CO_DELETE_CANCELLED_LINES](CO_DELETE_CANCELLED_LINES.md)
+- [CO_HEADER_REROUTE_FIELDS](CO_HEADER_REROUTE_FIELDS.md)
+- [CO_ITEM_REROUTE_FIELDS](CO_ITEM_REROUTE_FIELDS.md)

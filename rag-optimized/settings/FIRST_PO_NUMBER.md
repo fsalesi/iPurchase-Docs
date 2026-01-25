@@ -2,11 +2,11 @@
 
 **Category:** Purchase Orders
 
-Numeric. Starting purchase order number for sequential PO numbering.
+Numeric.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects purchase order processing and how POs are generated, formatted, or transmitted to suppliers.
 
 ### Setting Details
 

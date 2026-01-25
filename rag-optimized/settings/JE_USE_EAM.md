@@ -2,18 +2,18 @@
 
 **Category:** EAM Integration
 
-TRUE | FALSE. If TRUE, uses EAM system for journal entry processing.
+TRUE | FALSE.
 
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| **TRUE** | Enables this feature |
+| **TRUE** | uses EAM system for journal entry processing |
 | **FALSE** | Disables this feature |
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures eam integration behavior in iPurchase.
 
 ### Setting Details
 

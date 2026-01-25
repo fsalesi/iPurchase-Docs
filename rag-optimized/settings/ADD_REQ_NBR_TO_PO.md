@@ -2,7 +2,7 @@
 
 **Category:** Requisitions
 
-When a PO is created do you want to add the requisition number and line to pod_req and pod_req_line fields. This should be set to False if using 2009SE or above; or if GRS is being used
+When a PO is created do you want to add the requisition number and line to pod_req and pod_req_line fields.
 
 ### Valid Values
 
@@ -13,7 +13,7 @@ When a PO is created do you want to add the requisition number and line to pod_r
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures requisitions behavior in iPurchase.
 
 ### Setting Details
 

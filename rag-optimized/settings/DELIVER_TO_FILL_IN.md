@@ -13,7 +13,7 @@ Rather than the Deliver To field being a drop down list of users defined in iPur
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures uncategorized behavior in iPurchase.
 
 ### Setting Details
 

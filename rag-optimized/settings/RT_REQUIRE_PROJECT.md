@@ -6,7 +6,7 @@ List of requisition typles that require a project code.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures gl accounts & finance behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'RT_REQUIRE_PROJECT'
 ```
+
+### Related Settings
+
+- [RT_REQ_TAXABLE](RT_REQ_TAXABLE.md)

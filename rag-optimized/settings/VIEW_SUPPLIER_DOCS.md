@@ -2,11 +2,11 @@
 
 **Category:** User Management
 
-True or False or list of users groups. Default value is blank. Will give the users access to the "Contacts" button in Requisition Workbench
+True or False or list of users groups.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures user management behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'VIEW_SUPPLIER_DOCS'
 ```
+
+### Related Settings
+
+- [VIEW_DEPARTMENT_REQS](VIEW_DEPARTMENT_REQS.md)
+- [VIEW_REQS_DEPARTMENT](VIEW_REQS_DEPARTMENT.md)
+- [VIEW_REQS_RESTRICTED_MODE](VIEW_REQS_RESTRICTED_MODE.md)

@@ -2,7 +2,7 @@
 
 **Category:** Security & Authentication
 
-Removes the options of saving your password on the login screen. Users will need to enter their password every time.
+Removes the options of saving your password on the login screen.
 
 ### Valid Values
 
@@ -13,7 +13,7 @@ Removes the options of saving your password on the login screen. Users will need
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This security setting affects user authentication and login behavior.
 
 ### Setting Details
 

@@ -2,11 +2,11 @@
 
 **Category:** Requisitions
 
-These are the list of fields that are hidden at the line level. These should not be changed unless you want to hide other line fields.
+These are the list of fields that are hidden at the line level.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures requisitions behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'REQ_MNT_HIDDEN_LINE_FIELDS'
 ```
+
+### Related Settings
+
+- [REQ_INQUIRY_BUYER_ALWAYS](REQ_INQUIRY_BUYER_ALWAYS.md)
+- [REQ_INQUIRY_FIELDS](REQ_INQUIRY_FIELDS.md)
+- [REQ_INQ_HIDDEN_ELEMENTS](REQ_INQ_HIDDEN_ELEMENTS.md)

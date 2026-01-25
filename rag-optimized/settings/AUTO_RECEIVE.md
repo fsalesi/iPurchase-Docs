@@ -2,18 +2,18 @@
 
 **Category:** Receiving
 
-TRUE | FALSE. If TRUE, automatically creates receipt transactions when purchase order is created. Timing controlled by AUTO_RECEIVE_TIME setting.
+TRUE | FALSE.
 
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| **TRUE** | Enables this feature |
+| **TRUE** | automatically creates receipt transactions when purchase order is created |
 | **FALSE** | Disables this feature |
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures receiving behavior in iPurchase.
 
 ### Setting Details
 
@@ -30,3 +30,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'AUTO_RECEIVE'
 ```
+
+### Related Settings
+
+- [AUTO_RECEIVE_TIME](AUTO_RECEIVE_TIME.md)

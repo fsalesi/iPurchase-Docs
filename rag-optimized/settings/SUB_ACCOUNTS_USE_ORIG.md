@@ -2,18 +2,18 @@
 
 **Category:** GL Accounts & Finance
 
-TRUE | FALSE. If TRUE, uses originator's allowed sub-accounts instead of OBO's.
+TRUE | FALSE.
 
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| **TRUE** | Enables this feature |
+| **TRUE** | uses originator's allowed sub-accounts instead of OBO's |
 | **FALSE** | Disables this feature |
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures gl accounts & finance behavior in iPurchase.
 
 ### Setting Details
 
@@ -30,3 +30,8 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'SUB_ACCOUNTS_USE_ORIG'
 ```
+
+### Related Settings
+
+- [SUB_ACCOUNT_RANGE_CANDO](SUB_ACCOUNT_RANGE_CANDO.md)
+- [SUB_ACCOUNT_SORT_BY_NAME](SUB_ACCOUNT_SORT_BY_NAME.md)

@@ -2,7 +2,7 @@
 
 **Category:** Approval Workflow
 
-If using Line Approvals, then setting this to a value of TRUE will set each line to Approved (Green) as the default each time the requisition is submitted for approval. A value of FALSE will set each requisition to neither approved nor rejected (Yellow).
+If using Line Approvals, then setting this to a value of TRUE will set each line to Approved (Green) as the default each time the requisition is submitted for approval.
 
 ### Valid Values
 
@@ -13,7 +13,7 @@ If using Line Approvals, then setting this to a value of TRUE will set each line
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects the approval workflow process, determining how requisitions are routed and approved.
 
 ### Setting Details
 
@@ -30,3 +30,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'DEFAULT_LINES_TO_APPROVED'
 ```
+
+### Related Settings
+
+- [DEFAULT_LINES_TO_APPROVED_AUTO](DEFAULT_LINES_TO_APPROVED_AUTO.md)

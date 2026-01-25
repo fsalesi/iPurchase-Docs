@@ -2,11 +2,11 @@
 
 **Category:** Requisitions
 
-Comma-separated requisition types. Types that allow MRO (Maintenance, Repair, Operations) items.
+Comma-separated requisition types.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures requisitions behavior in iPurchase.
 
 ### Setting Details
 

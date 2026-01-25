@@ -2,18 +2,18 @@
 
 **Category:** Approval Workflow
 
-TRUE | FALSE. If TRUE, uses new rerouting algorithm for change orders.
+TRUE | FALSE.
 
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| **TRUE** | Enables this feature |
+| **TRUE** | uses new rerouting algorithm for change orders |
 | **FALSE** | Disables this feature |
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects the approval workflow process, determining how requisitions are routed and approved.
 
 ### Setting Details
 

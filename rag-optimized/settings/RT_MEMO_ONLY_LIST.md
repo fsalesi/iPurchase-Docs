@@ -2,11 +2,11 @@
 
 **Category:** Requisition Types
 
-Comma-separated list of requisition types. All line items created for the requisition types defined will be entered as Memo Items on the Purchase Order.
+Comma-separated list of requisition types.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures requisition types behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'RT_MEMO_ONLY_LIST'
 ```
+
+### Related Settings
+
+- [RT_USE_LOCATION](RT_USE_LOCATION.md)

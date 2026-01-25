@@ -2,11 +2,11 @@
 
 **Category:** Security & Authentication
 
-Do not use QAD passwords for users that are also in QAD. Let iPurchase manage those passwords.
+Do not use QAD passwords for users that are also in QAD.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures security & authentication behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'NO_QAD_AUTHENTICATION'
 ```
+
+### Related Settings
+
+- [NO_PASSWORD_ON_APPROVE](NO_PASSWORD_ON_APPROVE.md)

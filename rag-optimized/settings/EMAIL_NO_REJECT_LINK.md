@@ -2,18 +2,29 @@
 
 **Category:** Email Configuration
 
-True or False - Include link to Reject in email that goes out to approver. Default FALSE
+Controls whether approval emails include a direct "Reject" link for one-click rejection.
 
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| **TRUE** | Enables this feature |
-| **FALSE** | Disables this feature |
+| **TRUE** | Hide the reject link from approval emails |
+| **FALSE** | Include the reject link in approval emails (DEFAULT) |
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+By default, approval notification emails include both "Approve" and "Reject" links for quick action. Some organizations prefer to hide the reject link to encourage approvers to log into the system and provide detailed rejection reasons rather than one-click rejections.
+
+**When TRUE:**
+- Approvers must log into iPurchase to reject
+- Encourages more thoughtful rejections with comments
+- Reject link removed from all approval emails
+
+### Common Questions
+
+- How do I remove the reject link from emails?
+- Can approvers still reject requisitions?
+- Why would I hide the reject link?
 
 ### Setting Details
 
@@ -30,3 +41,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAIL_NO_REJECT_LINK'
 ```
+
+### Related Settings
+
+- [EMAIL_NO_APPROVE_LINK](EMAIL_NO_APPROVE_LINK.md) - Hide approve link from emails

@@ -2,11 +2,11 @@
 
 **Category:** QAD Integration
 
-This setting will use OBO as the Requested By. If you set QAD_REQUESTED_BY to "ORIGINATOR" then the req originator (xxreq_userid) will be used.
+This setting will use OBO as the Requested By.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures qad integration behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,8 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'QAD_REQUESTED_BY'
 ```
+
+### Related Settings
+
+- [QAD_COMMENT_TYPE](QAD_COMMENT_TYPE.md)
+- [QAD_INTERFACE_PASSWORD](QAD_INTERFACE_PASSWORD.md)

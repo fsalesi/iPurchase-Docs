@@ -6,7 +6,7 @@ The number of minutes a user will be locked out after failing to login more than
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures uncategorized behavior in iPurchase.
 
 ### Setting Details
 

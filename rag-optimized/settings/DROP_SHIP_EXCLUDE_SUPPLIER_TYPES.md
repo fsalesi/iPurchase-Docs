@@ -2,11 +2,11 @@
 
 **Category:** Catalog & Vendors
 
-Comma-Separated list of Supplier Types that should not show in the drop ship search. For example you may want to exclude employee addresses
+Comma-Separated list of Supplier Types that should not show in the drop ship search.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures catalog & vendors behavior in iPurchase.
 
 ### Setting Details
 

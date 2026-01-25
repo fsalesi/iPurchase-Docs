@@ -2,11 +2,11 @@
 
 **Category:** System Configuration
 
-Comma-separated field names. Fields to exclude from audit trail for the specified table. Replace {TABLE} with actual table name (e.g., AUDIT_xxreq_mstr_EXCEPT). Used to reduce audit trail volume.
+Comma-separated field names.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures system configuration behavior in iPurchase.
 
 ### Setting Details
 

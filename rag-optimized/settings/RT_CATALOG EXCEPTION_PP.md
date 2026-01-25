@@ -6,7 +6,7 @@ Technical - Do Not Modify without consulting ISS
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting controls catalog functionality, affecting how users browse and select items from supplier catalogs.
 
 ### Setting Details
 
@@ -23,3 +23,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'RT_CATALOG EXCEPTION_PP'
 ```
+
+### Related Settings
+
+- [RT_VENDOR_ITEM_ONLY](RT_VENDOR_ITEM_ONLY.md)

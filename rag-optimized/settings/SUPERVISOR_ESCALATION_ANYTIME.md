@@ -2,18 +2,18 @@
 
 **Category:** Approval Workflow
 
-TRUE | FALSE. If TRUE, supervisors can approve/reject anytime, not just when pending.
+TRUE | FALSE.
 
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| **TRUE** | Enables this feature |
+| **TRUE** | supervisors can approve/reject anytime, not just when pending |
 | **FALSE** | Disables this feature |
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects the approval workflow process, determining how requisitions are routed and approved.
 
 ### Setting Details
 
@@ -30,3 +30,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'SUPERVISOR_ESCALATION_ANYTIME'
 ```
+
+### Related Settings
+
+- [SUPERVISOR_APPROVAL_FIELD](SUPERVISOR_APPROVAL_FIELD.md)
+- [SUPERVISOR_ESCALATION_DAYS](SUPERVISOR_ESCALATION_DAYS.md)
+- [SUPERVISOR_ESCALATION_LEVEL](SUPERVISOR_ESCALATION_LEVEL.md)

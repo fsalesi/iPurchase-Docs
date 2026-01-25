@@ -2,7 +2,7 @@
 
 **Category:** Email Configuration
 
-Do not include the requisition print in emails. Only includes the text.
+Do not include the requisition print in emails.
 
 ### Valid Values
 
@@ -13,7 +13,7 @@ Do not include the requisition print in emails. Only includes the text.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting defines the email body content. You can use HTML formatting and dynamic tokens that are replaced with actual values when the email is sent.
 
 ### Setting Details
 
@@ -30,3 +30,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'NO_EMAIL_REQ_BODY'
 ```
+
+### Related Settings
+
+- [NO_CHANGE_EMAIL](NO_CHANGE_EMAIL.md)
+- [NO_EMAILS](NO_EMAILS.md)
+- [NO_PO_EMAIL](NO_PO_EMAIL.md)

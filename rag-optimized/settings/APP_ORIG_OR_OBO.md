@@ -2,11 +2,11 @@
 
 **Category:** Approval Workflow
 
-ORIGINATOR | OBO. Determines whether approval rule xxapp_orig field matches against the requisition originator (xxreq_userid) or the On Behalf Of person (xxreq_obo). Affects approval rule evaluation and reporting.
+ORIGINATOR | OBO.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects the approval workflow process, determining how requisitions are routed and approved.
 
 ### Setting Details
 
@@ -23,3 +23,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'APP_ORIG_OR_OBO'
 ```
+
+### Related Settings
+
+- [APP_SUPERVISOR_SEQ](APP_SUPERVISOR_SEQ.md)

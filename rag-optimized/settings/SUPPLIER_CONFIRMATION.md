@@ -2,7 +2,7 @@
 
 **Category:** Catalog & Vendors
 
-TRUE | FALSE. Require supplier PO confirmation.
+TRUE | FALSE.
 
 ### Valid Values
 
@@ -13,7 +13,7 @@ TRUE | FALSE. Require supplier PO confirmation.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures catalog & vendors behavior in iPurchase.
 
 ### Setting Details
 
@@ -30,3 +30,8 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'SUPPLIER_CONFIRMATION'
 ```
+
+### Related Settings
+
+- [SUPPLIER_PO_MERGE_ATTACHMENTS_EXCLUDE](SUPPLIER_PO_MERGE_ATTACHMENTS_EXCLUDE.md)
+- [SUPPLIER_SEARCH_MATCHES](SUPPLIER_SEARCH_MATCHES.md)

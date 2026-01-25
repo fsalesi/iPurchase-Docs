@@ -6,7 +6,7 @@ Technical - Do Not Modify without consulting ISS
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This email-related setting controls how iPurchase communicates with users via email notifications.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'NO_PO_EMAIL'
 ```
+
+### Related Settings
+
+- [NO_CHANGE_EMAIL](NO_CHANGE_EMAIL.md)
+- [NO_EMAILS](NO_EMAILS.md)
+- [NO_EMAIL_REQ_BODY](NO_EMAIL_REQ_BODY.md)

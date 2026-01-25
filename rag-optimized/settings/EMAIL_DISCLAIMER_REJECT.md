@@ -2,11 +2,31 @@
 
 **Category:** Email Configuration
 
-If questions, please contact the approver that rejected the requisition
+Custom text displayed in rejection notification emails, typically providing guidance on next steps after a requisition is rejected.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+When a requisition is rejected, the rejection email includes this disclaimer text. Use it to provide helpful guidance to users about what to do next.
+
+**Default text:**
+```
+If questions, please contact the approver that rejected the requisition
+```
+
+**Customization options:**
+- Include contact information for purchasing support
+- Add instructions for resubmission
+- Reference company policies on rejections
+
+### Valid Values
+
+Text string or HTML content for the rejection email disclaimer.
+
+### Common Questions
+
+- How do I customize the rejection email message?
+- Can I include HTML in the rejection disclaimer?
+- How do I add support contact information to rejection emails?
 
 ### Setting Details
 

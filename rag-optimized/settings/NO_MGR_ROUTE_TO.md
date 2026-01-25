@@ -2,11 +2,11 @@
 
 **Category:** Approval Workflow
 
-User/group. Skip supervisor chain routing and route directly to this approver.
+User/group.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects the approval workflow process, determining how requisitions are routed and approved.
 
 ### Setting Details
 
@@ -23,3 +23,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'NO_MGR_ROUTE_TO'
 ```
+
+### Related Settings
+
+- [NO_APPROVAL_EMAILS](NO_APPROVAL_EMAILS.md)

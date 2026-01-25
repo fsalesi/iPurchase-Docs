@@ -2,7 +2,7 @@
 
 **Category:** Catalog & Vendors
 
-TRUE | FALSE. Restrict requisitions to items in vendor catalog only.
+TRUE | FALSE.
 
 ### Valid Values
 
@@ -13,7 +13,7 @@ TRUE | FALSE. Restrict requisitions to items in vendor catalog only.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures catalog & vendors behavior in iPurchase.
 
 ### Setting Details
 

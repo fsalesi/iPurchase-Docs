@@ -2,7 +2,7 @@
 
 **Category:** Reporting & Inquiry
 
-If this setting is set to true then when a user searches for a supplier they will not be allowed to search by name, only by supplier number. a value of false enables the user to search by both supplier number and name.
+If this setting is set to true then when a user searches for a supplier they will not be allowed to search by name, only by supplier number.
 
 ### Valid Values
 
@@ -13,7 +13,7 @@ If this setting is set to true then when a user searches for a supplier they wil
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures reporting & inquiry behavior in iPurchase.
 
 ### Setting Details
 
@@ -30,3 +30,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'INQUIRY_NO_NAME_SEARCH'
 ```
+
+### Related Settings
+
+- [INQUIRY_AFTER_REJECT](INQUIRY_AFTER_REJECT.md)
+- [INQUIRY_LAST_REV_DEFAULT](INQUIRY_LAST_REV_DEFAULT.md)
+- [INQUIRY_NOTES_MATCHES](INQUIRY_NOTES_MATCHES.md)

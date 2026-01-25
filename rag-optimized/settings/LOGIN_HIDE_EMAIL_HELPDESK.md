@@ -6,7 +6,7 @@ Hide the Email Helpdesk link on the login screen
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This email-related setting controls how iPurchase communicates with users via email notifications.
 
 ### Setting Details
 

@@ -2,11 +2,11 @@
 
 **Category:** Purchase Orders
 
-Possible Values: Blank, Punchout, Catalog, Lowest.  During a punchout, if an item ordered via a punchout site also exists in the catalog, do you want to use the Catalog's price rather than the price returned from the punchout?
+Possible Values: Blank, Punchout, Catalog, Lowest.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects purchase order processing and how POs are generated, formatted, or transmitted to suppliers.
 
 ### Setting Details
 

@@ -2,11 +2,11 @@
 
 **Category:** Email Configuration
 
-Configuration setting for iPurchase.
+Configuration setting for email configuration.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This email-related setting controls how iPurchase communicates with users via email notifications.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAIL_OPEN_PO_INCLUDE_DOMAINS'
 ```
+
+### Related Settings
+
+- [EMAIL_AUTH_PASSWORD](EMAIL_AUTH_PASSWORD.md)
+- [EMAIL_AUTH_TYPE](EMAIL_AUTH_TYPE.md)
+- [EMAIL_AUTH_USER](EMAIL_AUTH_USER.md)

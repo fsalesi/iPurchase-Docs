@@ -2,14 +2,14 @@
 
 **Category:** Approval Workflow
 
-Comma Separated list of User ID's or Group ID's that will allow an approver to approve multiple requisitions simultaneously from the Requisition Inquiry screen.  If the user is a member of the specified groups then the user does not need to go into each requisition in order to approve. A checkbox is displayed on the inquiry screen next to each requisition where the approver for the requisition is the logged in user. If the requisition has been delegated to the logged in user, then the checkbox will not be displayed and the user must go into the requisition in order to approve. The approver will check all the requisitions that they want to approve and then click the Batch Approve button. Asterisk indicates everyone, a blank indicates no one.
+Comma Separated list of User ID's or Group ID's that will allow an approver to approve multiple requisitions simultaneously from the Requisition Inquiry screen.
 
 ### How It Works
 
-This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) to specify which users or groups have access.
 
-**Common patterns:**
-- `*` - Everyone/all values allowed
+**Common configurations:**
+- `*` - All users/everyone
 - (blank) - No one/feature disabled
 - `user1,user2` - Specific users only
 - `group1,!user1` - Group members except specific user
@@ -29,3 +29,8 @@ This setting uses [Can-Do list format](../../reference/can-do-list-format.md) fo
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'BATCH_APPROVE_GROUPS'
 ```
+
+### Related Settings
+
+- [BATCH_APPROVE_GROUPS_ALWAYS](BATCH_APPROVE_GROUPS_ALWAYS.md)
+- [BATCH_APPROVE_GROUPS_FINAL](BATCH_APPROVE_GROUPS_FINAL.md)

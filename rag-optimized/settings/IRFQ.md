@@ -2,7 +2,7 @@
 
 **Category:** RFQ Management
 
-TRUE | FALSE. Enable iRFQ (RFQ management) module.
+TRUE | FALSE.
 
 ### Valid Values
 
@@ -13,7 +13,7 @@ TRUE | FALSE. Enable iRFQ (RFQ management) module.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures rfq management behavior in iPurchase.
 
 ### Setting Details
 

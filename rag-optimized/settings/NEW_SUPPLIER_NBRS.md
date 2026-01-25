@@ -6,7 +6,7 @@ Comma separated list of supplier numbers which should not allow final approval.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures catalog & vendors behavior in iPurchase.
 
 ### Setting Details
 

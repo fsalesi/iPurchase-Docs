@@ -6,7 +6,7 @@ Technical - Do Not Modify without consulting ISS
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This security setting affects user authentication and login behavior.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'PASSWORD_RESET_TIMEOUT'
 ```
+
+### Related Settings
+
+- [PASSWORD_EXPIRE_DAYS](PASSWORD_EXPIRE_DAYS.md)
+- [PASSWORD_REMINDER_DAYS](PASSWORD_REMINDER_DAYS.md)
+- [PASSWORD_RULES](PASSWORD_RULES.md)

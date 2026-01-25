@@ -2,11 +2,11 @@
 
 **Category:** Uncategorized
 
-Within a catalog requisition, iPurchase will add up the quantities of all the items chosen by default.  If the administrator sets this setting to true the system will display number of lines instead of adding up the quantities.
+Within a catalog requisition, iPurchase will add up the quantities of all the items chosen by default.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures uncategorized behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'CART_SUM_LINES'
 ```
+
+### Related Settings
+
+- [CART_BREAK_BY](CART_BREAK_BY.md)

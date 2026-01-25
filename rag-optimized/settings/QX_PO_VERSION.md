@@ -6,7 +6,7 @@ Version of the qxtend PO method for this environment
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects purchase order processing and how POs are generated, formatted, or transmitted to suppliers.
 
 ### Setting Details
 
@@ -23,3 +23,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'QX_PO_VERSION'
 ```
+
+### Related Settings
+
+- [QX_PO_NAME](QX_PO_NAME.md)

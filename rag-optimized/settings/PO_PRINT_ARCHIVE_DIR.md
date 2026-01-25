@@ -2,11 +2,11 @@
 
 **Category:** Purchase Orders
 
-Directory on application server. Enter the path to a directory on the application server where all purchase orders will be saved to when printing a revision through iPurchase for the first time. This keeps an archive of physical purchase orders.
+Directory on application server.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects purchase order processing and how POs are generated, formatted, or transmitted to suppliers.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'PO_PRINT_ARCHIVE_DIR'
 ```
+
+### Related Settings
+
+- [PO_BLANKET_PRINT_PROGRAM](PO_BLANKET_PRINT_PROGRAM.md)
+- [PO_BREAK_BY](PO_BREAK_BY.md)
+- [PO_CONFIRMATION_RESPONSE](PO_CONFIRMATION_RESPONSE.md)

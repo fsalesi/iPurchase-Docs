@@ -2,11 +2,11 @@
 
 **Category:** Purchase Orders
 
-This setting is a list of requisition types that would set the PO Required field to True or Yes.  For example if you do not require a PO for credit card purchases and CREDIT_CARD is a Requisition Type, then list all the other Requisition Types here. The default is TRUE unless an item appears in this list. The list should be in the format EXPENSE,CAPITAL,TOOLING
+This setting is a list of requisition types that would set the PO Required field to True or Yes.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects purchase order processing and how POs are generated, formatted, or transmitted to suppliers.
 
 ### Setting Details
 

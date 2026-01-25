@@ -2,11 +2,39 @@
 
 **Category:** Email Configuration
 
-This setting allows the administrator to set the body of the email that is sent to users when a new user is created. Special tokens that can be inserted in email are $User ID, $PASSWORD, $URL.  These tokens will be substituted with the actual values.
+Email body template sent to newly created users with their login credentials and instructions.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+When an administrator creates a new user account, iPurchase can automatically send a welcome email. This setting defines the email body content.
+
+**Available tokens for substitution:**
+- `$User ID` - The user's login ID
+- `$PASSWORD` - The user's initial password
+- `$URL` - Link to the iPurchase login page
+
+**Example:**
+```
+Welcome to iPurchase!
+
+Your account has been created:
+User ID: $User ID
+Password: $PASSWORD
+
+Please log in at: $URL
+
+Change your password after first login.
+```
+
+### Valid Values
+
+Text or HTML content with optional token substitution.
+
+### Common Questions
+
+- How do I customize the new user welcome email?
+- What information is sent to new users?
+- Can I include HTML in the welcome email?
 
 ### Setting Details
 
@@ -23,3 +51,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAIL_NEW_USER_BODY'
 ```
+
+### Related Settings
+
+- [EMAIL_NEW_USER_SUBJECT](EMAIL_NEW_USER_SUBJECT.md) - Subject line for new user email

@@ -2,11 +2,25 @@
 
 **Category:** Email Configuration
 
-This setting allows the administrator to set the subject for the new user email.
+Subject line for the welcome email sent to newly created users.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+When a new user account is created and a welcome email is sent, this setting provides the email subject line. Keep it clear and recognizable so users don't mistake it for spam.
+
+**Example:**
+```
+EMAIL_NEW_USER_SUBJECT = "Welcome to iPurchase - Your Account is Ready"
+```
+
+### Valid Values
+
+Text string for the email subject.
+
+### Common Questions
+
+- How do I customize the new user email subject?
+- What subject line should I use for welcome emails?
 
 ### Setting Details
 
@@ -23,3 +37,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAIL_NEW_USER_SUBJECT'
 ```
+
+### Related Settings
+
+- [EMAIL_NEW_USER_BODY](EMAIL_NEW_USER_BODY.md) - Body content for new user email

@@ -2,7 +2,7 @@
 
 **Category:** GL Accounts & Finance
 
-This setting allows the administrator to set the drop down list of departments at the line entry. If set to TRUE the list will be based on the originator.  If set to FALSE, the department is set based on the on behalf of field. User departments are defined in user maintenance. This setting is related to Restrict User Department.
+This setting allows the administrator to set the drop down list of departments at the line entry.
 
 ### Valid Values
 
@@ -13,7 +13,7 @@ This setting allows the administrator to set the drop down list of departments a
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures gl accounts & finance behavior in iPurchase.
 
 ### Setting Details
 

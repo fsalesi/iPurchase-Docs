@@ -6,7 +6,7 @@ If this is set to something like en-us"
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures uncategorized behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,8 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'USE_SINGLE_LANGUAGE'
 ```
+
+### Related Settings
+
+- [USE_CHAINED_DELEGATES](USE_CHAINED_DELEGATES.md)
+- [USE_LYNC](USE_LYNC.md)

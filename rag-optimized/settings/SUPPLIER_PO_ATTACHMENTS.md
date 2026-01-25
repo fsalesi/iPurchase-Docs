@@ -2,11 +2,11 @@
 
 **Category:** Purchase Orders
 
-Comma-Separated List of paths and files. This is a list of files which is to be emailed to the supplier as attachments to the Purchase Order.
+Comma-Separated List of paths and files.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects purchase order processing and how POs are generated, formatted, or transmitted to suppliers.
 
 ### Setting Details
 
@@ -23,3 +23,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'SUPPLIER_PO_ATTACHMENTS'
 ```
+
+### Related Settings
+
+- [SUPPLIER_PO_MERGE_ATTACHMENTS](SUPPLIER_PO_MERGE_ATTACHMENTS.md)

@@ -6,7 +6,7 @@ Email subject for receipt notifications.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting customizes the subject line for outgoing emails. Choose text that clearly identifies the email purpose to improve open rates and avoid spam filters.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'RECEIPT_EMAIL_SUBJECT'
 ```
+
+### Related Settings
+
+- [RECEIPT_EMAIL_MESSAGE](RECEIPT_EMAIL_MESSAGE.md)
+- [RECEIPT_EMAIL_REQ_TYPES](RECEIPT_EMAIL_REQ_TYPES.md)
+- [RECEIPT_EMAIL_TO](RECEIPT_EMAIL_TO.md)

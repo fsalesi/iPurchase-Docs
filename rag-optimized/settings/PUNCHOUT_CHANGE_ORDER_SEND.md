@@ -2,14 +2,14 @@
 
 **Category:** Change Orders
 
-Send PO revisions automatically to punchout suppliers via cXML. List of Vendor Numbers or * for all. CAN-DO functionality !staples,*
+Send PO revisions automatically to punchout suppliers via cXML.
 
 ### How It Works
 
-This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) to specify which users or groups have access.
 
-**Common patterns:**
-- `*` - Everyone/all values allowed
+**Common configurations:**
+- `*` - All users/everyone
 - (blank) - No one/feature disabled
 - `user1,user2` - Specific users only
 - `group1,!user1` - Group members except specific user

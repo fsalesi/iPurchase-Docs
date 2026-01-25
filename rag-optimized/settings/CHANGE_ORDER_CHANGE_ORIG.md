@@ -2,18 +2,18 @@
 
 **Category:** Change Orders
 
-TRUE | FALSE. If TRUE, allows changing the originator (xxreq_userid) field on purchase order change orders.
+TRUE | FALSE.
 
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| **TRUE** | Enables this feature |
+| **TRUE** | allows changing the originator (xxreq_userid) field on purchase order change orders |
 | **FALSE** | Disables this feature |
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures change orders behavior in iPurchase.
 
 ### Setting Details
 

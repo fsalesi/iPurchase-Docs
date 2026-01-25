@@ -13,7 +13,7 @@ Do not show nor use the Other column on Budgets.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This display setting controls what information is visible to users in the interface.
 
 ### Setting Details
 
@@ -30,3 +30,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'BUDGET_HIDE_OTHER'
 ```
+
+### Related Settings
+
+- [BUDGET_ADMINISTRATOR](BUDGET_ADMINISTRATOR.md)
+- [BUDGET_ASST_EDIT](BUDGET_ASST_EDIT.md)
+- [BUDGET_MGR_EDIT](BUDGET_MGR_EDIT.md)

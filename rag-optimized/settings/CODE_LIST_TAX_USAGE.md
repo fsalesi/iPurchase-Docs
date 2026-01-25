@@ -2,7 +2,7 @@
 
 **Category:** GL Accounts & Finance
 
-Configuration setting for iPurchase.
+Configuration setting for gl accounts & finance.
 
 ### How It Works
 
@@ -23,3 +23,8 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'CODE_LIST_TAX_USAGE'
 ```
+
+### Related Settings
+
+- [CODE_LIST_TAX_CLASS](CODE_LIST_TAX_CLASS.md)
+- [CODE_LIST_TAX_ENVIRONMENT](CODE_LIST_TAX_ENVIRONMENT.md)

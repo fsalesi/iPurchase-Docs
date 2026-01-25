@@ -2,11 +2,11 @@
 
 **Category:** Requisitions
 
-True or False If you set this setting to TRUE, then all items entered in the line entry screen for the specified requisition type will have the account, sub-account, and cost center set to the values which QAD would dictate based on the vendor and item. This setting will override all other account, sub-account, and cost center settings. This setting can also be at the system level ' see GL_Override.
+True or False If you set this setting to TRUE, then all items entered in the line entry screen for the specified requisition type will have the account, sub-account, and cost center set to the values which QAD would dictate based on the vendor and item.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures requisitions behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'RT_[Requisition Type]_GL_OVERRIDE'
 ```
+
+### Related Settings
+
+- [RT_INVENTORY_ITEM_ONLY](RT_INVENTORY_ITEM_ONLY.md)
+- [RT_[Requisition Type]_ACCESS](RT_[Requisition Type]_ACCESS.md)
+- [RT_[Requisition Type]_ACCOUNT_DEFAULT](RT_[Requisition Type]_ACCOUNT_DEFAULT.md)

@@ -2,14 +2,14 @@
 
 **Category:** Purchase Orders
 
-Comma Separated list of User ID's or Group ID's that will have the ability to close PO  or  PO line on Purchase order.  Either Line or whole PO can be closed. Close or canceled depends on Receipts. Asterisk indicates everyone, a blank indicates no one.
+Comma Separated list of User ID's or Group ID's that will have the ability to close PO  or  PO line on Purchase order.
 
 ### How It Works
 
-This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) to specify which users or groups have access.
 
-**Common patterns:**
-- `*` - Everyone/all values allowed
+**Common configurations:**
+- `*` - All users/everyone
 - (blank) - No one/feature disabled
 - `user1,user2` - Specific users only
 - `group1,!user1` - Group members except specific user

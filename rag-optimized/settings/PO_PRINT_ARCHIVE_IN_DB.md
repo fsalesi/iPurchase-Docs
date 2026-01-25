@@ -2,7 +2,7 @@
 
 **Category:** Purchase Orders
 
-Store Purchase Order PDF files in database. A setting of true will display a clock icon next to Purchase Order numbers in iPurchase. Clicking the clock icon will display a list of all original prints for the given Purchase Order.
+Store Purchase Order PDF files in database.
 
 ### Valid Values
 
@@ -13,7 +13,7 @@ Store Purchase Order PDF files in database. A setting of true will display a clo
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects purchase order processing and how POs are generated, formatted, or transmitted to suppliers.
 
 ### Setting Details
 
@@ -30,3 +30,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'PO_PRINT_ARCHIVE_IN_DB'
 ```
+
+### Related Settings
+
+- [PO_BLANKET_PRINT_PROGRAM](PO_BLANKET_PRINT_PROGRAM.md)
+- [PO_BREAK_BY](PO_BREAK_BY.md)
+- [PO_CONFIRMATION_RESPONSE](PO_CONFIRMATION_RESPONSE.md)

@@ -2,7 +2,7 @@
 
 **Category:** Requisitions
 
-A setting of True will synchronize iPurchase Requisition Lines with the requisition (req_det) functionality in QAD. Only items which are planned by MRP will be synchronized
+A setting of True will synchronize iPurchase Requisition Lines with the requisition (req_det) functionality in QAD.
 
 ### Valid Values
 
@@ -13,7 +13,7 @@ A setting of True will synchronize iPurchase Requisition Lines with the requisit
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures requisitions behavior in iPurchase.
 
 ### Setting Details
 

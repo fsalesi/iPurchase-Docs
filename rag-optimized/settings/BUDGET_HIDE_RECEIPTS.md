@@ -13,7 +13,7 @@ Do not show nor use the Receipts column on Budgets.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This display setting controls what information is visible to users in the interface.
 
 ### Setting Details
 

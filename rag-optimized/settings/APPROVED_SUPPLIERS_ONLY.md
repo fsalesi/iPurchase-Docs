@@ -2,18 +2,18 @@
 
 **Category:** Catalog & Vendors
 
-TRUE | FALSE. If TRUE, only approved suppliers can be selected on requisitions. Enforces supplier approval workflow.
+TRUE | FALSE.
 
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| **TRUE** | Enables this feature |
+| **TRUE** | only approved suppliers can be selected on requisitions |
 | **FALSE** | Disables this feature |
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures catalog & vendors behavior in iPurchase.
 
 ### Setting Details
 

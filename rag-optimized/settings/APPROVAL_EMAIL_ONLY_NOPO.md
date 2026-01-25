@@ -2,18 +2,30 @@
 
 **Category:** Email Configuration
 
-TRUE | FALSE. If TRUE, approval emails are sent only when the requisition does NOT require a PO (xxreq_po_required = TRUE). Used to reduce email volume.
+Controls whether approval notification emails are sent for all requisitions or only for those that don't require a purchase order.
 
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| **TRUE** | Enables this feature |
-| **FALSE** | Disables this feature |
+| **TRUE** | Send approval emails only for non-PO requisitions |
+| **FALSE** | Send approval emails for all requisitions (DEFAULT) |
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+Some organizations want to reduce email volume by limiting approval notifications. When enabled, this setting suppresses approval emails for requisitions that will generate a PO, sending notifications only for memo-only or non-PO requisitions.
+
+**Use case:** Organizations where PO requisitions have their own notification workflow through ERP integration, so iPurchase approval emails are redundant.
+
+**Behavior:**
+- `xxreq_po_required = TRUE` → No approval email sent
+- `xxreq_po_required = FALSE` → Approval email sent normally
+
+### Common Questions
+
+- How do I reduce the number of approval emails?
+- Why aren't approvers getting emails for some requisitions?
+- Can I limit emails to certain requisition types?
 
 ### Setting Details
 
@@ -30,3 +42,8 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'APPROVAL_EMAIL_ONLY_NOPO'
 ```
+
+### Related Settings
+
+- [NO_APPROVAL_EMAILS](NO_APPROVAL_EMAILS.md) - Disable all approval emails
+- [NO_EMAILS](NO_EMAILS.md) - Disable all system emails

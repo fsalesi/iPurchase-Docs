@@ -2,11 +2,11 @@
 
 **Category:** Purchase Orders
 
-Comma separated list of fields on a requisition that will be used to split the requisition into multiple PO's. Or Comma separated list of fields on a requisition that will be used to consolidate PO's from multiple requisitions. Ex: xxreqd_vendor,xxreq_site
+Comma separated list of fields on a requisition that will be used to split the requisition into multiple PO's.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects purchase order processing and how POs are generated, formatted, or transmitted to suppliers.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'PO_BREAK_BY'
 ```
+
+### Related Settings
+
+- [PO_BLANKET_PRINT_PROGRAM](PO_BLANKET_PRINT_PROGRAM.md)
+- [PO_CONFIRMATION_RESPONSE](PO_CONFIRMATION_RESPONSE.md)
+- [PO_DO_NOT_PRINT](PO_DO_NOT_PRINT.md)

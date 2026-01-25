@@ -2,7 +2,7 @@
 
 **Category:** Reporting & Inquiry
 
-Will export a consolidated view of the requisition when the Excel link is clicked in Requisition Inquiry. Default FALSE
+Will export a consolidated view of the requisition when the Excel link is clicked in Requisition Inquiry.
 
 ### Valid Values
 
@@ -13,7 +13,7 @@ Will export a consolidated view of the requisition when the Excel link is clicke
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures reporting & inquiry behavior in iPurchase.
 
 ### Setting Details
 
@@ -30,3 +30,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EXCEL_EXPORT_ONE_TAB'
 ```
+
+### Related Settings
+
+- [EXCEL_EXPORT_FIELDS](EXCEL_EXPORT_FIELDS.md)

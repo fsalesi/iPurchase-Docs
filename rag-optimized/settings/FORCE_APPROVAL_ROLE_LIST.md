@@ -2,14 +2,14 @@
 
 **Category:** Approval Workflow
 
-Comma Separated list of User ID's or Group ID's that are allowed to Force Approve any requisition.  Force Approval bypasses all open approvals and creates a PO. A history of this action is maintained for audit purposes. Allow_Approver_Changes must also be set to TRUE and this group must also be listed in the "Allow_Approver_Changes_Roles" setting. Asterisk indicates everyone, a blank indicates no one.
+Comma Separated list of User ID's or Group ID's that are allowed to Force Approve any requisition.
 
 ### How It Works
 
-This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) to specify which users or groups have access.
 
-**Common patterns:**
-- `*` - Everyone/all values allowed
+**Common configurations:**
+- `*` - All users/everyone
 - (blank) - No one/feature disabled
 - `user1,user2` - Specific users only
 - `group1,!user1` - Group members except specific user

@@ -2,11 +2,11 @@
 
 **Category:** User Management
 
-Use this setting to set the User ID for integration to QAD. This user ID will be used in QAD to create PO's. This user must be enabled in iPurchase and QAD. This user would need to be created before a PO can be created from iPurchase.
+Use this setting to set the User ID for integration to QAD.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures user management behavior in iPurchase.
 
 ### Setting Details
 

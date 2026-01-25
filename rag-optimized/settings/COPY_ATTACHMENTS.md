@@ -13,7 +13,7 @@ This setting indicates whether or not attachments are copied when a requisition 
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures ach integration behavior in iPurchase.
 
 ### Setting Details
 

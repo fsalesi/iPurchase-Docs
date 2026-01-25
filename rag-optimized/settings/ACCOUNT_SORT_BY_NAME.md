@@ -2,7 +2,7 @@
 
 **Category:** GL Accounts & Finance
 
-A value of true will show the accounts sorted by name. Any other value will sort by number.
+A value of true will show the accounts sorted by name.
 
 ### Valid Values
 
@@ -13,7 +13,7 @@ A value of true will show the accounts sorted by name. Any other value will sort
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures gl accounts & finance behavior in iPurchase.
 
 ### Setting Details
 
@@ -30,3 +30,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ACCOUNT_SORT_BY_NAME'
 ```
+
+### Related Settings
+
+- [ACCOUNT_RANGE_CANDO](ACCOUNT_RANGE_CANDO.md)
+- [ACCOUNT_REQUIRE_PROJECT](ACCOUNT_REQUIRE_PROJECT.md)
+- [ACCOUNT_SHOW_CUSTOMNOTE](ACCOUNT_SHOW_CUSTOMNOTE.md)

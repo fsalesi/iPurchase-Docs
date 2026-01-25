@@ -2,11 +2,11 @@
 
 **Category:** Catalog & Vendors
 
-Comma-separated types. Types using signature-based approved vendor list. Related: AVL_REQ_TYPES, USE_SIG_AVL
+Comma-separated types.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures catalog & vendors behavior in iPurchase.
 
 ### Setting Details
 

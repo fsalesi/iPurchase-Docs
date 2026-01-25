@@ -6,7 +6,7 @@ This is the Approval Level or Sequence when adding supervisors to the approval r
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects the approval workflow process, determining how requisitions are routed and approved.
 
 ### Setting Details
 
@@ -23,3 +23,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'APP_SUPERVISOR_SEQ'
 ```
+
+### Related Settings
+
+- [APP_ORIG_OR_OBO](APP_ORIG_OR_OBO.md)

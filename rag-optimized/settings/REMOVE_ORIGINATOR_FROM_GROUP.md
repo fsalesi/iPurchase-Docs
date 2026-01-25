@@ -13,7 +13,7 @@ If the originator is listed as a member of a group on the approval routing, if t
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures uncategorized behavior in iPurchase.
 
 ### Setting Details
 
@@ -30,3 +30,8 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'REMOVE_ORIGINATOR_FROM_GROUP'
 ```
+
+### Related Settings
+
+- [REMOVE_ORIG_CO](REMOVE_ORIG_CO.md)
+- [REMOVE_ORIG_RELEASE](REMOVE_ORIG_RELEASE.md)

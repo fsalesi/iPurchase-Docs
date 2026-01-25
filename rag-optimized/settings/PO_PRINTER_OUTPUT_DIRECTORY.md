@@ -2,11 +2,11 @@
 
 **Category:** Purchase Orders
 
-Is a directory on the iPurchase application server where the QAD Reporting Framework will save the file. If you are using Optio, Jetforms, Pics, etc, to print graphical purchase orders, enter the name of the directory where pdf files will be placed by the third-party forms package, otherwise leave blank. QAD EE 2012 and above allows the ability to print fancy purchase orders. Requirements: Names QAD user. Settings QAD_AUTHENTICATION_USER and QAD_AUTHENTICATION_PASSWORD must be set. The user specified in QAD_AUTHENTICATION_USER must be setup in QAD with a role of "rptAdmin"
+Is a directory on the iPurchase application server where the QAD Reporting Framework will save the file.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects purchase order processing and how POs are generated, formatted, or transmitted to suppliers.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'PO_PRINTER_OUTPUT_DIRECTORY'
 ```
+
+### Related Settings
+
+- [PO_BLANKET_PRINT_PROGRAM](PO_BLANKET_PRINT_PROGRAM.md)
+- [PO_BREAK_BY](PO_BREAK_BY.md)
+- [PO_CONFIRMATION_RESPONSE](PO_CONFIRMATION_RESPONSE.md)

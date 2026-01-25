@@ -2,14 +2,14 @@
 
 **Category:** User Management
 
-Comma separated list of User ID's or Group ID's that are who are allowed to edit items in a Catalog within iPurchase. Asterisk indicates everyone, a blank indicates no one. In order for the user to edit the catalog they would use the Edit link that appears next to the item # in the catalog (3-4 icons).
+Comma separated list of User ID's or Group ID's that are who are allowed to edit items in a Catalog within iPurchase.
 
 ### How It Works
 
-This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) to specify which users or groups have access.
 
-**Common patterns:**
-- `*` - Everyone/all values allowed
+**Common configurations:**
+- `*` - All users/everyone
 - (blank) - No one/feature disabled
 - `user1,user2` - Specific users only
 - `group1,!user1` - Group members except specific user
@@ -29,3 +29,9 @@ This setting uses [Can-Do list format](../../reference/can-do-list-format.md) fo
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ALLOW_CATALOG_EDIT'
 ```
+
+### Related Settings
+
+- [ALLOW_BATCH_PO](ALLOW_BATCH_PO.md)
+- [ALLOW_BLANKET_RELEASE](ALLOW_BLANKET_RELEASE.md)
+- [ALLOW_BUG](ALLOW_BUG.md)

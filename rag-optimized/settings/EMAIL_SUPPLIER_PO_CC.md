@@ -2,11 +2,11 @@
 
 **Category:** Email Configuration
 
-This is a list of email address(s) of whom to carbon copy the supplier email to when the PO is created.  A value of "BUYER" will copy the associated buyer which is set on the requisition. If a user is included in this setting and has OOF turned on, their delegate will receive a carbon copy of the supplier email. The administrator can also add static email addresses to this setting or use these other values: $xxreq_buyer = Buyer $xxreq_User ID = Originator $xxreq_obo = On Behalf Of $xxreq_deliver_to = Deliver To
+This is a list of email address(s) of whom to carbon copy the supplier email to when the PO is created.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+Configure email recipients for this notification type. Multiple addresses can be comma-separated.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAIL_SUPPLIER_PO_CC'
 ```
+
+### Related Settings
+
+- [EMAIL_AUTH_PASSWORD](EMAIL_AUTH_PASSWORD.md)
+- [EMAIL_AUTH_TYPE](EMAIL_AUTH_TYPE.md)
+- [EMAIL_AUTH_USER](EMAIL_AUTH_USER.md)

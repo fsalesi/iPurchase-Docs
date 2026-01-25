@@ -6,7 +6,7 @@ List for User Field 5
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures requisitions behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'CODE_LIST_H_XXREQ_UCHAR5'
 ```
+
+### Related Settings
+
+- [CODE_LIST_H_XXREQ_UCHAR1](CODE_LIST_H_XXREQ_UCHAR1.md)
+- [CODE_LIST_H_XXREQ_UCHAR2](CODE_LIST_H_XXREQ_UCHAR2.md)
+- [CODE_LIST_H_XXREQ_UCHAR3](CODE_LIST_H_XXREQ_UCHAR3.md)

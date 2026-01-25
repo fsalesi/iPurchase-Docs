@@ -6,7 +6,7 @@ A list of accounts which will always require a Project Code
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures gl accounts & finance behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ACCOUNT_REQUIRE_PROJECT'
 ```
+
+### Related Settings
+
+- [ACCOUNT_RANGE_CANDO](ACCOUNT_RANGE_CANDO.md)
+- [ACCOUNT_SHOW_CUSTOMNOTE](ACCOUNT_SHOW_CUSTOMNOTE.md)
+- [ACCOUNT_SORT_BY_NAME](ACCOUNT_SORT_BY_NAME.md)

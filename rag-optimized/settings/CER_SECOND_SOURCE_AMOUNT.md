@@ -2,11 +2,11 @@
 
 **Category:** Catalog & Vendors
 
-Dollar amount. Threshold above which second source certification is required. Related to competitive bidding requirements.
+Dollar amount.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures catalog & vendors behavior in iPurchase.
 
 ### Setting Details
 

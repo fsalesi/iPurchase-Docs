@@ -2,11 +2,11 @@
 
 **Category:** Security & Authentication
 
-If you currently have the Out-Of-Office setting on, this setting can automatically turn it off when you login. A setting of "ASK" will prompt the user if they want to turn off OOF, but only once every 12 hours.
+If you currently have the Out-Of-Office setting on, this setting can automatically turn it off when you login.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This security setting affects user authentication and login behavior.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'LOGIN_BACK_IN_OFFICE'
 ```
+
+### Related Settings
+
+- [LOGIN_GOTO_CATALOG](LOGIN_GOTO_CATALOG.md)
+- [LOGIN_GOTO_MNT](LOGIN_GOTO_MNT.md)
+- [LOGIN_HIDE_FORGOT_PASSWORD](LOGIN_HIDE_FORGOT_PASSWORD.md)

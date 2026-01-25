@@ -6,7 +6,7 @@ Status value for inventory transfer transactions.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures inventory & mrp behavior in iPurchase.
 
 ### Setting Details
 

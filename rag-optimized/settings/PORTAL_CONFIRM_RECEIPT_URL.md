@@ -2,11 +2,11 @@
 
 **Category:** Portal Integration
 
-URL endpoint for portal receipt confirmation integration. Used for external portal systems.
+URL endpoint for portal receipt confirmation integration.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures portal integration behavior in iPurchase.
 
 ### Setting Details
 

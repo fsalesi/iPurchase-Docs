@@ -2,14 +2,14 @@
 
 **Category:** Requisitions
 
-Substitute the requisition type for "[REQUISITION TYPE]". This setting allows specifying valid departments (cost centers) for a specific requisition type. The field uses the Progress "Can-Do" function. See Progress help if needed. A sample value can be 5521,!5622,56*,7*,!* This is interpreted as department 5521 is valid, department 5622 is not valid, any department that begin with 56 (except 5622) are valid, any departments that begin with a 7 are valid, and finally, all other departments are invalid.
+Substitute the requisition type for "[REQUISITION TYPE]".
 
 ### How It Works
 
-This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) to specify which users or groups have access.
 
-**Common patterns:**
-- `*` - Everyone/all values allowed
+**Common configurations:**
+- `*` - All users/everyone
 - (blank) - No one/feature disabled
 - `user1,user2` - Specific users only
 - `group1,!user1` - Group members except specific user
@@ -29,3 +29,9 @@ This setting uses [Can-Do list format](../../reference/can-do-list-format.md) fo
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'RT_[Requisition Type]_DEPT_RANGE'
 ```
+
+### Related Settings
+
+- [RT_INVENTORY_ITEM_ONLY](RT_INVENTORY_ITEM_ONLY.md)
+- [RT_[Requisition Type]_ACCESS](RT_[Requisition Type]_ACCESS.md)
+- [RT_[Requisition Type]_ACCOUNT_DEFAULT](RT_[Requisition Type]_ACCOUNT_DEFAULT.md)

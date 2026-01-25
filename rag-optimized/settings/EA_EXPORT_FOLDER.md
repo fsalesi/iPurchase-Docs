@@ -2,11 +2,11 @@
 
 **Category:** System Configuration
 
-Directory path on application server. Folder where Enterprise Analytics export files are written.
+Directory path on application server.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures system configuration behavior in iPurchase.
 
 ### Setting Details
 

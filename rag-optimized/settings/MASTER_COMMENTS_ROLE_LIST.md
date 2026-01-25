@@ -2,17 +2,11 @@
 
 **Category:** Uncategorized
 
-Comma-Separated list of group ID's or "*" for all. Only members of these groups will be allowed to enter or delete master comments from a requisition.
+Comma-Separated list of group ID's or "*" for all.
 
 ### How It Works
 
-This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
-
-**Common patterns:**
-- `*` - Everyone/all values allowed
-- (blank) - No one/feature disabled
-- `user1,user2` - Specific users only
-- `group1,!user1` - Group members except specific user
+This setting configures uncategorized behavior in iPurchase.
 
 ### Setting Details
 

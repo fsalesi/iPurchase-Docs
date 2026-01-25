@@ -6,7 +6,7 @@ In this setting the administrator can set the default value for "Ship Via" field
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects purchase order processing and how POs are generated, formatted, or transmitted to suppliers.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'DEFAULT_SHIPVIA'
 ```
+
+### Related Settings
+
+- [DEFAULT_BUYER](DEFAULT_BUYER.md)
+- [DEFAULT_BUYER_[SITE]](DEFAULT_BUYER_[SITE].md)
+- [DEFAULT_SHIPTO](DEFAULT_SHIPTO.md)

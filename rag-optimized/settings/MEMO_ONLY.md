@@ -13,7 +13,7 @@ If this setting is true, then a user will not be allowed to order an item# which
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures uncategorized behavior in iPurchase.
 
 ### Setting Details
 

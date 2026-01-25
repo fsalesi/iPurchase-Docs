@@ -2,18 +2,18 @@
 
 **Category:** iApprove Integration
 
-TRUE | FALSE. If TRUE, uses iApprove system for budget workflows instead of iPurchase budget module.
+TRUE | FALSE.
 
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| **TRUE** | Enables this feature |
+| **TRUE** | uses iApprove system for budget workflows instead of iPurchase budget module |
 | **FALSE** | Disables this feature |
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures iapprove integration behavior in iPurchase.
 
 ### Setting Details
 

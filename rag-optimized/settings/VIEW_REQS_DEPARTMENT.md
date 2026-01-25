@@ -2,7 +2,7 @@
 
 **Category:** User Management
 
-TRUE | FALSE. Restrict viewing to user's department reqs.
+TRUE | FALSE.
 
 ### Valid Values
 
@@ -13,7 +13,7 @@ TRUE | FALSE. Restrict viewing to user's department reqs.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures user management behavior in iPurchase.
 
 ### Setting Details
 
@@ -30,3 +30,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'VIEW_REQS_DEPARTMENT'
 ```
+
+### Related Settings
+
+- [VIEW_DEPARTMENT_REQS](VIEW_DEPARTMENT_REQS.md)
+- [VIEW_REQS_RESTRICTED_MODE](VIEW_REQS_RESTRICTED_MODE.md)
+- [VIEW_SUPPLIER_DOCS](VIEW_SUPPLIER_DOCS.md)

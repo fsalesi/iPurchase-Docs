@@ -2,11 +2,11 @@
 
 **Category:** Email Configuration
 
-Email address. Reply-to address used in system-generated emails. If blank, uses FROM address.
+Email address.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+Configure email recipients for this notification type. Multiple addresses can be comma-separated.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAIL_REPLY_TO'
 ```
+
+### Related Settings
+
+- [EMAIL_AUTH_PASSWORD](EMAIL_AUTH_PASSWORD.md)
+- [EMAIL_AUTH_TYPE](EMAIL_AUTH_TYPE.md)
+- [EMAIL_AUTH_USER](EMAIL_AUTH_USER.md)

@@ -2,11 +2,11 @@
 
 **Category:** Inventory & MRP
 
-Comma-separated req types. Types that trigger MRP (Material Requirements Planning).
+Comma-separated req types.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures inventory & mrp behavior in iPurchase.
 
 ### Setting Details
 

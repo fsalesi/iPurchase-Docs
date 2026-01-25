@@ -6,7 +6,7 @@ URL to redirect to after SSO authentication.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures security & authentication behavior in iPurchase.
 
 ### Setting Details
 

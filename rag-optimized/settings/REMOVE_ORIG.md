@@ -13,7 +13,7 @@ This setting does not allow the originator to be an approver for their own requi
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures gl accounts & finance behavior in iPurchase.
 
 ### Setting Details
 

@@ -2,14 +2,14 @@
 
 **Category:** Requisitions
 
-Comma separated list of User ID's or Group ID's that are allowed to create a requisition for the given requisition type. Asterisk indicates everyone, a blank indicates no one. All other users will not have access to this requisition type. The user will not be able to see those requisition types as choices in Requisition Maintenance. Furthermore, the requisition inquiry will not show any results for those types of requisitions, and any place requisition types are displayed will also be filtered based on this setting.
+Comma separated list of User ID's or Group ID's that are allowed to create a requisition for the given requisition type.
 
 ### How It Works
 
-This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) to specify which users or groups have access.
 
-**Common patterns:**
-- `*` - Everyone/all values allowed
+**Common configurations:**
+- `*` - All users/everyone
 - (blank) - No one/feature disabled
 - `user1,user2` - Specific users only
 - `group1,!user1` - Group members except specific user
@@ -29,3 +29,9 @@ This setting uses [Can-Do list format](../../reference/can-do-list-format.md) fo
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'RT_[Requisition Type]_ACCESS'
 ```
+
+### Related Settings
+
+- [RT_INVENTORY_ITEM_ONLY](RT_INVENTORY_ITEM_ONLY.md)
+- [RT_[Requisition Type]_ACCOUNT_DEFAULT](RT_[Requisition Type]_ACCOUNT_DEFAULT.md)
+- [RT_[Requisition Type]_ACCOUNT_RANGE](RT_[Requisition Type]_ACCOUNT_RANGE.md)

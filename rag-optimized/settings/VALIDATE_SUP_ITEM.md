@@ -2,7 +2,7 @@
 
 **Category:** Catalog & Vendors
 
-TRUE | FALSE. Validate that supplier carries the requested item.
+TRUE | FALSE.
 
 ### Valid Values
 
@@ -13,7 +13,7 @@ TRUE | FALSE. Validate that supplier carries the requested item.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures catalog & vendors behavior in iPurchase.
 
 ### Setting Details
 

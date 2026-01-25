@@ -13,7 +13,7 @@ If set to TRUE, will not show deleted items in the discrepancy report
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This display setting controls what information is visible to users in the interface.
 
 ### Setting Details
 

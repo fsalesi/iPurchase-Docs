@@ -6,7 +6,7 @@ Comma separated list of requisition types that will not send approval emails to 
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This email-related setting controls how iPurchase communicates with users via email notifications.
 
 ### Setting Details
 
@@ -23,3 +23,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'NO_APPROVAL_EMAILS'
 ```
+
+### Related Settings
+
+- [NO_MGR_ROUTE_TO](NO_MGR_ROUTE_TO.md)

@@ -2,7 +2,7 @@
 
 **Category:** Catalog & Vendors
 
-If set to True then a user can search for a supplier using any character in the suppliers name.  If set to True, the supplier lookup will run slower.
+If set to True then a user can search for a supplier using any character in the suppliers name.
 
 ### Valid Values
 
@@ -13,7 +13,7 @@ If set to True then a user can search for a supplier using any character in the 
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures catalog & vendors behavior in iPurchase.
 
 ### Setting Details
 
@@ -30,3 +30,8 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'SUPPLIER_SEARCH_MATCHES'
 ```
+
+### Related Settings
+
+- [SUPPLIER_CONFIRMATION](SUPPLIER_CONFIRMATION.md)
+- [SUPPLIER_PO_MERGE_ATTACHMENTS_EXCLUDE](SUPPLIER_PO_MERGE_ATTACHMENTS_EXCLUDE.md)

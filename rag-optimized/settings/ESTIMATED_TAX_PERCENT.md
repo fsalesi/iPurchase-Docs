@@ -2,11 +2,11 @@
 
 **Category:** GL Accounts & Finance
 
-If the taxable amounts need to figure into the approval rules, then use this setting to enter an estimate tax percentage that will be added on to all taxable requisition lines.  If 10% enter as "10"
+If the taxable amounts need to figure into the approval rules, then use this setting to enter an estimate tax percentage that will be added on to all taxable requisition lines.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures gl accounts & finance behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ESTIMATED_TAX_PERCENT'
 ```
+
+### Related Settings
+
+- [ESTIMATED_TAX_PERCENT_[ship to code]](ESTIMATED_TAX_PERCENT_[ship to code].md)

@@ -6,7 +6,7 @@ This setting allows the administrator to set the subject for the password change
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting customizes the subject line for outgoing emails. Choose text that clearly identifies the email purpose to improve open rates and avoid spam filters.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAIL_PASSWORD_CHANGE_SUBJECT'
 ```
+
+### Related Settings
+
+- [EMAIL_AUTH_PASSWORD](EMAIL_AUTH_PASSWORD.md)
+- [EMAIL_AUTH_TYPE](EMAIL_AUTH_TYPE.md)
+- [EMAIL_AUTH_USER](EMAIL_AUTH_USER.md)

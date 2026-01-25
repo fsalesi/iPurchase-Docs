@@ -2,7 +2,7 @@
 
 **Category:** Approval Workflow
 
-This setting determines whether supervisors can approve or reject individual line items. Only those line items which are approved will be added to the PO. If there are any items which are neither approved nor rejected, then the final approval will be disallowed until all items are either approved or rejected.
+This setting determines whether supervisors can approve or reject individual line items.
 
 ### Valid Values
 
@@ -13,7 +13,7 @@ This setting determines whether supervisors can approve or reject individual lin
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects the approval workflow process, determining how requisitions are routed and approved.
 
 ### Setting Details
 
@@ -30,3 +30,8 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'USE_LINE_APPROVALS'
 ```
+
+### Related Settings
+
+- [USE_APP_AMOUNT_OWN_REQS](USE_APP_AMOUNT_OWN_REQS.md)
+- [USE_SUPERVISORS_TO_APPROVE](USE_SUPERVISORS_TO_APPROVE.md)

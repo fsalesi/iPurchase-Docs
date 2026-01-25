@@ -2,18 +2,18 @@
 
 **Category:** System Configuration
 
-TRUE | FALSE. If TRUE, allows exporting approval data to Excel format.
+TRUE | FALSE.
 
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| **TRUE** | Enables this feature |
+| **TRUE** | allows exporting approval data to Excel format |
 | **FALSE** | Disables this feature |
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects the approval workflow process, determining how requisitions are routed and approved.
 
 ### Setting Details
 

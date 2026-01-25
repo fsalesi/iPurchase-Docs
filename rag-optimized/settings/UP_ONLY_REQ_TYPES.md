@@ -2,11 +2,11 @@
 
 **Category:** Change Orders
 
-Comma-separated requisition types. Types that use UP_ONLY (Update PO Only) routing rule.
+Comma-separated requisition types.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures change orders behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,8 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'UP_ONLY_REQ_TYPES'
 ```
+
+### Related Settings
+
+- [UP_ONLY_APP_LEVEL_EXCLUDED](UP_ONLY_APP_LEVEL_EXCLUDED.md)
+- [UP_ONLY_RULE](UP_ONLY_RULE.md)

@@ -2,7 +2,7 @@
 
 **Category:** GL Accounts & Finance
 
-[LEGACY/OBSOLETE] TRUE | FALSE. Enable budget functionality. Commented out in code - use BUDGET_USE_IAPPROVE instead.
+[LEGACY/OBSOLETE] TRUE | FALSE.
 
 ### Valid Values
 
@@ -13,7 +13,7 @@
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures gl accounts & finance behavior in iPurchase.
 
 ### Setting Details
 
@@ -30,3 +30,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'USE_BUDGETS'
 ```
+
+### Related Settings
+
+- [USE_BUDGETS_AS_FORECAST](USE_BUDGETS_AS_FORECAST.md)

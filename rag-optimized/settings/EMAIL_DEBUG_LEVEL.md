@@ -2,11 +2,32 @@
 
 **Category:** Email Configuration
 
-Numeric 0-3. Email system debug verbosity. 0=off, 1=basic, 2=detailed, 3=verbose. Used for troubleshooting email issues.
+Controls the verbosity of email system logging for troubleshooting delivery issues.
+
+### Valid Values
+
+| Value | Behavior |
+|-------|----------|
+| **0** | Off - No debug logging (DEFAULT) |
+| **1** | Basic - Log send attempts and failures |
+| **2** | Detailed - Include message headers and recipients |
+| **3** | Verbose - Full SMTP conversation logging |
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+When troubleshooting email delivery problems, increase this setting to capture detailed logs about the email sending process. The logs help identify issues like:
+- SMTP authentication failures
+- Connection timeouts
+- Rejected recipients
+- TLS/SSL handshake problems
+
+**⚠️ Warning:** Higher debug levels may log sensitive information. Reset to 0 after troubleshooting.
+
+### Common Questions
+
+- Why aren't emails being delivered?
+- How do I troubleshoot SMTP connection issues?
+- Where do email debug logs appear?
 
 ### Setting Details
 
@@ -23,3 +44,8 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAIL_DEBUG_LEVEL'
 ```
+
+### Related Settings
+
+- [EMAILSERVER](EMAILSERVER.md) - SMTP server address
+- [EMAIL_AUTH_TYPE](EMAIL_AUTH_TYPE.md) - Authentication method

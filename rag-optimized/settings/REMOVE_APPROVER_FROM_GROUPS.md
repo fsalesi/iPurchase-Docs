@@ -2,18 +2,18 @@
 
 **Category:** Approval Workflow
 
-TRUE | FALSE. If TRUE, removes approver from later groups if they already approved.
+TRUE | FALSE.
 
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| **TRUE** | Enables this feature |
+| **TRUE** | removes approver from later groups if they already approved |
 | **FALSE** | Disables this feature |
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects the approval workflow process, determining how requisitions are routed and approved.
 
 ### Setting Details
 
@@ -30,3 +30,8 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'REMOVE_APPROVER_FROM_GROUPS'
 ```
+
+### Related Settings
+
+- [REMOVE_APPROVER_ROLE_LIST](REMOVE_APPROVER_ROLE_LIST.md)
+- [REMOVE_ORIGINATOR_FROM_GROUP_CO](REMOVE_ORIGINATOR_FROM_GROUP_CO.md)

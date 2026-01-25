@@ -6,7 +6,7 @@ Administrator can set the default value for "Who's Paying Freight" field.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting provides a default value that pre-populates fields, reducing data entry and ensuring consistency.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'DEFAULT_FREIGHTTERMS'
 ```
+
+### Related Settings
+
+- [DEFAULT_ACCT](DEFAULT_ACCT.md)
+- [DEFAULT_BILLTO](DEFAULT_BILLTO.md)
+- [DEFAULT_BLANKET_CYCLE](DEFAULT_BLANKET_CYCLE.md)

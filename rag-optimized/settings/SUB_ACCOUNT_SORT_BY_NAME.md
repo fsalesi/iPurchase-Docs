@@ -2,11 +2,11 @@
 
 **Category:** GL Accounts & Finance
 
-True or False A value of TRUE will show the sub-accounts sorted by name. Any other value will sort by number.
+True or False A value of TRUE will show the sub-accounts sorted by name.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures gl accounts & finance behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,8 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'SUB_ACCOUNT_SORT_BY_NAME'
 ```
+
+### Related Settings
+
+- [SUB_ACCOUNTS_USE_ORIG](SUB_ACCOUNTS_USE_ORIG.md)
+- [SUB_ACCOUNT_RANGE_CANDO](SUB_ACCOUNT_RANGE_CANDO.md)

@@ -2,18 +2,18 @@
 
 **Category:** Catalog & Vendors
 
-TRUE | FALSE. If TRUE, allows use of temporary/unverified vendors on requisitions. If FALSE, temporary vendors are rejected.
+TRUE | FALSE.
 
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| **TRUE** | Enables this feature |
-| **FALSE** | Disables this feature |
+| **TRUE** | allows use of temporary/unverified vendors on requisitions |
+| **FALSE** | temporary vendors are rejected |
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This permission setting controls whether users can perform specific actions within the system.
 
 ### Setting Details
 

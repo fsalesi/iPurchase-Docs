@@ -2,11 +2,11 @@
 
 **Category:** GL Accounts & Finance
 
-The number of years to keep requisitions. Note: Pending Requisitions can't be archived.
+The number of years to keep requisitions.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures gl accounts & finance behavior in iPurchase.
 
 ### Setting Details
 

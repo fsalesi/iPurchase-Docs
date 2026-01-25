@@ -13,7 +13,7 @@ Disable the requisition type field when there is at least one line item on a req
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures requisitions behavior in iPurchase.
 
 ### Setting Details
 

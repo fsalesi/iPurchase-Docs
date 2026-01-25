@@ -2,7 +2,7 @@
 
 **Category:** Catalog & Vendors
 
-A user can search a catalog using either matches or contains criteria.  If set to True then the system will use the Match functionality. Matches:  If the item number is 12345 then you should be able to search by using 345. Contains: You have to use the beginning part of the item number i.e. "123". Contains is faster but only searches the beginning of the word. Matches is slow but will search anywhere in the item number. If you have thousands of catalog items in your database then this will make the searching unusable
+A user can search a catalog using either matches or contains criteria.
 
 ### Valid Values
 
@@ -13,7 +13,7 @@ A user can search a catalog using either matches or contains criteria.  If set t
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting controls catalog functionality, affecting how users browse and select items from supplier catalogs.
 
 ### Setting Details
 
@@ -30,3 +30,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'CATALOG_ITEM_NBR_MATCH'
 ```
+
+### Related Settings
+
+- [CATALOG_ACCESS_[Supplier NBR]](CATALOG_ACCESS_[Supplier NBR].md)
+- [CATALOG_CAN_DELETE](CATALOG_CAN_DELETE.md)
+- [CATALOG_CAN_RATE](CATALOG_CAN_RATE.md)

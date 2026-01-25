@@ -2,11 +2,11 @@
 
 **Category:** Custom/Product Management
 
-Group ID for product managers. Customer-specific product management setting.
+Group ID for product managers.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures custom/product management behavior in iPurchase.
 
 ### Setting Details
 

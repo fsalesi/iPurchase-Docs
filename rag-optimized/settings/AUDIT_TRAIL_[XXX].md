@@ -2,11 +2,11 @@
 
 **Category:** Uncategorized
 
-There are several settings all beginning with "AUDIT_TRAIL". These setting should not be updated as they have to do with the internals of the Audit Trail Inquiry.
+There are several settings all beginning with "AUDIT_TRAIL".
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures uncategorized behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'AUDIT_TRAIL_[XXX]'
 ```
+
+### Related Settings
+
+- [AUDIT_TRAIL_ACTION_LIST](AUDIT_TRAIL_ACTION_LIST.md)
+- [AUDIT_TRAIL_DOMAIN_EXEMPTION](AUDIT_TRAIL_DOMAIN_EXEMPTION.md)
+- [AUDIT_TRAIL_TABLE_LABEL](AUDIT_TRAIL_TABLE_LABEL.md)

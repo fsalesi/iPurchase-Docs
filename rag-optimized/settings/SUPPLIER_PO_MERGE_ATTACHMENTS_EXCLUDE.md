@@ -2,11 +2,11 @@
 
 **Category:** Catalog & Vendors
 
-Comma-separated suppliers. Suppliers excluded from attachment merging.
+Comma-separated suppliers.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects purchase order processing and how POs are generated, formatted, or transmitted to suppliers.
 
 ### Setting Details
 
@@ -23,3 +23,8 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'SUPPLIER_PO_MERGE_ATTACHMENTS_EXCLUDE'
 ```
+
+### Related Settings
+
+- [SUPPLIER_CONFIRMATION](SUPPLIER_CONFIRMATION.md)
+- [SUPPLIER_SEARCH_MATCHES](SUPPLIER_SEARCH_MATCHES.md)

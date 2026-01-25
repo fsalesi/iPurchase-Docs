@@ -2,11 +2,11 @@
 
 **Category:** Requisitions
 
-TRUE or FALSE Substitute the requisition type for "[REQUISITION TYPE]" and site for "[SITE]". This setting determines whether the users can change the account during line entry and is specific to the requisition type and site specified.
+TRUE or FALSE Substitute the requisition type for "[REQUISITION TYPE]" and site for "[SITE]".
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures requisitions behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'RT_[Requisition Type]_[Site]_ACCOUNT_READONLY'
 ```
+
+### Related Settings
+
+- [RT_INVENTORY_ITEM_ONLY](RT_INVENTORY_ITEM_ONLY.md)
+- [RT_[Requisition Type]_ACCESS](RT_[Requisition Type]_ACCESS.md)
+- [RT_[Requisition Type]_ACCOUNT_DEFAULT](RT_[Requisition Type]_ACCOUNT_DEFAULT.md)

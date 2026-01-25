@@ -2,11 +2,11 @@
 
 **Category:** Receiving
 
-Time value. Timestamp used when AUTO_RECEIVE creates automatic receipt records. Must be configured correctly when AUTO_RECEIVE is enabled.
+Time value.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures receiving behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'AUTO_RECEIVE_TIME'
 ```
+
+### Related Settings
+
+- [AUTO_RECEIVE](AUTO_RECEIVE.md)

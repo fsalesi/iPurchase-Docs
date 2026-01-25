@@ -2,11 +2,11 @@
 
 **Category:** Inventory & MRP
 
-Only use this setting if you want to have a different buyer list show up in the MRP Action Center. This list is in the format 'list:code:desc,code:desc' or a generalized code field name like 'ptp_buyer'
+Only use this setting if you want to have a different buyer list show up in the MRP Action Center.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures inventory & mrp behavior in iPurchase.
 
 ### Setting Details
 

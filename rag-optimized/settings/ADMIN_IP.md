@@ -2,11 +2,11 @@
 
 **Category:** Security & Authentication
 
-Comma-separated IP addresses. Restricts admin features to specific IP addresses. If blank, all IPs are allowed. Used for IP-based access control.
+Comma-separated IP addresses.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures security & authentication behavior in iPurchase.
 
 ### Setting Details
 

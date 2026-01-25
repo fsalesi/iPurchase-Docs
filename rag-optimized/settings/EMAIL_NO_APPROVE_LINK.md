@@ -2,7 +2,7 @@
 
 **Category:** Approval Workflow
 
-True or False - Include link to Approve in email that goes out to approver. Default FALSE
+True or False - Include link to Approve in email that goes out to approver.
 
 ### Valid Values
 
@@ -13,7 +13,7 @@ True or False - Include link to Approve in email that goes out to approver. Defa
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This email-related setting controls how iPurchase communicates with users via email notifications.
 
 ### Setting Details
 
@@ -30,3 +30,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAIL_NO_APPROVE_LINK'
 ```
+
+### Related Settings
+
+- [EMAIL_SUPPLIER_PO_TO_FINAL_APPROVER](EMAIL_SUPPLIER_PO_TO_FINAL_APPROVER.md)

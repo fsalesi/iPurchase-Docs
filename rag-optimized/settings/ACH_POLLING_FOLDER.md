@@ -2,11 +2,11 @@
 
 **Category:** ACH Integration
 
-Directory path on application server. Folder where incoming ACH files (*.txt) are placed for processing by the ACH polling job. Processed files are moved to ACH_ARCHIVE_FOLDER. Used in job_iaach_poller.p.
+Directory path on application server.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures ach integration behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ACH_POLLING_FOLDER'
 ```
+
+### Related Settings
+
+- [ACH_ARCHIVE_FOLDER](ACH_ARCHIVE_FOLDER.md)

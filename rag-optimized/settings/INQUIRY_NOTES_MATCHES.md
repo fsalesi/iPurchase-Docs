@@ -13,7 +13,7 @@ When searching requisitions by using the notes field, use 'matches' vs 'contains
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures reporting & inquiry behavior in iPurchase.
 
 ### Setting Details
 
@@ -30,3 +30,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'INQUIRY_NOTES_MATCHES'
 ```
+
+### Related Settings
+
+- [INQUIRY_AFTER_REJECT](INQUIRY_AFTER_REJECT.md)
+- [INQUIRY_LAST_REV_DEFAULT](INQUIRY_LAST_REV_DEFAULT.md)
+- [INQUIRY_NO_NAME_SEARCH](INQUIRY_NO_NAME_SEARCH.md)

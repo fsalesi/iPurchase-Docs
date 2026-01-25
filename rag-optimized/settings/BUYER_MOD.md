@@ -2,18 +2,18 @@
 
 **Category:** Purchase Orders
 
-TRUE | FALSE. If TRUE, allows the buyer field to be modified during requisition copy and PO creation. If FALSE, buyer field is locked.
+TRUE | FALSE.
 
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| **TRUE** | Enables this feature |
-| **FALSE** | Disables this feature |
+| **TRUE** | allows the buyer field to be modified during requisition copy and PO creation |
+| **FALSE** | buyer field is locked |
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects purchase order processing and how POs are generated, formatted, or transmitted to suppliers.
 
 ### Setting Details
 

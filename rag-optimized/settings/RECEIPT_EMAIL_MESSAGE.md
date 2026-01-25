@@ -6,7 +6,7 @@ Custom message text for receipt notification emails.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This email-related setting controls how iPurchase communicates with users via email notifications.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'RECEIPT_EMAIL_MESSAGE'
 ```
+
+### Related Settings
+
+- [RECEIPT_EMAIL_REQ_TYPES](RECEIPT_EMAIL_REQ_TYPES.md)
+- [RECEIPT_EMAIL_SUBJECT](RECEIPT_EMAIL_SUBJECT.md)
+- [RECEIPT_EMAIL_TO](RECEIPT_EMAIL_TO.md)

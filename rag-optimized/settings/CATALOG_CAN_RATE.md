@@ -2,18 +2,18 @@
 
 **Category:** Catalog & Vendors
 
-TRUE | FALSE. If TRUE, users can rate catalog items. Related: CATALOG_SHOW_RATING
+TRUE | FALSE.
 
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| **TRUE** | Enables this feature |
+| **TRUE** | users can rate catalog items |
 | **FALSE** | Disables this feature |
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting controls catalog functionality, affecting how users browse and select items from supplier catalogs.
 
 ### Setting Details
 
@@ -30,3 +30,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'CATALOG_CAN_RATE'
 ```
+
+### Related Settings
+
+- [CATALOG_ACCESS_[Supplier NBR]](CATALOG_ACCESS_[Supplier NBR].md)
+- [CATALOG_CAN_DELETE](CATALOG_CAN_DELETE.md)
+- [CATALOG_CART_SHOW_DETAILS](CATALOG_CART_SHOW_DETAILS.md)

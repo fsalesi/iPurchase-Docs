@@ -2,11 +2,11 @@
 
 **Category:** Approval Workflow
 
-Numeric. Days before sending reminder emails to pending approvers.
+Numeric.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects the approval workflow process, determining how requisitions are routed and approved.
 
 ### Setting Details
 

@@ -13,7 +13,7 @@ This setting will display the supplier terms on the requisition header.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures uncategorized behavior in iPurchase.
 
 ### Setting Details
 

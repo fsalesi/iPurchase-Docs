@@ -2,7 +2,7 @@
 
 **Category:** GL Accounts & Finance
 
-If you set this setting to true, then all items entered in the line entry screen will have the account, sub-account, and cost center set to the values which QAD would dictate based on the vendor and item.  This setting will override all other account, sub-account, and cost center settings. This setting can also be at the requisition type level ' see RT_[Requisition Type]_GL_Override
+If you set this setting to true, then all items entered in the line entry screen will have the account, sub-account, and cost center set to the values which QAD would dictate based on the vendor and item.
 
 ### Valid Values
 
@@ -13,7 +13,7 @@ If you set this setting to true, then all items entered in the line entry screen
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures gl accounts & finance behavior in iPurchase.
 
 ### Setting Details
 

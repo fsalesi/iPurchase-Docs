@@ -6,7 +6,7 @@ Phone numbers for SMS notifications.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures system configuration behavior in iPurchase.
 
 ### Setting Details
 

@@ -2,11 +2,11 @@
 
 **Category:** Purchase Orders
 
-This setting points iPurchase to PO printer server configuration file. ex:  or apps or test or qdt or envs or test or configs or server.xml QAD EE 2012 and above allows the ability to print fancy purchase orders. Requirements: Names QAD user. Settings QAD_AUTHENTICATION_USER and QAD_AUTHENTICATION_PASSWORD must be set. The user specified in QAD_AUTHENTICATION_USER must be setup in QAD with a role of "rptAdmin"
+This setting points iPurchase to PO printer server configuration file.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting affects purchase order processing and how POs are generated, formatted, or transmitted to suppliers.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'PO_PRINTER_SERVER_XML'
 ```
+
+### Related Settings
+
+- [PO_BLANKET_PRINT_PROGRAM](PO_BLANKET_PRINT_PROGRAM.md)
+- [PO_BREAK_BY](PO_BREAK_BY.md)
+- [PO_CONFIRMATION_RESPONSE](PO_CONFIRMATION_RESPONSE.md)

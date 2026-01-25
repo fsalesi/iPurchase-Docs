@@ -13,7 +13,7 @@ This setting allows the system to use the current supplier data from the ERP sys
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures uncategorized behavior in iPurchase.
 
 ### Setting Details
 

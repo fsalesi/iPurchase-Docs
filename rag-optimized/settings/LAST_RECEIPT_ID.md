@@ -2,11 +2,11 @@
 
 **Category:** Receiving
 
-iPurchase process receipts in QAD for budgets. It periodically looks for receipts in batch. When implementing you can set the tr_id to start from so that it does not spend time looking at old receipt data.
+iPurchase process receipts in QAD for budgets.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures receiving behavior in iPurchase.
 
 ### Setting Details
 

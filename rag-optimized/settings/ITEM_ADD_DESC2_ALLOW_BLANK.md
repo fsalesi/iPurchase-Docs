@@ -2,18 +2,18 @@
 
 **Category:** Requisitions
 
-TRUE | FALSE. If TRUE, allows adding catalog items with blank secondary description.
+TRUE | FALSE.
 
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| **TRUE** | Enables this feature |
+| **TRUE** | allows adding catalog items with blank secondary description |
 | **FALSE** | Disables this feature |
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This permission setting controls whether users can perform specific actions within the system.
 
 ### Setting Details
 

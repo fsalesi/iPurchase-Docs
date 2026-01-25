@@ -6,7 +6,7 @@ Identifies how many consecutive failed login attempts will be allowed before dis
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This security setting affects user authentication and login behavior.
 
 ### Setting Details
 

@@ -2,14 +2,14 @@
 
 **Category:** User Management
 
-Comma Separated list of User ID's or Group ID's who are allowed to create new budgets in iPurchase. Asterisk indicates everyone, a blank indicates no one.
+Comma Separated list of User ID's or Group ID's who are allowed to create new budgets in iPurchase.
 
 ### How It Works
 
-This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) to specify which users or groups have access.
 
-**Common patterns:**
-- `*` - Everyone/all values allowed
+**Common configurations:**
+- `*` - All users/everyone
 - (blank) - No one/feature disabled
 - `user1,user2` - Specific users only
 - `group1,!user1` - Group members except specific user

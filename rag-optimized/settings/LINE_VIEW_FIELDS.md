@@ -6,7 +6,7 @@ System default for which fields are displayed in the Requisition Item browse.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures user management behavior in iPurchase.
 
 ### Setting Details
 

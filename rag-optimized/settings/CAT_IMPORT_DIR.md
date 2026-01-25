@@ -6,7 +6,7 @@ The administrator will choose a folder on application server where catalog files
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures uncategorized behavior in iPurchase.
 
 ### Setting Details
 

@@ -13,7 +13,7 @@ Is the Acct selection limited to those accounts defined in the user's profile? S
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures user management behavior in iPurchase.
 
 ### Setting Details
 
@@ -30,3 +30,8 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'RESTRICT_USER_ACCOUNTS'
 ```
+
+### Related Settings
+
+- [RESTRICT_USER_DEPARTMENTS](RESTRICT_USER_DEPARTMENTS.md)
+- [RESTRICT_USER_SUB_ACCOUNTS](RESTRICT_USER_SUB_ACCOUNTS.md)

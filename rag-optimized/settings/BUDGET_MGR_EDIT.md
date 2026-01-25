@@ -6,7 +6,7 @@ Allow the budget manager specified in a budget the ability to modify the entire 
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures gl accounts & finance behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'BUDGET_MGR_EDIT'
 ```
+
+### Related Settings
+
+- [BUDGET_ADMINISTRATOR](BUDGET_ADMINISTRATOR.md)
+- [BUDGET_ASST_EDIT](BUDGET_ASST_EDIT.md)
+- [BUDGET_HIDE_OTHER](BUDGET_HIDE_OTHER.md)

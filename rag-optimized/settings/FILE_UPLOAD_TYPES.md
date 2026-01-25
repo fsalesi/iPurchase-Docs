@@ -2,11 +2,11 @@
 
 **Category:** System Configuration
 
-Comma-separated file extensions. Allowed file types for document uploads (e.g., pdf,doc,docx,xlsx).
+Comma-separated file extensions.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures system configuration behavior in iPurchase.
 
 ### Setting Details
 

@@ -2,11 +2,11 @@
 
 **Category:** Inventory & MRP
 
-Comma-separated transaction types. Valid inventory transaction types.
+Comma-separated transaction types.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures inventory & mrp behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'INV_TRANS_TYPES'
 ```
+
+### Related Settings
+
+- [INV_TRANS_REASON_CODES](INV_TRANS_REASON_CODES.md)

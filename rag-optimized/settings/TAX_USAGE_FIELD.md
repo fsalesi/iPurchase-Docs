@@ -2,11 +2,11 @@
 
 **Category:** GL Accounts & Finance
 
-[LEGACY/OBSOLETE] Field name for tax usage in data upgrades. Commented out in code.
+[LEGACY/OBSOLETE] Field name for tax usage in data upgrades.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures gl accounts & finance behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,8 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'TAX_USAGE_FIELD'
 ```
+
+### Related Settings
+
+- [TAX_CLASS_FIELD](TAX_CLASS_FIELD.md)
+- [TAX_CUSTOMER](TAX_CUSTOMER.md)

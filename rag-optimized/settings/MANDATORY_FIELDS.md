@@ -2,11 +2,11 @@
 
 **Category:** Uncategorized
 
-Comma-Separated list of field names. The following fields can be either mandatory or optional. h_buyer,h_supplier_contact,h_supplier_phone,h_supplier_fax,h_deliver_to2,h_req_type,h_supplier_email,h_bill_to,h_req_need,h_site,h_freight_terms,h_ship_via To make a field mandatory, add the field to this list. To make it optional, remove the field from the list, or simply add an "x" to the beginning or end of the field identifier. Adding the "x" is the recommended approach.  All fields other than those listed above (Supplier, Ship To, Bill To, etc), are mandatory.
+Comma-Separated list of field names.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures uncategorized behavior in iPurchase.
 
 ### Setting Details
 

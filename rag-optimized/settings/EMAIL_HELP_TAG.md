@@ -2,11 +2,28 @@
 
 **Category:** Email Configuration
 
-Include -- If questions, email the helpdesk link on all internal emails."
+Standard help text included in email notifications, typically containing contact information and guidance.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This text is appended to internal emails to provide users with guidance on getting help. The $HELPDESK token is replaced with the EMAIL_HELPDESK address.
+
+**Default text:**
+```
+If questions, email the $HELPDESK, or contact the originator, or approver.
+```
+
+**Customization:** Modify to match your organization's support structure and escalation paths.
+
+### Valid Values
+
+Text string. Can include the $HELPDESK token for dynamic substitution.
+
+### Common Questions
+
+- How do I customize the help text in emails?
+- What tokens can I use in email templates?
+- How do I remove the help tag from emails?
 
 ### Setting Details
 
@@ -23,3 +40,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAIL_HELP_TAG'
 ```
+
+### Related Settings
+
+- [EMAIL_HELPDESK](EMAIL_HELPDESK.md) - Helpdesk email address

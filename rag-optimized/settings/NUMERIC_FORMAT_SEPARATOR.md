@@ -6,7 +6,7 @@ Usually a comma
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures uncategorized behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,7 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'NUMERIC_FORMAT_SEPARATOR'
 ```
+
+### Related Settings
+
+- [NUMERIC_FORMAT_DECIMAL](NUMERIC_FORMAT_DECIMAL.md)

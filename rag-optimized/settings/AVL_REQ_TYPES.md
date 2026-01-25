@@ -2,11 +2,11 @@
 
 **Category:** Catalog & Vendors
 
-Comma-separated requisition types. Requisition types that require Approved Vendor List validation. Related: SIG_AVL_REQ_TYPES, USE_SIG_AVL
+Comma-separated requisition types.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures catalog & vendors behavior in iPurchase.
 
 ### Setting Details
 

@@ -2,11 +2,11 @@
 
 **Category:** Uncategorized
 
-Comma-Separated List of Currency Codes and HTML symbol codes. For example the symbol for a Euro would be represented with the HTML code "&euro~;" Ensure to add a semi-colon before all semi-colons.
+Comma-Separated List of Currency Codes and HTML symbol codes.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures uncategorized behavior in iPurchase.
 
 ### Setting Details
 

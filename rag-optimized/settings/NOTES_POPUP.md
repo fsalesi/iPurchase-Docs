@@ -2,18 +2,18 @@
 
 **Category:** System Configuration
 
-TRUE | FALSE. If TRUE, displays notes in popup window instead of inline.
+TRUE | FALSE.
 
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| **TRUE** | Enables this feature |
+| **TRUE** | displays notes in popup window instead of inline |
 | **FALSE** | Disables this feature |
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures system configuration behavior in iPurchase.
 
 ### Setting Details
 

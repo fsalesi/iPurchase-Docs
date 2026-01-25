@@ -6,7 +6,7 @@ If a catalog exception requisition is rejected, the supplier will receive an ema
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures catalog & vendors behavior in iPurchase.
 
 ### Setting Details
 

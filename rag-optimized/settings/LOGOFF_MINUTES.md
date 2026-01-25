@@ -6,7 +6,7 @@ Enter how many minutes of inactivity the system will wait until it logs a user o
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures uncategorized behavior in iPurchase.
 
 ### Setting Details
 

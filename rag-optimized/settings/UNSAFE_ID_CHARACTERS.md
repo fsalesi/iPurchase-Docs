@@ -6,7 +6,7 @@ Characters prohibited in user IDs and identifiers for security.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures security & authentication behavior in iPurchase.
 
 ### Setting Details
 

@@ -2,11 +2,34 @@
 
 **Category:** Email Configuration
 
-HTML content. Custom header included in email templates. Used for branding/styling emails.
+Custom HTML header content included at the top of email templates for branding and styling.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting allows you to add consistent branding to all iPurchase emails. The HTML content is inserted at the top of email templates before the main message body.
+
+**Common uses:**
+- Company logo
+- Branding colors and styling
+- Standard header text or legal notices
+- CSS styling for email formatting
+
+**Example:**
+```html
+<div style="background:#003366; padding:10px; text-align:center;">
+  <img src="https://company.com/logo.png" alt="Company Logo">
+</div>
+```
+
+### Valid Values
+
+HTML content string. Keep it simple - many email clients have limited HTML/CSS support.
+
+### Common Questions
+
+- How do I add a company logo to emails?
+- Can I style iPurchase emails with CSS?
+- How do I add branding to notification emails?
 
 ### Setting Details
 
@@ -23,3 +46,8 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAIL_HEADER'
 ```
+
+### Related Settings
+
+- [EMAIL_PO_LOGO](EMAIL_PO_LOGO.md) - Logo for PO emails
+- [PO_LOGO](PO_LOGO.md) - Logo on printed PO documents

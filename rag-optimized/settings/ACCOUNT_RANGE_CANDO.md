@@ -2,14 +2,14 @@
 
 **Category:** GL Accounts & Finance
 
-This is a comma separated list of accounts that can be used with iPurchase. The field uses the Progress 'Can-Do' function. See Progress help if needed. A sample value can be 5521,!5622,56*,7*,!* This is interpreted as account 5521 is valid, account 5622 is not valid, any accounts that begin with 56 (except 5622) are valid, any accounts that begin with a 7 are valid, and finally, all other accounts are invalid. These can be further restricted by Requisition Type with other settings.
+This is a comma separated list of accounts that can be used with iPurchase.
 
 ### How It Works
 
-This setting uses [Can-Do list format](../../reference/can-do-list-format.md) for specifying users and groups.
+This setting uses [Can-Do list format](../../reference/can-do-list-format.md) to specify which users or groups have access.
 
-**Common patterns:**
-- `*` - Everyone/all values allowed
+**Common configurations:**
+- `*` - All users/everyone
 - (blank) - No one/feature disabled
 - `user1,user2` - Specific users only
 - `group1,!user1` - Group members except specific user
@@ -29,3 +29,9 @@ This setting uses [Can-Do list format](../../reference/can-do-list-format.md) fo
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'ACCOUNT_RANGE_CANDO'
 ```
+
+### Related Settings
+
+- [ACCOUNT_REQUIRE_PROJECT](ACCOUNT_REQUIRE_PROJECT.md)
+- [ACCOUNT_SHOW_CUSTOMNOTE](ACCOUNT_SHOW_CUSTOMNOTE.md)
+- [ACCOUNT_SORT_BY_NAME](ACCOUNT_SORT_BY_NAME.md)

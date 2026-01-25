@@ -2,11 +2,11 @@
 
 **Category:** GL Accounts & Finance
 
-A value of true will show the departments sorted by name. Any other value will sort by number.
+A value of true will show the departments sorted by name.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures gl accounts & finance behavior in iPurchase.
 
 ### Setting Details
 

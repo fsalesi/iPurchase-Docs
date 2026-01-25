@@ -2,11 +2,11 @@
 
 **Category:** QAD Integration
 
-Directory path on application server. Folder where AS400 catalog XML files are written. Files are named [req_nbr].xml. Used in catalog integration.
+Directory path on application server.
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures qad integration behavior in iPurchase.
 
 ### Setting Details
 

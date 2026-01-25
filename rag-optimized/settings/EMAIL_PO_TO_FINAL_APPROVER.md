@@ -2,18 +2,18 @@
 
 **Category:** Email Configuration
 
-TRUE | FALSE. If TRUE, sends PO creation notification to the final approver on the requisition.
+TRUE | FALSE.
 
 ### Valid Values
 
 | Value | Behavior |
 |-------|----------|
-| **TRUE** | Enables this feature |
+| **TRUE** | sends PO creation notification to the final approver on the requisition |
 | **FALSE** | Disables this feature |
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+Configure email recipients for this notification type. Multiple addresses can be comma-separated.
 
 ### Setting Details
 
@@ -30,3 +30,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'EMAIL_PO_TO_FINAL_APPROVER'
 ```
+
+### Related Settings
+
+- [EMAIL_AUTH_PASSWORD](EMAIL_AUTH_PASSWORD.md)
+- [EMAIL_AUTH_TYPE](EMAIL_AUTH_TYPE.md)
+- [EMAIL_AUTH_USER](EMAIL_AUTH_USER.md)

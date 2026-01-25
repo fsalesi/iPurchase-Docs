@@ -6,7 +6,7 @@ In QAD master comments, there is a reference number to identify a master comment
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting configures uncategorized behavior in iPurchase.
 
 ### Setting Details
 
@@ -23,3 +23,8 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'AUTO_ADD_ITEM_MC_TYPES'
 ```
+
+### Related Settings
+
+- [AUTO_ADD_DROPSHIP](AUTO_ADD_DROPSHIP.md)
+- [AUTO_CHANGE_GL](AUTO_CHANGE_GL.md)

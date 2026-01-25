@@ -2,7 +2,7 @@
 
 **Category:** Reporting & Inquiry
 
-Setting this to true will check the Last Revision Only in the requisition inquiry. This is useful when you only want to see the requisition for the last revision of a PO. As opposed to all the requisitions for the PO.
+Setting this to true will check the Last Revision Only in the requisition inquiry.
 
 ### Valid Values
 
@@ -13,7 +13,7 @@ Setting this to true will check the Last Revision Only in the requisition inquir
 
 ### How It Works
 
-See the description above for details on how this setting affects system behavior.
+This setting provides a default value that pre-populates fields, reducing data entry and ensuring consistency.
 
 ### Setting Details
 
@@ -30,3 +30,9 @@ See the description above for details on how this setting affects system behavio
 SELECT pf_chr1 FROM PUB.pf_mstr
 WHERE pf_us_id = 'SYSTEM' AND pf_group = 'DEFAULT' AND pf_attr = 'INQUIRY_LAST_REV_DEFAULT'
 ```
+
+### Related Settings
+
+- [INQUIRY_AFTER_REJECT](INQUIRY_AFTER_REJECT.md)
+- [INQUIRY_NOTES_MATCHES](INQUIRY_NOTES_MATCHES.md)
+- [INQUIRY_NO_NAME_SEARCH](INQUIRY_NO_NAME_SEARCH.md)
