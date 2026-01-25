@@ -57,3 +57,9 @@ AND
 ```
 
 ---
+
+### Header vs Line Evaluation
+
+Complex rules use `xxAR_AmtType` (Header/Line) and `xxAR_Eval_Lines` (TRUE/FALSE) to control how amount thresholds are compared and whether to create separate approvals per line.
+
+**See:** [Header vs Line Evaluation](header-vs-line-evaluation.md) for detailed explanation and examples.

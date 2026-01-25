@@ -112,41 +112,6 @@ Seq 252: CC8300 Manager
 
 #### 2. Which Cost Field: Header vs. Line
 
-This setting determines how the rule's amount thresholds are compared:
+The `xxapp_which_cost` field determines whether amount thresholds compare against the total requisition or each line item separately. This is critical for cross-department requisitions.
 
-**Header (Total Requisition Cost)**
-- Compares against the **total requisition amount**
-- Creates **one approval record** if the rule matches
-- Best for: "If the total req exceeds $10K, VP must approve"
-
-**Line (Individual Line Evaluation)**
-- Compares against **each line item's amount separately**
-- Can create **multiple approval records** from a single rule
-- Best for: Cross-department charging, commodity-specific approvals
-
-**Example Scenario:**
-
-A $15,000 requisition with 3 lines:
-- Line 1: $8,000 to Cost Center 8100
-- Line 2: $5,000 to Cost Center 8200  
-- Line 3: $2,000 to Cost Center 8300
-
-**With "Header" setting:**
-- Rule checks: Is $15,000 (total) within my amount range?
-- Result: One approval based on total
-
-**With "Line" setting:**
-- Rule checks each line separately: Is $8,000 within range? Is $5,000? Is $2,000?
-- Result: Could generate up to 3 separate approvals (one per line)
-
-**When to use "Line":**
-- Cross-department requisitions where each department should approve their portion
-- Different approval requirements based on what's being purchased (by UNSPSC code)
-- When you need granular control over who approves what
-
-**When to use "Header":**
-- Executive-level rules (CFO approves total spend over $100K)
-- Most standard cost center approvals
-- When you want simpler, faster routing
-
----
+**See:** [Header vs Line Evaluation](header-vs-line-evaluation.md) for detailed explanation and examples.
