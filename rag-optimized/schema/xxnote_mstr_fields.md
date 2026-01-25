@@ -7,7 +7,7 @@ Stores notes and comments with optional file attachments. Can be linked to requi
 
 **Related tables:** xxreq_mstr (requisitions)
 
-## Fields
+### Fields
 
 | Field | Type | Flags | Description |
 |-------|------|:-----:|-------------|

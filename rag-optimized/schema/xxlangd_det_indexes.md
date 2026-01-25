@@ -7,7 +7,7 @@ Database indexes for the xxlangd_det table. Use these indexes for efficient quer
 - How do I query xxlangd_det efficiently?
 - What is the primary key of xxlangd_det?
 
-## Indexes
+### Indexes
 
 | Index | Type | Fields |
 |-------|------|--------|

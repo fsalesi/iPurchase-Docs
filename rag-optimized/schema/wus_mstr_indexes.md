@@ -7,7 +7,7 @@ Database indexes for the wus_mstr table. Use these indexes for efficient queries
 - How do I query wus_mstr efficiently?
 - What is the primary key of wus_mstr?
 
-## Indexes
+### Indexes
 
 | Index | Type | Fields |
 |-------|------|--------|

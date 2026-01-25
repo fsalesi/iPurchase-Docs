@@ -2,7 +2,7 @@
 
 Enterprise framework audit trail tracking all database changes with before/after values.
 
-## Fields
+### Fields
 
 | Field | Type | Flags | Description |
 |-------|------|:-----:|-------------|

@@ -9,7 +9,7 @@ Stores all system settings, user preferences, and configuration parameters. The 
 
 **Related tables:** System Settings Reference documentation
 
-## Fields
+### Fields
 
 | Field | Type | Flags | Description |
 |-------|------|:-----:|-------------|

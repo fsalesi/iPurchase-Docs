@@ -10,7 +10,7 @@ Stores simple approval rules using AND logic. The primary table for configuring 
 
 **Related tables:** xxAppRule (complex rules), xxAppField (conditions), xxreq_audit (history)
 
-## Fields
+### Fields
 
 | Field | Type | Flags | Description |
 |-------|------|:-----:|-------------|

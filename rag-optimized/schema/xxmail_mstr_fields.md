@@ -7,7 +7,7 @@ Email queue header records for outbound notifications. Tracks email status and d
 
 **Related tables:** xxmaild_det (email details)
 
-## Fields
+### Fields
 
 | Field | Type | Flags | Description |
 |-------|------|:-----:|-------------|

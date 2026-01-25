@@ -7,7 +7,7 @@ Database indexes for the xxreq_mstr table. Use these indexes for efficient queri
 - How do I query xxreq_mstr efficiently?
 - What is the primary key of xxreq_mstr?
 
-## Indexes
+### Indexes
 
 | Index | Type | Fields |
 |-------|------|--------|

@@ -7,7 +7,7 @@ Database indexes for the xxlink_mstr table. Use these indexes for efficient quer
 - How do I query xxlink_mstr efficiently?
 - What is the primary key of xxlink_mstr?
 
-## Indexes
+### Indexes
 
 | Index | Type | Fields |
 |-------|------|--------|

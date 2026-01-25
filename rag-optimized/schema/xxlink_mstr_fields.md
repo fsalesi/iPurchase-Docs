@@ -2,7 +2,7 @@
 
 Configurable links displayed in the iPurchase interface.
 
-## Fields
+### Fields
 
 | Field | Type | Flags | Description |
 |-------|------|:-----:|-------------|

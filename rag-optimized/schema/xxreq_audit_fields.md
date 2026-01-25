@@ -10,7 +10,7 @@ Records all approval actions taken on requisitions. Shows who approved/rejected,
 
 **Related tables:** xxreq_mstr (requisition), xxapp_mstr (rules), wus_mstr (users)
 
-## Fields
+### Fields
 
 | Field | Type | Flags | Description |
 |-------|------|:-----:|-------------|

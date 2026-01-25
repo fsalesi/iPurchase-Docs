@@ -10,7 +10,7 @@ Stores individual line items within requisitions. Each line has quantity, cost, 
 
 **Related tables:** xxreq_mstr (header), GL account coding
 
-## Fields
+### Fields
 
 | Field | Type | Flags | Description |
 |-------|------|:-----:|-------------|

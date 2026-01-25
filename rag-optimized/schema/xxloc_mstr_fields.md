@@ -8,7 +8,7 @@ Location/site master defining valid ship-to and bill-to locations for requisitio
 
 **Related tables:** xxreq_mstr (requisitions)
 
-## Fields
+### Fields
 
 | Field | Type | Flags | Description |
 |-------|------|:-----:|-------------|

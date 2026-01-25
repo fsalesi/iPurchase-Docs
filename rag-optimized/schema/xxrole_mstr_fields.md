@@ -2,7 +2,7 @@
 
 Role definitions (Manager, Director, VP, etc.) for role-based approval routing.
 
-## Fields
+### Fields
 
 | Field | Type | Flags | Description |
 |-------|------|:-----:|-------------|

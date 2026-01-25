@@ -2,7 +2,7 @@
 
 Language detail records containing locale-specific settings.
 
-## Fields
+### Fields
 
 | Field | Type | Flags | Description |
 |-------|------|:-----:|-------------|

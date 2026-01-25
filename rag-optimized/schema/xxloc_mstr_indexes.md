@@ -7,7 +7,7 @@ Database indexes for the xxloc_mstr table. Use these indexes for efficient queri
 - How do I query xxloc_mstr efficiently?
 - What is the primary key of xxloc_mstr?
 
-## Indexes
+### Indexes
 
 | Index | Type | Fields |
 |-------|------|--------|

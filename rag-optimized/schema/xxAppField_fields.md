@@ -9,7 +9,7 @@ Stores the conditions for complex approval rules. Forms a hierarchical tree stru
 
 **Related tables:** xxAppRule (rule header)
 
-## Fields
+### Fields
 
 | Field | Type | Flags | Description |
 |-------|------|:-----:|-------------|

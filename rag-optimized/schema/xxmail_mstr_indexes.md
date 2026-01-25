@@ -7,7 +7,7 @@ Database indexes for the xxmail_mstr table. Use these indexes for efficient quer
 - How do I query xxmail_mstr efficiently?
 - What is the primary key of xxmail_mstr?
 
-## Indexes
+### Indexes
 
 | Index | Type | Fields |
 |-------|------|--------|

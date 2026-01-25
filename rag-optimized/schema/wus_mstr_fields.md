@@ -10,7 +10,7 @@ Stores all user accounts, profiles, and settings for iPurchase. Contains login c
 
 **Related tables:** wgr_mstr (groups), wugr_mstr (group membership), pf_mstr (user preferences)
 
-## Fields
+### Fields
 
 | Field | Type | Flags | Description |
 |-------|------|:-----:|-------------|

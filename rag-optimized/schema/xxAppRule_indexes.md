@@ -7,7 +7,7 @@ Database indexes for the xxAppRule table. Use these indexes for efficient querie
 - How do I query xxAppRule efficiently?
 - What is the primary key of xxAppRule?
 
-## Indexes
+### Indexes
 
 | Index | Type | Fields |
 |-------|------|--------|

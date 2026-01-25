@@ -7,7 +7,7 @@ Database indexes for the xxapp_mstr table. Use these indexes for efficient queri
 - How do I query xxapp_mstr efficiently?
 - What is the primary key of xxapp_mstr?
 
-## Indexes
+### Indexes
 
 | Index | Type | Fields |
 |-------|------|--------|

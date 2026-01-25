@@ -8,7 +8,7 @@ Links users to groups. Each record represents one user belonging to one group. U
 
 **Related tables:** wus_mstr (users), wgr_mstr (groups)
 
-## Fields
+### Fields
 
 | Field | Type | Flags | Description |
 |-------|------|:-----:|-------------|

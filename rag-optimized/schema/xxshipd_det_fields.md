@@ -2,7 +2,7 @@
 
 Shipping detail records for requisition delivery information.
 
-## Fields
+### Fields
 
 | Field | Type | Flags | Description |
 |-------|------|:-----:|-------------|

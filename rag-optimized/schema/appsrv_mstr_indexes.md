@@ -7,7 +7,7 @@ Database indexes for the appsrv_mstr table. Use these indexes for efficient quer
 - How do I query appsrv_mstr efficiently?
 - What is the primary key of appsrv_mstr?
 
-## Indexes
+### Indexes
 
 | Index | Type | Fields |
 |-------|------|--------|

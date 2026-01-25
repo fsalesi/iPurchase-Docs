@@ -7,7 +7,7 @@ Database indexes for the efw_audit table. Use these indexes for efficient querie
 - How do I query efw_audit efficiently?
 - What is the primary key of efw_audit?
 
-## Indexes
+### Indexes
 
 | Index | Type | Fields |
 |-------|------|--------|

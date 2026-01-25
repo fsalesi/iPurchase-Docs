@@ -7,7 +7,7 @@ Database indexes for the xxmaild_det table. Use these indexes for efficient quer
 - How do I query xxmaild_det efficiently?
 - What is the primary key of xxmaild_det?
 
-## Indexes
+### Indexes
 
 | Index | Type | Fields |
 |-------|------|--------|

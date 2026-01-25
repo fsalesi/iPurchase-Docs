@@ -7,7 +7,7 @@ Stores email detail records including attachments for outbound notifications.
 
 **Related tables:** xxmail_mstr (email header)
 
-## Fields
+### Fields
 
 | Field | Type | Flags | Description |
 |-------|------|:-----:|-------------|

@@ -8,7 +8,7 @@ Stores archived Purchase Order PDF documents as BLOBs. Each PO can have multiple
 
 **Related tables:** BLOB extraction tools, po_mstr (QAD PO header)
 
-## Fields
+### Fields
 
 | Field | Type | Flags | Description |
 |-------|------|:-----:|-------------|

@@ -7,7 +7,7 @@ Database indexes for the xxpo_archive table. Use these indexes for efficient que
 - How do I query xxpo_archive efficiently?
 - What is the primary key of xxpo_archive?
 
-## Indexes
+### Indexes
 
 | Index | Type | Fields |
 |-------|------|--------|

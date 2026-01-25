@@ -9,7 +9,7 @@ Defines groups used for approval routing, permissions, and organizational struct
 
 **Related tables:** wugr_mstr (membership), xxapp_mstr (approval rules), wus_mstr (users)
 
-## Fields
+### Fields
 
 | Field | Type | Flags | Description |
 |-------|------|:-----:|-------------|

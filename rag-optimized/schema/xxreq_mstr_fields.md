@@ -10,7 +10,7 @@ The main requisition table containing header-level information: status, dates, t
 
 **Related tables:** xxreqd_det (line items), xxreq_audit (approvals), xxreq_attach (attachments)
 
-## Fields
+### Fields
 
 | Field | Type | Flags | Description |
 |-------|------|:-----:|-------------|

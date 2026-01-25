@@ -7,7 +7,7 @@ Database indexes for the xxreqd_det table. Use these indexes for efficient queri
 - How do I query xxreqd_det efficiently?
 - What is the primary key of xxreqd_det?
 
-## Indexes
+### Indexes
 
 | Index | Type | Fields |
 |-------|------|--------|

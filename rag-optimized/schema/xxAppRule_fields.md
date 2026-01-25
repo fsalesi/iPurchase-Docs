@@ -9,7 +9,7 @@ Stores complex approval rules with nested AND/OR logic. Used for advanced routin
 
 **Related tables:** xxAppField (conditions), xxapp_mstr (simple rules)
 
-## Fields
+### Fields
 
 | Field | Type | Flags | Description |
 |-------|------|:-----:|-------------|

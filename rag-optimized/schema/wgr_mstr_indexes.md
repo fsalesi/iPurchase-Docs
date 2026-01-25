@@ -7,7 +7,7 @@ Database indexes for the wgr_mstr table. Use these indexes for efficient queries
 - How do I query wgr_mstr efficiently?
 - What is the primary key of wgr_mstr?
 
-## Indexes
+### Indexes
 
 | Index | Type | Fields |
 |-------|------|--------|

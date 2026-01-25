@@ -7,7 +7,7 @@ Database indexes for the xxshipd_det table. Use these indexes for efficient quer
 - How do I query xxshipd_det efficiently?
 - What is the primary key of xxshipd_det?
 
-## Indexes
+### Indexes
 
 | Index | Type | Fields |
 |-------|------|--------|
