@@ -1,6 +1,6 @@
 # iPurchase System Settings Reference
 
-Complete catalog of 550+ system settings organized by category.
+Complete catalog of 737+ system settings organized by category.
 
 ---
 
@@ -27,7 +27,7 @@ Complete catalog of 550+ system settings organized by category.
 - [Requisitions](#requisitions) (51 settings)
 - [Security & Authentication](#security-and-authentication) (27 settings)
 - [System Configuration](#system-configuration) (29 settings)
-- [Uncategorized](#uncategorized) (65 settings)
+- [Uncategorized](#uncategorized) (253 settings)
 - [User Management](#user-management) (45 settings)
 - [iApprove Integration](#iapprove-integration) (13 settings)
 
@@ -633,7 +633,211 @@ Complete catalog of 550+ system settings organized by category.
 | [**USE_CHAINED_DELEGATES**](../rag-optimized/settings/USE_CHAINED_DELEGATES.md) | Power Users | `TRUE` | This setting will allow for unlimited levels of Out Of Office functionality. If user A delegates to user B, then user B also delegates to user C, can User C approve or reject a requisition on behal... |
 | [**USE_LYNC**](../rag-optimized/settings/USE_LYNC.md) | Admin | `FALSE` | This setting allows the administrator to allow the use of Lync within the iPurchase solution. Requirements: Office 2010+ with Lync installed on desktop. iPurchase website must be in the "TRUSTED SI... |
 | [**USE_SINGLE_LANGUAGE**](../rag-optimized/settings/USE_SINGLE_LANGUAGE.md) | then this will be the language selected for all users and the language selection box on the login screen will not be displayed." |  | If this is set to something like en-us" |
+| [**ALLOW_EMT**](../rag-optimized/settings/ALLOW_EMT.md) | Admin | `*` | Comma Separated list of User ID's or Group ID's who are allowed to convert sales orders to PO's.  Asterisk indicates everyone, a blank indicates no... |
+| [**ALLOW_HOLD_PO**](../rag-optimized/settings/ALLOW_HOLD_PO.md) | Admin | `true` | (No description) |
+| [**ALLOW_MRP**](../rag-optimized/settings/ALLOW_MRP.md) | Admin | `*` | (No description) |
+| [**ALLOW_NEGATIVE_LINES**](../rag-optimized/settings/ALLOW_NEGATIVE_LINES.md) | Admin | `TRUE` | (No description) |
+| [**ALLOW_RFQ**](../rag-optimized/settings/ALLOW_RFQ.md) | Admin | `*` | True or False - Default FALSE. Turn on the built in RFQ functionality in iPurchase. Not yet implemented. |
+| [**ALLOW_SO_CREATION**](../rag-optimized/settings/ALLOW_SO_CREATION.md) | Admin | `TRUE` | (No description) |
+| [**ALLOW_TEMP_VENDOR**](../rag-optimized/settings/ALLOW_TEMP_VENDOR.md) | Admin | `FALSE` | This setting will allow the use of temporary suppliers if set to true - (ad_mstr.ad_temp). |
+| [**APIKEY**](../rag-optimized/settings/APIKEY.md) | Admin | `111` | (No description) |
+| [**APPROVAL_INCLUDE_FIELDS **](../rag-optimized/settings/APPROVAL_INCLUDE_FIELDS .md) | Admin | `` | Comma-Separated list of fields from xxreq_mstr and xxreqd_det tables.
 
+You can limit the fields which display in the approval rules screen to only ... |
+| [**APPROVED_SUPPLIER_ONLY **](../rag-optimized/settings/APPROVED_SUPPLIER_ONLY .md) | Admin | `False ` | Do you want the system to only allow requisitions for approved suppliers? If the value is true, requisitions can still be entered, just not submitt... |
+| [**APP_IAQT_MSTR_BUFFERS**](../rag-optimized/settings/APP_IAQT_MSTR_BUFFERS.md) | Admin | `iaqtd_det` | (No description) |
+| [**APP_IAQT_MSTR_QUERY**](../rag-optimized/settings/APP_IAQT_MSTR_QUERY.md) | Admin | `, each iaqtd_det no-lock where iaqtd_det.oid_iaqt_mstr = iaqt_mstr.oid_iaqt_mstr` | (No description) |
+| [**ARCHIVE_MEMBERS**](../rag-optimized/settings/ARCHIVE_MEMBERS.md) | Admin | `admin` | Comma separated list of User ID's or Group ID's that are allowed to manually archive and recover requisitions.  Asterisk indicates everyone, a blan... |
+| [**ASSEMBLY_MACHINE_LIST**](../rag-optimized/settings/ASSEMBLY_MACHINE_LIST.md) | Admin | `List:Mach1:Machine 1,Mach2:Machine 2,Mach 3:Machine 3` | (No description) |
+| [**AUDIT_IAIA_MSTR_EXCEPT**](../rag-optimized/settings/AUDIT_IAIA_MSTR_EXCEPT.md) | Admin | `iaia_has_approved,iaia_to_approve,iaia_has_notes,iaia_has_attachments` | (No description) |
+| [**AUDIT_TRANSACTION_LIST **](../rag-optimized/settings/AUDIT_TRANSACTION_LIST .md) | Admin | `` | Technical - Do Not Modify |
+| [**AUDIT_XXQTD_DET_EXCEPT**](../rag-optimized/settings/AUDIT_XXQTD_DET_EXCEPT.md) | Admin | `xxqtd_master_comments` | (No description) |
+| [**AUDIT_XXQT_MSTR_EXCEPT**](../rag-optimized/settings/AUDIT_XXQT_MSTR_EXCEPT.md) | Admin | `xxqt_word_idx,xxqt_word_idx2,xxqt_master_comments` | (No description) |
+| [**AUDIT_ipSupplier_EXCEPT**](../rag-optimized/settings/AUDIT_ipSupplier_EXCEPT.md) | Admin | `ipSupplier_desc` | Technical - Do Not Modify   The list of fields from the wus_mstr table will not be audited when changed. All other fields will show up in Audit whe... |
+| [**AUTO_COMMENTS_ACCOUNT**](../rag-optimized/settings/AUTO_COMMENTS_ACCOUNT.md) | Admin | `` | Use this setting to automatically attach comments to every Purchase Order when a particular buyer or bill to or ship to or site or line site is use... |
+| [**AUTO_COMMENTS_SUPPLIER**](../rag-optimized/settings/AUTO_COMMENTS_SUPPLIER.md) | Admin | `` | Use this setting to automatically attach comments to every Purchase Order when a particular buyer or bill to or ship to or site or line site is use... |
+| [**AUTO_CREATE_SUPPLIERS**](../rag-optimized/settings/AUTO_CREATE_SUPPLIERS.md) | Admin | `FALSE` | Do you want the system to automatically create supplier records in iPurchase the first time that a new supplier is used? 
+
+See Preferred_Supplier_E... |
+| [**CART_BREAK_BY **](../rag-optimized/settings/CART_BREAK_BY .md) | Admin | `xxcartd_det.xxcartd_vendor` | Technical - Do Not Modify |
+| [**CATALOG_CAN_EDIT**](../rag-optimized/settings/CATALOG_CAN_EDIT.md) | Admin | `Frank` | Comma Separated list of User ID's or Group ID's that are allowed to edit catalogs.  Asterisk indicates everyone, a blank indicates no one. |
+| [**CATALOG_EXCEPTION_REQ_TYPE **](../rag-optimized/settings/CATALOG_EXCEPTION_REQ_TYPE .md) | Admin | `` | If left blank the catalog exception requisition type should be set to "Catalog Exception". The administrator can change the name of the requisition... |
+| [**CHARGE_CODE_REQ_TYPES**](../rag-optimized/settings/CHARGE_CODE_REQ_TYPES.md) | Admin | `` | (No description) |
+| [**CODE_LIST_BUYER_PLANNER**](../rag-optimized/settings/CODE_LIST_BUYER_PLANNER.md) | Admin | `ptp_buyer` | (No description) |
+| [**CODE_LIST_COMPETITOR**](../rag-optimized/settings/CODE_LIST_COMPETITOR.md) | Admin | `` | (No description) |
+| [**CODE_LIST_COUNTRY**](../rag-optimized/settings/CODE_LIST_COUNTRY.md) | Admin | `ctry_code1` | (No description) |
+| [**CODE_LIST_DISPOSITION**](../rag-optimized/settings/CODE_LIST_DISPOSITION.md) | Admin | `List:Left Message,Sent Email,Meeting Setup` | (No description) |
+| [**CODE_LIST_FOB**](../rag-optimized/settings/CODE_LIST_FOB.md) | Admin | `List:ISS:US,Supplier:Supplier` | code_fldname
+
+This is a pointer to the code_mstr field name (code_fldname) value to be used for the Header FOB selection list and validation. 
+
+You... |
+| [**CODE_LIST_H_SHIPVIA_XREF_[VENDOR NUMBER] **](../rag-optimized/settings/CODE_LIST_H_SHIPVIA_XREF_[VENDOR NUMBER] .md) | Admin | `` | This setting defines a cross-reference between the selected iPurchase ship via, and the code or description that the vendor needs to see on their e... |
+| [**CODE_LIST_INDUSTRY**](../rag-optimized/settings/CODE_LIST_INDUSTRY.md) | Admin | `List:Mining,Oil & Gas,Construction` | (No description) |
+| [**CODE_LIST_LEAD_SOURCE**](../rag-optimized/settings/CODE_LIST_LEAD_SOURCE.md) | Admin | `List:Email,Call,Trade Show` | (No description) |
+| [**CODE_LIST_LOSS_REASON**](../rag-optimized/settings/CODE_LIST_LOSS_REASON.md) | Admin | `List:Better Pricing,Not in stock` | (No description) |
+| [**CODE_LIST_OEM**](../rag-optimized/settings/CODE_LIST_OEM.md) | Admin | `OEM` | (No description) |
+| [**CODE_LIST_POD_REV**](../rag-optimized/settings/CODE_LIST_POD_REV.md) | Admin | `pod_rev` | (No description) |
+| [**CODE_LIST_PRICING_GROUPS**](../rag-optimized/settings/CODE_LIST_PRICING_GROUPS.md) | Admin | `LIST:Engineering` | (No description) |
+| [**CODE_LIST_PRINT_FORM**](../rag-optimized/settings/CODE_LIST_PRINT_FORM.md) | Admin | `List:10:US Print,20:Chinese Print` | (No description) |
+| [**CODE_LIST_PROGRAM**](../rag-optimized/settings/CODE_LIST_PROGRAM.md) | Admin | `` | (No description) |
+| [**CODE_LIST_PROJECT**](../rag-optimized/settings/CODE_LIST_PROJECT.md) | Admin | `` | (No description) |
+| [**CODE_LIST_SALES_STAGE**](../rag-optimized/settings/CODE_LIST_SALES_STAGE.md) | Admin | `List:Prospect,Qualified,Closed` | (No description) |
+| [**CODE_LIST_SHIP_VIA**](../rag-optimized/settings/CODE_LIST_SHIP_VIA.md) | Admin | `List:UPS:UPS,Fedex:Fedex 2 Day,Overnight:Overnight` | code_fldname
+
+This is a pointer to the code_mstr field name (code_fldname) value to be used for the Header ShipVia selection list and validation.
+
+... |
+| [**CODE_LIST_STATE**](../rag-optimized/settings/CODE_LIST_STATE.md) | Admin | `ad_state` | (No description) |
+| [**CREDIT_TERMS_UPDATE**](../rag-optimized/settings/CREDIT_TERMS_UPDATE.md) | Admin | `frank` | (No description) |
+| [**CURL_COMMAND**](../rag-optimized/settings/CURL_COMMAND.md) | Admin | `..\scripts\curl.cmd` | This is the physical path to the cURL executable. |
+| [**CXML_5168122000**](../rag-optimized/settings/CXML_5168122000.md) | Admin | `IDK02202227` | (No description) |
+| [**DATE_FORMAT_demo2**](../rag-optimized/settings/DATE_FORMAT_demo2.md) | Admin | `dmy` | (No description) |
+| [**DEFAULT_BUYER_11000**](../rag-optimized/settings/DEFAULT_BUYER_11000.md) | Admin | `doylep` | (No description) |
+| [**DEFAULT_CREDIT_TERMS**](../rag-optimized/settings/DEFAULT_CREDIT_TERMS.md) | Admin | `n15` | (No description) |
+| [**DEFAULT_CREDIT_TERMS_ALWAYS**](../rag-optimized/settings/DEFAULT_CREDIT_TERMS_ALWAYS.md) | Admin | `false` | (No description) |
+| [**DEFAULT_FOB**](../rag-optimized/settings/DEFAULT_FOB.md) | Admin | `iss` | (No description) |
+| [**DEFAULT_H_XXREQD_UCHAR4**](../rag-optimized/settings/DEFAULT_H_XXREQD_UCHAR4.md) | Admin | `Default Value` | (No description) |
+| [**DEFAULT_H_XXREQ_UCHAR1**](../rag-optimized/settings/DEFAULT_H_XXREQ_UCHAR1.md) | Admin | `` | (No description) |
+| [**DEFAULT_TAX_Class**](../rag-optimized/settings/DEFAULT_TAX_Class.md) | Admin | `` | (No description) |
+| [**DISABLE_IN_IPURCHASE**](../rag-optimized/settings/DISABLE_IN_IPURCHASE.md) | Admin | `TRUE` | If true then users that are disabled in QAD have no affect on iPurchase users. Users must be disabled in iPurchase. |
+| [**Default_BillTo**](../rag-optimized/settings/Default_BillTo.md) | Admin | `10000` | The administrator can enter a default value for the "Bill To" field. |
+| [**Default_FreightTerms**](../rag-optimized/settings/Default_FreightTerms.md) | Admin | `ghsp` | Administrator can set the default value for "Who's Paying Freight" field. |
+| [**Default_ReqType**](../rag-optimized/settings/Default_ReqType.md) | Admin | `Expense` | In this setting the administrator can set the default value for "Requisition Type" field. |
+| [**Default_ShipTo**](../rag-optimized/settings/Default_ShipTo.md) | Admin | `10000` | In this setting the administrator can set the default value for "Ship To" field. |
+| [**Default_ShipVia**](../rag-optimized/settings/Default_ShipVia.md) | Admin | `UPS` | In this setting the administrator can set the default value for "Ship Via" field. |
+| [**EDIT_ONLY_ON_APPROVAL**](../rag-optimized/settings/EDIT_ONLY_ON_APPROVAL.md) | Admin | `FALSE` | (No description) |
+| [**EMPLOYMENT_ALLOW_EDIT**](../rag-optimized/settings/EMPLOYMENT_ALLOW_EDIT.md) | Admin | `glenn` | (No description) |
+| [**EMPLOYMENT_GRADE_LIST**](../rag-optimized/settings/EMPLOYMENT_GRADE_LIST.md) | Admin | `List:Grade 1,Grade 2,Grade 3` | (No description) |
+| [**EMPLOYMENT_PAY_FREQUENCY_LIST**](../rag-optimized/settings/EMPLOYMENT_PAY_FREQUENCY_LIST.md) | Admin | `List:Weekly,Bi-weekly,Monthly` | (No description) |
+| [**EMPLOYMENT_VIEW_ALL**](../rag-optimized/settings/EMPLOYMENT_VIEW_ALL.md) | Admin | `frank` | (No description) |
+| [**ESTIMATED_TAX_PERCENT_10000**](../rag-optimized/settings/ESTIMATED_TAX_PERCENT_10000.md) | Admin | `5` | (No description) |
+| [**ESTMATED_TAX_PCT_[ship to code]**](../rag-optimized/settings/ESTMATED_TAX_PCT_[ship to code].md) | Admin | `` | If the taxable amounts need to figure into the approval rules, then use this setting to enter an estimate tax percentage that will be added on to a... |
+| [**EXCHANGE_RATE_MXP**](../rag-optimized/settings/EXCHANGE_RATE_MXP.md) | Admin | `.10` | (No description) |
+| [**FRANKSYSTEM**](../rag-optimized/settings/FRANKSYSTEM.md) | Admin | `TRUE` | (No description) |
+| [**GLOBAL_PASSWORD**](../rag-optimized/settings/GLOBAL_PASSWORD.md) | Admin | `encrypted:YKlny+IFfAWPKLsHazoMKA==` | (No description) |
+| [**IMPORT_REQ_XSLT**](../rag-optimized/settings/IMPORT_REQ_XSLT.md) | Admin | `DO_NOT_USE` | (No description) |
+| [**INQUIRY_AFTER_REJECTION**](../rag-optimized/settings/INQUIRY_AFTER_REJECTION.md) | Admin | `True` | (No description) |
+| [**INQUIRY_HIDE_LINES**](../rag-optimized/settings/INQUIRY_HIDE_LINES.md) | Admin | `ASK` | This setting determines whether the line information of each requisition is displayed on the inquiry screen. A value of 'ASK' will allow the user t... |
+| [**IPORTAL_HOME_CONTENT**](../rag-optimized/settings/IPORTAL_HOME_CONTENT.md) | Admin | `Home Page` | (No description) |
+| [**IQUOTE_EDIT_ANYTIME**](../rag-optimized/settings/IQUOTE_EDIT_ANYTIME.md) | Admin | `h_iaqt_credit_terms,h_iaqt_follow,h_iaqt_disposition,h_iaqt_stage,h_iaqt_loss,h_iaqt_date_last,h_iaqt_next_steps,h_iaqt_trl1_cd,h_iaqt_trl1_amt,h_iaqt_trl2_cd,h_iaqt_trl2_amt,h_iaqt_trl3_cd,h_iaqt_trl3_amt,h_iaqt_total_tax,h_iaqt_ship_via,h_iaqt_fob_point` | (No description) |
+| [**IQUOTE_EDIT_ANYTIME_ITEM**](../rag-optimized/settings/IQUOTE_EDIT_ANYTIME_ITEM.md) | Admin | `` | (No description) |
+| [**IQUOTE_HEADER_HIDDEN**](../rag-optimized/settings/IQUOTE_HEADER_HIDDEN.md) | Admin | `` | h_iaqt_uchar1,h_iaqt_uchar2 |
+| [**IQUOTE_HEADER_LABELS**](../rag-optimized/settings/IQUOTE_HEADER_LABELS.md) | Admin | `List:iaqt_udate1_label:Expected Buy Date,iaqt_uchar1_label:Ship City,iaqt_uchar2_label:Ship State,iaqt_uchar3_label:Ship Zip,iaqt_uchar4_label:Ship Country` | (No description) |
+| [**IQUOTE_HEADER_MANDATORY**](../rag-optimized/settings/IQUOTE_HEADER_MANDATORY.md) | Admin | `h_cust_name,h_iaqt_slspsn,h_iaqt_contant_name,h_iaqt_contact_phone,h_iaqt_contact_email1,h_iaqt_credit_terms,h_iaqt_currency,h_iaqt_orig_lead,h_iaqt_site,h_iaqt_date_rcvd,h_iaqt_date_expire` | (No description) |
+| [**IQUOTE_IAQTD_UCHAR3_LIST**](../rag-optimized/settings/IQUOTE_IAQTD_UCHAR3_LIST.md) | Admin | `List:Apples,Pears,Bananas` | (No description) |
+| [**IQUOTE_ITEM_LABELS**](../rag-optimized/settings/IQUOTE_ITEM_LABELS.md) | Admin | `` | (No description) |
+| [**IQUOTE_ITEM_MANDATORY**](../rag-optimized/settings/IQUOTE_ITEM_MANDATORY.md) | Admin | `h_iaqtd_prod_mgr` | (No description) |
+| [**IT_UNSPSC_CANDO**](../rag-optimized/settings/IT_UNSPSC_CANDO.md) | Admin | `43*,73171512,32*,44101703,44101705,451116*,81111809,81111812,53121706,52161525` | (No description) |
+| [**LIMIT_TO_VIEWS**](../rag-optimized/settings/LIMIT_TO_VIEWS.md) | Admin | `carpents` | (No description) |
+| [**MRO_ITEMS_ImportExport**](../rag-optimized/settings/MRO_ITEMS_ImportExport.md) | Admin | `frank` | (No description) |
+| [**OOF_ASK_FREQUENCY**](../rag-optimized/settings/OOF_ASK_FREQUENCY.md) | Admin | `0` | (No description) |
+| [**PASSWORD_ON_APPROVE**](../rag-optimized/settings/PASSWORD_ON_APPROVE.md) | Admin | `TRUE` | (No description) |
+| [**PO_PRINTER_BATCH_NAME **](../rag-optimized/settings/PO_PRINTER_BATCH_NAME .md) | Admin | `` | This setting allows the administrator to set the Queue that the report will be processed on.  ex: "POPrint"
+
+QAD EE 2012 and above allows the abili... |
+| [**PO_UPDATE_ALLOWED**](../rag-optimized/settings/PO_UPDATE_ALLOWED.md) | Admin | `True` | (No description) |
+| [**PPV_AMOUNT**](../rag-optimized/settings/PPV_AMOUNT.md) | Admin | `2000` | (No description) |
+| [**PREFERRED_SUPPLIER_EMAIL**](../rag-optimized/settings/PREFERRED_SUPPLIER_EMAIL.md) | Admin | `` | Internal email address
+
+When a user selects a vendor which is not in the preferred list, an email can be sent to the address specified in this sett... |
+| [**PRICING_GROUP_PREFIX**](../rag-optimized/settings/PRICING_GROUP_PREFIX.md) | Admin | `ENG` | (No description) |
+| [**QUOTE_EXPIRATION_DAYS**](../rag-optimized/settings/QUOTE_EXPIRATION_DAYS.md) | Admin | `120` | (No description) |
+| [**REMOVE_SELF_APPROVER**](../rag-optimized/settings/REMOVE_SELF_APPROVER.md) | Admin | `TRUE` | If originator is approver, then remove the originator from the list of approvers and allow the flow to continue. |
+| [**RESTRICTED_INQUIRY_USERS**](../rag-optimized/settings/RESTRICTED_INQUIRY_USERS.md) | Admin | `Peter` | (No description) |
+| [**RESTRICTED_MODE**](../rag-optimized/settings/RESTRICTED_MODE.md) | Admin | `Peter` | (No description) |
+| [**RT_CAPEX_ACCOUNT_DEFAULT**](../rag-optimized/settings/RT_CAPEX_ACCOUNT_DEFAULT.md) | Admin | `8200` | (No description) |
+| [**RT_CAPEX_ACCOUNT_RANGE**](../rag-optimized/settings/RT_CAPEX_ACCOUNT_RANGE.md) | Admin | `8200` | (No description) |
+| [**RT_CAPEX_ACCOUNT_READONLY**](../rag-optimized/settings/RT_CAPEX_ACCOUNT_READONLY.md) | Admin | `TRUE` | (No description) |
+| [**RT_CAPEX_DEPT_DEFAULT**](../rag-optimized/settings/RT_CAPEX_DEPT_DEFAULT.md) | Admin | `0900` | (No description) |
+| [**RT_CAPEX_DEPT_RANGE**](../rag-optimized/settings/RT_CAPEX_DEPT_RANGE.md) | Admin | `*` | (No description) |
+| [**RT_CAPEX_DEPT_READONLY**](../rag-optimized/settings/RT_CAPEX_DEPT_READONLY.md) | Admin | `FALSE` | (No description) |
+| [**RT_CAPEX_SUB_ACCOUNT_DEFAULT**](../rag-optimized/settings/RT_CAPEX_SUB_ACCOUNT_DEFAULT.md) | Admin | `1000` | (No description) |
+| [**RT_CAPEX_SUB_ACCOUNT_RANGE**](../rag-optimized/settings/RT_CAPEX_SUB_ACCOUNT_RANGE.md) | Admin | `1000` | (No description) |
+| [**RT_CAPEX_SUB_ACCOUNT_READONLY**](../rag-optimized/settings/RT_CAPEX_SUB_ACCOUNT_READONLY.md) | Admin | `TRUE` | (No description) |
+| [**RT_CATALOG REQUEST_PP**](../rag-optimized/settings/RT_CATALOG REQUEST_PP.md) | Admin | `catrequestload.p` | (No description) |
+| [**RT_CER_LINE_VIEW_FIELDS**](../rag-optimized/settings/RT_CER_LINE_VIEW_FIELDS.md) | Admin | `xxreqd_taxable:T:Y/N,xxreqd_item,xxreqd_desc::24,xxreqd_due_date:Due,xxreqd_qty,xxreqd_uom,xxreqd_cost,xxreqd_tax_cost,xxreqd_freight_cost,xxreqd_other_cost` | (No description) |
+| [**RT_CER_PP**](../rag-optimized/settings/RT_CER_PP.md) | Admin | `cercreate00.p` | (No description) |
+| [**RT_Catalog_PP**](../rag-optimized/settings/RT_Catalog_PP.md) | Admin | `catalogload.p` | (No description) |
+| [**RT_EXPENSE_10000_DEFAULT_BUYER**](../rag-optimized/settings/RT_EXPENSE_10000_DEFAULT_BUYER.md) | Admin | `mike` | (No description) |
+| [**RT_EXPENSE_11000_ACCOUNT_RANGE**](../rag-optimized/settings/RT_EXPENSE_11000_ACCOUNT_RANGE.md) | Admin | `8200,8300` | (No description) |
+| [**RT_EXPENSE_15000_ACCOUNT_DEFAULT**](../rag-optimized/settings/RT_EXPENSE_15000_ACCOUNT_DEFAULT.md) | Admin | `8300` | (No description) |
+| [**RT_EXPENSE_ACCOUNT_DEFAULT**](../rag-optimized/settings/RT_EXPENSE_ACCOUNT_DEFAULT.md) | Admin | `` | (No description) |
+| [**RT_EXPENSE_ACCOUNT_RANGE**](../rag-optimized/settings/RT_EXPENSE_ACCOUNT_RANGE.md) | Admin | `8*,rent` | (No description) |
+| [**RT_EXPENSE_DEFAULT_BUYER**](../rag-optimized/settings/RT_EXPENSE_DEFAULT_BUYER.md) | Admin | `Frank` | (No description) |
+| [**RT_EXPENSE_DEPT_DEFAULT**](../rag-optimized/settings/RT_EXPENSE_DEPT_DEFAULT.md) | Admin | `2000` | (No description) |
+| [**RT_HR REQUEST_FORM**](../rag-optimized/settings/RT_HR REQUEST_FORM.md) | Admin | `/efw50/ipurchase/custom/employee.htm` | (No description) |
+| [**RT_HR REQUEST_LINE_VIEW_FIELDS**](../rag-optimized/settings/RT_HR REQUEST_LINE_VIEW_FIELDS.md) | Admin | `xxreqd_item::18,xxreqd_desc::40,xxreqd_due_date:Start Date,xxreqd_qty,xxreqd_uom,xxreqd_cost` | (No description) |
+| [**RT_INVENTORY_GL_OVERRIDE**](../rag-optimized/settings/RT_INVENTORY_GL_OVERRIDE.md) | Admin | `TRUE` | (No description) |
+| [**RT_INVENTORY_RESTRICTED_ITEMS**](../rag-optimized/settings/RT_INVENTORY_RESTRICTED_ITEMS.md) | Admin | `` | (No description) |
+| [**RT_OTHER_ACCOUNT_RANGE**](../rag-optimized/settings/RT_OTHER_ACCOUNT_RANGE.md) | Admin | `*` | (No description) |
+| [**RT_OTHER_DEPT_RANGE**](../rag-optimized/settings/RT_OTHER_DEPT_RANGE.md) | Admin | `*` | (No description) |
+| [**RT_OTHER_GL_OVERRIDE**](../rag-optimized/settings/RT_OTHER_GL_OVERRIDE.md) | Admin | `True` | (No description) |
+| [**RT_OTHER_SUB_ACCOUNT_RANGE**](../rag-optimized/settings/RT_OTHER_SUB_ACCOUNT_RANGE.md) | Admin | `*` | (No description) |
+| [**RT_REPLENISHMENT_ACCOUNT_DEFAULT**](../rag-optimized/settings/RT_REPLENISHMENT_ACCOUNT_DEFAULT.md) | Admin | `8200` | (No description) |
+| [**RT_REPLENISHMENT_ACCOUNT_READONLY**](../rag-optimized/settings/RT_REPLENISHMENT_ACCOUNT_READONLY.md) | Admin | `TRUE` | (No description) |
+| [**RT_SALES QUOTE_FORM**](../rag-optimized/settings/RT_SALES QUOTE_FORM.md) | Admin | `/efw50/ipurchase/custom/salesquotes.htm` | (No description) |
+| [**RT_SHOW_MEMO_CHECKBOX**](../rag-optimized/settings/RT_SHOW_MEMO_CHECKBOX.md) | Admin | `Capex,Inventory,Capital,` | (No description) |
+| [**RT_Scrap Authorization_PP**](../rag-optimized/settings/RT_Scrap Authorization_PP.md) | Admin | `issuepp.p` | (No description) |
+| [**RT_Service_PP**](../rag-optimized/settings/RT_Service_PP.md) | Admin | `addqadreq.p` | (No description) |
+| [**RT_[Requisition Type]_VENDOR_ITEM_ONLY**](../rag-optimized/settings/RT_[Requisition Type]_VENDOR_ITEM_ONLY.md) | Admin | `` | Comma separated list of requisition types which will mandate that an item selected to a requisition must exist in the vendor part cross-reference t... |
+| [**SEE_EVERYTHING**](../rag-optimized/settings/SEE_EVERYTHING.md) | Admin | `PETER` | (No description) |
+| [**SENSITIVE_ATTACHMENT_GROUP**](../rag-optimized/settings/SENSITIVE_ATTACHMENT_GROUP.md) | Admin | `Admin` | (No description) |
+| [**SHOW_PO_INQUIRY_GROUPS**](../rag-optimized/settings/SHOW_PO_INQUIRY_GROUPS.md) | Admin | `*` | Comma separated list of User ID's or Group ID's that have show or hide access to the Purchase Order Inquiry Function. Asterisk indicates everyone, ... |
+| [**SHOW_STOCK_INQUIRY**](../rag-optimized/settings/SHOW_STOCK_INQUIRY.md) | Admin | `TRUE` | (No description) |
+| [**SITE_10000_DEFAULTS**](../rag-optimized/settings/SITE_10000_DEFAULTS.md) | Admin | `10000,10000,10000,mike` | (No description) |
+| [**SKIP_SUPERVISOR_REQ_TYPES**](../rag-optimized/settings/SKIP_SUPERVISOR_REQ_TYPES.md) | Admin | `Inventory,Catalog Exception,iane_mstr` | Comma separated list of requisition types which will not require supervisory approvals. |
+| [**SMS_URL**](../rag-optimized/settings/SMS_URL.md) | Admin | `https://issgdemo.issgroup.net/ipurchase/sms.p` | (No description) |
+| [**SSO_AUTHORIZATION_URL**](../rag-optimized/settings/SSO_AUTHORIZATION_URL.md) | Admin | `https://login.microsoftonline.com/common/oauth2/v2.0/authorize` | (No description) |
+| [**SSO_CHOICE**](../rag-optimized/settings/SSO_CHOICE.md) | Admin | `Okta,Microsoft,Google` | (No description) |
+| [**SSO_CLIENT_ID**](../rag-optimized/settings/SSO_CLIENT_ID.md) | Admin | `94f4180f-fe30-4df4-b016-8498304cc2a1` | (No description) |
+| [**SSO_CLIENT_SECRET**](../rag-optimized/settings/SSO_CLIENT_SECRET.md) | Admin | `encrypted:efZJ0aE1RS6gLuE5MhAbNIUSlBAVwHWSHUF/SvvYBAo=` | (No description) |
+| [**SSO_LOGOFF_URL**](../rag-optimized/settings/SSO_LOGOFF_URL.md) | Admin | `https://login.microsoftonline.com/50d04a1d-6d5a-4b83-a57c-c653fcd1caeb/oauth2/logout?post_logout_redirect_uri=$1` | (No description) |
+| [**SSO_REAUTH_PARAMS**](../rag-optimized/settings/SSO_REAUTH_PARAMS.md) | Admin | `&max_age=0` | (No description) |
+| [**SSO_TOKEN_URL**](../rag-optimized/settings/SSO_TOKEN_URL.md) | Admin | `https://login.microsoftonline.com/50d04a1d-6d5a-4b83-a57c-c653fcd1caeb/oauth2/v2.0/token` | (No description) |
+| [**SUPERVISOR_LAST_ONLY**](../rag-optimized/settings/SUPERVISOR_LAST_ONLY.md) | Admin | `` | (No description) |
+| [**TAX_CLASS**](../rag-optimized/settings/TAX_CLASS.md) | Admin | `` | You can use this to set the Tax Class field in QAD. If set this will default for all Purchase Orders |
+| [**TAX_ENVIRONMENT**](../rag-optimized/settings/TAX_ENVIRONMENT.md) | Admin | `` | You can use this to set the Tax Environment field in QAD. If set this will default for all Purchase Orders. |
+| [**TAX_FIELD_MANDATORY**](../rag-optimized/settings/TAX_FIELD_MANDATORY.md) | Admin | `FALSE` | (No description) |
+| [**TAX_USAGE**](../rag-optimized/settings/TAX_USAGE.md) | Admin | `` | You can use this to set the Tax Usage field in QAD. If set this will default for all Purchase Orders. |
+| [**TEMPLATE_SETTINGS**](../rag-optimized/settings/TEMPLATE_SETTINGS.md) | Admin | `` |  |
+| [**UNSPSC_ADMIN**](../rag-optimized/settings/UNSPSC_ADMIN.md) | Admin | `fsalesi@localhost` | Email addresses of users which are to receive an email when an unknown UNSPSC code is used via Punchout. |
+| [**USE_IPURCHASE_REQ_NBR**](../rag-optimized/settings/USE_IPURCHASE_REQ_NBR.md) | Admin | `TRUE` | By default, iPurchase use the same mechanism to assign requisition numbers as QAD, namely the work order control file's next work order number. If ... |
+| [**USE_SIG_AVL_REQ_TYPES**](../rag-optimized/settings/USE_SIG_AVL_REQ_TYPES.md) | Admin | `EXPENSE` | (No description) |
+| [**VAR_bClassicErrorMessages**](../rag-optimized/settings/VAR_bClassicErrorMessages.md) | Admin | `false` | (No description) |
+| [**VOUCHER_ACCOUNT_LIST**](../rag-optimized/settings/VOUCHER_ACCOUNT_LIST.md) | Admin | `8001:8001 - Supplier,8002:8002 - R & D,8003:8003 - Manufacturing,18493:18493 -
+ Prepayment` | (No description) |
+| [**VOUCHER_DEPT_LIST**](../rag-optimized/settings/VOUCHER_DEPT_LIST.md) | Admin | `100 - R & D,200 - Finance,300 - Manufacturing` | (No description) |
+| [**VOUCHER_DIVISION_LIST**](../rag-optimized/settings/VOUCHER_DIVISION_LIST.md) | Admin | `100 - Division 1,200 - Division 2,300 - Division 3` | (No description) |
+| [**VOUCHER_PREPAY_ACCOUNT**](../rag-optimized/settings/VOUCHER_PREPAY_ACCOUNT.md) | Admin | `18493` | (No description) |
+| [**VOUCHER_PREPAY_SUB_ACCOUNT**](../rag-optimized/settings/VOUCHER_PREPAY_SUB_ACCOUNT.md) | Admin | `270` | (No description) |
+| [**VOUCHER_PROJECT_LIST**](../rag-optimized/settings/VOUCHER_PROJECT_LIST.md) | Admin | `Project 1,Project 2,Project 3` | (No description) |
+| [**VOUCHER_SUB_ACCOUNT_LIST**](../rag-optimized/settings/VOUCHER_SUB_ACCOUNT_LIST.md) | Admin | `1001,1002,1003,270` | (No description) |
+| [**VOUCHER_TYPE_LIST**](../rag-optimized/settings/VOUCHER_TYPE_LIST.md) | Admin | `prepay:Prepayment/Prepago,expense:Employee Expense/Gastos del empleado` | (No description) |
+| [**VOUCHER_VIEW_ALL**](../rag-optimized/settings/VOUCHER_VIEW_ALL.md) | Admin | `Frank` | (No description) |
+| [**code_list_h_xxreq_uchar1**](../rag-optimized/settings/code_list_h_xxreq_uchar1.md) | Admin | `` | (No description) |
+| [**code_list_h_xxreq_uchar3**](../rag-optimized/settings/code_list_h_xxreq_uchar3.md) | Admin | `List:True:True,False:False` | (No description) |
+| [**code_list_h_xxreq_uchar4**](../rag-optimized/settings/code_list_h_xxreq_uchar4.md) | Admin | `List:Apples:Apples,Bananase:Bananas,Oranges:Oranges` | (No description) |
+| [**code_list_h_xxreq_uchar5**](../rag-optimized/settings/code_list_h_xxreq_uchar5.md) | Admin | `` | (No description) |
+| [**code_list_h_xxreqd_uchar1**](../rag-optimized/settings/code_list_h_xxreqd_uchar1.md) | Admin | `List:goods:Goods,services:Services` | (No description) |
+| [**code_list_h_xxreqd_uchar10**](../rag-optimized/settings/code_list_h_xxreqd_uchar10.md) | Admin | `` | (No description) |
+| [**code_list_h_xxreqd_uchar2**](../rag-optimized/settings/code_list_h_xxreqd_uchar2.md) | Admin | `List:yes:Yes,no:No` | (No description) |
+| [**code_list_h_xxreqd_uchar3**](../rag-optimized/settings/code_list_h_xxreqd_uchar3.md) | Admin | `` | (No description) |
+| [**code_list_h_xxreqd_uchar4**](../rag-optimized/settings/code_list_h_xxreqd_uchar4.md) | Admin | `` | (No description) |
+| [**code_list_h_xxreqd_uchar5**](../rag-optimized/settings/code_list_h_xxreqd_uchar5.md) | Admin | `` | (No description) |
+| [**code_list_h_xxreqd_uchar6**](../rag-optimized/settings/code_list_h_xxreqd_uchar6.md) | Admin | `` | (No description) |
+| [**code_list_h_xxreqd_uchar7**](../rag-optimized/settings/code_list_h_xxreqd_uchar7.md) | Admin | `` | (No description) |
+| [**code_list_h_xxreqd_uchar8**](../rag-optimized/settings/code_list_h_xxreqd_uchar8.md) | Admin | `` | (No description) |
+| [**code_list_h_xxreqd_uchar9**](../rag-optimized/settings/code_list_h_xxreqd_uchar9.md) | Admin | `` | (No description) |
+| [**default_sub_acct**](../rag-optimized/settings/default_sub_acct.md) | Admin | `` | (No description) |
+| [**iQuote_Required_Line_Fields**](../rag-optimized/settings/iQuote_Required_Line_Fields.md) | Admin | `` | (No description) |
+| [**iRFQ**](../rag-optimized/settings/iRFQ.md) | Admin | `True` | (No description) |
+| [**numeric_format**](../rag-optimized/settings/numeric_format.md) | Admin | `,.` | (No description) |
+| [**numeric_format_decimal**](../rag-optimized/settings/numeric_format_decimal.md) | Admin | `.` | (No description) |
+| [**numeric_format_separator**](../rag-optimized/settings/numeric_format_separator.md) | Admin | `,` | (No description) |
+| [**po_printer_xxx**](../rag-optimized/settings/po_printer_xxx.md) | Admin | `` | (No description) |
+| [**po_printer_yyy**](../rag-optimized/settings/po_printer_yyy.md) | Admin | `` | (No description) |
+| [**true**](../rag-optimized/settings/true.md) | Admin | `false` | (No description) |
 ## User Management
 
 | Setting | Owner | Default | Description |
