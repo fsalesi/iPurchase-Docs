@@ -1,0 +1,13 @@
+# RT_OTHER_GL_OVERRIDE
+
+## Description
+No description available.
+
+## Default Value
+`True`
+
+## Category
+System Setting
+
+## Notes
+This is a stub documentation file. Additional details may be added later.
