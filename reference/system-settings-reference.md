@@ -641,9 +641,7 @@ Complete catalog of 737+ system settings organized by category.
 | [**ALLOW_SO_CREATION**](../rag-optimized/settings/ALLOW_SO_CREATION.md) | Admin | `TRUE` | (No description) |
 | [**ALLOW_TEMP_VENDOR**](../rag-optimized/settings/ALLOW_TEMP_VENDOR.md) | Admin | `FALSE` | This setting will allow the use of temporary suppliers if set to true - (ad_mstr.ad_temp). |
 | [**APIKEY**](../rag-optimized/settings/APIKEY.md) | Admin | `111` | (No description) |
-| [**APPROVAL_INCLUDE_FIELDS **](../rag-optimized/settings/APPROVAL_INCLUDE_FIELDS .md) | Admin | `` | Comma-Separated list of fields from xxreq_mstr and xxreqd_det tables.
-
-You can limit the fields which display in the approval rules screen to only ... |
+| [**APPROVAL_INCLUDE_FIELDS **](../rag-optimized/settings/APPROVAL_INCLUDE_FIELDS .md) | Admin | `` | Comma-Separated list of fields from xxreq_mstr and xxreqd_det tables.  You can limit the fields which display in the approval rules screen to only ... |
 | [**APPROVED_SUPPLIER_ONLY **](../rag-optimized/settings/APPROVED_SUPPLIER_ONLY .md) | Admin | `False ` | Do you want the system to only allow requisitions for approved suppliers? If the value is true, requisitions can still be entered, just not submitt... |
 | [**APP_IAQT_MSTR_BUFFERS**](../rag-optimized/settings/APP_IAQT_MSTR_BUFFERS.md) | Admin | `iaqtd_det` | (No description) |
 | [**APP_IAQT_MSTR_QUERY**](../rag-optimized/settings/APP_IAQT_MSTR_QUERY.md) | Admin | `, each iaqtd_det no-lock where iaqtd_det.oid_iaqt_mstr = iaqt_mstr.oid_iaqt_mstr` | (No description) |
@@ -656,9 +654,7 @@ You can limit the fields which display in the approval rules screen to only ... 
 | [**AUDIT_ipSupplier_EXCEPT**](../rag-optimized/settings/AUDIT_ipSupplier_EXCEPT.md) | Admin | `ipSupplier_desc` | Technical - Do Not Modify   The list of fields from the wus_mstr table will not be audited when changed. All other fields will show up in Audit whe... |
 | [**AUTO_COMMENTS_ACCOUNT**](../rag-optimized/settings/AUTO_COMMENTS_ACCOUNT.md) | Admin | `` | Use this setting to automatically attach comments to every Purchase Order when a particular buyer or bill to or ship to or site or line site is use... |
 | [**AUTO_COMMENTS_SUPPLIER**](../rag-optimized/settings/AUTO_COMMENTS_SUPPLIER.md) | Admin | `` | Use this setting to automatically attach comments to every Purchase Order when a particular buyer or bill to or ship to or site or line site is use... |
-| [**AUTO_CREATE_SUPPLIERS**](../rag-optimized/settings/AUTO_CREATE_SUPPLIERS.md) | Admin | `FALSE` | Do you want the system to automatically create supplier records in iPurchase the first time that a new supplier is used? 
-
-See Preferred_Supplier_E... |
+| [**AUTO_CREATE_SUPPLIERS**](../rag-optimized/settings/AUTO_CREATE_SUPPLIERS.md) | Admin | `FALSE` | Do you want the system to automatically create supplier records in iPurchase the first time that a new supplier is used?   See Preferred_Supplier_E... |
 | [**CART_BREAK_BY **](../rag-optimized/settings/CART_BREAK_BY .md) | Admin | `xxcartd_det.xxcartd_vendor` | Technical - Do Not Modify |
 | [**CATALOG_CAN_EDIT**](../rag-optimized/settings/CATALOG_CAN_EDIT.md) | Admin | `Frank` | Comma Separated list of User ID's or Group ID's that are allowed to edit catalogs.  Asterisk indicates everyone, a blank indicates no one. |
 | [**CATALOG_EXCEPTION_REQ_TYPE **](../rag-optimized/settings/CATALOG_EXCEPTION_REQ_TYPE .md) | Admin | `` | If left blank the catalog exception requisition type should be set to "Catalog Exception". The administrator can change the name of the requisition... |
@@ -667,11 +663,7 @@ See Preferred_Supplier_E... |
 | [**CODE_LIST_COMPETITOR**](../rag-optimized/settings/CODE_LIST_COMPETITOR.md) | Admin | `` | (No description) |
 | [**CODE_LIST_COUNTRY**](../rag-optimized/settings/CODE_LIST_COUNTRY.md) | Admin | `ctry_code1` | (No description) |
 | [**CODE_LIST_DISPOSITION**](../rag-optimized/settings/CODE_LIST_DISPOSITION.md) | Admin | `List:Left Message,Sent Email,Meeting Setup` | (No description) |
-| [**CODE_LIST_FOB**](../rag-optimized/settings/CODE_LIST_FOB.md) | Admin | `List:ISS:US,Supplier:Supplier` | code_fldname
-
-This is a pointer to the code_mstr field name (code_fldname) value to be used for the Header FOB selection list and validation. 
-
-You... |
+| [**CODE_LIST_FOB**](../rag-optimized/settings/CODE_LIST_FOB.md) | Admin | `List:ISS:US,Supplier:Supplier` | code_fldname  This is a pointer to the code_mstr field name (code_fldname) value to be used for the Header FOB selection list and validation.  You... |
 | [**CODE_LIST_H_SHIPVIA_XREF_[VENDOR NUMBER] **](../rag-optimized/settings/CODE_LIST_H_SHIPVIA_XREF_[VENDOR NUMBER] .md) | Admin | `` | This setting defines a cross-reference between the selected iPurchase ship via, and the code or description that the vendor needs to see on their e... |
 | [**CODE_LIST_INDUSTRY**](../rag-optimized/settings/CODE_LIST_INDUSTRY.md) | Admin | `List:Mining,Oil & Gas,Construction` | (No description) |
 | [**CODE_LIST_LEAD_SOURCE**](../rag-optimized/settings/CODE_LIST_LEAD_SOURCE.md) | Admin | `List:Email,Call,Trade Show` | (No description) |
@@ -683,11 +675,7 @@ You... |
 | [**CODE_LIST_PROGRAM**](../rag-optimized/settings/CODE_LIST_PROGRAM.md) | Admin | `` | (No description) |
 | [**CODE_LIST_PROJECT**](../rag-optimized/settings/CODE_LIST_PROJECT.md) | Admin | `` | (No description) |
 | [**CODE_LIST_SALES_STAGE**](../rag-optimized/settings/CODE_LIST_SALES_STAGE.md) | Admin | `List:Prospect,Qualified,Closed` | (No description) |
-| [**CODE_LIST_SHIP_VIA**](../rag-optimized/settings/CODE_LIST_SHIP_VIA.md) | Admin | `List:UPS:UPS,Fedex:Fedex 2 Day,Overnight:Overnight` | code_fldname
-
-This is a pointer to the code_mstr field name (code_fldname) value to be used for the Header ShipVia selection list and validation.
-
-... |
+| [**CODE_LIST_SHIP_VIA**](../rag-optimized/settings/CODE_LIST_SHIP_VIA.md) | Admin | `List:UPS:UPS,Fedex:Fedex 2 Day,Overnight:Overnight` | code_fldname  This is a pointer to the code_mstr field name (code_fldname) value to be used for the Header ShipVia selection list and validation.  ... |
 | [**CODE_LIST_STATE**](../rag-optimized/settings/CODE_LIST_STATE.md) | Admin | `ad_state` | (No description) |
 | [**CREDIT_TERMS_UPDATE**](../rag-optimized/settings/CREDIT_TERMS_UPDATE.md) | Admin | `frank` | (No description) |
 | [**CURL_COMMAND**](../rag-optimized/settings/CURL_COMMAND.md) | Admin | `..\scripts\curl.cmd` | This is the physical path to the cURL executable. |
@@ -733,14 +721,10 @@ This is a pointer to the code_mstr field name (code_fldname) value to be used fo
 | [**MRO_ITEMS_ImportExport**](../rag-optimized/settings/MRO_ITEMS_ImportExport.md) | Admin | `frank` | (No description) |
 | [**OOF_ASK_FREQUENCY**](../rag-optimized/settings/OOF_ASK_FREQUENCY.md) | Admin | `0` | (No description) |
 | [**PASSWORD_ON_APPROVE**](../rag-optimized/settings/PASSWORD_ON_APPROVE.md) | Admin | `TRUE` | (No description) |
-| [**PO_PRINTER_BATCH_NAME **](../rag-optimized/settings/PO_PRINTER_BATCH_NAME .md) | Admin | `` | This setting allows the administrator to set the Queue that the report will be processed on.  ex: "POPrint"
-
-QAD EE 2012 and above allows the abili... |
+| [**PO_PRINTER_BATCH_NAME **](../rag-optimized/settings/PO_PRINTER_BATCH_NAME .md) | Admin | `` | This setting allows the administrator to set the Queue that the report will be processed on.  ex: "POPrint"  QAD EE 2012 and above allows the abili... |
 | [**PO_UPDATE_ALLOWED**](../rag-optimized/settings/PO_UPDATE_ALLOWED.md) | Admin | `True` | (No description) |
 | [**PPV_AMOUNT**](../rag-optimized/settings/PPV_AMOUNT.md) | Admin | `2000` | (No description) |
-| [**PREFERRED_SUPPLIER_EMAIL**](../rag-optimized/settings/PREFERRED_SUPPLIER_EMAIL.md) | Admin | `` | Internal email address
-
-When a user selects a vendor which is not in the preferred list, an email can be sent to the address specified in this sett... |
+| [**PREFERRED_SUPPLIER_EMAIL**](../rag-optimized/settings/PREFERRED_SUPPLIER_EMAIL.md) | Admin | `` | Internal email address  When a user selects a vendor which is not in the preferred list, an email can be sent to the address specified in this sett... |
 | [**PRICING_GROUP_PREFIX**](../rag-optimized/settings/PRICING_GROUP_PREFIX.md) | Admin | `ENG` | (No description) |
 | [**QUOTE_EXPIRATION_DAYS**](../rag-optimized/settings/QUOTE_EXPIRATION_DAYS.md) | Admin | `120` | (No description) |
 | [**REMOVE_SELF_APPROVER**](../rag-optimized/settings/REMOVE_SELF_APPROVER.md) | Admin | `TRUE` | If originator is approver, then remove the originator from the list of approvers and allow the flow to continue. |
@@ -805,8 +789,7 @@ When a user selects a vendor which is not in the preferred list, an email can be
 | [**USE_IPURCHASE_REQ_NBR**](../rag-optimized/settings/USE_IPURCHASE_REQ_NBR.md) | Admin | `TRUE` | By default, iPurchase use the same mechanism to assign requisition numbers as QAD, namely the work order control file's next work order number. If ... |
 | [**USE_SIG_AVL_REQ_TYPES**](../rag-optimized/settings/USE_SIG_AVL_REQ_TYPES.md) | Admin | `EXPENSE` | (No description) |
 | [**VAR_bClassicErrorMessages**](../rag-optimized/settings/VAR_bClassicErrorMessages.md) | Admin | `false` | (No description) |
-| [**VOUCHER_ACCOUNT_LIST**](../rag-optimized/settings/VOUCHER_ACCOUNT_LIST.md) | Admin | `8001:8001 - Supplier,8002:8002 - R & D,8003:8003 - Manufacturing,18493:18493 -
- Prepayment` | (No description) |
+| [**VOUCHER_ACCOUNT_LIST**](../rag-optimized/settings/VOUCHER_ACCOUNT_LIST.md) | Admin | `8001:8001 - Supplier,8002:8002 - R & D,8003:8003 - Manufacturing,18493:18493 - Prepayment` | (No description) |
 | [**VOUCHER_DEPT_LIST**](../rag-optimized/settings/VOUCHER_DEPT_LIST.md) | Admin | `100 - R & D,200 - Finance,300 - Manufacturing` | (No description) |
 | [**VOUCHER_DIVISION_LIST**](../rag-optimized/settings/VOUCHER_DIVISION_LIST.md) | Admin | `100 - Division 1,200 - Division 2,300 - Division 3` | (No description) |
 | [**VOUCHER_PREPAY_ACCOUNT**](../rag-optimized/settings/VOUCHER_PREPAY_ACCOUNT.md) | Admin | `18493` | (No description) |
