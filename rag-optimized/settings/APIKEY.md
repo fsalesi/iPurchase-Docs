@@ -1,13 +1,13 @@
 # APIKEY
 
 ## Description
-No description available.
+API key for external integrations.
 
 ## Default Value
-`111`
+`(set during configuration)`
 
 ## Category
-System Setting
+Security & Authentication
 
 ## Notes
-This is a stub documentation file. Additional details may be added later.
+Set this to a secure value during system configuration.

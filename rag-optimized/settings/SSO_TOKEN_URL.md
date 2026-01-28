@@ -1,13 +1,18 @@
 # SSO_TOKEN_URL
 
 ## Description
-No description available.
+The OAuth2 token endpoint URL for your SSO identity provider.
 
 ## Default Value
-`https://login.microsoftonline.com/50d04a1d-6d5a-4b83-a57c-c653fcd1caeb/oauth2/v2.0/token`
+`(set during configuration)`
+
+## Example Values
+- Microsoft/Azure: `https://login.microsoftonline.com/[TENANT_ID]/oauth2/v2.0/token`
+- Google: `https://oauth2.googleapis.com/token`
+- Okta: `https://[YOUR_DOMAIN].okta.com/oauth2/default/v1/token`
 
 ## Category
-System Setting
+Security & Authentication
 
 ## Notes
-This is a stub documentation file. Additional details may be added later.
+Replace `[TENANT_ID]` or `[YOUR_DOMAIN]` with your organization's values.

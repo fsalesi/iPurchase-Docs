@@ -1,13 +1,13 @@
 # GLOBAL_PASSWORD
 
 ## Description
-No description available.
+System-level password for administrative functions.
 
 ## Default Value
-`encrypted:YKlny+IFfAWPKLsHazoMKA==`
+`(encrypted - set during configuration)`
 
 ## Category
-System Setting
+Security & Authentication
 
 ## Notes
-This is a stub documentation file. Additional details may be added later.
+This value is encrypted in the database.

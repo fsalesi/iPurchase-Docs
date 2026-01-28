@@ -1,13 +1,17 @@
 # SSO_CHOICE
 
 ## Description
-No description available.
+Comma-separated list of enabled SSO identity providers.
 
 ## Default Value
-`Okta,Microsoft,Google`
+`(set during configuration)`
+
+## Example Values
+- Single provider: `Microsoft`
+- Multiple providers: `Microsoft,Google,Okta`
 
 ## Category
-System Setting
+Security & Authentication
 
 ## Notes
-This is a stub documentation file. Additional details may be added later.
+Users will see a dropdown to select their identity provider if multiple are configured.

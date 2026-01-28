@@ -1,13 +1,13 @@
 # SMS_URL
 
 ## Description
-No description available.
+URL for the SMS notification service endpoint.
 
 ## Default Value
-`https://issgdemo.issgroup.net/ipurchase/sms.p`
+`(set during configuration)`
 
 ## Category
-System Setting
+System Configuration
 
 ## Notes
-This is a stub documentation file. Additional details may be added later.
+Configure this to point to your SMS gateway service for sending text notifications.

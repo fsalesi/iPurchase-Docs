@@ -1,13 +1,18 @@
 # SSO_AUTHORIZATION_URL
 
 ## Description
-No description available.
+The OAuth2 authorization endpoint URL for your SSO identity provider.
 
 ## Default Value
-`https://login.microsoftonline.com/common/oauth2/v2.0/authorize`
+`(set during configuration)`
+
+## Example Values
+- Microsoft/Azure: `https://login.microsoftonline.com/common/oauth2/v2.0/authorize`
+- Google: `https://accounts.google.com/o/oauth2/auth`
+- Okta: `https://[YOUR_DOMAIN].okta.com/oauth2/default/v1/authorize`
 
 ## Category
-System Setting
+Security & Authentication
 
 ## Notes
-This is a stub documentation file. Additional details may be added later.
+For Microsoft, use `common` for multi-tenant or your specific tenant ID for single-tenant.

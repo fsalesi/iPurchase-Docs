@@ -1,13 +1,13 @@
 # SSO_CLIENT_ID
 
 ## Description
-No description available.
+The Application (Client) ID from your SSO identity provider registration.
 
 ## Default Value
-`94f4180f-fe30-4df4-b016-8498304cc2a1`
+`(set during configuration)`
 
 ## Category
-System Setting
+Security & Authentication
 
 ## Notes
-This is a stub documentation file. Additional details may be added later.
+Obtain this value from your identity provider (Azure AD App Registration, Okta Application, etc.)

@@ -1,15 +1,13 @@
 # UNSPSC_ADMIN
 
 ## Description
-Email addresses of users which are to receive an email when an unknown UNSPSC code is used via Punchout.
-
-
+Email address of the administrator responsible for UNSPSC commodity code management.
 
 ## Default Value
-`fsalesi@localhost`
+`(set during configuration)`
 
 ## Category
-System Setting
+System Configuration
 
 ## Notes
-This is a stub documentation file. Additional details may be added later.
+Set to the email of the person who should receive notifications about UNSPSC code requests or issues.

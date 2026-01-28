@@ -1,13 +1,15 @@
 # SSO_REAUTH_PARAMS
 
 ## Description
-No description available.
+Additional OAuth2 parameters to force re-authentication.
 
 ## Default Value
 `&max_age=0`
 
 ## Category
-System Setting
+Security & Authentication
 
 ## Notes
-This is a stub documentation file. Additional details may be added later.
+Used to force users to re-authenticate with their identity provider. Common values:
+- `&max_age=0` - Always prompt for credentials
+- `&prompt=login` - Force login prompt (provider-specific)

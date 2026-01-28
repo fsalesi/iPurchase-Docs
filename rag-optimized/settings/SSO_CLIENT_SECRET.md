@@ -1,13 +1,13 @@
 # SSO_CLIENT_SECRET
 
 ## Description
-No description available.
+The client secret from your SSO identity provider (e.g., Azure AD, Okta, Google).
 
 ## Default Value
-`encrypted:efZJ0aE1RS6gLuE5MhAbNIUSlBAVwHWSHUF/SvvYBAo=`
+`(encrypted - set during configuration)`
 
 ## Category
-System Setting
+Security & Authentication
 
 ## Notes
-This is a stub documentation file. Additional details may be added later.
+This value is encrypted in the database. Obtain from your identity provider's app registration.
